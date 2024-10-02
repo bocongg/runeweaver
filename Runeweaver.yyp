@@ -70,6 +70,7 @@
     {"id":{"name":"sprSplashScreen","path":"sprites/sprSplashScreen/sprSplashScreen.yy",},},
     {"id":{"name":"sprTitle","path":"sprites/sprTitle/sprTitle.yy",},},
     {"id":{"name":"sprWall","path":"sprites/sprWall/sprWall.yy",},},
+    {"id":{"name":"sprWand","path":"sprites/sprWand/sprWand.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

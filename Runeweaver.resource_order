@@ -41,5 +41,6 @@
     {"name":"sprSoundButton","order":4,"path":"sprites/sprSoundButton/sprSoundButton.yy",},
     {"name":"sprSplashScreen","order":1,"path":"sprites/sprSplashScreen/sprSplashScreen.yy",},
     {"name":"sprWall","order":1,"path":"sprites/sprWall/sprWall.yy",},
+    {"name":"sprWand","order":4,"path":"sprites/sprWand/sprWand.yy",},
   ],
 }
