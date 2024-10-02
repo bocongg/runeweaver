@@ -17,10 +17,12 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
-    {"name":"obj_wall","order":1,"path":"objects/obj_wall/obj_wall.yy",},
-    {"name":"spr_player_left","order":2,"path":"sprites/spr_player_left/spr_player_left.yy",},
-    {"name":"spr_player_right","order":3,"path":"sprites/spr_player_right/spr_player_right.yy",},
-    {"name":"spr_player_up","order":1,"path":"sprites/spr_player_up/spr_player_up.yy",},
-    {"name":"spr_wall","order":4,"path":"sprites/spr_wall/spr_wall.yy",},
+    {"name":"objSolidWall","order":2,"path":"objects/objSolidWall/objSolidWall.yy",},
+    {"name":"objWall","order":1,"path":"objects/objWall/objWall.yy",},
+    {"name":"sprPlayerLeft","order":2,"path":"sprites/sprPlayerLeft/sprPlayerLeft.yy",},
+    {"name":"sprPlayerRight","order":3,"path":"sprites/sprPlayerRight/sprPlayerRight.yy",},
+    {"name":"sprPlayerUp","order":1,"path":"sprites/sprPlayerUp/sprPlayerUp.yy",},
+    {"name":"sprSolidWall","order":5,"path":"sprites/sprSolidWall/sprSolidWall.yy",},
+    {"name":"sprWall","order":4,"path":"sprites/sprWall/sprWall.yy",},
   ],
 }
