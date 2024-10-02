@@ -17,9 +17,9 @@
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"Collectables","order":1,"path":"folders/Sprites/Collectables.yy",},
     {"name":"Enemies","order":2,"path":"folders/Sprites/Enemies.yy",},
-    {"name":"Powers","order":6,"path":"folders/Sprites/Powers.yy",},
     {"name":"GUI","order":3,"path":"folders/Sprites/GUI.yy",},
     {"name":"Player","order":4,"path":"folders/Sprites/Player.yy",},
+    {"name":"Powers","order":6,"path":"folders/Sprites/Powers.yy",},
     {"name":"Splash","order":5,"path":"folders/Sprites/Splash.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
@@ -38,5 +38,6 @@
     {"name":"sprPlayerRight","order":2,"path":"sprites/sprPlayerRight/sprPlayerRight.yy",},
     {"name":"sprPlayerUp","order":3,"path":"sprites/sprPlayerUp/sprPlayerUp.yy",},
     {"name":"sprWall","order":1,"path":"sprites/sprWall/sprWall.yy",},
+    {"name":"sprWand","order":4,"path":"sprites/sprWand/sprWand.yy",},
   ],
 }
