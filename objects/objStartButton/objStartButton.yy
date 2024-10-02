@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"objWall",
+  "%Name":"objStartButton",
   "eventList":[],
   "managed":true,
-  "name":"objWall",
+  "name":"objStartButton",
   "overriddenProperties":[],
   "parent":{
-    "name":"Game",
-    "path":"folders/Objects/Game.yy",
+    "name":"Start Screen",
+    "path":"folders/Objects/Start Screen.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -27,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sprWall",
-    "path":"sprites/sprWall/sprWall.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
