@@ -40,7 +40,6 @@
     {"name":"sndButtonClick","order":1,"path":"sounds/sndButtonClick/sndButtonClick.yy",},
     {"name":"sprButton1","order":1,"path":"sprites/sprButton1/sprButton1.yy",},
     {"name":"sprButton2","order":2,"path":"sprites/sprButton2/sprButton2.yy",},
-    {"name":"sprHealth","order":1,"path":"sprites/sprHealth/sprHealth.yy",},
     {"name":"sprPlayerLeft","order":1,"path":"sprites/sprPlayerLeft/sprPlayerLeft.yy",},
     {"name":"sprPlayerRight","order":2,"path":"sprites/sprPlayerRight/sprPlayerRight.yy",},
     {"name":"sprPlayerSplash","order":2,"path":"sprites/sprPlayerSplash/sprPlayerSplash.yy",},
