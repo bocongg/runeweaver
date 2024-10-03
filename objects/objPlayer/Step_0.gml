@@ -3,6 +3,8 @@
 	leftKey = keyboard_check(ord("A"));
 	upKey = keyboard_check(ord("W"));
 	downKey = keyboard_check(ord("S"));
+	basicShootKey = mouse_check_button(mb_left);
+	specialShootKey = mouse_check_button(mb_right);
 
 
 //player movement
@@ -55,4 +57,22 @@
 	//set the player sprite
 	sprite_index = sprite[face];
 	
+#endregion
+
+//shoot the wand
+#region
+	if shootTimer >0 {shootTimer--;};
+	if (basicShootKey or specialShootKey) && shootTimer <= 0 
+	{
+		//reset the timer
+		shootTimer = shootCooldown;
+		//shooting
+			//create the bullet
+			var _bulletInst = instance_create_depth(x,centerY,depth-100,bulletObj);
+		
+			//change the bullet's direction
+			with(_bulletInst) {
+				dir = other.aimDir;
+			}
+	}
 #endregion
