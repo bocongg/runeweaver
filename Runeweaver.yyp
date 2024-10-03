@@ -17,6 +17,7 @@
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Game","folderPath":"folders/Objects/Game.yy","name":"Game","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Start Screen","folderPath":"folders/Objects/Start Screen.yy","name":"Start Screen","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"UI","folderPath":"folders/Objects/UI.yy","name":"UI","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Particle Systems","folderPath":"folders/Particle Systems.yy","name":"Particle Systems","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Paths","folderPath":"folders/Paths.yy","name":"Paths","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -43,8 +44,13 @@
   },
   "name":"Runeweaver",
   "resources":[
+    {"id":{"name":"fntLarge","path":"fonts/fntLarge/fntLarge.yy",},},
     {"id":{"name":"fntMedium","path":"fonts/fntMedium/fntMedium.yy",},},
+<<<<<<< Updated upstream
     {"id":{"name":"objBullet","path":"objects/objBullet/objBullet.yy",},},
+=======
+    {"id":{"name":"objBigButtonParent","path":"objects/objBigButtonParent/objBigButtonParent.yy",},},
+>>>>>>> Stashed changes
     {"id":{"name":"objExitButton","path":"objects/objExitButton/objExitButton.yy",},},
     {"id":{"name":"objGameTitle","path":"objects/objGameTitle/objGameTitle.yy",},},
     {"id":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},},
@@ -62,10 +68,10 @@
     {"id":{"name":"sprButton2","path":"sprites/sprButton2/sprButton2.yy",},},
     {"id":{"name":"sprExitButton","path":"sprites/sprExitButton/sprExitButton.yy",},},
     {"id":{"name":"sprGold","path":"sprites/sprGold/sprGold.yy",},},
-    {"id":{"name":"sprHealth","path":"sprites/sprHealth/sprHealth.yy",},},
     {"id":{"name":"sprPlayerDown","path":"sprites/sprPlayerDown/sprPlayerDown.yy",},},
     {"id":{"name":"sprPlayerLeft","path":"sprites/sprPlayerLeft/sprPlayerLeft.yy",},},
     {"id":{"name":"sprPlayerRight","path":"sprites/sprPlayerRight/sprPlayerRight.yy",},},
+    {"id":{"name":"sprPlayerSplash","path":"sprites/sprPlayerSplash/sprPlayerSplash.yy",},},
     {"id":{"name":"sprPlayerUp","path":"sprites/sprPlayerUp/sprPlayerUp.yy",},},
     {"id":{"name":"sprSolidWall","path":"sprites/sprSolidWall/sprSolidWall.yy",},},
     {"id":{"name":"sprSoundButton","path":"sprites/sprSoundButton/sprSoundButton.yy",},},
