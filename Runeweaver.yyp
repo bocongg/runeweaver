@@ -44,6 +44,7 @@
   "name":"Runeweaver",
   "resources":[
     {"id":{"name":"fntMedium","path":"fonts/fntMedium/fntMedium.yy",},},
+    {"id":{"name":"objBullet","path":"objects/objBullet/objBullet.yy",},},
     {"id":{"name":"objExitButton","path":"objects/objExitButton/objExitButton.yy",},},
     {"id":{"name":"objGameTitle","path":"objects/objGameTitle/objGameTitle.yy",},},
     {"id":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},},
@@ -56,6 +57,7 @@
     {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},},
     {"id":{"name":"sndButtonClick","path":"sounds/sndButtonClick/sndButtonClick.yy",},},
     {"id":{"name":"sndMusicMenu","path":"sounds/sndMusicMenu/sndMusicMenu.yy",},},
+    {"id":{"name":"level1Fire","path":"sprites/level1Fire/level1Fire.yy",},},
     {"id":{"name":"sprButton1","path":"sprites/sprButton1/sprButton1.yy",},},
     {"id":{"name":"sprButton2","path":"sprites/sprButton2/sprButton2.yy",},},
     {"id":{"name":"sprExitButton","path":"sprites/sprExitButton/sprExitButton.yy",},},
