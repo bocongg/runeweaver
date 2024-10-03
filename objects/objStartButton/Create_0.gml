@@ -1,11 +1,7 @@
-/// @DnDAction : YoYo Games.Instances.Inherit_Event
-/// @DnDVersion : 1
-/// @DnDHash : 32CE222B
-event_inherited();
+// Assign Variable
+// // Variable used for clicked state.
+is_clicked = false;
 
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
-/// @DnDHash : 69D53345
-/// @DnDArgument : "expr" ""Start""
-/// @DnDArgument : "var" "text"
-text = "Start";
+// Assign Variable
+// // Variable used for button scaling.
+target_scale = 1.0;
