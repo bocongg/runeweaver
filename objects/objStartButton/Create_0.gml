@@ -9,3 +9,11 @@ event_inherited();
 /// @DnDArgument : "expr" ""Start""
 /// @DnDArgument : "var" "text"
 text = "Start";
+
+/// @DnDAction : YoYo Games.Audio.Play_Audio
+/// @DnDVersion : 1.1
+/// @DnDHash : 128CF79B
+/// @DnDArgument : "soundid" "sndMusicMenu"
+/// @DnDArgument : "loop" "1"
+/// @DnDSaveInfo : "soundid" "sndMusicMenu"
+audio_play_sound(sndMusicMenu, 0, 1, 1.0, undefined, 1.0);
