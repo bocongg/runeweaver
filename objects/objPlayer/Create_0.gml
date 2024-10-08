@@ -1,9 +1,9 @@
 //damage setup 
-get_damaged_create(20, true);
+get_damaged_create(10, true);
 
 // varaibles for movement
 	moveDir = 0;
-	moveSpd = 10;
+	moveSpd = 8;
 	xspd = 0;
 	yspd = 0;
 
@@ -23,6 +23,6 @@ get_damaged_create(20, true);
 
 //wand info
 	shootTimer = 0;
-	shootCooldown = 9;
+	shootCooldown = 15; //higher number means inbetween shots is longer
 	
 	bulletObj = objBullet;

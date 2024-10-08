@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Map Screen",
-    "path":"folders/Objects/Map Screen.yy",
+    "path":"folders/Objects/UI/Map Screen.yy",
   },
   "parentObjectId":{
     "name":"objMapNode",

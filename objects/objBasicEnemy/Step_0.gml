@@ -1,16 +1,49 @@
+//state machine
+switch(state)
+{
+	//chase state
+	case 0:
+		//get player's direction
+		if instance_exists(objPlayer) 
+		{
+			dir = point_direction(x, y, objPlayer.x, objPlayer.y);
+		}
+		//set the correct speed
+		spd = chaseSpd;
+		break;
+	
+	//pause and shoot state
+	case 1:
+		
+		//get player's direction
+		if instance_exists(objPlayer) 
+		{
+			dir = point_direction(x, y, objPlayer.x, objPlayer.y);
+		}
+		//set the correct speed
+		spd = 0;
+		
+		//stop animating 
+		image_index = 0;
+	break;
+}
+
+
 //chase the player
-	if instance_exists(objPlayer) 
-	{
-		dir = point_direction(x, y, objPlayer.x, objPlayer.y);
-	}
 	
 	//getting the speed
 	xspd = lengthdir_x(spd, dir);
 	yspd = lengthdir_y(spd, dir);
 	
-	//get correct face
-	if xspd > 0 {face = 1;};
-	if xspd < 0 {face = -1;};
+	//get the correct face
+	//if xspd > 0 {face = 1;};
+	//if xspd < 0 {face = -1;};
+	if dir > 90 && dir < 270 
+	{
+		face = -1;
+	} else {
+		face = 1;	
+	}
 
 	//collisions
 	if place_meeting(x + xspd, y, objWall) || place_meeting(x + xspd, y, objEnemyParent)
@@ -25,6 +58,9 @@
 	//moving
 	x += xspd;
 	y += yspd;
+	
+	//set the depth
+	depth = -y;
 
 
 // Inherit the parent event

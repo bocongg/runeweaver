@@ -1,11 +1,10 @@
 //check if got inputs
-	rightKey = keyboard_check(ord("D"));
-	leftKey = keyboard_check(ord("A"));
-	upKey = keyboard_check(ord("W"));
-	downKey = keyboard_check(ord("S"));
-	basicShootKey = mouse_check_button(mb_left);
-	specialShootKey = mouse_check_button(mb_right);
-
+	rightKey = global.rightKey;
+	leftKey = global.leftKey;
+	upKey = global.upKey;
+	downKey = global.downKey;
+	basicShootKey = global.basicShootKey;
+	specialShootKey = global.specialShootKey;
 
 //player movement
 #region
@@ -43,6 +42,7 @@
 #endregion
 
 //get damaged
+#region
 get_damaged(objDamagePlayer, true);
 
 //player aiming
@@ -51,6 +51,7 @@ get_damaged(objDamagePlayer, true);
 	//aim
 	aimDir = point_direction(x, centerY, mouse_x, mouse_y);
 	
+#endregion
 
 //sprite control
 #region
@@ -84,5 +85,9 @@ get_damaged(objDamagePlayer, true);
 //death
 if hp <= 0
 {
+	//create the game ovr object
+	instance_create_depth(0, 0, -10000, objGameOverScreen);
+	
+	//destroy player
 	instance_destroy();
 }

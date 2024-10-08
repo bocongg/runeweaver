@@ -3,6 +3,7 @@
 	function get_damaged_create(_hp = 10, _iframes = false)
 	{
 		//health points
+		maxHp = _hp;
 		hp = _hp;
 		
 		//get the iframes
@@ -45,6 +46,9 @@
 			}
 		}
 		
+		//clamp hp
+		hp = clamp(hp, 0, maxHp);
+	
 		exit;
 	}
 	//make sure the iframe blinking stops
@@ -121,4 +125,7 @@
 			}
 		}
 	}
+	
+	//clamp hp
+	hp = clamp(hp, 0, maxHp);
 }

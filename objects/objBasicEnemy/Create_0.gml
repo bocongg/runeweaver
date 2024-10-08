@@ -2,9 +2,13 @@
 //hp
 event_inherited();
 
-spd = 2;
+spd = 0;
+chaseSpd = 1;
 dir = 0;
 xspd = 0;
-yspd = 0;
+yspd = 0; 
 
 face = 1;
+
+//state machine
+state = 0; 
