@@ -1,2 +1,3 @@
-//health points
-hp = 10;
+event_inherited();
+
+get_damaged_create();

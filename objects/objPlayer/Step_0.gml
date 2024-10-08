@@ -41,6 +41,9 @@
 
 #endregion
 
+//get damaged
+get_damaged(objDamagePlayer, true);
+
 //player aiming
 	centerY = y + centerYOffSet;
 	
@@ -76,3 +79,9 @@
 			}
 	}
 #endregion
+
+//death
+if hp <= 0
+{
+	instance_destroy();
+}
