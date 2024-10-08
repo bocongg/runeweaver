@@ -16,6 +16,7 @@
 	sprite[1] = sprPlayerRight;
 	sprite[2] = sprPlayerLeft;
 	sprite[3] = sprPlayerLeft;
+	
 
 //wand info
 	shootTimer = 0;

@@ -13,6 +13,7 @@
 	if place_meeting(x,y,objSolidWall) {destroy = true;}
 	
 	//bullet out of range
-	if point_distance(xstart,ystart,x,y) > maxDist {
+	if point_distance(xstart,ystart,x,y) > maxDist 
+	{
 		destroy = true;
 	}
