@@ -64,7 +64,7 @@ if (mouse_over)
 			with(objGetRuneScreen) instance_destroy();
 	
 			// Destroys confirm button.
-			with(objButtonConfirm) instance_destroy();
+//			with(objButtonConfirm) instance_destroy();
 	
 			// Plays music sound effect.
 			audio_play_sound(sndMusicGame, 0, 1, 1.0, undefined, 1.0);
