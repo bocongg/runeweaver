@@ -26,10 +26,10 @@
 
 // If the game is over...
 // We do this by checking is an end game screen is present.
-// if (!instance_exists(objGetRunes))
-// {
+//if (!instance_exists(objGetRunes))
+//{
 	// If we have reached the experience goal...
-// 	if (global.xp >= global.xp_goal)
+//	if (global.xp >= global.xp_goal)
 //	{
 //		// Destroy the enemies.
 //		with (obj_enemy) instance_destroy();
@@ -52,7 +52,7 @@
 //		else
 //		{
 //			// Level up!
-//			global.level += 1;
+//			global.stage += 1;
 //		
 //			// Execute function to go to the next wave.
 //			next_wave();

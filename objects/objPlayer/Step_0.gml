@@ -29,6 +29,7 @@
 	if place_meeting(x + xspd, y, objSolidWall) == true {xspd = 0;}
 	if place_meeting(x, y + yspd, objSolidWall) == true {yspd = 0;}
 
+
 //move the player
 	x += xspd;
 	y += yspd;
