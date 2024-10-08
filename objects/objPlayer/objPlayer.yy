@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprPlayerDown",
-    "path":"sprites/sprPlayerDown/sprPlayerDown.yy",
+    "name":"sprPlayerRight",
+    "path":"sprites/sprPlayerRight/sprPlayerRight.yy",
   },
   "spriteMaskId":{
     "name":"sprPlayerDown",
