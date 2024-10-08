@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"level1Fire",
-    "path":"sprites/level1Fire/level1Fire.yy",
+    "name":"sprLevel1Fire",
+    "path":"sprites/sprLevel1Fire/sprLevel1Fire.yy",
   },
   "spriteMaskId":null,
   "visible":true,

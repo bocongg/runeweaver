@@ -1,6 +1,9 @@
+//damage setup 
+get_damaged_create(20, true);
+
 // varaibles for movement
 	moveDir = 0;
-	moveSpd = 2;
+	moveSpd = 10;
 	xspd = 0;
 	yspd = 0;
 
