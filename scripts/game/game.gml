@@ -94,7 +94,7 @@
 					hp -= _inst.damage;
 					_hitConfirm = true;
 					//tell the damage instance to destroy itself 
-					_inst.hitConfirm = true;
+					_inst.destroy = true;
 				}
 			}
 			

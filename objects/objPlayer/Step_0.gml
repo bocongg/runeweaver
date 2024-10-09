@@ -67,18 +67,32 @@ get_damaged(objDamagePlayer, true);
 //shoot the wand
 #region
 	if shootTimer >0 {shootTimer--;};
-	if (basicShootKey or specialShootKey) && shootTimer <= 0 
+	if basicShootKey && shootTimer <= 0 
 	{
 		//reset the timer
 		shootTimer = shootCooldown;
 		//shooting
 			//create the bullet
-			var _bulletInst = instance_create_depth(x,centerY,depth-100,bulletObj);
+			var _bulletInst = instance_create_depth(x, centerY, depth-100, objLevel1Fire);
 		
 			//change the bullet's direction
 			with(_bulletInst) {
 				dir = other.aimDir;
 			}
+	} else if specialShootKey && shootTimer <= 0 
+	{
+	
+		//reset the timer
+		shootTimer = shootCooldown;
+		//shooting
+			//create the bullet
+			var _bulletInst = instance_create_depth(x, centerY, depth-100, objLevel1Ice);
+		
+			//change the bullet's direction
+			with(_bulletInst) {
+				dir = other.aimDir;
+			}
+	
 	}
 #endregion
 

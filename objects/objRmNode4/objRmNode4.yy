@@ -8,8 +8,8 @@
   "name":"objRmNode4",
   "overriddenProperties":[],
   "parent":{
-    "name":"Map Screen",
-    "path":"folders/Objects/Map Screen.yy",
+    "name":"Runeweaver",
+    "path":"Runeweaver.yyp",
   },
   "parentObjectId":{
     "name":"objMapNode",
