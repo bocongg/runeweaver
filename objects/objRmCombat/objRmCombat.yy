@@ -8,8 +8,8 @@
   "name":"objRmCombat",
   "overriddenProperties":[],
   "parent":{
-    "name":"Map Screen",
-    "path":"folders/Objects/UI/Map Screen.yy",
+    "name":"test",
+    "path":"folders/Objects/UI/Map Screen/test.yy",
   },
   "parentObjectId":{
     "name":"objMapNode",
