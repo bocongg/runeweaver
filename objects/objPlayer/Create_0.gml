@@ -1,6 +1,9 @@
 //damage setup 
 get_damaged_create(10, true);
 
+//variable for coin
+	gold = 0;
+
 // varaibles for movement
 	moveDir = 0;
 	moveSpd = 8;
@@ -25,4 +28,4 @@ get_damaged_create(10, true);
 	shootTimer = 0;
 	shootCooldown = 15; //higher number means inbetween shots is longer
 	
-	bulletObj = objBullet;
+	bulletObj = objLevel1Fire;

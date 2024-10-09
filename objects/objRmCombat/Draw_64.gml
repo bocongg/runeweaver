@@ -4,7 +4,7 @@
 // Inherit the parent event
 event_inherited();
 
-var _unlocked = undefined
+var _unlocked = undefined;
 
 if (global.stage = 0) {
 		_unlocked = ds_map_find_value(global.roomNum, "roomOneUnlocked")
