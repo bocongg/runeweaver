@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprRuneFire1",
-    "path":"sprites/sprRuneFire1/sprRuneFire1.yy",
+    "name":"sprRuneFire",
+    "path":"sprites/sprRuneFire/sprRuneFire.yy",
   },
   "spriteMaskId":null,
   "visible":true,

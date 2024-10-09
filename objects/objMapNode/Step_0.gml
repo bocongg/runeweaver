@@ -35,7 +35,7 @@ if (mouse_over)
 			room_goto(Room1);
 	
 			// Destroys runes.
-			with(objRmCombat) instance_destroy();
+			with(objRmNodeStart) instance_destroy();
 	
 			// Destroys get runes screen.
 			with(objStageGenerator) instance_destroy();

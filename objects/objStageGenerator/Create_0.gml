@@ -32,73 +32,59 @@ xpos[14] = 1432; ypos[14] = 520;
 // final boss room (stage 8)
 xpos[15] = 1688; ypos[15] = 520;
 
-global.stage += 1;
+global.stage += 1
 
-if (global.stage = 0) {
+if (!variable_global_exists("stage")) {
+    global.stage = 0;
+}
+
+if (global.stage == 0) {
 	stageLevelReset();
 	randomise();
 }
 
-if (global.stage = 1) {
-	ds_map_replace(global.roomNum, "roomOneUnlocked", true);
-	ds_map_replace(global.roomNum, "roomTwoUnlocked", true);
-	ds_map_replace(global.roomNum, "roomStartUnlocked", false);
-} else if (global.stage = 2) {
-	ds_map_replace(global.roomNum, "roomThreeUnlocked", true);
-	ds_map_replace(global.roomNum, "roomFourUnlocked", true);
-	ds_map_replace(global.roomNum, "roomFiveUnlocked", true);
-	
-	ds_map_replace(global.roomNum, "roomOneUnlocked", false);
-	ds_map_replace(global.roomNum, "roomTwoUnlocked", false);
-} else if (global.stage = 3) {
-	ds_map_replace(global.roomNum, "roomSixUnlocked", true);
-	ds_map_replace(global.roomNum, "roomSevenUnlocked", true);
-
-	ds_map_replace(global.roomNum, "roomThreeUnlocked", false);
-	ds_map_replace(global.roomNum, "roomFourUnlocked", false);
-	ds_map_replace(global.roomNum, "roomFiveUnlocked", false);
-} else if (global.stage =4) {
-	ds_map_replace(global.roomNum, "roomEightUnlocked", true);
-	
-	ds_map_replace(global.roomNum, "roomSixUnlocked", false);
-	ds_map_replace(global.roomNum, "roomSevenUnlocked", false);
-} else if (global.stage = 5) {
-	ds_map_replace(global.roomNum, "roomNineUnlocked", true);
-	ds_map_replace(global.roomNum, "roomTenUnlocked", true);
-	
-	ds_map_replace(global.roomNum, "roomEightUnlocked", false);
-} else if (global.stage = 6) {
-	ds_map_replace(global.roomNum, "roomElevenUnlocked", true);
-	ds_map_replace(global.roomNum, "roomTwelveUnlocked", true);
-	ds_map_replace(global.roomNum, "roomThirteenUnlocked", true);
-	
-	ds_map_replace(global.roomNum, "roomNineUnlocked", false);
-	ds_map_replace(global.roomNum, "roomTenUnlocked", false);
-} else if (global.stage = 7) {
-	ds_map_replace(global.roomNum, "roomFourteenUnlocked", true);
-	
-	ds_map_replace(global.roomNum, "roomElevenUnlocked", false);
-	ds_map_replace(global.roomNum, "roomTwelveUnlocked", false);
-	ds_map_replace(global.roomNum, "roomThirteenUnlocked", false);
-} else if (global.stage = 8) {
-	ds_map_replace(global.roomNum, "roomFinalBossUnlocked", true);
-	
-	ds_map_replace(global.roomNum, "roomFourteenUnlocked", false);
+if (global.stage == 1) {
+	setStageOne();
+} else if (global.stage == 2) {
+	setStageTwo();
+} else if (global.stage == 3) {
+	setStageThree();
+} else if (global.stage == 4) {
+	setStageFour();
+} else if (global.stage == 5) {
+	setStageFive();
+} else if (global.stage == 6) {
+	setStageSix();
+} else if (global.stage == 7) {
+	setStageSeven();
+} else if (global.stage == 8) {
+	setStageEight();
 }
 
-
-
-
-instance_create_layer(xpos[0], ypos[0], "MapNodes", objRmCombatStart);
+instance_create_layer(xpos[0], ypos[0], "MapNodes", objRmNodeStart);
+instance_create_layer(xpos[1], ypos[1], "MapNodes", objRmNode1);
+instance_create_layer(xpos[2], ypos[2], "MapNodes", objRmNode2);
+instance_create_layer(xpos[3], ypos[3], "MapNodes", objRmNode3);
+instance_create_layer(xpos[4], ypos[4], "MapNodes", objRmNode4);
+instance_create_layer(xpos[5], ypos[5], "MapNodes", objRmNode5);
+instance_create_layer(xpos[6], ypos[6], "MapNodes", objRmNode6);
+instance_create_layer(xpos[7], ypos[7], "MapNodes", objRmNode7);
+instance_create_layer(xpos[8], ypos[8], "MapNodes", objRmNode8);
+instance_create_layer(xpos[9], ypos[9], "MapNodes", objRmNode9);
+instance_create_layer(xpos[10], ypos[10], "MapNodes", objRmNode10);
+instance_create_layer(xpos[11], ypos[11], "MapNodes", objRmNode11);
+instance_create_layer(xpos[12], ypos[12], "MapNodes", objRmNode12);
+instance_create_layer(xpos[13], ypos[13], "MapNodes", objRmNode13);
+instance_create_layer(xpos[14], ypos[14], "MapNodes", objRmNode14);
 instance_create_layer(xpos[15], ypos[15], "MapNodes", objRmFinalBoss);
 
-for (var i = 1; i <= 14; i++) {
-    // Randomly select one of the four objects using the choose() function
-    var selectedObj = choose(objRmCombat, objRmElite, objRmEvent, objRmRest, objRmTreasure);
+//for (var i = 1; i <= 14; i++) {
+//	// Randomly select one of the four objects using the choose() function
+//	var selectedObj = choose(objRmCombat, objRmElite, objRmEvent, objRmRest, objRmTreasure);
     
-    // Instantiate the selected object at (xpos[i], ypos[i]) on the "MapNodes" layer
-    instance_create_layer(xpos[i], ypos[i], "MapNodes", selectedObj);
-}
+//	// Instantiate the selected object at (xpos[i], ypos[i]) on the "MapNodes" layer
+//	instance_create_layer(xpos[i], ypos[i], "MapNodes", selectedObj);
+//}
 
 
 alarm_set(0, 100);
