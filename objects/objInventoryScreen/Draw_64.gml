@@ -1,0 +1,1 @@
+draw_sprite(sprRuneInventory, 0, 1920 / 2, 1080 / 2);

@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"getUpgrades",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Get Runes",
+    "path":"folders/Scripts/Get Runes.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

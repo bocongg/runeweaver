@@ -13,13 +13,13 @@ function getUpgrades()
 	var _upgrade_list = ds_list_create();
 
 	// Get upgrades for the shooting weapon and place them in the list.
-	weapon_shooting_upgrades(_upgrade_list);
+	getFireRune(_upgrade_list);
 
 	// Get upgrades for the swipe weapon and place them in the list.
-	weapon_swipe_upgrades(_upgrade_list);
+	getIceRune(_upgrade_list);
 
 	// Get upgrades for the trail weapon and place them in the list.
-	weapon_trail_upgrades(_upgrade_list);
+	getWindRune(_upgrade_list);
 
 	// Shuffle the list containing all the retrieved upgrades.
 	listShuffle(_upgrade_list);

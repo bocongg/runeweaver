@@ -6,21 +6,21 @@ event_inherited();
 
 var _unlocked = undefined
 
-if (global.stage = 0) {
+if (global.stage == 0) {
 		_unlocked = ds_map_find_value(global.roomNum, "roomOneUnlocked")
-	} else if (global.stage = 1) {
+	} else if (global.stage == 1) {
 		_unlocked = ds_map_find_value(global.roomNum, "roomOneUnlocked")
-	} else if (global.stage = 2) {
+	} else if (global.stage == 2) {
 		_unlocked = ds_map_find_value(global.roomNum, "roomThreeUnlocked")
-	} else if (global.stage = 3) {
+	} else if (global.stage == 3) {
 		_unlocked = ds_map_find_value(global.roomNum, "roomSixUnlocked")
-	} else if (global.stage = 4) {
+	} else if (global.stage == 4) {
 		_unlocked = ds_map_find_value(global.roomNum, "roomEightUnlocked")
-	} else if (global.stage = 5) {
+	} else if (global.stage == 5) {
 		_unlocked = ds_map_find_value(global.roomNum, "roomNineUnlocked")
-	} else if (global.stage = 6) {
+	} else if (global.stage == 6) {
 		_unlocked = ds_map_find_value(global.roomNum, "roomElevenUnlocked")
-	} else if (global.stage = 7) {
+	} else if (global.stage == 7) {
 		_unlocked = ds_map_find_value(global.roomNum, "roomFourteenUnlocked")
 	}
 
