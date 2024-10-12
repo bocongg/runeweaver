@@ -6,8 +6,8 @@
   "name":"objSolidWall",
   "overriddenProperties":[],
   "parent":{
-    "name":"Game",
-    "path":"folders/Objects/Game.yy",
+    "name":"Background",
+    "path":"folders/Objects/Game/Background.yy",
   },
   "parentObjectId":{
     "name":"objWall",

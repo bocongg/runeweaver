@@ -8,8 +8,8 @@
   "name":"objRmElite",
   "overriddenProperties":[],
   "parent":{
-    "name":"test",
-    "path":"folders/Objects/UI/Map Screen/test.yy",
+    "name":"Map Screen",
+    "path":"folders/Objects/UI/Map Screen.yy",
   },
   "parentObjectId":{
     "name":"objMapNode",
