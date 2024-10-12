@@ -9,8 +9,8 @@
   "name":"objLevel1Wind",
   "overriddenProperties":[],
   "parent":{
-    "name":"Game",
-    "path":"folders/Objects/Game.yy",
+    "name":"Power",
+    "path":"folders/Objects/Game/Power.yy",
   },
   "parentObjectId":{
     "name":"objDamageEnemy",

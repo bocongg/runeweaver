@@ -32,8 +32,12 @@ if (mouse_over)
 			// Play select sound.
 			audio_play_sound(sndButtonClick, 0, 0, 1.0, undefined, 1.0);
 			
-			room_goto(Room1);
-	
+			if !instance_exists(objTransition) {
+				var _inst = instance_create_layer(x, y, "Instances", objTransition);
+				_inst.targetRoom = Room1;
+			}
+			//room_goto(Room1);
+			
 			// Destroys runes.
 			with(objRmNodeStart) instance_destroy();
 	

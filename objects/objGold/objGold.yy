@@ -9,8 +9,8 @@
   "name":"objGold",
   "overriddenProperties":[],
   "parent":{
-    "name":"Game",
-    "path":"folders/Objects/Game.yy",
+    "name":"Collectables",
+    "path":"folders/Objects/Game/Collectables.yy",
   },
   "parentObjectId":null,
   "persistent":false,
