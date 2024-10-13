@@ -12,3 +12,12 @@ face = 1;
 
 //state machine
 state = 0; 
+	//shooting state
+	cooldownTime = 4*60; //4 seconds 
+	shootTimer = irandom(cooldownTime);
+	windupTime = 60;	//stand and freeze
+	recoverTime = 45;	//time before start chasing player
+	bulletInst = noone;
+	
+	bulletXoff = 5;
+	bulletYoff = -20;
