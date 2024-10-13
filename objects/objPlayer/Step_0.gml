@@ -66,42 +66,64 @@ get_damaged(objDamagePlayer, true);
 
 //shoot the wand
 #region
-	if shootTimer >0 {shootTimer--;};
-	if basicShootKey && shootTimer <= 0 
-	{
+	if shootTimer > 0 {shootTimer--;};
+	if basicShootKey && shootTimer <= 0 {
+		
 		//reset the timer
-		shootTimer = shootCooldown;
+		shootTimer = basicAttack.cooldown;
+		
 		//shooting
+			var _spread = basicAttack.spread;
+			var _spreadDiv = max(_spread/1 -1, 1);
+		
+			for (var i = 0; i < basicAttack.bulletNum ; i++) {
+				//create the bullet
+			var _bulletInst = instance_create_depth(x, centerY, depth-100, basicAttack.bulletObj);
+			
+				//change the bullet's direction
+				with(_bulletInst) {
+					dir = other.aimDir - _spread/2 + _spreadDiv*i; 
+				}
+			}
+	} else if specialShootKey && shootTimer <= 0 {
+	
+		//reset the timer
+		shootTimer = specialAttack.cooldown;
+		
+		//shooting
+			var _spread = specialAttack.spread;
+			var _spreadDiv = max(_spread/1 -1, 1);
+		
+			for (var i = 0; i < specialAttack.bulletNum ; i++) {
+				//create the bullet
+			var _bulletInst = instance_create_depth(x, centerY, depth-100, specialAttack.bulletObj);
+			
+				//change the bullet's direction
+				with(_bulletInst) {
+					dir = other.aimDir - _spread/2 + _spreadDiv*i; 
+				}
+			}
+		
+		
+		/*//shooting
 			//create the bullet
-			var _bulletInst = instance_create_depth(x, centerY, depth-100, objLevel1Fire);
+			var _bulletInst = instance_create_depth(x, centerY, depth-100, wand.bulletObj);
 		
 			//change the bullet's direction
 			with(_bulletInst) {
 				dir = other.aimDir;
-			}
-	} else if specialShootKey && shootTimer <= 0 
-	{
-	
-		//reset the timer
-		shootTimer = shootCooldown;
-		//shooting
-			//create the bullet
-			var _bulletInst = instance_create_depth(x, centerY, depth-100, objLevel1Ice);
-		
-			//change the bullet's direction
-			with(_bulletInst) {
-				dir = other.aimDir;
-			}
-	
+			}*/
 	}
 #endregion
 
 //death
-if hp <= 0
-{
+if hp <= 0 {
 	//create the game ovr object
 	instance_create_depth(0, 0, -10000, objGameOverScreen);
 	
 	//destroy player
 	instance_destroy();
 }
+
+
+

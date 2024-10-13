@@ -13,8 +13,8 @@
     "path":"folders/Objects/Game/Power.yy",
   },
   "parentObjectId":{
-    "name":"objDamageEnemy",
-    "path":"objects/objDamageEnemy/objDamageEnemy.yy",
+    "name":"objBasicBullet",
+    "path":"objects/objBasicBullet/objBasicBullet.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
