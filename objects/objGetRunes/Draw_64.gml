@@ -1,5 +1,5 @@
-// Draws the upgrade object.
-draw_self()
+// Draws the card object.
+draw_self();
 
 // Checks if glow highlight should show.
 if (mouse_over)
