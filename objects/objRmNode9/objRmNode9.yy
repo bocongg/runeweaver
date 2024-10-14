@@ -2,14 +2,14 @@
   "$GMObject":"",
   "%Name":"objRmNode9",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"objRmNode9",
   "overriddenProperties":[],
   "parent":{
-    "name":"Runeweaver",
-    "path":"Runeweaver.yyp",
+    "name":"Map Screen",
+    "path":"folders/Objects/UI/Map Screen.yy",
   },
   "parentObjectId":{
     "name":"objMapNode",
