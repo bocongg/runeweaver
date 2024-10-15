@@ -59,7 +59,7 @@
     {"name":"objExitButton","order":1,"path":"objects/objExitButton/objExitButton.yy",},
     {"name":"objGame","order":3,"path":"objects/objGame/objGame.yy",},
     {"name":"objGameOverScreen","order":6,"path":"objects/objGameOverScreen/objGameOverScreen.yy",},
-    {"name":"objGameTitle","order":3,"path":"objects/objGameTitle/objGameTitle.yy",},
+    {"name":"objGameTitle_to_delete","order":3,"path":"objects/objGameTitle_to_delete/objGameTitle_to_delete.yy",},
     {"name":"objGameTransition","order":2,"path":"objects/objGameTransition/objGameTransition.yy",},
     {"name":"objGetRunes","order":1,"path":"objects/objGetRunes/objGetRunes.yy",},
     {"name":"objGetRuneScreen","order":2,"path":"objects/objGetRuneScreen/objGetRuneScreen.yy",},
