@@ -1,32 +1,18 @@
-draw_self();
-//var _item_x = item_pos * 176;
-var _xx = bbox_left + 236;
-var _yy = bbox_top + 480;
-//draw_sprite(spr_Inventory_Selected, item_pos_index, _xx, _yy + _item_x);
-instance_create_layer(_xx, _yy, "RunesInventory", objFireRune1)
-instance_create_layer(_xx + 135, _yy, "RunesInventory", objIceRune1)
 
 
-//item_pos_index += 0.2;
-//for(var i = 0; i < 3; i += 1)
-//    {
-//    if !(item_array[i, item_type] == item_none)
-//        {
-//			if (i == 0) {
-//				item_array[0][item_type] = itemFireRune1
-//				draw_sprite(item_array[i, item_sprite], 0, _xx, _yy);
-//				draw_text(_xx + 40, _yy + 50,  + string(item_array[i, item_amount]));
-//			}
-//			if (i == 1) {
-//				item_array[1][item_type] = itemFireRune2
-//				draw_sprite(item_array[i, item_sprite], 0, _xx, _yy);
-//				draw_text(_xx + 40, _yy + 50,  + string(item_array[i, item_amount]));
-//			}
-//			if (i == 2) {
-//				item_array[2][item_type] = itemIceRune1
-//				draw_sprite(item_array[i, item_sprite], 0, _xx, _yy);
-//				draw_text(_xx + 40, _yy + 50,  + string(item_array[i, item_amount]));
-//			}
+////var _xx = bbox_left + 236;
+////var _yy = bbox_top + 480;
+
+////instance_create_layer(_xx, _yy, "RunesInventory", objFireRune1)
+////instance_create_layer(_xx + 135, _yy, "RunesInventory", objIceRune1)
+//draw_set_font(fntMedium);
+
+//for (var i = 0; i < inventorySlots; i += 1){
+//	var xx = bbox_left + 236 + (i mod rowLength) * 135;
+//	var yy = bbox_top + 480 + (i div rowLength) * 176;
+//	if (inventory[i] != -1){
+//		instance_create_layer(xx, yy, "RunesInventory", inventory[i]);
+//		//draw_text(xx + 40, yy + 50,  + string(inventory[i][runeAmount]));
 //	}
-//    _yy += 176;
 //}
+//draw_set_font(fntMedium);

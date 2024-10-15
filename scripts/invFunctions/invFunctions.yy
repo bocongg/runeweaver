@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"invFunctions",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"invFunctions",
+  "parent":{
+    "name":"Inventory_to_delete",
+    "path":"folders/Scripts/Inventory_to_delete.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

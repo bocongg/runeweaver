@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprButton1",
-    "path":"sprites/sprButton1/sprButton1.yy",
+    "name":"sprSoundButton",
+    "path":"sprites/sprSoundButton/sprSoundButton.yy",
   },
   "spriteMaskId":null,
   "visible":true,
