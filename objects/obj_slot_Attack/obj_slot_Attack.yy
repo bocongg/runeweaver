@@ -1,12 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_slot",
+  "%Name":"obj_slot_Attack",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":6,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_slot",
+  "name":"obj_slot_Attack",
   "overriddenProperties":[],
   "parent":{
     "name":"Inventory",
