@@ -81,7 +81,7 @@
     {"id":{"name":"objExitButton","path":"objects/objExitButton/objExitButton.yy",},},
     {"id":{"name":"objGame","path":"objects/objGame/objGame.yy",},},
     {"id":{"name":"objGameOverScreen","path":"objects/objGameOverScreen/objGameOverScreen.yy",},},
-    {"id":{"name":"objGameTitle","path":"objects/objGameTitle/objGameTitle.yy",},},
+    {"id":{"name":"objGameTitle_to_delete","path":"objects/objGameTitle_to_delete/objGameTitle_to_delete.yy",},},
     {"id":{"name":"objGameTransition","path":"objects/objGameTransition/objGameTransition.yy",},},
     {"id":{"name":"objGetRunes","path":"objects/objGetRunes/objGetRunes.yy",},},
     {"id":{"name":"objGetRuneScreen","path":"objects/objGetRuneScreen/objGetRuneScreen.yy",},},
