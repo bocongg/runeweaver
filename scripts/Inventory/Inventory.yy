@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"Inventory",
   "parent":{
-    "name":"Inventory",
-    "path":"folders/Scripts/Inventory.yy",
+    "name":"Inventory_to_delete",
+    "path":"folders/Scripts/Inventory_to_delete.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
