@@ -1,6 +1,3 @@
-/// @description Draw the mouse items.
-draw_self()
-
 // Sets the draw colour and alpha.
 draw_set_colour(c_black);
 draw_set_alpha(0.7);
@@ -13,30 +10,7 @@ draw_set_colour(c_white);
 draw_set_alpha(1);
 draw_sprite(sprRuneInventory, 0, x, y);
 
-with (obj_slot)
- {
-	//Get values
-	var iid = global.inventory[# var_slot, 0];
-	var amount = global.inventory[# var_slot, 1];
 
-	//Draw stuff
-	if (iid != item.none)
-	 {
-		draw_sprite(spr_item, iid, x, y); //Draw item sprite
-		draw_set_font(fntMedium);
-		draw_text(x+40, y+50, string(amount)); //Draw item quantity
-		}
-	}
-//Get values
-var iid = global.mouse_slot[# 0, 0];
-var amount = global.mouse_slot[# 0, 1];
-
-//Draw stuff
-if (iid != item.none)
- {
-	draw_sprite(spr_item, iid, mouse_x-32, mouse_y-32); //Draw item sprite
-	draw_text(mouse_x+40-32, mouse_y+50-32, string(amount)); //Draw item quantity
-	}
 
 
 //draw_self();

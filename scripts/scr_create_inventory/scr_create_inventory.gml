@@ -21,7 +21,49 @@ function scr_create_inventory() {
 		inst.var_slot = slot;
 		slot ++;
 		}
+	
+	
+	var slotAttack = 0;
+	
+	while (slotAttack < ds_grid_width(global.attack_slot))
+	{
+		var itemX = 88;
+		var itemY = 988;
+		
+		if (slotAttack == 1) {
+			itemX = 204;
+			itemY = 988;
+		}
 
+		var inst = instance_create_layer(itemX, itemY, "InventoryScreen", obj_slot_Attack);
+		inst.var_slotAttack = slotAttack;
+		slotAttack ++;
+	}
+	
+	var slotWeave = 0;
+	
+	while (slotWeave < ds_grid_width(global.weave_slot))
+	{
+		var itemX = 653;
+		var itemY = 215;
+		
+		if (slotWeave == 1) {
+			itemX = 859;
+			itemY = 215;
+		}
+		if (slotWeave == 2) {
+			itemX = 1067;
+			itemY = 215;
+		}
+		if (slotWeave == 3) {
+			itemX = 1292;
+			itemY = 215;
+		}
+
+		var inst = instance_create_layer(itemX, itemY, "InventoryScreen", obj_slot_Weave);
+		inst.var_slotWeave = slotWeave;
+		slotWeave ++;
+	}
 
 }
 
