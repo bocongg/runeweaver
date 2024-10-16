@@ -24,6 +24,18 @@
 	xspd = lengthdir_x(_spd, moveDir);
 	yspd = lengthdir_y(_spd, moveDir);
 
+//get damaged
+#region
+get_damaged(objDamagePlayer, true);
+
+//player aiming
+	centerY = y + centerYOffSet;
+	
+	//aim
+	aimDir = point_direction(x, centerY, mouse_x, mouse_y);
+	
+#endregion
+
 //collision
 	if place_meeting(x + xspd, y, objSolidWall) == true {xspd = 0;}
 	if place_meeting(x, y + yspd, objSolidWall) == true {yspd = 0;}
@@ -41,17 +53,7 @@
 
 #endregion
 
-//get damaged
-#region
-get_damaged(objDamagePlayer, true);
 
-//player aiming
-	centerY = y + centerYOffSet;
-	
-	//aim
-	aimDir = point_direction(x, centerY, mouse_x, mouse_y);
-	
-#endregion
 
 //sprite control
 #region

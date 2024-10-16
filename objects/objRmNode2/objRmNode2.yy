@@ -32,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sprRmTreasure",
+    "path":"sprites/sprRmTreasure/sprRmTreasure.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

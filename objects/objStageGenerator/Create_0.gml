@@ -32,42 +32,34 @@ xpos[14] = 1432; ypos[14] = 520;
 // final boss room (stage 8)
 xpos[15] = 1688; ypos[15] = 520;
 
+global.stage += 1
 
 if (!variable_global_exists("stage")) {
     global.stage = 0;
 }
 
-//if (global.stage == 0) {
-//	stageLevelReset();
-//}
-
-//if (global.stage == 1) {
-//	setStageOne();
-//} else if (global.stage == 2) {
-//	setStageTwo();
-//} else if (global.stage == 3) {
-//	setStageThree();
-//} else if (global.stage == 4) {
-//	setStageFour();
-//} else if (global.stage == 5) {
-//	setStageFive();
-//} else if (global.stage == 6) {
-//	setStageSix();
-//} else if (global.stage == 7) {
-//	setStageSeven();
-//} else if (global.stage == 8) {
-//	setStageEight();
-//}
-
-
-randomise();
-var objRmList = [objRmNode1, objRmNode2, objRmNode3, objRmNode4, objRmNode5, objRmNode6, objRmNode7, objRmNode8, objRmNode9, objRmNode10, objRmNode11, objRmNode12, objRmNode13, objRmNode14];
-
-for (var i = 0; i < 14; i+=1){
-	var randomRm = choose(sprRmCombat, sprRmEvent, sprRmRest, sprRmTreasure);
-	object_set_sprite(objRmList[i], randomRm);
+if (global.stage == 0) {
+	stageLevelReset();
+	randomise();
 }
 
+if (global.stage == 1) {
+	setStageOne();
+} else if (global.stage == 2) {
+	setStageTwo();
+} else if (global.stage == 3) {
+	setStageThree();
+} else if (global.stage == 4) {
+	setStageFour();
+} else if (global.stage == 5) {
+	setStageFive();
+} else if (global.stage == 6) {
+	setStageSix();
+} else if (global.stage == 7) {
+	setStageSeven();
+} else if (global.stage == 8) {
+	setStageEight();
+}
 
 instance_create_layer(xpos[0], ypos[0], "MapNodes", objRmNodeStart);
 instance_create_layer(xpos[1], ypos[1], "MapNodes", objRmNode1);
@@ -88,10 +80,11 @@ instance_create_layer(xpos[15], ypos[15], "MapNodes", objRmFinalBoss);
 
 //for (var i = 1; i <= 14; i++) {
 //	// Randomly select one of the four objects using the choose() function
-//	var selectedObj = choose(objRmNode1, objRmNode10, objRmNode2, objRmNode3);
+//	var selectedObj = choose(objRmCombat, objRmElite, objRmEvent, objRmRest, objRmTreasure);
     
 //	// Instantiate the selected object at (xpos[i], ypos[i]) on the "MapNodes" layer
 //	instance_create_layer(xpos[i], ypos[i], "MapNodes", selectedObj);
 //}
 
-//alarm_set(0, 100);
+
+alarm_set(0, 100);

@@ -1,50 +1,32 @@
 draw_self();
-
-with (obj_slot)
-{
-	//Get values
-	var iid = global.inventory[# var_slot, 0];
-	var amount = global.inventory[# var_slot, 1];
-
-	//Draw stuff
-	if (iid != item.none)
-	 {
-		draw_sprite(spr_item, iid, x, y); //Draw item sprite
-		draw_set_font(fntMedium);
-		draw_text(x+40, y+50, string(amount)); //Draw item quantity
-		}
-}
+//var _item_x = item_pos * 176;
+var _xx = bbox_left + 236;
+var _yy = bbox_top + 480;
+//draw_sprite(spr_Inventory_Selected, item_pos_index, _xx, _yy + _item_x);
+instance_create_layer(_xx, _yy, "RunesInventory", objFireRune1)
+instance_create_layer(_xx + 135, _yy, "RunesInventory", objIceRune1)
 
 
-with (obj_slot_Attack)
-{
-	var iidAttack = global.attack_slot[# var_slotAttack, 0];
-	var amountAttack = global.attack_slot[# var_slotAttack, 1];
-	
-	if (iidAttack != item.none)
-	{
-		draw_sprite(spr_item, iidAttack, x, y)
-	}
-}
-
-with (obj_slot_Weave)
-{
-	var iidWeave = global.weave_slot[# var_slotWeave, 0];
-	var amountWeave = global.weave_slot[# var_slotWeave, 1];
-	
-	if (iidWeave != item.none)
-	{
-		draw_sprite(spr_item, iidWeave, x, y)
-	}
-}
-	
-//Get values
-var iid = global.mouse_slot[# 0, 0];
-var amount = global.mouse_slot[# 0, 1];
-
-//Draw stuff
-if (iid != item.none)
-{
-	draw_sprite(spr_item, iid, mouse_x-10, mouse_y-10); //Draw item sprite
-	draw_text(mouse_x+40-10, mouse_y+50-10, string(amount)); //Draw item quantity
-}
+//item_pos_index += 0.2;
+//for(var i = 0; i < 3; i += 1)
+//    {
+//    if !(item_array[i, item_type] == item_none)
+//        {
+//			if (i == 0) {
+//				item_array[0][item_type] = itemFireRune1
+//				draw_sprite(item_array[i, item_sprite], 0, _xx, _yy);
+//				draw_text(_xx + 40, _yy + 50,  + string(item_array[i, item_amount]));
+//			}
+//			if (i == 1) {
+//				item_array[1][item_type] = itemFireRune2
+//				draw_sprite(item_array[i, item_sprite], 0, _xx, _yy);
+//				draw_text(_xx + 40, _yy + 50,  + string(item_array[i, item_amount]));
+//			}
+//			if (i == 2) {
+//				item_array[2][item_type] = itemIceRune1
+//				draw_sprite(item_array[i, item_sprite], 0, _xx, _yy);
+//				draw_text(_xx + 40, _yy + 50,  + string(item_array[i, item_amount]));
+//			}
+//	}
+//    _yy += 176;
+//}

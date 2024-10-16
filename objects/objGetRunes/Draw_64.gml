@@ -5,16 +5,16 @@ draw_self();
 if (mouse_over)
 {
 	var _objectRune = ds_map_find_value(upgrade_data, "object")
-	if (_objectRune == global.fire) {
+	if (_objectRune = global.fire) {
 		draw_sprite(sprRuneFireActive, 1, x, y);
 		draw_sprite(sprFireTooltip, 0, x, y+300);
 		
-	} else if (_objectRune == global.ice) {
+	} else if (_objectRune = global.ice) {
 		draw_sprite(sprRuneIceActive, 1, x, y);
 		draw_sprite(sprIceTooltip, 0, x, y+300);
 		
 		
-	} else if (_objectRune == global.wind) {
+	} else if (_objectRune = global.wind) {
 		draw_sprite(sprRuneWindActive, 1, x, y);
 		draw_sprite(sprWindTooltip, 0, x, y+300);
 	} 

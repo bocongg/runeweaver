@@ -1,3 +1,7 @@
+// Inherit the parent event
+	//getting damage and dying
+	event_inherited();
+
 //state machine
 switch(state) {
 
@@ -23,8 +27,7 @@ switch(state) {
 	} else {
 		face = 1;	
 	}
-
-	//collisions
+//collisions
 	if place_meeting(x + xspd, y, objWall) || place_meeting(x + xspd, y, objEnemyParent) {
 		xspd = 0;
 	}
@@ -40,9 +43,6 @@ switch(state) {
 	depth = -y;
 
 
-// Inherit the parent event
-	//getting damage and dying
-	event_inherited();
 
 
 
