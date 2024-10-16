@@ -7,7 +7,6 @@
   "inheritLayers":false,
   "instanceCreationOrder":[
     {"name":"inst_1764F574","path":"rooms/rmMapOverview/rmMapOverview.yy",},
-    {"name":"inst_695C93AE","path":"rooms/rmMapOverview/rmMapOverview.yy",},
     {"name":"inst_28C45D04","path":"rooms/rmMapOverview/rmMapOverview.yy",},
     {"name":"inst_51DCB16D","path":"rooms/rmMapOverview/rmMapOverview.yy",},
     {"name":"inst_7F1D42D2","path":"rooms/rmMapOverview/rmMapOverview.yy",},
@@ -29,7 +28,6 @@
     {"$GMRInstanceLayer":"","%Name":"UpgradeScreen","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"UpgradeScreen","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_1764F574","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1764F574","objectId":{"name":"objStageGenerator","path":"objects/objStageGenerator/objStageGenerator.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":64.0,},
-        {"$GMRInstance":"v1","%Name":"inst_695C93AE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_695C93AE","objectId":{"name":"objRunes_to_delete","path":"objects/objRunes_to_delete/objRunes_to_delete.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":64.0,},
         {"$GMRInstance":"v1","%Name":"inst_28C45D04","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_28C45D04","objectId":{"name":"objInvButton","path":"objects/objInvButton/objInvButton.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.6,"scaleY":0.6,"x":1728.0,"y":980.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets_1","assets":[
