@@ -1,14 +1,16 @@
-// Reset mouse_over to false, this will hide the overlay effect on map node.
+// Reset mouse_over to false, this will hide
+// the glow effect on the card when drawing.
 mouse_over = false;
 
 // If the mouse is over this card...
 if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_right && device_mouse_y_to_gui(0) > bbox_top && device_mouse_y_to_gui(0) < bbox_bottom)
 {
-	// Set mouse_over to true, to enable the overlay.
+	// Set mouse_over to true, to enable
+	// the purple glow.
 	mouse_over = true;
 }
 
-// Checks if overlay appears
+// Checks if upgrade is highlighted.
 if (mouse_over)
 {
 	// If the left mouse button has been pressed...
@@ -34,12 +36,13 @@ if (mouse_over)
 				var _inst = instance_create_layer(x, y, "Instances", objTransition);
 				_inst.targetRoom = Room1;
 			}
+			//room_goto(Room1);
 			
-			//// Destroys map node.
-			//with(objRmNodeStart) instance_destroy();
+			// Destroys runes.
+			with(objRmNodeStart) instance_destroy();
 	
-			//// Destroys get runes screen.
-			//with(objStageGenerator) instance_destroy();
+			// Destroys get runes screen.
+			with(objStageGenerator) instance_destroy();
 		}
 	}
 }

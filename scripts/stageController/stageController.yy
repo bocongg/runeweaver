@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"stageController",
   "parent":{
-    "name":"Stages_to_delete",
-    "path":"folders/Scripts/Stages_to_delete.yy",
+    "name":"Stages",
+    "path":"folders/Scripts/Stages.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

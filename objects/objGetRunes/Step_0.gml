@@ -54,17 +54,6 @@ if (mouse_over)
 	
 			// Upgrade components stats.
 			_object[? _key] += _amount;
-			
-			// Add rune to inventory
-			if (_object == global.fire) {
-				scr_gain_item(item.firerune1, 1);
-				
-			} else if (_object == global.ice) {
-				scr_gain_item(item.icerune1, 1);
-		
-			} else if (_object == global.wind) {
-				scr_gain_item(item.windrune1, 1);
-			} 
 	
 			// Destroys runes.
 			with(objGetRunes) instance_destroy();
