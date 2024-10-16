@@ -29,8 +29,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Collectables",
-    "path":"folders/Sprites/Collectables.yy",
+    "name":"Interactables",
+    "path":"folders/Sprites/Interactables.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

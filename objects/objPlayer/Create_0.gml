@@ -29,4 +29,6 @@ get_damaged_create(10, true);
 	shootTimer = 0;
 	
 	basicAttack = global.attackList.windBasicAttack;
-	specialAttack = global.attackList.windSpecialAttack;
+	specialAttack = global.attackList.fireSpecialAttack;
+	
+	chestOpened = false;

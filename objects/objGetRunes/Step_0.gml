@@ -71,6 +71,10 @@ if (mouse_over)
 	
 			// Destroys get runes screen.
 			with(objGetRuneScreen) instance_destroy();
+			
+			if (room != rmMapOverview) {
+				instance_create_layer(1872, 1032, "Instances", objStairs);
+			}
 	
 			// Plays music sound effect.
 			audio_play_sound(sndMusicGame, 0, 1, 1.0, undefined, 1.0);

@@ -125,5 +125,9 @@ if hp <= 0 {
 	instance_destroy();
 }
 
-
-
+if (!chestOpened) {
+	if (instance_number(objBasicEnemy) == 0 && instance_number(objEliteEnemy) == 0){
+		instance_create_layer(1920/2, 1080/2, "Instances", objChest);
+		chestOpened = true;
+	}
+}
