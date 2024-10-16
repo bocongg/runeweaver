@@ -7,7 +7,7 @@ function weaveRunes(){
 	if (global.weave_slot[# 0, 0] == runeID && global.weave_slot[# 1, 0] == runeID && global.weave_slot[# 2, 0] == runeID)
 	{
 		global.weave_slot[# 3, 0] = item.firerune2;
-		global.weave_slot[#4, 1] = 1;
+		global.weave_slot[# 3, 1] = 1;
 		
 		global.weave_slot[# 0, 0] = item.none;
 		global.weave_slot[# 0, 1] = 0;
@@ -22,7 +22,7 @@ function weaveRunes(){
 	if (global.weave_slot[# 0, 0] == runeID && global.weave_slot[# 1, 0] == runeID && global.weave_slot[# 2, 0] == runeID)
 	{
 		global.weave_slot[# 3, 0] = item.icerune2;
-		global.weave_slot[#4, 1] = 1;
+		global.weave_slot[# 3, 1] = 1;
 		
 		global.weave_slot[# 0, 0] = item.none;
 		global.weave_slot[# 0, 1] = 0;
@@ -37,7 +37,7 @@ function weaveRunes(){
 	if (global.weave_slot[# 0, 0] == runeID && global.weave_slot[# 1, 0] == runeID && global.weave_slot[# 2, 0] == runeID)
 	{
 		global.weave_slot[# 3, 0] = item.windrune2;
-		global.weave_slot[#4, 1] = 1;
+		global.weave_slot[# 3, 1] = 1;
 		
 		global.weave_slot[# 0, 0] = item.none;
 		global.weave_slot[# 0, 1] = 0;
@@ -70,7 +70,7 @@ function weaveRunes(){
 	if (canWeaveFrostfire)
 	{
 		global.weave_slot[# 3, 0] = item.frostfirerune1;
-		global.weave_slot[#4, 1] = 1;
+		global.weave_slot[# 3, 1] = 1;
 		
 		global.weave_slot[# 0, 0] = item.none;
 		global.weave_slot[# 0, 1] = 0;
@@ -103,7 +103,7 @@ function weaveRunes(){
 	if (canWeaveSnowstorm)
 	{
 		global.weave_slot[# 3, 0] = item.snowstormrune1;
-		global.weave_slot[#4, 1] = 1;
+		global.weave_slot[# 3, 1] = 1;
 		
 		global.weave_slot[# 0, 0] = item.none;
 		global.weave_slot[# 0, 1] = 0;
@@ -136,7 +136,7 @@ function weaveRunes(){
 	if (canWeaveInferno)
 	{
 		global.weave_slot[# 3, 0] = item.infernorune1;
-		global.weave_slot[#4, 1] = 1;
+		global.weave_slot[# 3, 1] = 1;
 		
 		global.weave_slot[# 0, 0] = item.none;
 		global.weave_slot[# 0, 1] = 0;
@@ -169,7 +169,7 @@ function weaveRunes(){
 	if (canWeavePrism)
 	{
 		global.weave_slot[# 3, 0] = item.prisimrune1;
-		global.weave_slot[#4, 1] = 1;
+		global.weave_slot[# 3, 1] = 1;
 		
 		global.weave_slot[# 0, 0] = item.none;
 		global.weave_slot[# 0, 1] = 0;

@@ -37,27 +37,27 @@ if (!variable_global_exists("stage")) {
     global.stage = 0;
 }
 
-if (global.stage == 0) {
-	stageLevelReset();
-}
+//if (global.stage == 0) {
+//	stageLevelReset();
+//}
 
-if (global.stage == 1) {
-	setStageOne();
-} else if (global.stage == 2) {
-	setStageTwo();
-} else if (global.stage == 3) {
-	setStageThree();
-} else if (global.stage == 4) {
-	setStageFour();
-} else if (global.stage == 5) {
-	setStageFive();
-} else if (global.stage == 6) {
-	setStageSix();
-} else if (global.stage == 7) {
-	setStageSeven();
-} else if (global.stage == 8) {
-	setStageEight();
-}
+//if (global.stage == 1) {
+//	setStageOne();
+//} else if (global.stage == 2) {
+//	setStageTwo();
+//} else if (global.stage == 3) {
+//	setStageThree();
+//} else if (global.stage == 4) {
+//	setStageFour();
+//} else if (global.stage == 5) {
+//	setStageFive();
+//} else if (global.stage == 6) {
+//	setStageSix();
+//} else if (global.stage == 7) {
+//	setStageSeven();
+//} else if (global.stage == 8) {
+//	setStageEight();
+//}
 
 
 randomise();
@@ -94,4 +94,4 @@ instance_create_layer(xpos[15], ypos[15], "MapNodes", objRmFinalBoss);
 //	instance_create_layer(xpos[i], ypos[i], "MapNodes", selectedObj);
 //}
 
-alarm_set(0, 100);
+//alarm_set(0, 100);
