@@ -1,28 +1,13 @@
-/// @description Init Inventory
+scr_init_inventory();
+scr_create_inventory();
 
-//randomize();
-//draw_set_font(fntSmall);
-//draw_set_halign(fa_right);
-//draw_set_valign(fa_bottom);
+//scr_gain_item(item.firerune1, 99);
+scr_gain_item(item.firerune2, 1);
+//scr_gain_item(item.icerune1,99);
+//scr_gain_item(item.icerune2, 99);
+//scr_gain_item(item.windrune1, 99);
+//scr_gain_item(item.windrune2, 99);
 
-//item_pos = 0;
-//item_pos_index = 0;
-//item_array = array_create(3, [ ], [ ], [ ]);
-//for(var i = 0; i < 3; i += 1)
-//   {
-//   item_array[i][item_type] = item_none;
-//   item_array[i][item_sprite] = -1;
-//   item_array[i][item_amount] = 0;
-//   }
- 
-//item_array[0][item_type] = itemFireRune1;
-//item_array[0][item_sprite] = 0;
-//item_array[0][item_amount] = 0;
- 
-//item_array[1][item_type] = itemFireRune2;
-//item_array[1][item_sprite] = 0;
-//item_array[1][item_amount] = 0;
- 
-//item_array[2][item_type] = itemIceRune1;
-//item_array[2][item_sprite] = 0;
-//item_array[2][item_amount] = 0;
+//scr_gain_item(item.icerune1, 2);
+//global.inventory[# 5, 0] = item.icerune1;
+//scr_slot_modify_amount(5, 2, true);

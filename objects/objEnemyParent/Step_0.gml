@@ -1,16 +1,5 @@
 get_damaged(objDamageEnemy);
 
-
-//turn off red damage flash
-if(image_blend == c_red) {
-	image_alpha -= 0.025
-	if(image_alpha <= 0.70) {
-		image_blend = c_white;
-		image_alpha = 1;
-	}
-}
-
-
 //death
 if hp <= 0 {
 	//determine if we should drop an item

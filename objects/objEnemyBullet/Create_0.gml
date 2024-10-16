@@ -12,5 +12,5 @@ state = 0;
 
 // cleanup
 destroy = false;
-playerDestroy = false;
+playerDestroy = true;
 

@@ -1,1 +1,1 @@
-instance_create_layer(0, 0, "Instances", objGetRuneScreen);
+instance_create_layer(0, 0, "Instances", objGetRuneScreen);	
