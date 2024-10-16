@@ -20,6 +20,7 @@ draw_rectangle(0, 0, display_width, display_height, false);
 	
 		//set the font and ensure to use the name of your font resource
 		draw_set_font(fntLarge); 
+		draw_set_halign(fa_center);
 		var text1 = "Game Over";
 
 		//get the width and height of the text

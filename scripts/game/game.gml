@@ -132,7 +132,7 @@
 		
 		fireBasicAttack : new create_basic_attack(
 			sprWand,
-			objLevel1Fire,
+			objBasicFire,
 			15,
 			1, 
 			0
@@ -140,7 +140,7 @@
 		
 		iceBasicAttack : new create_basic_attack(
 			sprWand,
-			objLevel1Ice,
+			objBasicIce,
 			30, 
 			1,
 			0
@@ -148,7 +148,7 @@
 		
 		windBasicAttack : new create_basic_attack(
 			sprWand,
-			objLevel1Wind,
+			objBasicWind,
 			30,
 			3, 
 			0
@@ -156,7 +156,7 @@
 		
 		fireSpecialAttack : new create_basic_attack(
 			sprWand,
-			objLevel1Fire,
+			objSpecialFire,
 			60,
 			1, 
 			0
@@ -164,7 +164,7 @@
 		
 		iceSpecialAttack : new create_basic_attack(
 			sprWand,
-			objLevel1Ice,
+			objSpecialIce,
 			30, 
 			1,
 			0
@@ -172,9 +172,9 @@
 		
 		windSpecialAttack : new create_basic_attack(
 			sprWand,
-			objLevel1Wind,
+			objSpecialWind,
 			30,
 			3, 
-			20
+			40
 		)
 	}

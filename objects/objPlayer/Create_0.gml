@@ -29,4 +29,4 @@ get_damaged_create(10, true);
 	shootTimer = 0;
 	
 	basicAttack = global.attackList.windBasicAttack;
-	specialAttack = global.attackList.fireSpecialAttack;
+	specialAttack = global.attackList.windSpecialAttack;
