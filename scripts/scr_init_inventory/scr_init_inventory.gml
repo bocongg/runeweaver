@@ -25,6 +25,7 @@ function scr_init_inventory() {
 		snowstormrune1,
 		infernorune1,
 		prisimrune1,
+		mysteryrune,
 		total
 		}
 

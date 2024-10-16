@@ -1,2 +1,2 @@
 direction = dir;
-speed = -8;
+speed = -4;

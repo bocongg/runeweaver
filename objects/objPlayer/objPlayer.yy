@@ -35,6 +35,9 @@
     "name":"sprPlayerRight",
     "path":"sprites/sprPlayerRight/sprPlayerRight.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"sprPlayerRight",
+    "path":"sprites/sprPlayerRight/sprPlayerRight.yy",
+  },
   "visible":true,
 }
