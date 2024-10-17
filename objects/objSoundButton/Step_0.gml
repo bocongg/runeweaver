@@ -26,11 +26,11 @@ if(device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_right
 		// If Mouse Released - If left mouse button is released...
 		if (mouse_check_button_released(mb_left))
 		{
-		// Get Master Volume - Get current volume.
-		var _volume = audio_get_master_gain(0);
+			// Get Master Volume - Get current volume.
+			var _volume = audio_get_master_gain(0);
 		
-		// Set Master Volume - Toggle volume on/off.
-		audio_set_master_gain(0, !_volume);
+			// Set Master Volume - Toggle volume on/off.
+			audio_set_master_gain(0, !_volume);
 		}
 	}
 }

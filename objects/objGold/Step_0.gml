@@ -6,6 +6,7 @@ y = ystart + dsin(floatDir);
 if place_meeting(x, y, objPlayer)
 {
 	//destroy self
-	objPlayer.gold += 1;
+	global.gold += 1;
+	audio_play_sound(sndCoinCollection, 0, 0, 1.0, undefined, 1.0);
 	instance_destroy();
 }

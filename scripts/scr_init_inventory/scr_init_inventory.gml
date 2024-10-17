@@ -1,17 +1,7 @@
 /// @description Setup item variables
 function scr_init_inventory() {
 
-	//Item ids
-	//enum item
-	// {
-	//	none,
-	//	apple,
-	//	sword,
-	//	health_potion,
-	//	staff,
-	//	total
-	//	}
-	
+	//Item id
 	enum item
 		{
 		none,
@@ -29,16 +19,6 @@ function scr_init_inventory() {
 		total
 		}
 
-	//enum item_stat
-	// {
-	// name,
-	// description,
-	// type,
-	// damage,
-	// health_gain,
-	//	total
-	// }
-
 	enum item_stat
 	 {
 	 name,
@@ -48,13 +28,6 @@ function scr_init_inventory() {
 	 //health_gain,
 	 total
 	 }
-
-	//enum item_type
-	// {
-	// none,
-	// weapon,
-	// food
-	// }
 
 	enum item_type
 	 {

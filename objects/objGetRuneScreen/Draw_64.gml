@@ -21,3 +21,7 @@ draw_set_valign(fa_middle);
 
 // Draws the heading.
 draw_text(1920 / 2, 175, "Choose Rune");
+
+draw_set_font(fntMedium);
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
