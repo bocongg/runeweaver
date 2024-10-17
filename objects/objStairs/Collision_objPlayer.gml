@@ -1,5 +1,10 @@
 global.stage += 1;
 
+audio_stop_sound(sndMusicGame);
+audio_stop_sound(sndRmRestBGM);
+audio_stop_sound(sndRmRestFountain);
+audio_sound_gain(sndMusicMenu, 1, 1000);
+
 room_goto(rmMapOverview);
 
 ////For Transition

@@ -8,5 +8,10 @@ alpha = clamp(alpha, 0, 1);
 //restart
 if basicShootKey && alpha >= 1
 {
-	room_goto(rmStartScreen);
+	audio_stop_all();
+	game_restart();
+	//Triggering the game_restart() function resets all variables and object states but not global variables
+	//including the built-in global variables of objects.
+	
+	//room_goto(rmStartScreen);
 }

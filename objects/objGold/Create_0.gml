@@ -1,5 +1,5 @@
 depth = -y;
-gold = 0;
+//gold = 0;
 
 //floating
 floatDir = 0;

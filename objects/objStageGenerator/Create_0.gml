@@ -37,27 +37,6 @@ if (!variable_global_exists("stage")) {
     global.stage = 0;
 }
 
-//if (global.stage == 0) {
-//	stageLevelReset();
-//}
-
-//if (global.stage == 1) {
-//	setStageOne();
-//} else if (global.stage == 2) {
-//	setStageTwo();
-//} else if (global.stage == 3) {
-//	setStageThree();
-//} else if (global.stage == 4) {
-//	setStageFour();
-//} else if (global.stage == 5) {
-//	setStageFive();
-//} else if (global.stage == 6) {
-//	setStageSix();
-//} else if (global.stage == 7) {
-//	setStageSeven();
-//} else if (global.stage == 8) {
-//	setStageEight();
-//}
 
 
 randomise();
@@ -67,6 +46,7 @@ for (var i = 0; i < 14; i+=1){
 	var randomRm = choose(sprRmCombat, sprRmEvent, sprRmRest, sprRmTreasure);
 	object_set_sprite(objRmList[i], randomRm);
 }
+
 
 
 instance_create_layer(xpos[0], ypos[0], "MapNodes", objRmNodeStart);
@@ -85,13 +65,3 @@ instance_create_layer(xpos[12], ypos[12], "MapNodes", objRmNode12);
 instance_create_layer(xpos[13], ypos[13], "MapNodes", objRmNode13);
 instance_create_layer(xpos[14], ypos[14], "MapNodes", objRmNode14);
 instance_create_layer(xpos[15], ypos[15], "MapNodes", objRmFinalBoss);
-
-//for (var i = 1; i <= 14; i++) {
-//	// Randomly select one of the four objects using the choose() function
-//	var selectedObj = choose(objRmNode1, objRmNode10, objRmNode2, objRmNode3);
-    
-//	// Instantiate the selected object at (xpos[i], ypos[i]) on the "MapNodes" layer
-//	instance_create_layer(xpos[i], ypos[i], "MapNodes", selectedObj);
-//}
-
-//alarm_set(0, 100);

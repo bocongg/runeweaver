@@ -1,8 +1,8 @@
 //damage setup 
 get_damaged_create(10, true);
 
-//variable for coin
-	gold = 0;
+////variable for coin
+//	gold = 0;
 
 // varaibles for movement
 	moveDir = 0;
@@ -27,9 +27,6 @@ get_damaged_create(10, true);
 
 //wand info
 	shootTimer = 0;
-	
-	//basicAttack = global.attackList.windBasicAttack;
-	//specialAttack = global.attackList.fireSpecialAttack;
 	
 	basicAttack = global.attackList.basicAttack;
 	specialAttack = global.attackList.basicAttack;

@@ -44,9 +44,6 @@ if (mouse_over)
 		// Checks for mouse release.
 		if (mouse_check_button_released(mb_left))
 		{
-			// Play select sound.
-			audio_play_sound(sndButtonClick, 0, 0, 1.0, undefined, 1.0);
-	
 			// Set variables for card stats.
 			var _object = ds_map_find_value(upgrade_data, "object");
 			var _key = ds_map_find_value(upgrade_data, "key");
@@ -72,12 +69,9 @@ if (mouse_over)
 			// Destroys get runes screen.
 			with(objGetRuneScreen) instance_destroy();
 			
-			if (room != rmMapOverview) {
+			if (room != rmMapOverview && room != rmRest) {
 				instance_create_layer(1872, 1032, "Instances", objStairs);
 			}
-	
-			// Plays music sound effect.
-			audio_play_sound(sndMusicGame, 0, 1, 1.0, undefined, 1.0);
 		}
 	}
 }
