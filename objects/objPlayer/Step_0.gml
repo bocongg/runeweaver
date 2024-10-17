@@ -131,3 +131,27 @@ if (!chestOpened) {
 		chestOpened = true;
 	}
 }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Set basic attack based on rune equipped
+if (global.attack_slot[# 0, 0] == item.firerune1){
+	basicAttack = global.attackList.windBasicAttack;
+}
+if (global.attack_slot[# 0, 0] == item.icerune1){
+	basicAttack = global.attackList.windBasicAttack;
+}
+if (global.attack_slot[# 0, 0] == item.windrune1){
+	basicAttack = global.attackList.windBasicAttack;
+}
+
+
+// Set special attack based on rune equipped
+if (global.attack_slot[# 1, 0] == item.firerune1){
+	specialAttack = global.attackList.fireSpecialAttack;
+}
+if (global.attack_slot[# 1, 0] == item.icerune1){
+	specialAttack = global.attackList.fireSpecialAttack;
+}
+if (global.attack_slot[# 1, 0] == item.windrune1){
+	specialAttack = global.attackList.fireSpecialAttack;
+}
