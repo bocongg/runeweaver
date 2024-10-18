@@ -28,7 +28,10 @@ if (!instance_exists(objGetRuneScreen)){
 		{
 			// Checks for mouse release.
 			if (mouse_check_button_released(mb_left))
-			{
+			{	
+				var roomID = object_get_name(objRmNodeStart);
+				ds_list_add(global.stagesCleared, roomID);
+				
 				if !instance_exists(objTransition) {
 					var _inst = instance_create_layer(x, y, "Instances", objTransition);
 					_inst.targetRoom = rmStart;

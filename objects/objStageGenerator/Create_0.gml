@@ -65,3 +65,6 @@ instance_create_layer(xpos[12], ypos[12], "MapNodes", objRmNode12);
 instance_create_layer(xpos[13], ypos[13], "MapNodes", objRmNode13);
 instance_create_layer(xpos[14], ypos[14], "MapNodes", objRmNode14);
 instance_create_layer(xpos[15], ypos[15], "MapNodes", objRmFinalBoss);
+
+
+global.stagesCleared = ds_list_create();
