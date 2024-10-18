@@ -30,11 +30,17 @@ if  (!instance_exists(objGetRuneScreen)){
 			// Checks for mouse release.
 			if (mouse_check_button_released(mb_left))
 			{
+				var roomID = object_get_name(objRmNode2);
+				ds_list_add(global.stagesCleared, roomID);
+				
 				if !instance_exists(objTransition) {
 					var _inst = instance_create_layer(x, y, "Instances", objTransition);
 					if (nodeSpr == sprRmRest) {
 						_inst.targetRoom = rmRest;
-					} else _inst.targetRoom = Room2;
+					} else 
+					if (nodeSpr == sprRmEvent) {
+						_inst.targetRoom = rmEvent;
+					} else _inst.targetRoom = Room1;
 				}
 			}
 		}

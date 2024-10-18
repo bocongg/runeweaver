@@ -1,16 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"objFountainTooltip",
+  "%Name":"objCloseEvent",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objFountainTooltip",
+  "name":"objCloseEvent",
   "overriddenProperties":[],
   "parent":{
-    "name":"Interactables",
-    "path":"folders/Objects/Game/Interactables.yy",
+    "name":"Event",
+    "path":"folders/Objects/Game/Interactables/Event.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprRmRestTooltip",
-    "path":"sprites/sprRmRestTooltip/sprRmRestTooltip.yy",
+    "name":"sprEventCardCloseButton",
+    "path":"sprites/sprEventCardCloseButton/sprEventCardCloseButton.yy",
   },
   "spriteMaskId":null,
   "visible":true,

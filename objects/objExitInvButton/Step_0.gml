@@ -28,6 +28,7 @@ if(device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_right
 			{
 				instance_deactivate_layer("InventoryScreen");
 				instance_deactivate_layer("Buttons");
+				instance_activate_layer("Instances");
 				instance_activate_layer("MapNodes");
 				instance_activate_layer("UpgradeScreen");
 			}

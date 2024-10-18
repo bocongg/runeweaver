@@ -35,3 +35,4 @@ xpos[14] = 1432; ypos[14] = 520;
 
 // final boss stage
 xpos[15] = 1688; ypos[15] = 520;
+

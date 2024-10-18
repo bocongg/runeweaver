@@ -69,7 +69,7 @@ if (mouse_over)
 			// Destroys get runes screen.
 			with(objGetRuneScreen) instance_destroy();
 			
-			if (room != rmMapOverview && room != rmRest) {
+			if (room != rmMapOverview && room != rmRest && room != rmEvent) {
 				instance_create_layer(1872, 1032, "Instances", objStairs);
 			}
 		}

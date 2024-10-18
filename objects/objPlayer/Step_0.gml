@@ -27,8 +27,6 @@
 //collision
 	if place_meeting(x + xspd, y, objSolidWall) == true {xspd = 0;}
 	if place_meeting(x, y + yspd, objSolidWall) == true {yspd = 0;}
-	if place_meeting(x + xspd, y, objFountain) == true {xspd = 0;}
-	if place_meeting(x, y + yspd, objFountain) == true {yspd = 0;}
 
 
 //move the player
@@ -127,7 +125,7 @@ if hp <= 0 {
 	instance_destroy();
 }
 
-if (!chestOpened && room != rmRest) {
+if (!chestOpened && room != rmRest && room != rmEvent) {
 	if (instance_number(objBasicEnemy) == 0 && instance_number(objEliteEnemy) == 0){
 		instance_create_layer(1920/2, 1080/2, "Instances", objChest);
 		chestOpened = true;
