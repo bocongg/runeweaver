@@ -27,12 +27,12 @@ function scr_create_inventory() {
 	
 	while (slotAttack < ds_grid_width(global.attack_slot))
 	{
-		var itemX = 88;
-		var itemY = 988;
+		var itemX = 107;
+		var itemY = 888;
 		
 		if (slotAttack == 1) {
-			itemX = 204;
-			itemY = 988;
+			itemX = 223;
+			itemY = 888;
 		}
 
 		var inst = instance_create_layer(itemX, itemY, "InventoryScreen", obj_slot_Attack);

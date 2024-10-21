@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprEventCardCloseButton",
-    "path":"sprites/sprEventCardCloseButton/sprEventCardCloseButton.yy",
+    "name":"sprEventCloseButton",
+    "path":"sprites/sprEventCloseButton/sprEventCloseButton.yy",
   },
   "spriteMaskId":null,
   "visible":true,

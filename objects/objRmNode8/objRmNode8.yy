@@ -33,7 +33,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sprRmRest",
+    "path":"sprites/sprRmRest/sprRmRest.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

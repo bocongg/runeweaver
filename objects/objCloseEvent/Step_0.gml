@@ -26,11 +26,21 @@ if(device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_right
 			// If Mouse Released - If left mouse button is released...
 			if (mouse_check_button_released(mb_left))
 			{
-				instance_destroy(objEventCard);
+				instance_destroy(objEventACard);
 				instance_destroy(objCloseEvent);
-				instance_destroy(objEvent1);
-				instance_destroy(objEvent2);
+				instance_destroy(objEventA1);
+				instance_destroy(objEventA2);
 				
+				instance_destroy(objEventBCard);
+				instance_destroy(objCloseEvent);
+				instance_destroy(objEventB1);
+				instance_destroy(objEventB2);
+				instance_destroy(objEventB3);
+				
+				instance_destroy(objEventCCard);
+				instance_destroy(objCloseEvent);
+				instance_destroy(objEventC1);
+				instance_destroy(objEventC2);
 			}
 		}
 }

@@ -1,88 +1,44 @@
-// Create a map assigned to global.ice
-global.ice = ds_map_create();
+// Create map to store the fire rune data.
+global.iceruneL1 = ds_map_create();
+global.iceruneL2 = ds_map_create();
+global.iceruneL3 = ds_map_create();
 
-// Call the function to reset the swipe weapon. First time, this essentially setps it up.
-iceRuneReset();
 
-// Define the reset function for the swipe weapon.
-function iceRuneReset() //weapon_swipe_reset
+function getIceRuneL1(_rune_list)
 {
-	// Reset ice rune values.
-	ds_map_replace(global.ice, "damage", 1);
-	ds_map_replace(global.ice, "attack_speed", 60);
-	ds_map_replace(global.ice, "unlocked", false);
+	// Create map to store the rune.
+	var _map = ds_map_create();
+	
+	// Add ice rune L1 details to map.
+	ds_map_replace(_map, "object", global.iceruneL1);
+	ds_map_replace(_map, "icon", sprRuneIce1);
+	
+	// Add ice rune L1 to rune list.
+	ds_list_add(_rune_list, _map);
 }
 
-// Decalre a function to get the ice rune upgrades.
-function getIceRune(_upgrade_list) //weapon_swipe_upgrades
+function getIceRuneL2(_rune_list)
 {
-	// Get whether the ice rune weapon is unlocked.
-	var _unlocked = ds_map_find_value(global.ice, "unlocked");
-
-	// If it is NOT unlocked...
-	if (!_unlocked)
-	{
-		// Create a map to hold the upgrade.
-		var _map = ds_map_create();
+	// Create map to store the rune.
+	var _map = ds_map_create();
 	
-		// Unlock ice rune.
-		ds_map_replace(_map, "description", "Shoot icecream");
-		ds_map_replace(_map, "object", global.ice);
-		ds_map_replace(_map, "key", "unlocked");
-		ds_map_replace(_map, "amount", 1);
-		ds_map_replace(_map, "icon", sprRuneIce);
-		ds_map_replace(_map, "rune_name", "Ice Shard");
+	// Add ice rune L2 details to map.
+	ds_map_replace(_map, "object", global.iceruneL2);
+	ds_map_replace(_map, "icon", sprRuneIce2);
 	
-		// Add upgrade to the list.
-		ds_list_add(_upgrade_list, _map);
-	
-		// Exit here, because there can't possibly be any other upgrades
-		// if the weapon is not unlocked.
-		exit;
-	}
-
-	// Get current attack speed of swipe weapon.
-	var _attack_speed = ds_map_find_value(global.ice, "attack_speed");
-
-	// If attack speed is over 10...
-	if (_attack_speed > 10)
-	{
-		// Create a map to hold the upgrade.
-		var _map = ds_map_create();
-	
-		// Increase attack speed.
-		// Note that this would actually decreasing a cooldown.
-		ds_map_replace(_map, "description", "Increase Attack Speed");
-		ds_map_replace(_map, "title", "SPEED");
-		ds_map_replace(_map, "object", global.ice);
-		ds_map_replace(_map, "key", "attack_speed");
-		ds_map_replace(_map, "amount", -10);
-		ds_map_replace(_map, "icon", sprRuneIce);
-		ds_map_replace(_map, "rune_name", "Flash Freeze");
-	
-		// Add upgrade to the list.
-		ds_list_add(_upgrade_list, _map);
-	}
-
-	// Finds the damage value.
-//	var _damage = ds_map_find_value(global.ice, "damage");
-//
-//	// Checks if the value is below 5.
-//	if (_damage < 5)
-//	{
-//		// Create a map to hold the upgrade.
-//		var _map = ds_map_create();
-//	
-//		// Increment damage by 1.
-//		ds_map_replace(_map, "description", "Small but fast\narea of effect\nattack around\nthe player"");
-//		ds_map_replace(_map, "title", "DAMAGE");
-//		ds_map_replace(_map, "object", global.ice);
-//		ds_map_replace(_map, "key", "damage");
-//		ds_map_replace(_map, "amount", 1);
-//		ds_map_replace(_map, "icon", spr_arcing_attack_big);
-//		ds_map_replace(_map, "rune_name", "SWIPE");
-//	
-//		// Add upgrade to the list.
-//		ds_list_add(_upgrade_list, _map);
-//	}
+	// Add ice rune L2 to rune list.
+	ds_list_add(_rune_list, _map);
 }
+
+//function getFireRuneL3(_rune_list)
+//{
+//	// Create map to store the rune.
+//	var _map = ds_map_create();
+	
+//	// Add ice rune L3 details to map.
+//	ds_map_replace(_map, "object", global.iceruneL3);
+//	ds_map_replace(_map, "icon", sprRuneIce3);
+	
+//	// Add ice rune L3 to rune list.
+//	ds_list_add(_upgrade_list, _map);
+//}

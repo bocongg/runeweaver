@@ -28,16 +28,3 @@ else if (iid == mouse_iid) //If both slots are the same
 			}
 		//}
 	}
-
-//with(objEquipBasic){
-//	var iid = global.mouse_slot[# var_slot, 0];
-//	var amount = global.mouse_slot[# var_slot, 1];
-	
-	
-//}
-
-//if (instance_number(objFireRune1) > 1) {
-//	instance_destroy(objFireRune1);
-//}
-
-//instance_create_layer(x, y, "InventoryScreen", objFireRune1)

@@ -32,32 +32,3 @@ if (mouse_iid != 0 && iid == 0)
 		exit;
 	}
 }
-
-//else if (iid == mouse_iid) //If both slots are the same
-// {
-//	//Take all mouse items and put them in inventory
-//	while (global.inventory[# var_slot, 1] < 21)
-//	 {
-//		global.inventory[# var_slot, 1] += 1;
-//		global.mouse_slot[# 0, 1] -= 1;
-//		if (global.mouse_slot[# 0, 1] <= 0)
-//		 {
-//			global.mouse_slot[# 0, 0] = item.none;
-//			global.mouse_slot[# 0, 1] = 0;
-//			exit;
-//			}
-//		}
-//	}
-
-//with(objEquipBasic){
-//	var iid = global.mouse_slot[# var_slot, 0];
-//	var amount = global.mouse_slot[# var_slot, 1];
-	
-	
-//}
-
-//if (instance_number(objFireRune1) > 1) {
-//	instance_destroy(objFireRune1);
-//}
-
-//instance_create_layer(x, y, "InventoryScreen", objFireRune1)
