@@ -4,18 +4,15 @@ draw_self();
 // Checks if glow highlight should show.
 if (mouse_over)
 {
-	var _objectRune = ds_map_find_value(upgrade_data, "object")
-	if (_objectRune == global.fire) {
-		draw_sprite(sprRuneFireActive, 1, x, y);
+	//var _objectRune = ds_map_find_value(upgrade_data, "object")
+	draw_sprite(sprRuneFireActive, 1, x, y);
+	
+	var _icon = ds_map_find_value(upgrade_data, "icon");
+	if (_icon == sprRuneFire1) {
 		draw_sprite(sprFireTooltip, 0, x, y+300);
-		
-	} else if (_objectRune == global.ice) {
-		draw_sprite(sprRuneIceActive, 1, x, y);
+	} else if (_icon == sprRuneIce1) {
 		draw_sprite(sprIceTooltip, 0, x, y+300);
-		
-		
-	} else if (_objectRune == global.wind) {
-		draw_sprite(sprRuneWindActive, 1, x, y);
+	} else if (_icon == sprRuneWind1) {
 		draw_sprite(sprWindTooltip, 0, x, y+300);
 	} 
 }
@@ -27,7 +24,7 @@ if (upgrade_data == undefined)
 	exit;
 }
 
-// Draws the upgrade object.
+// Draws the rune card.
 draw_sprite(upgrade_data[? "icon"], 0, x, y)
 
 // Set draw alpha.

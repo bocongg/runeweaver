@@ -1,25 +1,40 @@
-// Start the game music on a loop.
-audio_play_sound(sndMusicGame, 0, 1, 1.0, undefined, 1.0);
+scr_init_inventory();
 
-// Set the experience goal to reach the next level.
-//global.xp_goal = 10;
+scr_gain_item(item.firerune1, 5);
+//scr_gain_item(item.firerune2, 98);
+scr_gain_item(item.icerune1, 5);
+//scr_gain_item(item.icerune2, 98);
+scr_gain_item(item.windrune1, 5);
+//scr_gain_item(item.windrune2, 98);
 
-// Set current experience.
-//global.xp = 0;
+//scr_gain_item(item.icerune1, 2);
+//global.inventory[# 5, 0] = item.icerune1;
+//scr_slot_modify_amount(5, 2, true);
 
-// Set the current level.
-//global.level = 1;
 
-// Set the cooldown time for spawning enemies.
-//global.enemy_spawn_speed = 60;
 
-// Set starting enemy health bonus.
-// This is a multiplier, and is increased each wave.
-// Result: enemy hp = enemy base hp * health bonus.
-//global.enemy_health_bonus = 1;
+//// Start the game music on a loop.
+//audio_play_sound(sndMusicGame, 0, 1, 1.0, undefined, 1.0);
 
-// Create the hero in the center of the room.
-instance_create_layer(room_width / 2, room_height / 2, "Instances", objPlayer);
+//// Set the experience goal to reach the next level.
+////global.xp_goal = 10;
+
+//// Set current experience.
+////global.xp = 0;
+
+//// Set the current level.
+////global.level = 1;
+
+//// Set the cooldown time for spawning enemies.
+////global.enemy_spawn_speed = 60;
+
+//// Set starting enemy health bonus.
+//// This is a multiplier, and is increased each wave.
+//// Result: enemy hp = enemy base hp * health bonus.
+////global.enemy_health_bonus = 1;
+
+//// Create the hero in the center of the room.
+//instance_create_layer(room_width / 2, room_height / 2, "Instances", objPlayer);
 
 // Execute the shooting weapon reset function,
 // initializing values for that weapon.

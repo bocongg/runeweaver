@@ -1,5 +1,9 @@
 draw_self();
 
+if (global.stage == 0) {
+	with(objEquipBasic) {draw_sprite(sprInvTooltip2, 0, x+61.5, y-122);}
+}
+
 with (obj_slot)
 {
 	//Get values

@@ -46,31 +46,48 @@ if (mouse_over)
 		{
 			// Set variables for card stats.
 			var _object = ds_map_find_value(upgrade_data, "object");
-			var _key = ds_map_find_value(upgrade_data, "key");
-			var _amount = ds_map_find_value(upgrade_data, "amount");
+			//var _key = ds_map_find_value(upgrade_data, "key");
+			//var _amount = ds_map_find_value(upgrade_data, "amount");
+			var _icon = ds_map_find_value(upgrade_data, "icon");
 	
-			// Upgrade components stats.
-			_object[? _key] += _amount;
+			//// Upgrade components stats.
+			//_object[? _key] += _amount;
 			
 			// Add rune to inventory
-			if (_object == global.fire) {
+			if (_icon == sprRuneFire1) {
 				scr_gain_item(item.firerune1, 1);
-				
-			} else if (_object == global.ice) {
+
+			} else if (_icon == sprRuneIce1) {
 				scr_gain_item(item.icerune1, 1);
 		
-			} else if (_object == global.wind) {
+			} else if (_icon == sprRuneWind1) {
 				scr_gain_item(item.windrune1, 1);
+				
+			} else if (_icon == sprRuneFire2) {
+				scr_gain_item(item.firerune2, 1);
+				
+			} else if (_icon == sprRuneIce2) {
+				scr_gain_item(item.icerune2, 1);
+		
+			} else if (_icon == sprRuneWind2) {
+				scr_gain_item(item.windrune2, 1);
 			} 
-	
+			
+			global.showInvTooltip = true;
+			
 			// Destroys runes.
 			with(objGetRunes) instance_destroy();
 	
 			// Destroys get runes screen.
-			with(objGetRuneScreen) instance_destroy();
+			with(objGet3RuneScreen) instance_destroy();
+			with(objGet2RuneScreen) instance_destroy();
 			
-			if (room != rmMapOverview && room != rmRest && room != rmEvent) {
-				instance_create_layer(1872, 1032, "Instances", objStairs);
+			
+			if (room != rmMapOverview && room != rmRest && room != rmEventA && room != rmEventB && room != rmEventC) {
+				instance_create_layer(1840, 928, "Instances", objStairs);
+				if (global.stage == 0){
+					instance_create_layer(1492, 865, "Instances", objProceedSign);
+				}
 			}
 		}
 	}

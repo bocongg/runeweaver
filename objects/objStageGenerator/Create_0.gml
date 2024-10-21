@@ -40,10 +40,45 @@ if (!variable_global_exists("stage")) {
 
 
 randomise();
-var objRmList = [objRmNode1, objRmNode2, objRmNode3, objRmNode4, objRmNode5, objRmNode6, objRmNode7, objRmNode8, objRmNode9, objRmNode10, objRmNode11, objRmNode12, objRmNode13, objRmNode14];
+//Stage 2 generation - Combat & Event rooms only
+var objRmList = [objRmNode1, objRmNode2];
 
-for (var i = 0; i < 14; i+=1){
-	var randomRm = choose(sprRmCombat, sprRmEvent, sprRmRest, sprRmTreasure);
+for (var i = 0; i < 2; i+=1){
+	var randomRm = choose(sprRmCombat, sprRmEvent);
+	object_set_sprite(objRmList[i], randomRm);
+}
+
+//Stage 3 generation - Combat, Event, Treasure, Shop
+objRmList = [objRmNode3, objRmNode4, objRmNode5];
+
+for (var i = 0; i < 3; i+=1){
+	var randomRm = choose(sprRmCombat, sprRmEvent, sprRmTreasure);
+	object_set_sprite(objRmList[i], randomRm);
+}
+
+//Stage 4 generation - Combat, Event, Treasure, Shop
+objRmList = [objRmNode6, objRmNode7];
+
+for (var i = 0; i < 2; i+=1){
+	var randomRm = sprRmCombat;
+	object_set_sprite(objRmList[i], randomRm);
+}
+
+//Stage 5 generation - Fixed as Rest
+
+//Stage 6 generation - Combat, Event, Treasure, Shop
+objRmList = [objRmNode9, objRmNode10];
+
+for (var i = 0; i < 2; i+=1){
+	var randomRm = choose(sprRmCombat, sprRmEvent, sprRmTreasure);
+	object_set_sprite(objRmList[i], randomRm);
+}
+
+//Stage 7 generation - Combat, Event, Treasure, Shop
+objRmList = [objRmNode11, objRmNode12, objRmNode13];
+
+for (var i = 0; i < 3; i+=1){
+	var randomRm = choose(sprRmCombat, sprRmEvent, sprRmTreasure);
 	object_set_sprite(objRmList[i], randomRm);
 }
 

@@ -125,9 +125,13 @@ if hp <= 0 {
 	instance_destroy();
 }
 
-if (!chestOpened && room != rmRest && room != rmEvent) {
+if (!chestOpened && room != rmRest && room != rmEventA && room != rmEventB && room != rmEventC) {
 	if (instance_number(objBasicEnemy) == 0 && instance_number(objEliteEnemy) == 0){
-		instance_create_layer(1920/2, 1080/2, "Instances", objChest);
+		if (global.stage == 0){
+			instance_create_layer(1920/2, 1080/2, "Instances", objChest);
+		} else {
+			instance_create_layer(1526, 853, "Instances", objChest);
+		}
 		chestOpened = true;
 	}
 }

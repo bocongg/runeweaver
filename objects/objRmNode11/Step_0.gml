@@ -3,7 +3,7 @@ mouse_over = false;
 
 var nodeSpr = object_get_sprite(objRmNode11);
 
-if  (!instance_exists(objGetRuneScreen)){
+if  (!instance_exists(objGet3RuneScreen) && !instance_exists(objInventory)){
 
 	// If the mouse is over this card...
 	if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_right && device_mouse_y_to_gui(0) > bbox_top && device_mouse_y_to_gui(0) < bbox_bottom)
@@ -40,8 +40,8 @@ if  (!instance_exists(objGetRuneScreen)){
 						_inst.targetRoom = rmRest;
 					} else 
 					if (nodeSpr == sprRmEvent) {
-						_inst.targetRoom = rmEvent;
-					} else _inst.targetRoom = Room1;
+						_inst.targetRoom = choose(rmEventA, rmEventB, rmEventC);
+					} else _inst.targetRoom = rmCombat5;
 				}
 			}
 		}
