@@ -14,12 +14,7 @@
 	if destroy == true {instance_destroy();}
 	
 	//colliion on enemyParent and Wall
-	if place_meeting(x, y, objEnemyParent) || place_meeting(x, y, objSolidWall) {
-		var _areaDamageInst = instance_create_depth(x+8, y+8, -3000, objAreaDamage);
-		with(_areaDamageInst) {
-			image_xscale = 2; //how large the xscale
-			image_yscale = 2; //how large the yscale
-		}
+	if place_meeting(x, y, objSolidWall) {
 		destroy = true;
 	}
 	

@@ -4,7 +4,7 @@
 	
 	x += xspd;
 	y += yspd;
-	
+
 //cleanup	
 
 	//hit confirm destroy

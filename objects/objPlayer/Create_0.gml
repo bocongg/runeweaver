@@ -25,8 +25,8 @@ get_damaged_create(10, true);
 //wand info
 	shootTimer = 0;
 	
-	basicAttack = global.attackList.basicAttack;
-	specialAttack = global.attackList.basicAttack;
+	basicAttack = global.attackList.fireSpecialAttack;
+	specialAttack = global.attackList.windSpecialAttack;
 	
 	chestOpened = false;
 	gameWin = false;
