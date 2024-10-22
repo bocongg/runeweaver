@@ -10,8 +10,8 @@
   "name":"objGainHealth_test",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Rest",
+    "path":"folders/Objects/Game/Interactables/Rest.yy",
   },
   "parentObjectId":null,
   "persistent":false,

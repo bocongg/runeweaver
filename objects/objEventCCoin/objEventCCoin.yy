@@ -10,8 +10,8 @@
   "name":"objEventCCoin",
   "overriddenProperties":[],
   "parent":{
-    "name":"Event",
-    "path":"folders/Objects/Game/Interactables/Event.yy",
+    "name":"Event C",
+    "path":"folders/Objects/Game/Interactables/Event/Event C.yy",
   },
   "parentObjectId":null,
   "persistent":false,

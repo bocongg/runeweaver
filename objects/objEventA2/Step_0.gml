@@ -29,7 +29,7 @@ if (mouse_over)
 		{
 			global.eventA2clicked = true;
 			
-			instance_create_layer(1920/2, 1080/2, "UpgradeScreenBase", objAddRuneScreen);
+			instance_create_layer(1920/2, 1080/2, "UpgradeScreenBase", objEventOutcomeScreen);
 			instance_destroy(objEventACard);
 			instance_destroy(objCloseEvent);
 			instance_destroy(objEventA1);

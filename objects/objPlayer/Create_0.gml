@@ -1,9 +1,6 @@
 //damage setup 
 get_damaged_create(10, true);
 
-////variable for coin
-//	gold = 0;
-
 // varaibles for movement
 	moveDir = 0;
 	moveSpd = 8;
@@ -32,3 +29,4 @@ get_damaged_create(10, true);
 	specialAttack = global.attackList.basicAttack;
 	
 	chestOpened = false;
+	gameWin = false;

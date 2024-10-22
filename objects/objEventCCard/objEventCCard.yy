@@ -3,13 +3,14 @@
   "%Name":"objEventCCard",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"objEventCCard",
   "overriddenProperties":[],
   "parent":{
-    "name":"Event",
-    "path":"folders/Objects/Game/Interactables/Event.yy",
+    "name":"Event C",
+    "path":"folders/Objects/Game/Interactables/Event/Event C.yy",
   },
   "parentObjectId":null,
   "persistent":false,
