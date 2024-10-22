@@ -32,6 +32,7 @@ if  (!instance_exists(objGet3RuneScreen) && !instance_exists(objInventory)){
 			{
 				var roomID = object_get_name(objRmNode2);
 				ds_list_add(global.stagesCleared, roomID);
+				alarm_set(0,20);
 				
 				if !instance_exists(objTransition) {
 					var _inst = instance_create_layer(x, y, "Instances", objTransition);
@@ -40,6 +41,9 @@ if  (!instance_exists(objGet3RuneScreen) && !instance_exists(objInventory)){
 					} else 
 					if (nodeSpr == sprRmEvent) {
 						_inst.targetRoom = choose(rmEventA, rmEventB, rmEventC);
+						//_inst.targetRoom = rmEventA;
+						//_inst.targetRoom = rmEventB;
+						//_inst.targetRoom = rmEventC;
 					} else _inst.targetRoom = rmCombat1;
 				}
 			}

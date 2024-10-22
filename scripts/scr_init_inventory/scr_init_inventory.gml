@@ -11,10 +11,10 @@ function scr_init_inventory() {
 		icerune2,
 		windrune1,
 		windrune2,
-		frostfirerune1,
-		snowstormrune1,
-		infernorune1,
-		prisimrune1,
+		frostfirerune2,
+		snowstormrune2,
+		infernorune2,
+		prismrune3,
 		mysteryrune,
 		total
 		}

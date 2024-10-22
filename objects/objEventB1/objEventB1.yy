@@ -3,13 +3,15 @@
   "%Name":"objEventB1",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"objEventB1",
   "overriddenProperties":[],
   "parent":{
-    "name":"Event",
-    "path":"folders/Objects/Game/Interactables/Event.yy",
+    "name":"Event B",
+    "path":"folders/Objects/Game/Interactables/Event/Event B.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprEventACardOption1",
-    "path":"sprites/sprEventACardOption1/sprEventACardOption1.yy",
+    "name":"sprEventBCardOption1",
+    "path":"sprites/sprEventBCardOption1/sprEventBCardOption1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

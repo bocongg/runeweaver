@@ -1,3 +1,6 @@
+image_xscale = 0.6;
+image_yscale = 0.6;
+
 draw_self();
 
 draw_set_font(fntMedium);

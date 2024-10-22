@@ -1,4 +1,4 @@
-//draw the plater
+//draw the player
 	draw_self();
 
 //draw the weapon

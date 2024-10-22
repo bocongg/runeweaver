@@ -1,2 +1,2 @@
-//get_damaged_create();
-
+global.eventA1clicked = false;
+global.eventA2clicked = false;

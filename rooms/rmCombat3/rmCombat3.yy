@@ -8,7 +8,6 @@
   "instanceCreationOrder":[
     {"name":"inst_5D9FDDEB_1_1_1_1_1_1","path":"rooms/rmCombat3/rmCombat3.yy",},
     {"name":"inst_13A9FCB_1_1_1_1_1_1","path":"rooms/rmCombat3/rmCombat3.yy",},
-    {"name":"inst_42E54E0B_1_1_1_1_1_1","path":"rooms/rmCombat3/rmCombat3.yy",},
     {"name":"inst_29F1D5C8_1_1_1_1_1_1","path":"rooms/rmCombat3/rmCombat3.yy",},
     {"name":"inst_E007661_1_1_1_1_1_1","path":"rooms/rmCombat3/rmCombat3.yy",},
     {"name":"inst_6583698E_1_1_1_1_1_1","path":"rooms/rmCombat3/rmCombat3.yy",},
@@ -27,7 +26,6 @@
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"UpgradeScreen","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_13A9FCB_1_1_1_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_13A9FCB_1_1_1_1_1_1","objectId":{"name":"objInput","path":"objects/objInput/objInput.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":5.0,"scaleY":5.0,"x":0.0,"y":-96.0,},
-        {"$GMRInstance":"v1","%Name":"inst_42E54E0B_1_1_1_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_42E54E0B_1_1_1_1_1_1","objectId":{"name":"objHUD","path":"objects/objHUD/objHUD.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":4.4999995,"scaleY":4.4999995,"x":96.0,"y":-96.0,},
       ],"layers":[],"name":"UpgradeScreen","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"UpgradeScreenBase","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"UpgradeScreenBase","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":200,"effectEnabled":true,"effectType":null,"gridX":1,"gridY":1,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[

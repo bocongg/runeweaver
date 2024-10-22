@@ -30,4 +30,5 @@ with(objAddRunes) instance_destroy();
 with(objAddToInv) instance_destroy();
 	
 // Destroys get runes screen.
-with(objAddRuneScreen) instance_destroy();
+with(objEventOutcomeScreen) instance_destroy();
+with(objEventOutcomeCScreen) instance_destroy();

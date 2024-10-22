@@ -1,10 +1,10 @@
 scr_init_inventory();
 
-scr_gain_item(item.firerune1, 5);
+scr_gain_item(item.firerune1, 1);
 //scr_gain_item(item.firerune2, 98);
-scr_gain_item(item.icerune1, 5);
+//scr_gain_item(item.icerune1, 98);
 //scr_gain_item(item.icerune2, 98);
-scr_gain_item(item.windrune1, 5);
+//scr_gain_item(item.windrune1, 98);
 //scr_gain_item(item.windrune2, 98);
 
 //scr_gain_item(item.icerune1, 2);

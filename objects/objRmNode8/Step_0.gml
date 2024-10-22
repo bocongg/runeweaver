@@ -33,6 +33,7 @@ if  (!instance_exists(objGet3RuneScreen) && !instance_exists(objInventory)){
 			{
 				var roomID = object_get_name(objRmNode8);
 				ds_list_add(global.stagesCleared, roomID);
+				alarm_set(0,35);
 				
 				if !instance_exists(objTransition) {
 					var _inst = instance_create_layer(x, y, "Instances", objTransition);

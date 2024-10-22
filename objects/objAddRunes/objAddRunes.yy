@@ -10,8 +10,8 @@
   "name":"objAddRunes",
   "overriddenProperties":[],
   "parent":{
-    "name":"Runes",
-    "path":"folders/Objects/Game/Runes.yy",
+    "name":"Outcome",
+    "path":"folders/Objects/Game/Interactables/Event/Outcome.yy",
   },
   "parentObjectId":null,
   "persistent":false,

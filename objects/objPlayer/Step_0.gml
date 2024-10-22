@@ -66,6 +66,7 @@ get_damaged(objDamagePlayer, true);
 
 //shoot the wand
 #region
+if (room != rmRest && room != rmEventA && room != rmEventB && room != rmEventC && !instance_exists(objChest)){
 	if shootTimer > 0 {shootTimer--;};
 	if basicShootKey && shootTimer <= 0 {
 		
@@ -114,6 +115,7 @@ get_damaged(objDamagePlayer, true);
 				dir = other.aimDir;
 			}*/
 	}
+}
 #endregion
 
 //death
@@ -125,14 +127,20 @@ if hp <= 0 {
 	instance_destroy();
 }
 
-if (!chestOpened && room != rmRest && room != rmEventA && room != rmEventB && room != rmEventC) {
+if (!chestOpened && room != rmRest && room != rmEventA && room != rmEventB && room != rmEventC && room != rmFinalBoss) {
 	if (instance_number(objBasicEnemy) == 0 && instance_number(objEliteEnemy) == 0){
-		if (global.stage == 0){
+		if (global.stage == 1){
 			instance_create_layer(1920/2, 1080/2, "Instances", objChest);
 		} else {
 			instance_create_layer(1526, 853, "Instances", objChest);
 		}
 		chestOpened = true;
+	}
+}
+
+if ((room == rmFinalBoss) && (instance_number(objBasicEnemy) == 0) && (instance_number(objEliteEnemy) == 0)){
+	if (!instance_exists(objGameWinScreen)){
+		instance_create_layer(1920/2, 1080/2, "UpgradeScreen", objGameWinScreen);
 	}
 }
 
