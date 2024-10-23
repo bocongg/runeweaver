@@ -20,7 +20,25 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
 // Draws the heading.
-draw_text(1920 / 2, 175, "Choose Rune");
+
+if (((global.stage == 2 || global.stage == 3) && !global.runeScreenShownStage2n3) ||
+	 (global.stage == 7 && !global.runeScreenShownStage7)){
+	draw_text(1920 / 2, 175, "Choose Rune (1/2)");
+	
+} else if (((global.stage == 2 || global.stage == 3) && global.runeScreenShownStage2n3) ||
+			(global.stage == 7 && global.runeScreenShownStage7)){
+	draw_text(1920 / 2, 175, "Choose Rune (2/2)");
+	
+} else if (global.stage == 4 && global.runeScreenShownStage4 == 0){
+	draw_text(1920 / 2, 175, "Choose Rune (1/3)");
+} else if (global.stage == 4 && global.runeScreenShownStage4 == 1){
+	draw_text(1920 / 2, 175, "Choose Rune (2/3)");
+} else if (global.stage == 4 && global.runeScreenShownStage4 == 2){
+	draw_text(1920 / 2, 175, "Choose Rune (3/3)");
+	
+} else {
+	draw_text(1920 / 2, 175, "Choose Rune");
+}
 
 draw_set_font(fntMedium);
 draw_set_halign(fa_left);

@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprEnemyLion",
-    "path":"sprites/sprEnemyLion/sprEnemyLion.yy",
+    "name":"sprEnemyLionAttack",
+    "path":"sprites/sprEnemyLionAttack/sprEnemyLionAttack.yy",
   },
   "spriteMaskId":null,
   "visible":true,

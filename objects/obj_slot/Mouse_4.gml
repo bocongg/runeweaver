@@ -20,9 +20,21 @@ if (mouse_iid == 0) //If mouse slot is empty
 	
 }
 
-if (mouse_iid != 0 && iid == 0)
+if (mouse_iid != 0 && iid == 0) // If inventory is empty and mouse slot not empty, transfer rune from mouse to inventory
 {
 	global.inventory[# var_slot, 0] = mouse_iid;
+	global.inventory[# var_slot, 1] += 1;
+	global.mouse_slot[# 0, 1] -= 1;
+	if (global.mouse_slot[# 0, 1] <= 0)
+	{
+		global.mouse_slot[# 0, 0] = item.none;
+		global.mouse_slot[# 0, 1] = 0;
+		exit;
+	}
+}
+
+if (iid == mouse_iid) //If both slots are the same
+{
 	global.inventory[# var_slot, 1] += 1;
 	global.mouse_slot[# 0, 1] -= 1;
 	if (global.mouse_slot[# 0, 1] <= 0)
