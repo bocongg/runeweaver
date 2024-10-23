@@ -82,8 +82,34 @@ if (mouse_over)
 			with(objGet3RuneScreen) instance_destroy();
 			with(objGet2RuneScreen) instance_destroy();
 			
-			
-			if (room != rmMapOverview && room != rmRest && room != rmEventA && room != rmEventB && room != rmEventC) {
+			// Show rune screen twice for stages 2 & 3
+			if (global.stage == 2 || global.stage == 3){
+				if (!global.runeScreenShownStage2n3){
+					instance_create_layer(1920/2, 1080/2, "UpgradeScreenBase", objGet2RuneScreen);
+					global.runeScreenShownStage2n3 = true;
+				} else if (room != rmMapOverview && room != rmRest && room != rmEventA && room != rmEventB && room != rmEventC) {
+					instance_create_layer(1840, 928, "Instances", objStairs);
+				}
+			// Show rune screen thrice for stage 4
+			} else if (global.stage == 4){
+				if (!global.runeScreenShownStage4one && !global.runeScreenShownStage4two){
+					instance_create_layer(1920/2, 1080/2, "UpgradeScreenBase", objGet2RuneScreen);
+					global.runeScreenShownStage4one = true;
+				} else if (global.runeScreenShownStage4one && !global.runeScreenShownStage4two){
+					instance_create_layer(1920/2, 1080/2, "UpgradeScreenBase", objGet2RuneScreen);
+					global.runeScreenShownStage4two = true;
+				} else if (room != rmMapOverview && room != rmRest && room != rmEventA && room != rmEventB && room != rmEventC) {
+					instance_create_layer(1840, 928, "Instances", objStairs);
+				}
+			// Show (L2) rune screen twice for stage 7			
+			} else if (global.stage == 7){
+				if (!global.runeScreenShownStage7){
+					instance_create_layer(1920/2, 1080/2, "UpgradeScreenBase", objGet2RuneScreen);
+					global.runeScreenShownStage7 = true;
+				} else if (room != rmMapOverview && room != rmRest && room != rmEventA && room != rmEventB && room != rmEventC) {
+					instance_create_layer(1840, 928, "Instances", objStairs);
+				}
+			} else if (room != rmMapOverview && room != rmRest && room != rmEventA && room != rmEventB && room != rmEventC) {
 				instance_create_layer(1840, 928, "Instances", objStairs);
 				if (global.stage == 1){
 					instance_create_layer(1492, 865, "Instances", objProceedSign);
