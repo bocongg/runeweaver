@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprBasicEnemyPhantom",
-    "path":"sprites/sprBasicEnemyPhantom/sprBasicEnemyPhantom.yy",
+    "name":"sprEnemyLion",
+    "path":"sprites/sprEnemyLion/sprEnemyLion.yy",
   },
   "spriteMaskId":null,
   "visible":true,
