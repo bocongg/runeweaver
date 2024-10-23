@@ -45,14 +45,6 @@
 	}
 	// receive damage
 	if place_meeting(x, y, _damageObj) {
-		////getting a single damage instance
-		//	var _inst = instance_place(x, y, objDamageEnemy);
-		//	//take damage from specific instance
-		//	hp -= _inst.damage;
-	
-		//	//tell the damage instance to destroy itself 
-		//	_inst.destroy = true;
-		
 		//getting a list of the damage instances
 		var _instList = ds_list_create();
 		instance_place_list(x, y, _damageObj, _instList, false);

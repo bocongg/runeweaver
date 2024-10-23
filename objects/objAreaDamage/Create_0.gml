@@ -3,6 +3,6 @@ createdDamageObjects = false;
 enemyDamageInst = noone;
 
 //damage over time
-damage = 2;
-damageInterval = 0.5; //DO NOT SET TO ZERO //apply the damage every half a second
+damage = 0.5;
+damageInterval = 1; //DO NOT SET TO ZERO //apply the damage every half a second
 damageLast = 5; //damage effect will last for 5 seconds 

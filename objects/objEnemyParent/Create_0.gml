@@ -17,5 +17,6 @@ enum DebuffInfo {
 }
 debuffs = [];
 tick = 0;
-baseSpd = 4; //new
+baseSpd = 1; //new
 chaseSpd = baseSpd;
+enemyColour = -1;
