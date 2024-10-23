@@ -13,8 +13,15 @@
 	//destroy
 	if destroy == true {instance_destroy();}
 	
-	//collision
-	if place_meeting(x,y,objSolidWall) {destroy = true;}
+	//colliion on enemyParent and Wall
+	if place_meeting(x, y, objEnemyParent) || place_meeting(x, y, objSolidWall) {
+		var _areaFreezeInst = instance_create_depth(x+8, y+8, -3000, objAreaFreeze);
+		with(_areaFreezeInst) {
+			image_xscale = 10; //how large the xscale
+			image_yscale = 10; //how large the yscale
+		}
+		destroy = true;
+	}
 	
 	//bullet out of range
 	if point_distance(xstart,ystart,x,y) > maxDist 
