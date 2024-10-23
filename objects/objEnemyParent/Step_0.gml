@@ -19,7 +19,7 @@ for (var i = array_length(debuffs) - 1; i >= 0; --i) {
    if (tick mod _tick_rate == 0) {
       var _dmg = _debuff[DebuffInfo.DMG];
       hp -= _dmg; // Or however you apply damage in your game
-	  //image_blend = enemyColour;
+	  image_blend = enemyColour;
    }
    
    //decrease debuff duration 
