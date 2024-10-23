@@ -13,10 +13,10 @@ enum DebuffInfo {
    DMG,
    TICK_RATE,
    DURATION,
-   SPEED_REDUCTION
+   SPEED_REDUCTION,
+   DAMAGE_COLOUR
 }
 debuffs = [];
 tick = 0;
 baseSpd = 1; //new
 chaseSpd = baseSpd;
-enemyColour = -1;

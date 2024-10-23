@@ -4,6 +4,7 @@ dir = 5;
 spd = 5;
 xspd = 0; 
 yspd = 0;
+damage = 1;
 
 // cleanup
 maxDist = 500;

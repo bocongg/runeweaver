@@ -1,6 +1,3 @@
-if place_meeting(x, y, objBasicFire) || place_meeting(x, y, objSpecialFire) {enemyColour = c_red;}
-if place_meeting(x, y, objBasicIce) || place_meeting(x, y, objSpecialIce) {enemyColour = c_aqua; }  // The enemy is frozen
-
 tick++;
 
 //reset speed to normal at the start of each step
@@ -19,7 +16,7 @@ for (var i = array_length(debuffs) - 1; i >= 0; --i) {
    if (tick mod _tick_rate == 0) {
       var _dmg = _debuff[DebuffInfo.DMG];
       hp -= _dmg; // Or however you apply damage in your game
-	  image_blend = enemyColour;
+	  image_blend = _debuff[DebuffInfo.DAMAGE_COLOUR];
    }
    
    //decrease debuff duration 
