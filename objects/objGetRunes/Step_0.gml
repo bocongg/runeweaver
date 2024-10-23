@@ -85,7 +85,7 @@ if (mouse_over)
 			
 			if (room != rmMapOverview && room != rmRest && room != rmEventA && room != rmEventB && room != rmEventC) {
 				instance_create_layer(1840, 928, "Instances", objStairs);
-				if (global.stage == 0){
+				if (global.stage == 1){
 					instance_create_layer(1492, 865, "Instances", objProceedSign);
 				}
 			}

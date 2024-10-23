@@ -1,31 +1,31 @@
 //damage 
-	//damage create event
-	function get_damaged_create(_hp = 10, _iframes = false) {
-		//health points
-		maxHp = _hp;
-		hp = _hp;
+//damage create event
+function get_damaged_create(_hp = 10, _iframes = false) {
+	//health points
+	maxHp = _hp;
+	hp = _hp;
 		
-		//get the iframes
-		if _iframes == true {
-			iframeTimer = 0;
-			iframeNumber = 90;
-		}
-		//create the damage list
-		if _iframes == false {
-			damageList = ds_list_create();
-		}
+	//get the iframes
+	if _iframes == true {
+		iframeTimer = 0;
+		iframeNumber = 90;
 	}
+	//create the damage list
+	if _iframes == false {
+		damageList = ds_list_create();
+	}
+}
 	
-	//damage clean up event
-	function get_damage_cleanup() {
-		//DO NOT NEED if we're using iframes
+//damage clean up event
+function get_damage_cleanup() {
+	//DO NOT NEED if we're using iframes
 		
-		//delete our damage list data structure to free memory
-		ds_list_destroy(damageList);
-	}
+	//delete our damage list data structure to free memory
+	ds_list_destroy(damageList);
+}
 
-	//damage step function
-	function get_damaged (_damageObj, _iframes = false) {
+//damage step function
+function get_damaged (_damageObj, _iframes = false, _isEnemy = true) {
 	//special exit for iframe timer
 	if _iframes == true && iframeTimer > 0 {
 		iframeTimer--;
@@ -36,6 +36,12 @@
 		
 		//clamp hp
 		hp = clamp(hp, 0, maxHp);
+
+		if (_isEnemy) {
+			hp = clamp(hp, 0, maxHp);
+		} else {
+			global.playerHp = clamp(global.playerHp, 0, global.playerMaxHp);
+		}
 	
 		exit;
 	}
@@ -65,11 +71,17 @@
 						ds_list_add(damageList, _inst);
 					}
 					
-					//take damage from specific instance
-					hp -= _inst.damage;
-					_hitConfirm = true;
-					//tell the damage instance to destroy itself 
-					_inst.destroy = true;
+					if (_isEnemy) {
+						//take damage from specific instance
+						hp -= _inst.damage;
+						_hitConfirm = true;
+						//tell the damage instance to destroy itself 
+						_inst.destroy = true;
+					} else {
+						global.playerHp -= _inst.damage;
+						_hitConfirm = true;
+						_inst.destroy = true;
+					}
 				}
 			}
 			
@@ -99,7 +111,11 @@
 	}
 	
 	//clamp hp
-	hp = clamp(hp, 0, maxHp);
+	if (_isEnemy) {
+		hp = clamp(hp, 0, maxHp);
+	} else {
+		global.playerHp = clamp(global.playerHp, 0, global.playerMaxHp);
+	}
 }
 	
 //basicAttackList	

@@ -43,7 +43,7 @@
 
 //get damaged
 #region
-get_damaged(objDamagePlayer, true);
+get_damaged(objDamagePlayer, true, false);
 
 //player aiming
 	centerY = y + centerYOffSet;
@@ -119,7 +119,7 @@ if (room != rmRest && room != rmEventA && room != rmEventB && room != rmEventC &
 #endregion
 
 //death
-if hp <= 0 {
+if global.playerHp <= 0 {
 	//create the game ovr object
 	instance_create_depth(0, 0, -10000, objGameOverScreen);
 	
@@ -131,6 +131,7 @@ if (!chestOpened && room != rmRest && room != rmEventA && room != rmEventB && ro
 	if (instance_number(objBasicEnemy) == 0 && instance_number(objEliteEnemy) == 0){
 		if (global.stage == 1){
 			instance_create_layer(1920/2, 1080/2, "Instances", objChest);
+			instance_create_layer(959.5, 389, "Instances", objInteractableTooltip);
 		} else {
 			instance_create_layer(1526, 853, "Instances", objChest);
 		}

@@ -1,6 +1,11 @@
 scr_init_inventory();
 
 scr_gain_item(item.firerune1, 1);
+
+// Player HP
+global.playerMaxHp = 50;
+global.playerHp = global.playerMaxHp;
+
 //scr_gain_item(item.firerune2, 98);
 //scr_gain_item(item.icerune1, 98);
 //scr_gain_item(item.icerune2, 98);

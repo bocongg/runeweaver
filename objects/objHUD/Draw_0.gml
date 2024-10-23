@@ -3,7 +3,7 @@ var _camX = camera_get_view_x(view_camera[0]);
 var _camY = camera_get_view_y(view_camera[0]);
 
 //draw player's hp
-var _healthPercent = playerHp / playerMaxHp;
+var _healthPercent = global.playerHp / global.playerMaxHp;
 var _hpImage = _healthPercent * (sprite_get_number(sprPlayerHealthBar) - 1);
 
 // Position the health bar at the top-left corner of the view
