@@ -1,5 +1,5 @@
 //damage setup 
-get_damaged_create(10, true);
+get_damaged_create(global.playerMaxHp, true);
 
 // varaibles for movement
 	moveDir = 0;
@@ -25,8 +25,8 @@ get_damaged_create(10, true);
 //wand info
 	shootTimer = 0;
 	
-	basicAttack = global.attackList.iceSpecialAttack;
-	specialAttack = global.attackList.fireSpecialAttack;
+	basicAttack = global.attackList.basicAttack;
+	specialAttack = global.attackList.basicAttack;
 	
 	chestOpened = false;
 	gameWin = false;

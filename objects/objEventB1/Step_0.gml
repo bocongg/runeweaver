@@ -28,6 +28,7 @@ if (mouse_over)
 		if (mouse_check_button_released(mb_left))
 		{
 			global.eventB1clicked = true;
+			global.playerHp -= (global.playerHp* 0.30);
 			
 			instance_create_layer(1920/2, 1080/2, "UpgradeScreenBase", objEventOutcomeScreen);
 			instance_destroy(objEventBCard);
