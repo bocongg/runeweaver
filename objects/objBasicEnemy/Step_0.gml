@@ -56,7 +56,18 @@ switch(state) {
 			if shootTimer == windupTime && instance_exists(bulletInst) {
 				
 				//set our bullet's state to the movement state
-				bulletInst.state = 1;
+				//bulletInst.state = 1;
+				show_debug_message("before freezeEnemy");
+				if freezeEnemy == true {
+					//bulletInst.state = 0;
+					show_debug_message("in the destroy");
+					bulletInst.destroy = true;
+				} 
+				else {
+					show_debug_message("else");
+					bulletInst.state = 1;
+				}
+				show_debug_message("after freezeEnemy");
 			}
 			
 			//recover and return to chasing the player
