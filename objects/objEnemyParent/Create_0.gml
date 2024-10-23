@@ -18,5 +18,9 @@ enum DebuffInfo {
 }
 debuffs = [];
 tick = 0;
-baseSpd = 1; //new
+baseSpd = 1; 
 chaseSpd = baseSpd;
+
+
+freezeEnemy = false; //new
+freezeEnemyID = noone;

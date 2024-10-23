@@ -20,7 +20,6 @@ if createdDamageObjects == false {
 				damageOverTimeinfo [DebuffInfo.DAMAGE_COLOUR] = c_red; 
 
 				array_push(colliding_enemy.debuffs, damageOverTimeinfo); 
-				show_debug_message("sprite_index: " + string(other.sprite_index) + "image_xscale: " + string(other.image_xscale) + "image_yscale: " + string(other.image_yscale));
 				mask_index = other.sprite_index;
 				image_xscale = other.image_xscale;
 				image_yscale = other.image_yscale;

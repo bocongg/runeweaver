@@ -7,20 +7,22 @@ if createdDamageObjects == false {
 	var _listSize = ds_list_size(_instList);
 	
 	for (var i = 0; i < _listSize; i++) {
+		show_debug_message("Instance ID in objAreaFreeze: " + string(instance_id_get(i)));
+		
 		var colliding_enemy = ds_list_find_value(_instList, i);
+		
 		
 		if (colliding_enemy != noone) {
 		
 				// Check for collision with multiple enemies
 				var damageOverTimeinfo = [];
-				damageOverTimeinfo [DebuffInfo.DMG] = 1; // damage is however much damage the poison should apply each tick
+				damageOverTimeinfo [DebuffInfo.DMG] = 0; // damage is however much damage the poison should apply each tick
 				damageOverTimeinfo [DebuffInfo.TICK_RATE] = game_get_speed(gamespeed_fps) * 1; 
 				damageOverTimeinfo [DebuffInfo.DURATION] = game_get_speed(gamespeed_fps) * 5; 
-				damageOverTimeinfo [DebuffInfo.SPEED_REDUCTION] = 0; 
-				damageOverTimeinfo [DebuffInfo.DAMAGE_COLOUR] = c_red; 
+				damageOverTimeinfo [DebuffInfo.SPEED_REDUCTION] = 1; 
+				damageOverTimeinfo [DebuffInfo.DAMAGE_COLOUR] = c_aqua; 
 
 				array_push(colliding_enemy.debuffs, damageOverTimeinfo); 
-				show_debug_message("sprite_index: " + string(other.sprite_index) + "image_xscale: " + string(other.image_xscale) + "image_yscale: " + string(other.image_yscale));
 				mask_index = other.sprite_index;
 				image_xscale = other.image_xscale;
 				image_yscale = other.image_yscale;
