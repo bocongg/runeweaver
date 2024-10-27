@@ -4,4 +4,5 @@ if (!global.eventC1clicked && !global.eventC2clicked){
 	}
 } else {
 	sprite_index = sprEventCoinInactive;
+	instance_destroy(objInteractableTooltip);
 }

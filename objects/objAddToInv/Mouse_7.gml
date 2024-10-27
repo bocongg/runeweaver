@@ -32,3 +32,5 @@ with(objAddToInv) instance_destroy();
 // Destroys get runes screen.
 with(objEventOutcomeScreen) instance_destroy();
 with(objEventOutcomeCScreen) instance_destroy();
+
+instance_create_layer(1917, 831, "Instances", objStairs);

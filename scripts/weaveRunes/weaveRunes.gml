@@ -15,6 +15,21 @@ function weaveRunes(){
 		global.weave_slot[# 2, 1] = 0;
 	}
 	
+	var runeID = item.firerune2
+	
+	if ((global.weave_slot[# 0, 0] == runeID) && (global.weave_slot[# 1, 0] == runeID) && (global.weave_slot[# 2, 0] == runeID))
+	{
+		global.weave_slot[# 3, 0] = item.firerune3;
+		global.weave_slot[# 3, 1] = 1;
+		
+		global.weave_slot[# 0, 0] = item.none;
+		global.weave_slot[# 0, 1] = 0;
+		global.weave_slot[# 1, 0] = item.none;
+		global.weave_slot[# 1, 1] = 0;
+		global.weave_slot[# 2, 0] = item.none;
+		global.weave_slot[# 2, 1] = 0;
+	}
+	
 	var runeID = item.icerune1
 	
 	if (global.weave_slot[# 0, 0] == runeID && global.weave_slot[# 1, 0] == runeID && global.weave_slot[# 2, 0] == runeID)
@@ -30,11 +45,41 @@ function weaveRunes(){
 		global.weave_slot[# 2, 1] = 0;
 	}
 	
+	var runeID = item.icerune2
+	
+	if (global.weave_slot[# 0, 0] == runeID && global.weave_slot[# 1, 0] == runeID && global.weave_slot[# 2, 0] == runeID)
+	{
+		global.weave_slot[# 3, 0] = item.icerune3;
+		global.weave_slot[# 3, 1] = 1;
+		
+		global.weave_slot[# 0, 0] = item.none;
+		global.weave_slot[# 0, 1] = 0;
+		global.weave_slot[# 1, 0] = item.none;
+		global.weave_slot[# 1, 1] = 0;
+		global.weave_slot[# 2, 0] = item.none;
+		global.weave_slot[# 2, 1] = 0;
+	}
+	
 	var runeID = item.windrune1
 	
 	if (global.weave_slot[# 0, 0] == runeID && global.weave_slot[# 1, 0] == runeID && global.weave_slot[# 2, 0] == runeID)
 	{
 		global.weave_slot[# 3, 0] = item.windrune2;
+		global.weave_slot[# 3, 1] = 1;
+		
+		global.weave_slot[# 0, 0] = item.none;
+		global.weave_slot[# 0, 1] = 0;
+		global.weave_slot[# 1, 0] = item.none;
+		global.weave_slot[# 1, 1] = 0;
+		global.weave_slot[# 2, 0] = item.none;
+		global.weave_slot[# 2, 1] = 0;
+	}
+	
+	var runeID = item.windrune2
+	
+	if (global.weave_slot[# 0, 0] == runeID && global.weave_slot[# 1, 0] == runeID && global.weave_slot[# 2, 0] == runeID)
+	{
+		global.weave_slot[# 3, 0] = item.windrune3;
 		global.weave_slot[# 3, 1] = 1;
 		
 		global.weave_slot[# 0, 0] = item.none;
@@ -202,10 +247,38 @@ function weaveRunesCheck(){
 			exit;
 		}
 	}
+	
+	// Weave fire rune level 3
+	var runeID = item.firerune2
+	
+	if ((global.weave_slot[# 0, 0] == runeID) && (global.weave_slot[# 1, 0] == runeID) && (global.weave_slot[# 2, 0] == runeID))
+	{
+		if ((global.weave_slot[# 3, 0] == item.none) && (global.weave_slot[# 3, 0] != item.mysteryrune))
+		{
+			global.weave_slot[# 3, 0] = item.mysteryrune;
+		} else if ((global.weave_slot[# 3, 0] != item.none) && (global.weave_slot[# 3, 0] != item.mysteryrune))
+		{
+			exit;
+		}
+	}
 
 
 	// Weave ice rune level 2
 	var runeID = item.icerune1
+	
+	if ((global.weave_slot[# 0, 0] == runeID) && (global.weave_slot[# 1, 0] == runeID) && (global.weave_slot[# 2, 0] == runeID))
+	{
+		if ((global.weave_slot[# 3, 0] == item.none) && (global.weave_slot[# 3, 0] != item.mysteryrune))
+		{
+			global.weave_slot[# 3, 0] = item.mysteryrune;
+		} else if ((global.weave_slot[# 3, 0] != item.none) && (global.weave_slot[# 3, 0] != item.mysteryrune))
+		{
+			exit;
+		}
+	}
+	
+	// Weave ice rune level 3
+	var runeID = item.icerune2
 	
 	if ((global.weave_slot[# 0, 0] == runeID) && (global.weave_slot[# 1, 0] == runeID) && (global.weave_slot[# 2, 0] == runeID))
 	{
@@ -232,6 +305,21 @@ function weaveRunesCheck(){
 			exit;
 		}
 	}
+	
+	// Weave wind rune level 3
+	var runeID = item.windrune2
+	
+	if ((global.weave_slot[# 0, 0] == runeID) && (global.weave_slot[# 1, 0] == runeID) && (global.weave_slot[# 2, 0] == runeID))
+	{
+		if ((global.weave_slot[# 3, 0] == item.none) && (global.weave_slot[# 3, 0] != item.mysteryrune))
+		{
+			global.weave_slot[# 3, 0] = item.mysteryrune;
+		} else if ((global.weave_slot[# 3, 0] != item.none) && (global.weave_slot[# 3, 0] != item.mysteryrune))
+		{
+			exit;
+		}
+	}
+
 
 
 	// Weave frostfire rune

@@ -89,6 +89,7 @@ function eventAOption2(){
 	if _chance == "noget" {
 		instance_create_layer(1920/2, 1080/2, "UpgradeScreen", objNoRuneScreen);
 		with(objEventOutcomeScreen) instance_destroy();
+		instance_create_layer(1917, 831, "Instances", objStairs);
 	};
 	
 	if _chance == "get" {
@@ -217,6 +218,7 @@ function eventBOption2(){
 function eventBOption3(){
 	instance_create_layer(1920/2, 1080/2, "UpgradeScreen", objOKByeScreen);
 	with(objEventOutcomeScreen) instance_destroy();
+	instance_create_layer(1917, 831, "Instances", objStairs);
 }
 
 //Offer a Level 2 special rune and in return obtain 4 random level 1 runes.

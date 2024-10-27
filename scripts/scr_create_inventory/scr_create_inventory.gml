@@ -20,7 +20,7 @@ function scr_create_inventory() {
 		var inst = instance_create_layer(itemX, itemY, "InventoryScreen", obj_slot);
 		inst.var_slot = slot;
 		slot ++;
-		}
+	}
 	
 	
 	var slotAttack = 0;

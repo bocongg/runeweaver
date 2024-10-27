@@ -41,7 +41,7 @@ if  (!instance_exists(objGet3RuneScreen) && !instance_exists(objInventory)){
 						_inst.targetRoom = rmRest;
 					} else 
 					if (nodeSpr == sprRmEvent) {
-						_inst.targetRoom = choose(rmEventA, rmEventB, rmEventC);
+						_inst.targetRoom = choose(rmEventA, rmEventB);
 					} else _inst.targetRoom = rmCombat2;
 				}
 			}
