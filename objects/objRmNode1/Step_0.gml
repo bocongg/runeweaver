@@ -40,7 +40,11 @@ if  (!instance_exists(objGet3RuneScreen) && !instance_exists(objInventory)){
 						_inst.targetRoom = rmRest;
 					} else 
 					if (nodeSpr == sprRmEvent) {
-						_inst.targetRoom = choose(rmEventA, rmEventB, rmEventC);
+						//if (!specialRune) {
+						//	_inst.targetRoom = rmEventC;
+						//} else
+						//_inst.targetRoom = rmEventB;
+						_inst.targetRoom = choose(rmEventA, rmEventB);
 						//_inst.targetRoom = rmEventA;
 						//_inst.targetRoom = rmEventB;
 						//_inst.targetRoom = rmEventC;

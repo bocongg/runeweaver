@@ -132,8 +132,10 @@ if (!chestOpened && room != rmRest && room != rmEventA && room != rmEventB && ro
 		if (global.stage == 1){
 			instance_create_layer(1920/2, 1080/2, "Instances", objChest);
 			instance_create_layer(959.5, 389, "Instances", objInteractableTooltip);
+			instance_create_layer(1664, 992, "UpgradeScreenBase", objInvButton);
 		} else {
 			instance_create_layer(1526, 853, "Instances", objChest);
+			instance_create_layer(1664, 992, "UpgradeScreenBase", objInvButton);
 		}
 		chestOpened = true;
 	}
