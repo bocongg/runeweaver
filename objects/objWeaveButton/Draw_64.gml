@@ -2,7 +2,7 @@
 if (canWeave){
 	draw_self();
 } else {
-	draw_sprite_ext(sprButton2, 3, x, y, 0.5, 0.5, 0, c_white, 1)
+	draw_sprite_ext(sprButton, 3, x, y, 0.5, 0.5, 0, c_white, 1)
 }
 
 // Set Font

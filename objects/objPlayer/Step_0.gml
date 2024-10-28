@@ -66,7 +66,7 @@ get_damaged(objDamagePlayer, true, false);
 
 //shoot the wand
 #region
-if (room != rmRest && room != rmEventA && room != rmEventB && room != rmEventC && !instance_exists(objChest)){
+if (room != rmShop && room != rmRest && room != rmEventA && room != rmEventB && room != rmEventC && !instance_exists(objChest) && !instance_place(mouse_x, mouse_y, objPauseButton)){
 	if shootTimer > 0 {shootTimer--;};
 	if basicShootKey && shootTimer <= 0 {
 		
@@ -121,13 +121,13 @@ if (room != rmRest && room != rmEventA && room != rmEventB && room != rmEventC &
 //death
 if global.playerHp <= 0 {
 	//create the game ovr object
-	instance_create_depth(0, 0, -10000, objGameOverScreen);
+	instance_create_layer(1920/2, 1080/2, "PauseScreen", objLoseGif);
 	
 	//destroy player
 	instance_destroy();
 }
 
-if (!chestOpened && room != rmRest && room != rmEventA && room != rmEventB && room != rmEventC && room != rmFinalBoss) {
+if (!chestOpened && room != rmShop && room != rmRest && room != rmEventA && room != rmEventB && room != rmEventC && room != rmFinalBoss) {
 	if (instance_number(objBasicEnemy) == 0 && instance_number(objEliteEnemy) == 0){
 		if (global.stage == 1){
 			instance_create_layer(1920/2, 1080/2, "Instances", objChest);

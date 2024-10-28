@@ -11,14 +11,16 @@ with (obj_slot)
 	var amount = global.inventory[# var_slot, 1];
 
 	//Draw stuff
-	if (iid != item.none)
-	 {
+	if (iid != item.none){
 		draw_sprite(spr_item, iid, x, y); //Draw item sprite
 		draw_set_font(fntMedium);
 		draw_text(x+40, y+50, string(amount)); //Draw item quantity
-		}
+		
+		//if (position_meeting(mouse_x, mouse_y, id)) {
+		//	runeHoverTooltip(iid);
+		//}
+	}
 }
-
 
 with (obj_slot_Attack)
 {
