@@ -1,3 +1,3 @@
-sprite_index = sprButton2;
+sprite_index = sprButton;
 image_index = 1;
 

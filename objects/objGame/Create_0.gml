@@ -1,23 +1,132 @@
 scr_init_inventory();
 
-//scr_gain_item(item.firerune1, 1);
+scr_add_rune_info(item.firerune1,
+				  "Fire Rune",
+				  "Basic: Fire Bolt",
+				  "Shoot a bolt of\nflame. Burns, dealing\ndamage over time.",
+				  "Special: Fireball",
+				  "Hurl a ball of fire\nthat explodes,\ndealing area damage\nand burns the\nenemy.");
+scr_add_rune_info(item.firerune2,
+				  "Fire Rune",
+				  "Basic: Fire Bolt",
+				  "Shoot a bolt of\nflame. Burns, dealing\ndamage over time.",
+				  "Special: Fireball",
+				  "Hurl a ball of fire\nthat explodes,\ndealing area damage\nand burns the\nenemy.");
+scr_add_rune_info(item.firerune3,
+				  "Fire Rune",
+				  "Basic: Fire Bolt",
+				  "Shoot a bolt of\nflame. Burns, dealing\ndamage over time.",
+				  "Special: Fireball",
+				  "Hurl a ball of fire\nthat explodes,\ndealing area damage\nand burns the\nenemy.");
+				  
+scr_add_rune_info(item.icerune1,
+				  "Ice Rune",
+				  "Basic: Ice Shard",
+				  "Shoot a shard of ice.\nSlows the enemy\ndown.",
+				  "Special: Flash Freeze",
+				  "Freeze the air\naround the player,\nfreezing enemies\nfor a short time.");
+scr_add_rune_info(item.icerune2,
+				  "Ice Rune",
+				  "Basic: Ice Shard",
+				  "Shoot a shard of ice.\nSlows the enemy\ndown.",
+				  "Special: Flash Freeze",
+				  "Freeze the air\naround the player,\nfreezing enemies\nfor a short time.");
+scr_add_rune_info(item.icerune3,
+				  "Ice Rune",
+				  "Basic: Ice Shard",
+				  "Shoot a shard of ice.\nSlows the enemy\ndown.",
+				  "Special: Flash Freeze",
+				  "Freeze the air\naround the player,\nfreezing enemies\nfor a short time.");
+				  
+scr_add_rune_info(item.windrune1,
+				  "Wind Rune",
+				  "Basic: Air Cutter",
+				  "Shoot blades of air.\nPushes the enemy\nback slightly.",
+				  "Special: Galeforce",
+				  "Conjure a cone of\nwind, pushing\nenemies back.");
+scr_add_rune_info(item.windrune2,
+				  "Wind Rune",
+				  "Basic: Air Cutter",
+				  "Shoot blades of air.\nPushes the enemy\nback slightly.",
+				  "Special: Galeforce",
+				  "Conjure a cone of\nwind, pushing\nenemies back.");
+scr_add_rune_info(item.windrune3,
+				  "Wind Rune",
+				  "Basic: Air Cutter",
+				  "Shoot blades of air.\nPushes the enemy\nback slightly.",
+				  "Special: Galeforce",
+				  "Conjure a cone of\nwind, pushing\nenemies back.");
+				  
+scr_add_rune_info(item.frostfirerune2,
+				  "Frostfire Rune",
+				  "",
+				  "",
+				  "Special:\nFrostfire Blast",
+				  "Shoot a ball of fire\nand ice which\nexplodes, burning\nand freezing the\nenemy.");
+scr_add_rune_info(item.frostfirerune3,
+				  "Frostfire Rune",
+				  "",
+				  "",
+				  "Special:\nFrostfire Blast",
+				  "Shoot a ball of fire\nand ice which\nexplodes, burning\nand freezing the\nenemy.");
+				  
+scr_add_rune_info(item.blizzardrune2,
+				  "Blizzard Rune",
+				  "",
+				  "",
+				  "Special: Blizzard",
+				  "Call forth an icy\nstorm, freezing\nenemies in its\nradius.");
+scr_add_rune_info(item.blizzardrune3,
+				  "Blizzard Rune",
+				  "",
+				  "",
+				  "Special: Blizzard",
+				  "Call forth an icy\nstorm, freezing\nenemies in its\nradius.");
+				  
+scr_add_rune_info(item.infernorune2,
+				  "Inferno Rune",
+				  "",
+				  "",
+				  "Special: Inferno",
+				  "Call forth a storm\nof fire, burning\nenemies in an\narea and pushing\nthem back.");
+scr_add_rune_info(item.infernorune3,
+				  "Inferno Rune",
+				  "",
+				  "",
+				  "Special: Inferno",
+				  "Call forth a storm\nof fire, burning\nenemies in an\narea and pushing\nthem back.");
+
+scr_add_rune_info(item.prismrune3,
+				  "Prismatic Rune",
+				  "",
+				  "",
+				  "Special:\nPrismatic Beam",
+				  "Shoot a beam of\nmagical light.\nBurns and freezes\nenemies, and pushes\nthem back, but has\na very long cooldown.");
+
+
+scr_gain_item(item.firerune1, 23);
+scr_gain_item(item.icerune1, 23);
+scr_gain_item(item.windrune1, 23);
+scr_gain_item(item.frostfirerune2, 23);
+scr_gain_item(item.blizzardrune2, 23);
+scr_gain_item(item.infernorune2, 23);
+scr_gain_item(item.prismrune3, 1);
+scr_gain_item(item.firerune2, 23);
+scr_gain_item(item.icerune2, 23);
+scr_gain_item(item.windrune2, 23);
+scr_gain_item(item.frostfirerune3, 23);
+scr_gain_item(item.blizzardrune3, 23);
+scr_gain_item(item.infernorune3, 23);
+scr_gain_item(item.firerune3, 23);
+scr_gain_item(item.icerune3, 23);
+scr_gain_item(item.windrune3, 23);
+
 
 // Player HP
 global.playerMaxHp = 10;
 global.playerHp = global.playerMaxHp;
 
-//scr_gain_item(item.firerune1, 98);
-//scr_gain_item(item.firerune2, 98);
-//scr_gain_item(item.icerune1, 98);
-//scr_gain_item(item.icerune2, 98);
-//scr_gain_item(item.windrune1, 98);
-//scr_gain_item(item.windrune2, 98);
-
-//scr_gain_item(item.icerune1, 2);
-//global.inventory[# 5, 0] = item.icerune1;
-//scr_slot_modify_amount(5, 2, true);
-
-
+global.goldChance = 0
 
 //// Start the game music on a loop.
 //audio_play_sound(sndMusicGame, 0, 1, 1.0, undefined, 1.0);

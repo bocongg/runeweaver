@@ -16,8 +16,8 @@ function scr_init_inventory() {
 		windrune3,
 		frostfirerune2,
 		frostfirerune3,
-		snowstormrune2,
-		snowstormrune3,
+		blizzardrune2,
+		blizzardrune3,
 		infernorune2,
 		infernorune3,
 		prismrune3,
@@ -28,10 +28,10 @@ function scr_init_inventory() {
 	enum item_stat
 	 {
 	 name,
-	 //description,
-	 type,
-	 //damage,
-	 //health_gain,
+	 basicAttackName,
+	 basicAttackDescription,
+	 specialAttackName,
+	 specialAttackDescription,
 	 total
 	 }
 
@@ -52,10 +52,4 @@ function scr_init_inventory() {
 	global.mouse_slot = ds_grid_create(1, 2);
 	global.attack_slot = ds_grid_create(2,2);
 	global.weave_slot = ds_grid_create(4,2);
-
-	//scr_add_rune(item.firerune1, "Fire Rune Level 1");
-	//scr_add_rune(item.firerune2, "Fire Rune Level 2");
-	//scr_add_rune(item.icerune1, "Ice Rune Level 1");
-
-
 }

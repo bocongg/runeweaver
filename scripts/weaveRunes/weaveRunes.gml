@@ -90,13 +90,13 @@ function weaveRunes(){
 		global.weave_slot[# 2, 1] = 0;
 	}
 	
-	// Frostfire recipe
-	var canWeaveFrostfire = false;
+	// Frostfire 2 recipe
+	var canWeaveFrostfire2 = false;
 	
 	// Check if runes to weave are the same. If same, cannot weave Frostfire.
 	if (global.weave_slot[# 0, 0] == global.weave_slot[# 1, 0] == global.weave_slot[# 2, 0])
 	{
-		canWeaveFrostfire = false;	
+		canWeaveFrostfire2 = false;	
 	} 
 	
 	if ( (global.weave_slot[# 0, 0] == item.firerune1) && (global.weave_slot[# 1, 0] == item.firerune1) && (global.weave_slot[# 2, 0] == item.icerune1) ||
@@ -104,14 +104,14 @@ function weaveRunes(){
 		 (global.weave_slot[# 0, 0] == item.icerune1) && (global.weave_slot[# 1, 0] == item.firerune1) && (global.weave_slot[# 2, 0] == item.firerune1) ||
 		 (global.weave_slot[# 0, 0] == item.firerune1) && (global.weave_slot[# 1, 0] == item.icerune1) && (global.weave_slot[# 2, 0] == item.icerune1) ||
 		 (global.weave_slot[# 0, 0] == item.icerune1) && (global.weave_slot[# 1, 0] == item.firerune1) && (global.weave_slot[# 2, 0] == item.icerune1) ||
-		 (global.weave_slot[# 0, 0] == item.icerune1) && (global.weave_slot[# 1, 0] == item.icerune1) && (global.weave_slot[# 2, 0] == item.firerune1) 
+		 (global.weave_slot[# 0, 0] == item.icerune1) && (global.weave_slot[# 1, 0] == item.icerune1) && (global.weave_slot[# 2, 0] == item.firerune1)
 	)
 	{
-		canWeaveFrostfire = true;
+		canWeaveFrostfire2 = true;
 	}
 	
 	
-	if (canWeaveFrostfire)
+	if (canWeaveFrostfire2)
 	{
 		global.weave_slot[# 3, 0] = item.frostfirerune2;
 		global.weave_slot[# 3, 1] = 1;
@@ -124,13 +124,47 @@ function weaveRunes(){
 		global.weave_slot[# 2, 1] = 0;
 	}
 	
-	// Snowstorm recipe
-	var canWeaveSnowstorm = false;
+	// Frostfire 3 recipe
+	var canWeaveFrostfire3 = false;
 	
-	// Check if runes to weave are the same. If same, cannot weave Snowstorm.
+	// Check if runes to weave are the same. If same, cannot weave Frostfire.
 	if (global.weave_slot[# 0, 0] == global.weave_slot[# 1, 0] == global.weave_slot[# 2, 0])
 	{
-		canWeaveSnowstorm = false;	
+		canWeaveFrostfire3 = false;	
+	} 
+	
+	if ( (global.weave_slot[# 0, 0] == item.firerune2) && (global.weave_slot[# 1, 0] == item.firerune2) && (global.weave_slot[# 2, 0] == item.icerune2) ||
+		 (global.weave_slot[# 0, 0] == item.firerune2) && (global.weave_slot[# 1, 0] == item.icerune2) && (global.weave_slot[# 2, 0] == item.firerune2) ||
+		 (global.weave_slot[# 0, 0] == item.icerune2) && (global.weave_slot[# 1, 0] == item.firerune2) && (global.weave_slot[# 2, 0] == item.firerune2) ||
+		 (global.weave_slot[# 0, 0] == item.firerune2) && (global.weave_slot[# 1, 0] == item.icerune2) && (global.weave_slot[# 2, 0] == item.icerune2) ||
+		 (global.weave_slot[# 0, 0] == item.icerune2) && (global.weave_slot[# 1, 0] == item.firerune2) && (global.weave_slot[# 2, 0] == item.icerune2) ||
+		 (global.weave_slot[# 0, 0] == item.icerune2) && (global.weave_slot[# 1, 0] == item.icerune2) && (global.weave_slot[# 2, 0] == item.firerune2) 
+	)
+	{
+		canWeaveFrostfire3 = true;
+	}
+	
+	
+	if (canWeaveFrostfire3)
+	{
+		global.weave_slot[# 3, 0] = item.frostfirerune3;
+		global.weave_slot[# 3, 1] = 1;
+		
+		global.weave_slot[# 0, 0] = item.none;
+		global.weave_slot[# 0, 1] = 0;
+		global.weave_slot[# 1, 0] = item.none;
+		global.weave_slot[# 1, 1] = 0;
+		global.weave_slot[# 2, 0] = item.none;
+		global.weave_slot[# 2, 1] = 0;
+	}
+	
+	// Blizzard 2 recipe
+	var canWeaveBlizzard2 = false;
+	
+	// Check if runes to weave are the same. If same, cannot weave Blizzard.
+	if (global.weave_slot[# 0, 0] == global.weave_slot[# 1, 0] == global.weave_slot[# 2, 0])
+	{
+		canWeaveBlizzard2 = false;	
 	}
 	
 	if ( (global.weave_slot[# 0, 0] == item.icerune1) && (global.weave_slot[# 1, 0] == item.icerune1) && (global.weave_slot[# 2, 0] == item.windrune1) ||
@@ -141,12 +175,45 @@ function weaveRunes(){
 		 (global.weave_slot[# 0, 0] == item.windrune1) && (global.weave_slot[# 1, 0] == item.windrune1) && (global.weave_slot[# 2, 0] == item.icerune1)
 	)
 	{
-		canWeaveSnowstorm = true;
+		canWeaveBlizzard2 = true;
 	}
 	
-	if (canWeaveSnowstorm)
+	if (canWeaveBlizzard2)
 	{
-		global.weave_slot[# 3, 0] = item.snowstormrune2;
+		global.weave_slot[# 3, 0] = item.blizzardrune2;
+		global.weave_slot[# 3, 1] = 1;
+		
+		global.weave_slot[# 0, 0] = item.none;
+		global.weave_slot[# 0, 1] = 0;
+		global.weave_slot[# 1, 0] = item.none;
+		global.weave_slot[# 1, 1] = 0;
+		global.weave_slot[# 2, 0] = item.none;
+		global.weave_slot[# 2, 1] = 0;
+	}
+	
+	// Blizzard 3 recipe
+	var canWeaveBlizzard3 = false;
+	
+	// Check if runes to weave are the same. If same, cannot weave Blizzard.
+	if (global.weave_slot[# 0, 0] == global.weave_slot[# 1, 0] == global.weave_slot[# 2, 0])
+	{
+		canWeaveBlizzard3 = false;	
+	}
+	
+	if ( (global.weave_slot[# 0, 0] == item.icerune2) && (global.weave_slot[# 1, 0] == item.icerune2) && (global.weave_slot[# 2, 0] == item.windrune2) ||
+		 (global.weave_slot[# 0, 0] == item.icerune2) && (global.weave_slot[# 1, 0] == item.windrune2) && (global.weave_slot[# 2, 0] == item.icerune2) ||
+		 (global.weave_slot[# 0, 0] == item.windrune2) && (global.weave_slot[# 1, 0] == item.icerune2) && (global.weave_slot[# 2, 0] == item.icerune2) ||
+		 (global.weave_slot[# 0, 0] == item.icerune2) && (global.weave_slot[# 1, 0] == item.windrune2) && (global.weave_slot[# 2, 0] == item.windrune2) ||
+		 (global.weave_slot[# 0, 0] == item.windrune2) && (global.weave_slot[# 1, 0] == item.icerune2) && (global.weave_slot[# 2, 0] == item.windrune2) ||
+		 (global.weave_slot[# 0, 0] == item.windrune2) && (global.weave_slot[# 1, 0] == item.windrune2) && (global.weave_slot[# 2, 0] == item.icerune2)
+	)
+	{
+		canWeaveBlizzard3 = true;
+	}
+	
+	if (canWeaveBlizzard3)
+	{
+		global.weave_slot[# 3, 0] = item.blizzardrune3;
 		global.weave_slot[# 3, 1] = 1;
 		
 		global.weave_slot[# 0, 0] = item.none;
@@ -157,13 +224,13 @@ function weaveRunes(){
 		global.weave_slot[# 2, 1] = 0;
 	}
 
-	// Inferno recipe
-	var canWeaveInferno = false;
+	// Inferno 2 recipe
+	var canWeaveInferno2 = false;
 	
 	// Check if runes to weave are the same. If same, cannot weave Inferno.
 	if (global.weave_slot[# 0, 0] == global.weave_slot[# 1, 0] == global.weave_slot[# 2, 0])
 	{
-		canWeaveInferno = false;	
+		canWeaveInferno2 = false;	
 	}
 	
 	if ( (global.weave_slot[# 0, 0] == item.windrune1) && (global.weave_slot[# 1, 0] == item.windrune1) && (global.weave_slot[# 2, 0] == item.firerune1) ||
@@ -174,12 +241,45 @@ function weaveRunes(){
 		 (global.weave_slot[# 0, 0] == item.firerune1) && (global.weave_slot[# 1, 0] == item.firerune1) && (global.weave_slot[# 2, 0] == item.windrune1)
 	)
 	{
-		canWeaveInferno = true;
+		canWeaveInferno2 = true;
 	}
 	
-	if (canWeaveInferno)
+	if (canWeaveInferno2)
 	{
 		global.weave_slot[# 3, 0] = item.infernorune2;
+		global.weave_slot[# 3, 1] = 1;
+		
+		global.weave_slot[# 0, 0] = item.none;
+		global.weave_slot[# 0, 1] = 0;
+		global.weave_slot[# 1, 0] = item.none;
+		global.weave_slot[# 1, 1] = 0;
+		global.weave_slot[# 2, 0] = item.none;
+		global.weave_slot[# 2, 1] = 0;
+	}
+	
+	// Inferno 3 recipe
+	var canWeaveInferno3 = false;
+	
+	// Check if runes to weave are the same. If same, cannot weave Inferno.
+	if (global.weave_slot[# 0, 0] == global.weave_slot[# 1, 0] == global.weave_slot[# 2, 0])
+	{
+		canWeaveInferno3 = false;	
+	}
+	
+	if ( (global.weave_slot[# 0, 0] == item.windrune2) && (global.weave_slot[# 1, 0] == item.windrune2) && (global.weave_slot[# 2, 0] == item.firerune2) ||
+		 (global.weave_slot[# 0, 0] == item.windrune2) && (global.weave_slot[# 1, 0] == item.firerune2) && (global.weave_slot[# 2, 0] == item.windrune2) ||
+		 (global.weave_slot[# 0, 0] == item.firerune2) && (global.weave_slot[# 1, 0] == item.windrune2) && (global.weave_slot[# 2, 0] == item.windrune2) ||
+		 (global.weave_slot[# 0, 0] == item.windrune2) && (global.weave_slot[# 1, 0] == item.firerune2) && (global.weave_slot[# 2, 0] == item.firerune2) ||
+		 (global.weave_slot[# 0, 0] == item.firerune2) && (global.weave_slot[# 1, 0] == item.windrune2) && (global.weave_slot[# 2, 0] == item.firerune2) ||
+		 (global.weave_slot[# 0, 0] == item.firerune2) && (global.weave_slot[# 1, 0] == item.firerune2) && (global.weave_slot[# 2, 0] == item.windrune2)
+	)
+	{
+		canWeaveInferno3 = true;
+	}
+	
+	if (canWeaveInferno3)
+	{
+		global.weave_slot[# 3, 0] = item.infernorune3;
 		global.weave_slot[# 3, 1] = 1;
 		
 		global.weave_slot[# 0, 0] = item.none;
@@ -206,12 +306,12 @@ function weaveRunes(){
 		 (global.weave_slot[# 0, 0] == item.windrune2) && (global.weave_slot[# 1, 0] == item.firerune2) && (global.weave_slot[# 2, 0] == item.icerune2) ||
 		 (global.weave_slot[# 0, 0] == item.windrune2) && (global.weave_slot[# 1, 0] == item.icerune2) && (global.weave_slot[# 2, 0] == item.firerune2) ||
 		 
-		 (global.weave_slot[# 0, 0] == item.frostfirerune2) && (global.weave_slot[# 1, 0] == item.snowstormrune2) && (global.weave_slot[# 2, 0] == item.infernorune2) ||
-		 (global.weave_slot[# 0, 0] == item.frostfirerune2) && (global.weave_slot[# 1, 0] == item.infernorune2) && (global.weave_slot[# 2, 0] == item.snowstormrune2) ||
-		 (global.weave_slot[# 0, 0] == item.snowstormrune2) && (global.weave_slot[# 1, 0] == item.frostfirerune2) && (global.weave_slot[# 2, 0] == item.infernorune2) ||
-		 (global.weave_slot[# 0, 0] == item.snowstormrune2) && (global.weave_slot[# 1, 0] == item.infernorune2) && (global.weave_slot[# 2, 0] == item.frostfirerune2) ||
-		 (global.weave_slot[# 0, 0] == item.infernorune2) && (global.weave_slot[# 1, 0] == item.frostfirerune2) && (global.weave_slot[# 2, 0] == item.snowstormrune2) ||
-		 (global.weave_slot[# 0, 0] == item.infernorune2) && (global.weave_slot[# 1, 0] == item.snowstormrune2) && (global.weave_slot[# 2, 0] == item.frostfirerune2)
+		 (global.weave_slot[# 0, 0] == item.frostfirerune2) && (global.weave_slot[# 1, 0] == item.blizzardrune2) && (global.weave_slot[# 2, 0] == item.infernorune2) ||
+		 (global.weave_slot[# 0, 0] == item.frostfirerune2) && (global.weave_slot[# 1, 0] == item.infernorune2) && (global.weave_slot[# 2, 0] == item.blizzardrune2) ||
+		 (global.weave_slot[# 0, 0] == item.blizzardrune2) && (global.weave_slot[# 1, 0] == item.frostfirerune2) && (global.weave_slot[# 2, 0] == item.infernorune2) ||
+		 (global.weave_slot[# 0, 0] == item.blizzardrune2) && (global.weave_slot[# 1, 0] == item.infernorune2) && (global.weave_slot[# 2, 0] == item.frostfirerune2) ||
+		 (global.weave_slot[# 0, 0] == item.infernorune2) && (global.weave_slot[# 1, 0] == item.frostfirerune2) && (global.weave_slot[# 2, 0] == item.blizzardrune2) ||
+		 (global.weave_slot[# 0, 0] == item.infernorune2) && (global.weave_slot[# 1, 0] == item.blizzardrune2) && (global.weave_slot[# 2, 0] == item.frostfirerune2)
 	)
 	{
 		canWeavePrism = true;
@@ -336,7 +436,14 @@ function weaveRunesCheck(){
 		 (global.weave_slot[# 0, 0] == item.icerune1) && (global.weave_slot[# 1, 0] == item.firerune1) && (global.weave_slot[# 2, 0] == item.firerune1) ||
 		 (global.weave_slot[# 0, 0] == item.firerune1) && (global.weave_slot[# 1, 0] == item.icerune1) && (global.weave_slot[# 2, 0] == item.icerune1) ||
 		 (global.weave_slot[# 0, 0] == item.icerune1) && (global.weave_slot[# 1, 0] == item.firerune1) && (global.weave_slot[# 2, 0] == item.icerune1) ||
-		 (global.weave_slot[# 0, 0] == item.icerune1) && (global.weave_slot[# 1, 0] == item.icerune1) && (global.weave_slot[# 2, 0] == item.firerune1) 
+		 (global.weave_slot[# 0, 0] == item.icerune1) && (global.weave_slot[# 1, 0] == item.icerune1) && (global.weave_slot[# 2, 0] == item.firerune1) ||
+		 
+		 (global.weave_slot[# 0, 0] == item.firerune2) && (global.weave_slot[# 1, 0] == item.firerune2) && (global.weave_slot[# 2, 0] == item.icerune2) ||
+		 (global.weave_slot[# 0, 0] == item.firerune2) && (global.weave_slot[# 1, 0] == item.icerune2) && (global.weave_slot[# 2, 0] == item.firerune2) ||
+		 (global.weave_slot[# 0, 0] == item.icerune2) && (global.weave_slot[# 1, 0] == item.firerune2) && (global.weave_slot[# 2, 0] == item.firerune2) ||
+		 (global.weave_slot[# 0, 0] == item.firerune2) && (global.weave_slot[# 1, 0] == item.icerune2) && (global.weave_slot[# 2, 0] == item.icerune2) ||
+		 (global.weave_slot[# 0, 0] == item.icerune2) && (global.weave_slot[# 1, 0] == item.firerune2) && (global.weave_slot[# 2, 0] == item.icerune2) ||
+		 (global.weave_slot[# 0, 0] == item.icerune2) && (global.weave_slot[# 1, 0] == item.icerune2) && (global.weave_slot[# 2, 0] == item.firerune2) 
 	)
 	{
 		canWeaveFrostfire = true;
@@ -353,13 +460,13 @@ function weaveRunesCheck(){
 	//}
 
 
-	// Weave snowstorm rune
-	var canWeaveSnowstorm = false;
+	// Weave Blizzard rune
+	var canWeaveBlizzard = false;
 	
-	// Check if runes to weave are the same. If same, cannot weave Snowstorm.
+	// Check if runes to weave are the same. If same, cannot weave Blizzard.
 	if (global.weave_slot[# 0, 0] == global.weave_slot[# 1, 0] == global.weave_slot[# 2, 0])
 	{
-		canWeaveSnowstorm = false;	
+		canWeaveBlizzard = false;	
 	}
 	
 	if ( (global.weave_slot[# 0, 0] == item.icerune1) && (global.weave_slot[# 1, 0] == item.icerune1) && (global.weave_slot[# 2, 0] == item.windrune1) ||
@@ -367,13 +474,20 @@ function weaveRunesCheck(){
 		 (global.weave_slot[# 0, 0] == item.windrune1) && (global.weave_slot[# 1, 0] == item.icerune1) && (global.weave_slot[# 2, 0] == item.icerune1) ||
 		 (global.weave_slot[# 0, 0] == item.icerune1) && (global.weave_slot[# 1, 0] == item.windrune1) && (global.weave_slot[# 2, 0] == item.windrune1) ||
 		 (global.weave_slot[# 0, 0] == item.windrune1) && (global.weave_slot[# 1, 0] == item.icerune1) && (global.weave_slot[# 2, 0] == item.windrune1) ||
-		 (global.weave_slot[# 0, 0] == item.windrune1) && (global.weave_slot[# 1, 0] == item.windrune1) && (global.weave_slot[# 2, 0] == item.icerune1)
+		 (global.weave_slot[# 0, 0] == item.windrune1) && (global.weave_slot[# 1, 0] == item.windrune1) && (global.weave_slot[# 2, 0] == item.icerune1) ||
+		 
+		 (global.weave_slot[# 0, 0] == item.icerune2) && (global.weave_slot[# 1, 0] == item.icerune2) && (global.weave_slot[# 2, 0] == item.windrune2) ||
+		 (global.weave_slot[# 0, 0] == item.icerune2) && (global.weave_slot[# 1, 0] == item.windrune2) && (global.weave_slot[# 2, 0] == item.icerune2) ||
+		 (global.weave_slot[# 0, 0] == item.windrune2) && (global.weave_slot[# 1, 0] == item.icerune2) && (global.weave_slot[# 2, 0] == item.icerune2) ||
+		 (global.weave_slot[# 0, 0] == item.icerune2) && (global.weave_slot[# 1, 0] == item.windrune2) && (global.weave_slot[# 2, 0] == item.windrune2) ||
+		 (global.weave_slot[# 0, 0] == item.windrune2) && (global.weave_slot[# 1, 0] == item.icerune2) && (global.weave_slot[# 2, 0] == item.windrune2) ||
+		 (global.weave_slot[# 0, 0] == item.windrune2) && (global.weave_slot[# 1, 0] == item.windrune2) && (global.weave_slot[# 2, 0] == item.icerune2)
 	)
 	{
-		canWeaveSnowstorm = true;
+		canWeaveBlizzard = true;
 	}
 	
-	if ((canWeaveSnowstorm) && (global.weave_slot[# 3, 0] == item.none) && (global.weave_slot[# 3, 0] != item.mysteryrune))
+	if ((canWeaveBlizzard) && (global.weave_slot[# 3, 0] == item.none) && (global.weave_slot[# 3, 0] != item.mysteryrune))
 	{
 		global.weave_slot[# 3, 0] = item.mysteryrune;
 	}
@@ -393,7 +507,14 @@ function weaveRunesCheck(){
 		 (global.weave_slot[# 0, 0] == item.firerune1) && (global.weave_slot[# 1, 0] == item.windrune1) && (global.weave_slot[# 2, 0] == item.windrune1) ||
 		 (global.weave_slot[# 0, 0] == item.windrune1) && (global.weave_slot[# 1, 0] == item.firerune1) && (global.weave_slot[# 2, 0] == item.firerune1) ||
 		 (global.weave_slot[# 0, 0] == item.firerune1) && (global.weave_slot[# 1, 0] == item.windrune1) && (global.weave_slot[# 2, 0] == item.firerune1) ||
-		 (global.weave_slot[# 0, 0] == item.firerune1) && (global.weave_slot[# 1, 0] == item.firerune1) && (global.weave_slot[# 2, 0] == item.windrune1)
+		 (global.weave_slot[# 0, 0] == item.firerune1) && (global.weave_slot[# 1, 0] == item.firerune1) && (global.weave_slot[# 2, 0] == item.windrune1) ||
+		 
+		 (global.weave_slot[# 0, 0] == item.windrune2) && (global.weave_slot[# 1, 0] == item.windrune2) && (global.weave_slot[# 2, 0] == item.firerune2) ||
+		 (global.weave_slot[# 0, 0] == item.windrune2) && (global.weave_slot[# 1, 0] == item.firerune2) && (global.weave_slot[# 2, 0] == item.windrune2) ||
+		 (global.weave_slot[# 0, 0] == item.firerune2) && (global.weave_slot[# 1, 0] == item.windrune2) && (global.weave_slot[# 2, 0] == item.windrune2) ||
+		 (global.weave_slot[# 0, 0] == item.windrune2) && (global.weave_slot[# 1, 0] == item.firerune2) && (global.weave_slot[# 2, 0] == item.firerune2) ||
+		 (global.weave_slot[# 0, 0] == item.firerune2) && (global.weave_slot[# 1, 0] == item.windrune2) && (global.weave_slot[# 2, 0] == item.firerune2) ||
+		 (global.weave_slot[# 0, 0] == item.firerune2) && (global.weave_slot[# 1, 0] == item.firerune2) && (global.weave_slot[# 2, 0] == item.windrune2)
 	)
 	{
 		canWeaveInferno = true;
@@ -421,12 +542,12 @@ function weaveRunesCheck(){
 		 (global.weave_slot[# 0, 0] == item.windrune2) && (global.weave_slot[# 1, 0] == item.firerune2) && (global.weave_slot[# 2, 0] == item.icerune2) ||
 		 (global.weave_slot[# 0, 0] == item.windrune2) && (global.weave_slot[# 1, 0] == item.icerune2) && (global.weave_slot[# 2, 0] == item.firerune2) ||
 		 
-		 (global.weave_slot[# 0, 0] == item.frostfirerune2) && (global.weave_slot[# 1, 0] == item.snowstormrune2) && (global.weave_slot[# 2, 0] == item.infernorune2) ||
-		 (global.weave_slot[# 0, 0] == item.frostfirerune2) && (global.weave_slot[# 1, 0] == item.infernorune2) && (global.weave_slot[# 2, 0] == item.snowstormrune2) ||
-		 (global.weave_slot[# 0, 0] == item.snowstormrune2) && (global.weave_slot[# 1, 0] == item.frostfirerune2) && (global.weave_slot[# 2, 0] == item.infernorune2) ||
-		 (global.weave_slot[# 0, 0] == item.snowstormrune2) && (global.weave_slot[# 1, 0] == item.infernorune2) && (global.weave_slot[# 2, 0] == item.frostfirerune2) ||
-		 (global.weave_slot[# 0, 0] == item.infernorune2) && (global.weave_slot[# 1, 0] == item.frostfirerune2) && (global.weave_slot[# 2, 0] == item.snowstormrune2) ||
-		 (global.weave_slot[# 0, 0] == item.infernorune2) && (global.weave_slot[# 1, 0] == item.snowstormrune2) && (global.weave_slot[# 2, 0] == item.frostfirerune2)
+		 (global.weave_slot[# 0, 0] == item.frostfirerune2) && (global.weave_slot[# 1, 0] == item.blizzardrune2) && (global.weave_slot[# 2, 0] == item.infernorune2) ||
+		 (global.weave_slot[# 0, 0] == item.frostfirerune2) && (global.weave_slot[# 1, 0] == item.infernorune2) && (global.weave_slot[# 2, 0] == item.blizzardrune2) ||
+		 (global.weave_slot[# 0, 0] == item.blizzardrune2) && (global.weave_slot[# 1, 0] == item.frostfirerune2) && (global.weave_slot[# 2, 0] == item.infernorune2) ||
+		 (global.weave_slot[# 0, 0] == item.blizzardrune2) && (global.weave_slot[# 1, 0] == item.infernorune2) && (global.weave_slot[# 2, 0] == item.frostfirerune2) ||
+		 (global.weave_slot[# 0, 0] == item.infernorune2) && (global.weave_slot[# 1, 0] == item.frostfirerune2) && (global.weave_slot[# 2, 0] == item.blizzardrune2) ||
+		 (global.weave_slot[# 0, 0] == item.infernorune2) && (global.weave_slot[# 1, 0] == item.blizzardrune2) && (global.weave_slot[# 2, 0] == item.frostfirerune2)
 	)
 	{
 		canWeavePrism = true;

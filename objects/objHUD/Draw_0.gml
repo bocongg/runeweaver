@@ -16,7 +16,7 @@ var _goldString = "X " + string(global.gold);
 image_speed = 0.2;
 
 // Calculate the top-right corner of the view
-var gold_x = _camX + 1700;
+var gold_x = _camX + 1600;
 var gold_y = _camY + 50; // Adjust the vertical offset as needed
 
 
