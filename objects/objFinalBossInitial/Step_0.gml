@@ -47,31 +47,6 @@ if(image_blend == c_red) {
 	}
 }
 
-
-//switch(enraged){
-//	case 1: //enraged
-//		spd = 0;
-//		chaseSpd = 3;
-//		dir = 0;
-//		xspd = 0;
-//		yspd = 0; 
-
-//		face = 1;
-
-//		//shooting state
-//		cooldownTime = 4*60; //4 seconds 
-//		shootTimer = irandom(cooldownTime);
-//		windupTime = 60;	//stand and freeze
-//		recoverTime = 45;	//time before start chasing player
-//		bulletInst = noone;
-
-
-
-
-
-//}
-
-
 //state machine
 switch(state) {
 
@@ -183,30 +158,14 @@ switch(state) {
 
 //death
 if hp <= 0 {
-	if (!enraged){
-		enraged += 1;
-		hp = maxHp*5;
-		
-		spd = 0;
-		chaseSpd = 3;
-		dir = 0;
-		xspd = 0;
-		yspd = 0; 
-
-		face = 1;
-
-		//shooting state
-		cooldownTime = 4*60; //4 seconds 
-		shootTimer = irandom(cooldownTime);
-		windupTime = 60;	//stand and freeze
-		recoverTime = 45;	//time before start chasing player
-		bulletInst = noone;
-		
-
-	} else {
-		//destroy self
-		instance_destroy();
-	}
+	//destroy self
+	instance_destroy();
+	var lay_id = layer_get_id("Background");
+	var back_id = layer_background_get_id(lay_id);
+	layer_background_sprite(back_id, sprFinalBossBgEnraged);
+	
+	instance_create_layer(1920/2, 1080/2, "PauseScreen", objFinalBossCutscene);
+	//instance_create_layer(x, y, "Instances", objFinalBossEnraged);
 }
 
 // Inherit the parent event

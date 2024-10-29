@@ -126,7 +126,9 @@ scr_gain_item(item.windrune3, 23);
 global.playerMaxHp = 10;
 global.playerHp = global.playerMaxHp;
 
-global.goldChance = 0
+global.energyDrink = 0;
+
+global.goldChance = 0;
 
 //// Start the game music on a loop.
 //audio_play_sound(sndMusicGame, 0, 1, 1.0, undefined, 1.0);

@@ -1,9 +1,13 @@
 //damage setup 
 get_damaged_create(global.playerMaxHp, true);
 
+if (!variable_global_exists("moveSpd")){
+	global.moveSpd = 8;
+}
+
 // varaibles for movement
 	moveDir = 0;
-	moveSpd = 8;
+	moveSpd = global.moveSpd
 	xspd = 0;
 	yspd = 0;
 

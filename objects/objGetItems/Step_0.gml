@@ -50,6 +50,8 @@ if (mouse_over)
 			// Add rune to inventory
 			if (_icon == sprEnergyDrink) {
 				global.gold -= 60;
+				global.energyDrink += 1;
+				global.moveSpd += global.moveSpd + (global.energyDrink*0.25*global.moveSpd);
 
 			} else if (_icon == sprFishTreat) {
 				global.gold -= 60;

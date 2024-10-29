@@ -24,5 +24,3 @@ bulletInst = noone;
 	
 bulletXoff = 5;
 bulletYoff = -20;
-
-enraged = 0;
