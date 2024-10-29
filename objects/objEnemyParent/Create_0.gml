@@ -1,4 +1,4 @@
-event_inherited();
+event_inherited(); // --> damage = 1; hitconfirm = false;
 
 get_damaged_create();
 
