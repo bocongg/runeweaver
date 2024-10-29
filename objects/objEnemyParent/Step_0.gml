@@ -71,7 +71,7 @@ if instance_exists(objPlayer) {
 	
 	//set the depth
 	depth = -y;
-	
+
 //death
 if hp <= 0 {
 	//determine if we should drop an item
