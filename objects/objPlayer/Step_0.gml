@@ -141,11 +141,11 @@ if (!chestOpened && room != rmShop && room != rmRest && room != rmEventA && room
 	}
 }
 
-if ((room == rmFinalBoss) && (instance_number(objBasicEnemy) == 0) && (instance_number(objEliteEnemy) == 0)){
-	if (!instance_exists(objGameWinScreen)){
-		instance_create_layer(1920/2, 1080/2, "UpgradeScreen", objGameWinScreen);
-	}
-}
+//if ((room == rmFinalBoss) && (instance_number(objBasicEnemy) == 0) && (instance_number(objEliteEnemy) == 0)){
+//	if (!instance_exists(objGameWinScreen)){
+//		instance_create_layer(1920/2, 1080/2, "UpgradeScreen", objGameWinScreen);
+//	}
+//}
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Set basic attack based on rune equipped

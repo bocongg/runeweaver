@@ -34,7 +34,7 @@ xpos[15] = 1732; ypos[15] = 557;
 
 
 if (!variable_global_exists("stage")) {
-    global.stage = 0;
+    global.stage = 8;
 }
 
 
