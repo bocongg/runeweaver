@@ -183,6 +183,6 @@ function get_damaged (_damageObj, _iframes = false, _isEnemy = true) {
 			objSpecialWind,
 			30,
 			3, 
-			40
+			30
 		)
 	}
