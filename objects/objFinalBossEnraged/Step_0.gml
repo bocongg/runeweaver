@@ -99,7 +99,7 @@ switch(state) {
 			
 			//shoot the bullet after the windup time is over
 			if shootTimer == windupTime && instance_exists(bulletInst) {
-				
+				audio_play_sound(sndEnemyAttack, 0, 0, 1.0, undefined, 1.0);
 				//set our bullet's state to the movement state
 				//bulletInst.state = 1;
 				show_debug_message("before freezeEnemy");

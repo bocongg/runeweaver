@@ -20,9 +20,9 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 	// If left mouse button is pressed...
 	if (mouse_check_button_pressed(mb_left))
 	{
-		// Play click sound effect.
-		audio_play_sound(sndButtonClick, 0, 0, 1.0, undefined, 1.0);
-	
+		if (canWeave) {
+			audio_play_sound(sndWeave, 0, 0, 1.0, undefined, 1.0);
+		}
 		// Sets click state to true.
 		is_clicked = true;
 	}

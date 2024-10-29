@@ -74,6 +74,7 @@ if instance_exists(objPlayer) {
 
 //death
 if hp <= 0 {
+	audio_play_sound(sndEnemyDeath, 0, 0, 1.0, undefined, 1.0);
 	for (var i = 0; i < irandom_range(3,4); i++){
 		randomise();
 		instance_create_layer(x + lengthdir_x(200, irandom(360)), y + lengthdir_y(200, irandom(360)), "Instances", objSpiderEnemyBaby);

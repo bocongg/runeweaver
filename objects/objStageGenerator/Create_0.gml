@@ -44,9 +44,7 @@ randomise();
 var objRmList = [objRmNode1, objRmNode2];
 
 for (var i = 0; i < 2; i+=1){
-	//var randomRm = choose(sprRmCombat, sprRmEvent);
-	//var randomRm =  sprRmEvent;
-	var randomRm =  sprRmShop;
+	var randomRm = choose(sprRmCombat, sprRmEvent);
 	object_set_sprite(objRmList[i], randomRm);
 }
 
@@ -54,11 +52,11 @@ for (var i = 0; i < 2; i+=1){
 objRmList = [objRmNode3, objRmNode4, objRmNode5];
 
 for (var i = 0; i < 3; i+=1){
-	var randomRm = choose(sprRmCombat, sprRmEvent, sprRmTreasure);
+	var randomRm = choose(sprRmCombat, sprRmEvent, sprRmShop, sprRmTreasure);
 	object_set_sprite(objRmList[i], randomRm);
 }
 
-//Stage 4 generation - Combat, Event, Treasure, Shop
+//Stage 4 generation - Combat
 objRmList = [objRmNode6, objRmNode7];
 
 for (var i = 0; i < 2; i+=1){
@@ -72,7 +70,7 @@ for (var i = 0; i < 2; i+=1){
 objRmList = [objRmNode9, objRmNode10];
 
 for (var i = 0; i < 2; i+=1){
-	var randomRm = choose(sprRmCombat, sprRmEvent, sprRmTreasure);
+	var randomRm = choose(sprRmCombat, sprRmEvent, sprRmShop, sprRmTreasure);
 	object_set_sprite(objRmList[i], randomRm);
 }
 
@@ -80,7 +78,7 @@ for (var i = 0; i < 2; i+=1){
 objRmList = [objRmNode11, objRmNode12, objRmNode13];
 
 for (var i = 0; i < 3; i+=1){
-	var randomRm = choose(sprRmCombat, sprRmEvent, sprRmTreasure);
+	var randomRm = choose(sprRmCombat, sprRmEvent, sprRmShop, sprRmTreasure);
 	object_set_sprite(objRmList[i], randomRm);
 }
 

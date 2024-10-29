@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"getTreasure",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"getTreasure",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

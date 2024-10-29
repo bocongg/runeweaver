@@ -10,8 +10,8 @@
   "name":"objFinalBossCutscene",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Transition",
+    "path":"folders/Objects/Transition.yy",
   },
   "parentObjectId":null,
   "persistent":false,

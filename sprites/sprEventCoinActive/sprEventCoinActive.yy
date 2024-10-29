@@ -30,7 +30,7 @@
   "origin":4,
   "parent":{
     "name":"Event Room",
-    "path":"folders/Sprites/Background/Event Room.yy",
+    "path":"folders/Sprites/Interactables/Event Room.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -12,8 +12,8 @@
   "duration":7.512,
   "name":"sndFinalBossGrowl",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"FInal Boss",
+    "path":"folders/Sounds/FInal Boss.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

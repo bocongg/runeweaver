@@ -1,9 +1,10 @@
 //global.stage += 1;
 
-audio_stop_sound(sndMusicGame);
-audio_stop_sound(sndRmRestBGM);
-audio_stop_sound(sndRmRestFountain);
-audio_sound_gain(sndMusicMenu, 1, 1000);
+audio_stop_sound(sndCombatBGM);
+audio_stop_sound(sndRestBGM);
+audio_stop_sound(sndRestFountain);
+audio_stop_sound(sndEventBGM);
+audio_sound_gain(sndStartBGM, 1, 1000);
 
 
 //room_goto(rmMapOverview);

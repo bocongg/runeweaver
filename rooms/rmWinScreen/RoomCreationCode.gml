@@ -5,6 +5,7 @@ if (!audio_is_playing(sndGameWin)){
 
 instance_destroy(objEquipBasic);
 instance_destroy(objEquipSpecial);
+instance_destroy(objHUD);
 
 if (!instance_exists(objPauseButton)){
 	instance_create_layer(1824, 96, "Buttons", objPauseButton)	

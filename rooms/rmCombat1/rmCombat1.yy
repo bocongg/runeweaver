@@ -8,13 +8,6 @@
   "instanceCreationOrder":[
     {"name":"inst_5D9FDDEB_1_1_1_1","path":"rooms/rmCombat1/rmCombat1.yy",},
     {"name":"inst_13A9FCB_1_1_1_1","path":"rooms/rmCombat1/rmCombat1.yy",},
-    {"name":"inst_29F1D5C8_1_1_1_1","path":"rooms/rmCombat1/rmCombat1.yy",},
-    {"name":"inst_E007661_1_1_1_1","path":"rooms/rmCombat1/rmCombat1.yy",},
-    {"name":"inst_6583698E_1_1_1_1","path":"rooms/rmCombat1/rmCombat1.yy",},
-    {"name":"inst_59582B54_1_1_1_1","path":"rooms/rmCombat1/rmCombat1.yy",},
-    {"name":"inst_6E756CD3_1_1_1_1","path":"rooms/rmCombat1/rmCombat1.yy",},
-    {"name":"inst_6D840A3B_1_1_1_1","path":"rooms/rmCombat1/rmCombat1.yy",},
-    {"name":"inst_5A630775_1_1_1_1","path":"rooms/rmCombat1/rmCombat1.yy",},
     {"name":"inst_565D64C6","path":"rooms/rmCombat1/rmCombat1.yy",},
     {"name":"inst_6D35A4B3","path":"rooms/rmCombat1/rmCombat1.yy",},
     {"name":"inst_17F13D5A","path":"rooms/rmCombat1/rmCombat1.yy",},
@@ -24,6 +17,9 @@
     {"name":"inst_139A886A","path":"rooms/rmCombat1/rmCombat1.yy",},
     {"name":"inst_D176F0","path":"rooms/rmCombat1/rmCombat1.yy",},
     {"name":"inst_3E83B15D","path":"rooms/rmCombat1/rmCombat1.yy",},
+    {"name":"inst_44EAA57E","path":"rooms/rmCombat1/rmCombat1.yy",},
+    {"name":"inst_7AB3B881","path":"rooms/rmCombat1/rmCombat1.yy",},
+    {"name":"inst_6ED6F6D0","path":"rooms/rmCombat1/rmCombat1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -41,13 +37,9 @@
     {"$GMRInstanceLayer":"","%Name":"UpgradeScreenBase","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"UpgradeScreenBase","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":700,"effectEnabled":true,"effectType":null,"gridX":1,"gridY":1,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_5D9FDDEB_1_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5D9FDDEB_1_1_1_1","objectId":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":314.0,"y":290.0,},
-        {"$GMRInstance":"v1","%Name":"inst_29F1D5C8_1_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_29F1D5C8_1_1_1_1","objectId":{"name":"objLionEnemy","path":"objects/objLionEnemy/objLionEnemy.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":856.0,"y":711.0,},
-        {"$GMRInstance":"v1","%Name":"inst_E007661_1_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":true,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_E007661_1_1_1_1","objectId":{"name":"objLionEnemy","path":"objects/objLionEnemy/objLionEnemy.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1006.0,"y":427.0,},
-        {"$GMRInstance":"v1","%Name":"inst_6583698E_1_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":true,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6583698E_1_1_1_1","objectId":{"name":"objEliteEnemy","path":"objects/objEliteEnemy/objEliteEnemy.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":793.0,"y":426.0,},
-        {"$GMRInstance":"v1","%Name":"inst_59582B54_1_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":true,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_59582B54_1_1_1_1","objectId":{"name":"objEliteEnemy","path":"objects/objEliteEnemy/objEliteEnemy.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":739.0,"y":582.0,},
-        {"$GMRInstance":"v1","%Name":"inst_6E756CD3_1_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6E756CD3_1_1_1_1","objectId":{"name":"objLionEnemy","path":"objects/objLionEnemy/objLionEnemy.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1034.0,"y":648.0,},
-        {"$GMRInstance":"v1","%Name":"inst_6D840A3B_1_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":true,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6D840A3B_1_1_1_1","objectId":{"name":"objLionEnemy","path":"objects/objLionEnemy/objLionEnemy.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1040.0,"y":608.0,},
-        {"$GMRInstance":"v1","%Name":"inst_5A630775_1_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5A630775_1_1_1_1","objectId":{"name":"objLionEnemy","path":"objects/objLionEnemy/objLionEnemy.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":992.0,"y":432.0,},
+        {"$GMRInstance":"v1","%Name":"inst_44EAA57E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_44EAA57E","objectId":{"name":"objLizardEnemy","path":"objects/objLizardEnemy/objLizardEnemy.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1495.0,"y":391.0,},
+        {"$GMRInstance":"v1","%Name":"inst_7AB3B881","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7AB3B881","objectId":{"name":"objLizardEnemy","path":"objects/objLizardEnemy/objLizardEnemy.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1687.0,"y":664.0,},
+        {"$GMRInstance":"v1","%Name":"inst_6ED6F6D0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6ED6F6D0","objectId":{"name":"objWormEnemy","path":"objects/objWormEnemy/objWormEnemy.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1200.0,"y":455.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets_1","assets":[
         {"$GMRSpriteGraphic":"","%Name":"graphic_2657C796","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":true,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_2657C796","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sprRmUpnstairsRight","path":"sprites/sprRmUpnstairsRight/sprRmUpnstairsRight.yy",},"x":1840.0,"y":928.0,},
@@ -67,8 +59,8 @@
   ],
   "name":"rmCombat1",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"Combat",
+    "path":"folders/Rooms/Combat.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

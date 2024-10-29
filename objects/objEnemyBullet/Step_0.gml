@@ -15,7 +15,7 @@ switch(state) {
 	
 	//shoot or travel
 	case 1:
-		
+
 		//movement
 		xspd = lengthdir_x(spd, dir);
 		yspd = lengthdir_y(spd, dir);

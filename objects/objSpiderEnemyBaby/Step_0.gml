@@ -74,6 +74,7 @@ if instance_exists(objPlayer) {
 
 //death
 if hp <= 0 {
+	audio_play_sound(sndEnemyDeath, 0, 0, 1.0, undefined, 1.0);
 	//determine if we should drop an item
 	var _chance = irandom(100);
 	

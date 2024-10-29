@@ -32,7 +32,7 @@ if (mouse_over)
 	if (mouse_check_button_pressed(mb_left))
 	{
 		// Play select sound effect.
-		audio_play_sound(sndButtonClick, 0, 0, 1.0, undefined, 1.0);
+		audio_play_sound(sndRuneSelect, 0, 0, 1.0, undefined, 1.0);
 		
 		// Sets click state to true.
 		is_clicked = true;
