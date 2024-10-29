@@ -127,7 +127,7 @@ if global.playerHp <= 0 {
 	instance_destroy();
 }
 
-if (!chestOpened && room != rmShop && room != rmRest && room != rmEventA && room != rmEventB && room != rmEventC && room != rmFinalBoss) {
+if (!chestOpened && room != rmWinScreen && room != rmShop && room != rmRest && room != rmEventA && room != rmEventB && room != rmEventC && room != rmFinalBoss) {
 	if (instance_number(objBasicEnemy) == 0 && instance_number(objEliteEnemy) == 0){
 		if (global.stage == 1){
 			instance_create_layer(1920/2, 1080/2, "Instances", objChest);
@@ -140,12 +140,6 @@ if (!chestOpened && room != rmShop && room != rmRest && room != rmEventA && room
 		chestOpened = true;
 	}
 }
-
-//if ((room == rmFinalBoss) && (instance_number(objBasicEnemy) == 0) && (instance_number(objEliteEnemy) == 0)){
-//	if (!instance_exists(objGameWinScreen)){
-//		instance_create_layer(1920/2, 1080/2, "UpgradeScreen", objGameWinScreen);
-//	}
-//}
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Set basic attack based on rune equipped
