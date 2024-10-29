@@ -14,6 +14,7 @@
     {"name":"inst_7F1D42D2","path":"rooms/rmMapOverview/rmMapOverview.yy",},
     {"name":"inst_3A9073DE","path":"rooms/rmMapOverview/rmMapOverview.yy",},
     {"name":"inst_63E262DD","path":"rooms/rmMapOverview/rmMapOverview.yy",},
+    {"name":"inst_36B45352","path":"rooms/rmMapOverview/rmMapOverview.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -35,7 +36,9 @@
     {"$GMRInstanceLayer":"","%Name":"UpgradeScreenBase","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_28C45D04","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_28C45D04","objectId":{"name":"objInvButton","path":"objects/objInvButton/objInvButton.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1664.0,"y":992.0,},
       ],"layers":[],"name":"UpgradeScreenBase","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
-    {"$GMRInstanceLayer":"","%Name":"Instances","depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+    {"$GMRInstanceLayer":"","%Name":"Instances","depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"$GMRInstance":"v1","%Name":"inst_36B45352","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_36B45352","objectId":{"name":"objTraining","path":"objects/objTraining/objTraining.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":96.0,"y":64.0,},
+      ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets_1","assets":[
         {"$GMRSpriteGraphic":"","%Name":"graphic_75AC99E0","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_75AC99E0","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":0.7,"scaleY":0.7,"spriteId":{"name":"sprMapLegend","path":"sprites/sprMapLegend/sprMapLegend.yy",},"x":1723.0,"y":263.0,},
         {"$GMRSpriteGraphic":"","%Name":"graphic_2188A760","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":2.0,"ignore":true,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_2188A760","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sprRmCombat","path":"sprites/sprRmCombat/sprRmCombat.yy",},"x":384.0,"y":559.0,},

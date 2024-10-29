@@ -160,11 +160,13 @@ switch(state) {
 if hp <= 0 {
 	//destroy self
 	instance_destroy();
+	effect_create_above(ef_smokeup, x, y, 2, c_red);
+	
 	var lay_id = layer_get_id("Background");
 	var back_id = layer_background_get_id(lay_id);
 	layer_background_sprite(back_id, sprFinalBossBgEnraged);
 	
-	instance_create_layer(1920/2, 1080/2, "PauseScreen", objFinalBossCutscene);
+	//instance_create_layer(1920/2, 1080/2, "PauseScreen", objFinalBossCutscene);
 	//instance_create_layer(x, y, "Instances", objFinalBossEnraged);
 }
 

@@ -127,8 +127,8 @@ if global.playerHp <= 0 {
 	instance_destroy();
 }
 
-if (!chestOpened && room != rmWinScreen && room != rmShop && room != rmRest && room != rmEventA && room != rmEventB && room != rmEventC && room != rmFinalBoss) {
-	if (instance_number(objBasicEnemy) == 0 && instance_number(objEliteEnemy) == 0){
+if (!chestOpened && room != rmTraining && room != rmWinScreen && room != rmShop && room != rmRest && room != rmEventA && room != rmEventB && room != rmEventC && room != rmFinalBoss) {
+	if (instance_number(objEnemyParent) == 0){
 		if (global.stage == 1){
 			instance_create_layer(1920/2, 1080/2, "Instances", objChest);
 			instance_create_layer(959.5, 389, "Instances", objInteractableTooltip);
@@ -140,6 +140,17 @@ if (!chestOpened && room != rmWinScreen && room != rmShop && room != rmRest && r
 		chestOpened = true;
 	}
 }
+
+if (instance_number(objFinalBossInitial) == 1) {
+	bossEncounter = true;
+}
+
+if ((room == rmFinalBoss || room == rmTraining) && instance_number(objFinalBossInitial) == 0 && bossEncounter && !bossEnraged){
+	alarm_set(0, 60);
+	bossEnraged = true;	
+}
+
+
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Set basic attack based on rune equipped

@@ -33,4 +33,5 @@ if (!variable_global_exists("moveSpd")){
 	specialAttack = global.attackList.basicAttack;
 	
 	chestOpened = false;
-	gameWin = false;
+	bossEncounter = false;
+	bossEnraged = false;
