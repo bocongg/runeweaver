@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"Shop Room",
-    "path":"folders/Sprites/Background/Shop Room.yy",
+    "path":"folders/Sprites/Interactables/Shop Room.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

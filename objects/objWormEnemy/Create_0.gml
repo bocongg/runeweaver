@@ -23,7 +23,7 @@ face = 1;
 state = 0; 
 
 //shooting state
-cooldownTime = 4*60; //4 seconds 
+cooldownTime = 5*60; //4 seconds 
 shootTimer = 0;
 bulletInst = noone;
 	

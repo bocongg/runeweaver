@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"Rest Room",
-    "path":"folders/Sprites/Background/Rest Room.yy",
+    "path":"folders/Sprites/Interactables/Rest Room.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

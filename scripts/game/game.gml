@@ -81,6 +81,7 @@ function get_damaged (_damageObj, _iframes = false, _isEnemy = true) {
 						global.playerHp -= _inst.damage;
 						_hitConfirm = true;
 						_inst.destroy = true;
+						audio_play_sound(sndPlayerTakeDmg, 0, 0, 1.0, undefined, 1.0);
 					}
 				}
 			}

@@ -42,6 +42,9 @@ if  (!instance_exists(objGet3RuneScreen) && !instance_exists(objInventory)){
 					if (nodeSpr == sprRmShop) {
 						_inst.targetRoom = rmShop;
 					} else
+					if (nodeSpr == sprRmTreasure) {
+						_inst.targetRoom = rmTreasure;
+					} else
 					if (nodeSpr == sprRmEvent) {
 						//if (!specialRune) {
 						//	_inst.targetRoom = rmEventC;

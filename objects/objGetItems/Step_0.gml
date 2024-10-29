@@ -44,16 +44,20 @@ if (mouse_over)
 		// Checks for mouse release.
 		if (mouse_check_button_released(mb_left))
 		{
+			audio_play_sound(sndPurchase, 0, 0, 1.0, undefined, 1.0);
+			
 			// Set variables for card stats.
 			var _icon = ds_map_find_value(upgrade_data, "icon");
 
-			// Add rune to inventory
+			// Add shop items
 			if (_icon == sprEnergyDrink) {
 				global.gold -= 60;
 				global.energyDrink += 1;
 				global.moveSpd += global.moveSpd + (global.energyDrink*0.25*global.moveSpd);
 
 			} else if (_icon == sprFishTreat) {
+				audio_play_sound(sndPlayerGainHealth, 0, 0, 1.0, undefined, 1.0);
+				
 				global.gold -= 60;
 				if (global.playerHp != global.playerMaxHp) {
 					global.playerHp += (global.playerMaxHp* 0.25);
@@ -67,12 +71,10 @@ if (mouse_over)
 				global.goldChance += 1
 			}
 			
-			//global.showInvTooltip = true;
-			
-			// Destroys runes.
+			// Destroys shop items.
 			with(objGetItems) instance_destroy();
 	
-			// Destroys get runes screen.
+			// Destroys get items screen.
 			with(objGetShopItemsScreen) instance_destroy();
 		}
 	}

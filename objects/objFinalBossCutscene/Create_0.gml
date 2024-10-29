@@ -12,5 +12,5 @@ depth = -10000;
 
 
 audio_stop_all();
-audio_play_sound(sndFinalBossBGM, 0, 0, 1.0, undefined, 1.0);
+audio_play_sound(sndFinalBossCutscene, 0, 0, 1.0, undefined, 1.0);
 audio_play_sound(sndFinalBossGrowl, 0, 1.0, 1.0, undefined, 1.0);

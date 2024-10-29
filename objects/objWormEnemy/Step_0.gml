@@ -40,19 +40,19 @@ switch(state) {
 		shootTimer++;
 		
 			//create the bullet
-			if shootTimer == (3*60-1) {
+			if shootTimer == (5*60-1) {
 				bulletInst = instance_create_depth(x + bulletXoff*face, y + bulletYoff, depth, objEnemyBullet2);
 			}
 			
 			//keep the bullet in the enemy's hands
-			if shootTimer == 3*60 && instance_exists(bulletInst) {
+			if shootTimer == 5*60 && instance_exists(bulletInst) {
 				bulletInst.x = x + bulletXoff * face;
 				bulletInst.y = y + bulletYoff;
 			}
 			
 			//shoot the bullet after the windup time is over
-			if shootTimer == 3*60 && instance_exists(bulletInst) {
-				
+			if shootTimer == 5*60 && instance_exists(bulletInst) {
+				audio_play_sound(sndEnemyAttack, 0, 0, 1.0, undefined, 1.0);
 				//set our bullet's state to the movement state
 				//bulletInst.state = 1;
 				show_debug_message("before freezeEnemy");
@@ -69,7 +69,7 @@ switch(state) {
 			}
 			
 			//recover and return to chasing the player
-			if shootTimer > 4*60 {
+			if shootTimer > 6*60 {
 				
 				//go back to chasing the player
 				state = 0;

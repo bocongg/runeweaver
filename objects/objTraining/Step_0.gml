@@ -1,3 +1,58 @@
+if (keyboard_check_pressed(ord("Z"))) {
+	if !instance_exists(objTransition) {
+		if (room == rmMapOverview) {
+			var _inst = instance_create_layer(x, y, "Instances", objTransition);
+			_inst.targetRoom = rmShop;	
+		}
+	}
+}
+
+if (keyboard_check_pressed(ord("X"))) {
+	if !instance_exists(objTransition) {
+		if (room == rmMapOverview) {
+			var _inst = instance_create_layer(x, y, "Instances", objTransition);
+			_inst.targetRoom = rmTreasure;	
+		}
+	}
+}
+
+if (keyboard_check_pressed(ord("V"))) {
+	if !instance_exists(objTransition) {
+		if (room == rmMapOverview) {
+			var _inst = instance_create_layer(x, y, "Instances", objTransition);
+			_inst.targetRoom = rmEventA;	
+		}
+	}
+}
+
+if (keyboard_check_pressed(ord("B"))) {
+	if !instance_exists(objTransition) {
+		if (room == rmMapOverview) {
+			var _inst = instance_create_layer(x, y, "Instances", objTransition);
+			_inst.targetRoom = rmEventB;	
+		}
+	}
+}
+
+if (keyboard_check_pressed(ord("C"))) {
+	if !instance_exists(objTransition) {
+		if (room == rmMapOverview) {
+			var _inst = instance_create_layer(x, y, "Instances", objTransition);
+			_inst.targetRoom = rmEventC;	
+		}
+	}
+}
+
+if (keyboard_check_pressed(ord("N"))) {
+	if !instance_exists(objTransition) {
+		if (room == rmMapOverview) {
+			var _inst = instance_create_layer(x, y, "Instances", objTransition);
+			_inst.targetRoom = rmRest;	
+		}
+	}
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
 if (keyboard_check_pressed(ord("T"))) {
 	if !instance_exists(objTransition) {
 		if (room == rmMapOverview) {

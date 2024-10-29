@@ -99,7 +99,7 @@ switch(state) {
 			
 			//shoot the bullet after the windup time is over
 			if shootTimer == windupTime && instance_exists(bulletInst) {
-				
+				audio_play_sound(sndEnemyAttack, 0, 0, 1.0, undefined, 1.0);
 				//set our bullet's state to the movement state
 				//bulletInst.state = 1;
 				show_debug_message("before freezeEnemy");
@@ -159,6 +159,7 @@ switch(state) {
 //death
 if hp <= 0 {
 	//destroy self
+	audio_play_sound(sndEnemyDeath, 0, 0, 1.0, undefined, 1.0);
 	instance_destroy();
 	effect_create_above(ef_smokeup, x, y, 2, c_red);
 	
@@ -166,8 +167,9 @@ if hp <= 0 {
 	var back_id = layer_background_get_id(lay_id);
 	layer_background_sprite(back_id, sprFinalBossBgEnraged);
 	
-	//instance_create_layer(1920/2, 1080/2, "PauseScreen", objFinalBossCutscene);
-	//instance_create_layer(x, y, "Instances", objFinalBossEnraged);
+	if (audio_is_playing(sndFinalBossInitialBGM)){
+		audio_stop_sound(sndFinalBossInitialBGM);
+	}
 }
 
 // Inherit the parent event

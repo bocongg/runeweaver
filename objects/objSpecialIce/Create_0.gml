@@ -10,3 +10,5 @@ damage = 0;
 maxDist = 500;
 destroy = false;
 enemyDestroy = false;
+
+audio_play_sound(sndSpecialAttack, 0, 0, 1.0, undefined, 1.0);
