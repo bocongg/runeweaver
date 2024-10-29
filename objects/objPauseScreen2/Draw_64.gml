@@ -1,0 +1,1 @@
+draw_sprite(sprPauseScreen,1,x,y);

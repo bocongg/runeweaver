@@ -35,6 +35,7 @@ if(device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_right
 				with(obj_slot) instance_destroy();
 				with(obj_slot_Attack) instance_destroy();
 				with(obj_slot_Weave) instance_destroy();
+				instance_activate_layer("UpgradeScreenBase");
 				instance_activate_layer("UpgradeScreen");
 			}
 		}

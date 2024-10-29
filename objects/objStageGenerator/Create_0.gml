@@ -44,8 +44,9 @@ randomise();
 var objRmList = [objRmNode1, objRmNode2];
 
 for (var i = 0; i < 2; i+=1){
-	var randomRm = choose(sprRmCombat, sprRmEvent);
+	//var randomRm = choose(sprRmCombat, sprRmEvent);
 	//var randomRm =  sprRmEvent;
+	var randomRm =  sprRmShop;
 	object_set_sprite(objRmList[i], randomRm);
 }
 
