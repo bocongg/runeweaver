@@ -1,4 +1,5 @@
-event_inherited();
+damage = 5;
+hitconfirm = false;
 
 dir = 5;
 spd = 10;
