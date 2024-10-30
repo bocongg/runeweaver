@@ -1,3 +1,5 @@
+event_inherited();
+
 //create damage objects
 if createdDamageObjects == false {
 	//var colliding_enemy = instance_place(x, y, objEnemyParent); 
@@ -13,11 +15,11 @@ if createdDamageObjects == false {
 		
 				// Check for collision with multiple enemies
 				var damageOverTimeinfo = [];
-				damageOverTimeinfo [DebuffInfo.DMG] = 1; // damage is however much damage the poison should apply each tick
-				damageOverTimeinfo [DebuffInfo.TICK_RATE] = game_get_speed(gamespeed_fps) * 1; 
-				damageOverTimeinfo [DebuffInfo.DURATION] = game_get_speed(gamespeed_fps) * 5; 
-				damageOverTimeinfo [DebuffInfo.SPEED_REDUCTION] = 0; 
-				damageOverTimeinfo [DebuffInfo.DAMAGE_COLOUR] = c_red; 
+				damageOverTimeinfo [DebuffInfo.DMG] = damageOverTime; // damage is however much damage the poison should apply each tick
+				damageOverTimeinfo [DebuffInfo.TICK_RATE] = game_get_speed(gamespeed_fps) * damageInterval; 
+				damageOverTimeinfo [DebuffInfo.DURATION] = game_get_speed(gamespeed_fps) * damageLast; 
+				damageOverTimeinfo [DebuffInfo.SPEED_REDUCTION] = 1; 
+				damageOverTimeinfo [DebuffInfo.DAMAGE_COLOUR] = c_aqua; 
 
 				array_push(colliding_enemy.debuffs, damageOverTimeinfo); 
 				mask_index = other.sprite_index;

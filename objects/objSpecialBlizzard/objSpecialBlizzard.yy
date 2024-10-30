@@ -13,7 +13,10 @@
     "name":"Power",
     "path":"folders/Objects/Game/Power.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"objDamageEnemy",
+    "path":"objects/objDamageEnemy/objDamageEnemy.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

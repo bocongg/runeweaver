@@ -56,18 +56,8 @@ switch(state) {
 			if shootTimer == windupTime && instance_exists(bulletInst) {
 				audio_play_sound(sndEnemyAttack, 0, 0, 1.0, undefined, 1.0);
 				//set our bullet's state to the movement state
-				//bulletInst.state = 1;
-				show_debug_message("before freezeEnemy");
-				if freezeEnemy == true {
-					//bulletInst.state = 0;
-					show_debug_message("in the destroy");
-					bulletInst.destroy = true;
-				} 
-				else {
-					show_debug_message("else");
-					bulletInst.state = 1;
-				}
-				show_debug_message("after freezeEnemy");
+				if freezeEnemy == true {bulletInst.destroy = true;} 
+				else {bulletInst.state = 1;}
 			}
 			
 			//recover and return to chasing the player
@@ -113,17 +103,6 @@ switch(state) {
 	//set the depth
 	depth = -y;
 
-/*//knockback
-sprite_index = sprKBBasicEnemyPhantom;
-image_speed = 0.5;
-image_index = 0;
-knowbackSpeed = lerp(knowbackSpeed, 0, 0.10);
-if knowbackSpeed < 1 
-{
-	knowbackSpeed = 0;
-}*/
-// Inherit the parent event
-	//getting damage and dying
 	event_inherited();
 
 
