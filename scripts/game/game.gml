@@ -173,7 +173,7 @@ function get_damaged (_damageObj, _iframes = false, _isEnemy = true) {
 		
 		iceSpecialAttack : new create_basic_attack(
 			sprWand,
-			objSpecialIce,
+			objSpecialFlashFreeze,
 			30, 
 			1,
 			0

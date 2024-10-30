@@ -87,7 +87,7 @@ if (room != rmTreasure && room != rmShop && room != rmRest && room != rmEventA &
 				}
 			}
 	} else if specialShootKey && shootTimer <= 0 {
-	
+		
 		//reset the timer
 		shootTimer = specialAttack.cooldown;
 		
@@ -95,25 +95,27 @@ if (room != rmTreasure && room != rmShop && room != rmRest && room != rmEventA &
 			var _spread = specialAttack.spread;
 			var _spreadDiv = max(_spread/1 -1, 1);
 		
+		//TEST//
+		if specialAttack.bulletObj == objSpecialBlizzard {
+			//create the bullet
+			var _bulletInst = instance_create_depth(mouse_x, mouse_y, depth-100, specialAttack.bulletObj);
+		} else if specialAttack.bulletObj == objSpecialFlashFreeze {
+			//create the bullet
+			var _bulletInst = instance_create_depth(x, y, depth-100, specialAttack.bulletObj);
+		} 	
+		else {
+		
 			for (var i = 0; i < specialAttack.bulletNum ; i++) {
+				
 				//create the bullet
-			var _bulletInst = instance_create_depth(x, centerY, depth-100, specialAttack.bulletObj);
+				var _bulletInst = instance_create_depth(x, centerY, depth-100, specialAttack.bulletObj);
 			
 				//change the bullet's direction
 				with(_bulletInst) {
 					dir = other.aimDir - _spread/2 + _spreadDiv*i; 
 				}
 			}
-		
-		
-		/*//shooting
-			//create the bullet
-			var _bulletInst = instance_create_depth(x, centerY, depth-100, wand.bulletObj);
-		
-			//change the bullet's direction
-			with(_bulletInst) {
-				dir = other.aimDir;
-			}*/
+		} 
 	}
 }
 #endregion
@@ -154,18 +156,21 @@ if ((room == rmFinalBoss || room == rmTraining) && instance_number(objFinalBossI
 	bossEnraged = true;	
 }
 
-
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Set basic attack based on rune equipped
-if (global.attack_slot[# 0, 0] == item.firerune1){
+if (global.attack_slot[# 0, 0] == item.firerune1) ||
+	(global.attack_slot[# 0, 0] == item.frostfirerune2) || 
+    (global.attack_slot[# 0, 0] == item.frostfirerune3){
 	basicAttack = global.attackList.fireBasicAttack;
 }
-if (global.attack_slot[# 0, 0] == item.icerune1){
-	basicAttack = global.attackList.iceBasicAttack;
-}
-if (global.attack_slot[# 0, 0] == item.windrune1){
+if ((global.attack_slot[# 0, 0] == item.windrune1) ||
+	(global.attack_slot[# 0, 0] == item.infernorune2) || 
+    (global.attack_slot[# 0, 0] == item.infernorune3)){
 	basicAttack = global.attackList.windBasicAttack;
+}
+if ((global.attack_slot[# 0, 0] == item.icerune1) ||
+	(global.attack_slot[# 0, 0] == item.blizzardrune2) || 
+    (global.attack_slot[# 0, 0] == item.blizzardrune3)){
+	basicAttack = global.attackList.iceBasicAttack;
 }
 
 
@@ -178,4 +183,16 @@ if (global.attack_slot[# 1, 0] == item.icerune1){
 }
 if (global.attack_slot[# 1, 0] == item.windrune1){
 	specialAttack = global.attackList.windSpecialAttack;
+}
+if ((global.attack_slot[# 1, 0] == item.blizzardrune2) || 
+    (global.attack_slot[# 1, 0] == item.blizzardrune3)){
+	specialAttack = global.attackList.blizzardSpecialAttack;
+}
+if ((global.attack_slot[# 1, 0] == item.frostfirerune2) || 
+    (global.attack_slot[# 1, 0] == item.frostfirerune3)){
+	specialAttack = global.attackList.frostFireSpecialAttack;
+}
+if ((global.attack_slot[# 1, 0] == item.infernorune2) || 
+    (global.attack_slot[# 1, 0] == item.infernorune3)){
+	specialAttack = global.attackList.infernoSpecialAttack;
 }
