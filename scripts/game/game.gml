@@ -177,13 +177,33 @@ function get_damaged (_damageObj, _iframes = false, _isEnemy = true) {
 			30, 
 			1,
 			0
-		),
-		
+		),	
 		windSpecialAttack : new create_basic_attack(
 			sprWand,
 			objSpecialWind,
 			30,
 			3, 
 			30
+		),
+		infernoSpecialAttack : new create_basic_attack(
+			sprWand,
+			objSpecialInferno,
+			30,
+			1, 
+			0
+		),
+		blizzardSpecialAttack : new create_basic_attack(
+			sprWand,
+			objSpecialBlizzard,
+			30,
+			1, 
+			0
+		),
+		frostFireSpecialAttack : new create_basic_attack(
+			sprWand,
+			objSpecialFrostFire,
+			30,
+			1, 
+			0
 		)
 	}
