@@ -1,7 +1,8 @@
-event_inherited();
+damage = 10;
+hitconfirm = false;
 
 dir = 5;
-spd = 5;
+spd = 15;
 xspd = 0; 
 yspd = 0;
 

@@ -7,7 +7,9 @@ switch(state) {
 		if instance_exists(objPlayer) {
 			dir = point_direction(x, y, objPlayer.x, objPlayer.y);
 		}
-	
+		
+		image_angle = point_direction(x, y, objPlayer.x, objPlayer.y);
+		
 		//set depth to make myself more visible
 		depth = -y - 50;
 	
