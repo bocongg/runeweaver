@@ -1,3 +1,6 @@
+//rotate
+image_angle = dir;
+
 //state machine
 switch(state) {
 	//wait for the enemy  to  shoot state

@@ -105,6 +105,8 @@ if (room != rmWinScreen && room != rmTreasure && room != rmShop && room != rmRes
 		} else if specialAttack.bulletObj == objSpecialPrism {
 			//create the bullet
 			var _bulletInst = instance_create_depth(x+20, y, depth-100, specialAttack.bulletObj);
+			//change the bullet's direction
+			with(_bulletInst) {dir = other.aimDir;}
 		}	
 		else {
 		
@@ -160,31 +162,45 @@ if ((room == rmFinalBoss || room == rmTraining) && instance_number(objFinalBossI
 }
 
 //Set basic attack based on rune equipped
+if (global.attack_slot[# 0, 0] == item.prismrune3) {
+	basicAttack = global.attackList.basicAttack;
+}
 if (global.attack_slot[# 0, 0] == item.firerune1) ||
+	(global.attack_slot[# 0, 0] == item.firerune2) ||
+	(global.attack_slot[# 0, 0] == item.firerune3) ||
 	(global.attack_slot[# 0, 0] == item.frostfirerune2) || 
     (global.attack_slot[# 0, 0] == item.frostfirerune3){
 	basicAttack = global.attackList.fireBasicAttack;
 }
 if ((global.attack_slot[# 0, 0] == item.windrune1) ||
+	(global.attack_slot[# 0, 0] == item.windrune2) ||
+	(global.attack_slot[# 0, 0] == item.windrune3) ||
 	(global.attack_slot[# 0, 0] == item.infernorune2) || 
     (global.attack_slot[# 0, 0] == item.infernorune3)){
 	basicAttack = global.attackList.windBasicAttack;
 }
 if ((global.attack_slot[# 0, 0] == item.icerune1) ||
+	(global.attack_slot[# 0, 0] == item.icerune2) ||
+	(global.attack_slot[# 0, 0] == item.icerune3) ||
 	(global.attack_slot[# 0, 0] == item.blizzardrune2) || 
     (global.attack_slot[# 0, 0] == item.blizzardrune3)){
 	basicAttack = global.attackList.iceBasicAttack;
 }
 
-
 // Set special attack based on rune equipped
-if (global.attack_slot[# 1, 0] == item.firerune1){
+if ((global.attack_slot[# 1, 0] == item.firerune1) || 
+	(global.attack_slot[# 1, 0] == item.firerune2) ||
+	(global.attack_slot[# 1, 0] == item.firerune3)) {
 	specialAttack = global.attackList.fireSpecialAttack;
 }
-if (global.attack_slot[# 1, 0] == item.icerune1){
+if ((global.attack_slot[# 1, 0] == item.icerune1) || 
+	(global.attack_slot[# 1, 0] == item.icerune2) ||
+	(global.attack_slot[# 1, 0] == item.icerune3)) {
 	specialAttack = global.attackList.iceSpecialAttack;
 }
-if (global.attack_slot[# 1, 0] == item.windrune1){
+if ((global.attack_slot[# 1, 0] == item.windrune1) || 
+	(global.attack_slot[# 1, 0] == item.windrune2) ||
+	(global.attack_slot[# 1, 0] == item.windrune3)) {
 	specialAttack = global.attackList.windSpecialAttack;
 }
 if ((global.attack_slot[# 1, 0] == item.blizzardrune2) || 
@@ -198,4 +214,7 @@ if ((global.attack_slot[# 1, 0] == item.frostfirerune2) ||
 if ((global.attack_slot[# 1, 0] == item.infernorune2) || 
     (global.attack_slot[# 1, 0] == item.infernorune3)){
 	specialAttack = global.attackList.infernoSpecialAttack;
+}
+if (global.attack_slot[# 1, 0] == item.prismrune3) {
+	specialAttack = global.attackList.prismSpecialAttack;
 }

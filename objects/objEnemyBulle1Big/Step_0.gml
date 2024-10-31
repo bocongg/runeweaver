@@ -1,3 +1,6 @@
+//rotate 
+image_angle = dir;
+
 //state machine
 switch(state) {
 	//wait for the enemy  to  shoot state
@@ -42,6 +45,4 @@ switch(state) {
 	//out of room bounds
 	var _pad = 16;
 	if bbox_right < - _pad || bbox_left > room_width + _pad || bbox_bottom < - _pad || bbox_top > room_height + _pad
-	{
-		destroy = true;
-	}
+	{destroy = true;}
