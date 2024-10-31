@@ -81,15 +81,12 @@ switch(state) {
 		//set the correct speed
 		spd = 0;
 		
-		//stop animating or manually set the image index
-		//image_index = 0;
-		
 		//shoot a bullet
 		shootTimer++;
 		
 			//create the bullet
 			if shootTimer == 1 {
-				bulletInst = instance_create_depth(x + bulletXoff*face, y + bulletYoff, depth, objFinalBossBulletEnraged);
+				bulletInst = instance_create_depth(x + bulletXoff*face, y + bulletYoff, depth, objFinalBossBulletEnraged3Homing);
 			} 
 			//keep the bullet in the enemy's hands
 			if shootTimer <= windupTime && instance_exists(bulletInst) {

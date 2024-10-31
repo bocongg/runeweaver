@@ -41,7 +41,7 @@ switch(state) {
 		
 			//create the bullet
 			if shootTimer == (5*60-1) {
-				bulletInst = instance_create_depth(x + bulletXoff*face, y + bulletYoff, depth, objEnemyBullet2);
+				bulletInst = instance_create_depth(x + bulletXoff*face, y + bulletYoff, depth, objEnemyBullet1Fast);
 			}
 			
 			//keep the bullet in the enemy's hands

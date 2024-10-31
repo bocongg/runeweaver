@@ -1,134 +1,29 @@
 scr_init_inventory();
 
-scr_add_rune_info(item.firerune1,
-				  "Fire Rune",
-				  "Basic: Fire Bolt",
-				  "Shoot a bolt of\nflame. Burns, dealing\ndamage over time.",
-				  "Special: Fireball",
-				  "Hurl a ball of fire\nthat explodes,\ndealing area damage\nand burns the\nenemy.");
-scr_add_rune_info(item.firerune2,
-				  "Fire Rune",
-				  "Basic: Fire Bolt",
-				  "Shoot a bolt of\nflame. Burns, dealing\ndamage over time.",
-				  "Special: Fireball",
-				  "Hurl a ball of fire\nthat explodes,\ndealing area damage\nand burns the\nenemy.");
-scr_add_rune_info(item.firerune3,
-				  "Fire Rune",
-				  "Basic: Fire Bolt",
-				  "Shoot a bolt of\nflame. Burns, dealing\ndamage over time.",
-				  "Special: Fireball",
-				  "Hurl a ball of fire\nthat explodes,\ndealing area damage\nand burns the\nenemy.");
-				  
-scr_add_rune_info(item.icerune1,
-				  "Ice Rune",
-				  "Basic: Ice Shard",
-				  "Shoot a shard of ice.\nSlows the enemy\ndown.",
-				  "Special: Flash Freeze",
-				  "Freeze the air\naround the player,\nfreezing enemies\nfor a short time.");
-scr_add_rune_info(item.icerune2,
-				  "Ice Rune",
-				  "Basic: Ice Shard",
-				  "Shoot a shard of ice.\nSlows the enemy\ndown.",
-				  "Special: Flash Freeze",
-				  "Freeze the air\naround the player,\nfreezing enemies\nfor a short time.");
-scr_add_rune_info(item.icerune3,
-				  "Ice Rune",
-				  "Basic: Ice Shard",
-				  "Shoot a shard of ice.\nSlows the enemy\ndown.",
-				  "Special: Flash Freeze",
-				  "Freeze the air\naround the player,\nfreezing enemies\nfor a short time.");
-				  
-scr_add_rune_info(item.windrune1,
-				  "Wind Rune",
-				  "Basic: Air Cutter",
-				  "Shoot blades of air.\nPushes the enemy\nback slightly.",
-				  "Special: Galeforce",
-				  "Conjure a cone of\nwind, pushing\nenemies back.");
-scr_add_rune_info(item.windrune2,
-				  "Wind Rune",
-				  "Basic: Air Cutter",
-				  "Shoot blades of air.\nPushes the enemy\nback slightly.",
-				  "Special: Galeforce",
-				  "Conjure a cone of\nwind, pushing\nenemies back.");
-scr_add_rune_info(item.windrune3,
-				  "Wind Rune",
-				  "Basic: Air Cutter",
-				  "Shoot blades of air.\nPushes the enemy\nback slightly.",
-				  "Special: Galeforce",
-				  "Conjure a cone of\nwind, pushing\nenemies back.");
-				  
-scr_add_rune_info(item.frostfirerune2,
-				  "Frostfire Rune",
-				  "",
-				  "",
-				  "Special:\nFrostfire Blast",
-				  "Shoot a ball of fire\nand ice which\nexplodes, burning\nand freezing the\nenemy.");
-scr_add_rune_info(item.frostfirerune3,
-				  "Frostfire Rune",
-				  "",
-				  "",
-				  "Special:\nFrostfire Blast",
-				  "Shoot a ball of fire\nand ice which\nexplodes, burning\nand freezing the\nenemy.");
-				  
-scr_add_rune_info(item.blizzardrune2,
-				  "Blizzard Rune",
-				  "",
-				  "",
-				  "Special: Blizzard",
-				  "Call forth an icy\nstorm, freezing\nenemies in its\nradius.");
-scr_add_rune_info(item.blizzardrune3,
-				  "Blizzard Rune",
-				  "",
-				  "",
-				  "Special: Blizzard",
-				  "Call forth an icy\nstorm, freezing\nenemies in its\nradius.");
-				  
-scr_add_rune_info(item.infernorune2,
-				  "Inferno Rune",
-				  "",
-				  "",
-				  "Special: Inferno",
-				  "Call forth a storm\nof fire, burning\nenemies in an\narea and pushing\nthem back.");
-scr_add_rune_info(item.infernorune3,
-				  "Inferno Rune",
-				  "",
-				  "",
-				  "Special: Inferno",
-				  "Call forth a storm\nof fire, burning\nenemies in an\narea and pushing\nthem back.");
-
 scr_gain_item(item.firerune1, 1);
-//scr_gain_item(item.firerune1, 99);
-//scr_gain_item(item.icerune1, 99);
-//scr_gain_item(item.windrune1, 99);
-//scr_gain_item(item.frostfirerune3, 2);
+//scr_gain_item(item.firerune2, 1);
+//scr_gain_item(item.firerune3, 1);
+//scr_gain_item(item.icerune1, 1);
+//scr_gain_item(item.icerune2, 1);
+//scr_gain_item(item.icerune3, 1);
+//scr_gain_item(item.windrune1, 1);
+//scr_gain_item(item.windrune2, 1);
+//scr_gain_item(item.windrune3, 1);
+//scr_gain_item(item.frostfirerune2, 1);
+//scr_gain_item(item.frostfirerune3, 1);
+//scr_gain_item(item.blizzardrune2, 1);
 //scr_gain_item(item.blizzardrune3, 1);
+//scr_gain_item(item.infernorune2, 1);
 //scr_gain_item(item.infernorune3, 1);
 //scr_gain_item(item.prismrune3, 1);
-//scr_gain_item(item.frostfirerune2, 23);
-//scr_gain_item(item.blizzardrune2, 23);
-//scr_gain_item(item.infernorune2, 23);
-//scr_gain_item(item.prismrune3, 1);
-//scr_gain_item(item.firerune2, 23);
-//scr_gain_item(item.icerune2, 23);
-//scr_gain_item(item.windrune2, 23);
-//scr_gain_item(item.frostfirerune3, 23);
-//scr_gain_item(item.blizzardrune3, 23);
-//scr_gain_item(item.infernorune3, 23);
-//scr_gain_item(item.firerune3, 23);
-//scr_gain_item(item.icerune3, 23);
-//scr_gain_item(item.windrune3, 23);
-
 
 // Player HP
-global.playerMaxHp = 10;
+global.playerMaxHp = 100;
 global.playerHp = global.playerMaxHp;
 
 global.energyDrink = 0;
 
 global.goldChance = 0;
-
-//// Start the game music on a loop.
-//audio_play_sound(sndMusicGame, 0, 1, 1.0, undefined, 1.0);
 
 //// Set the experience goal to reach the next level.
 ////global.xp_goal = 10;
@@ -146,9 +41,6 @@ global.goldChance = 0;
 //// This is a multiplier, and is increased each wave.
 //// Result: enemy hp = enemy base hp * health bonus.
 ////global.enemy_health_bonus = 1;
-
-//// Create the hero in the center of the room.
-//instance_create_layer(room_width / 2, room_height / 2, "Instances", objPlayer);
 
 // Execute the shooting weapon reset function,
 // initializing values for that weapon.
