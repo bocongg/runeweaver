@@ -10,3 +10,5 @@ instance_destroy(objHUD);
 if (!instance_exists(objPauseButton)){
 	instance_create_layer(1824, 96, "Buttons", objPauseButton)	
 }
+
+global.moveSpd = 8;

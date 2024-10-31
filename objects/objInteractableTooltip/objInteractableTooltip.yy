@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprRmRestTooltip",
-    "path":"sprites/sprRmRestTooltip/sprRmRestTooltip.yy",
+    "name":"sprInteractTooltip",
+    "path":"sprites/sprInteractTooltip/sprInteractTooltip.yy",
   },
   "spriteMaskId":null,
   "visible":true,

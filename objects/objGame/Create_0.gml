@@ -96,30 +96,27 @@ scr_add_rune_info(item.infernorune3,
 				  "Special: Inferno",
 				  "Call forth a storm\nof fire, burning\nenemies in an\narea and pushing\nthem back.");
 
-scr_add_rune_info(item.prismrune3,
-				  "Prismatic Rune",
-				  "",
-				  "",
-				  "Special:\nPrismatic Beam",
-				  "Shoot a beam of\nmagical light.\nBurns and freezes\nenemies, and pushes\nthem back, but has\na very long cooldown.");
-
-
-scr_gain_item(item.firerune1, 23);
-scr_gain_item(item.icerune1, 23);
-scr_gain_item(item.windrune1, 23);
-scr_gain_item(item.frostfirerune2, 23);
-scr_gain_item(item.blizzardrune2, 23);
-scr_gain_item(item.infernorune2, 23);
-scr_gain_item(item.prismrune3, 1);
-scr_gain_item(item.firerune2, 23);
-scr_gain_item(item.icerune2, 23);
-scr_gain_item(item.windrune2, 23);
-scr_gain_item(item.frostfirerune3, 23);
-scr_gain_item(item.blizzardrune3, 23);
-scr_gain_item(item.infernorune3, 23);
-scr_gain_item(item.firerune3, 23);
-scr_gain_item(item.icerune3, 23);
-scr_gain_item(item.windrune3, 23);
+scr_gain_item(item.firerune1, 1);
+//scr_gain_item(item.firerune1, 99);
+//scr_gain_item(item.icerune1, 99);
+//scr_gain_item(item.windrune1, 99);
+//scr_gain_item(item.frostfirerune3, 2);
+//scr_gain_item(item.blizzardrune3, 1);
+//scr_gain_item(item.infernorune3, 1);
+//scr_gain_item(item.prismrune3, 1);
+//scr_gain_item(item.frostfirerune2, 23);
+//scr_gain_item(item.blizzardrune2, 23);
+//scr_gain_item(item.infernorune2, 23);
+//scr_gain_item(item.prismrune3, 1);
+//scr_gain_item(item.firerune2, 23);
+//scr_gain_item(item.icerune2, 23);
+//scr_gain_item(item.windrune2, 23);
+//scr_gain_item(item.frostfirerune3, 23);
+//scr_gain_item(item.blizzardrune3, 23);
+//scr_gain_item(item.infernorune3, 23);
+//scr_gain_item(item.firerune3, 23);
+//scr_gain_item(item.icerune3, 23);
+//scr_gain_item(item.windrune3, 23);
 
 
 // Player HP

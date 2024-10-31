@@ -41,6 +41,7 @@ if(device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_right
 				instance_destroy(objCloseEvent);
 				instance_destroy(objEventC1);
 				instance_destroy(objEventC2);
+				instance_destroy(objEventC3);
 			}
 		}
 }
