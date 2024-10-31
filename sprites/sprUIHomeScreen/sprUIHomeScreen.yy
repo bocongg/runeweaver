@@ -19,7 +19,7 @@
   "height":784,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"4ad667da-82e3-4dcb-8ff1-61a4ceb3d819","blendMode":0,"displayName":"default","isLocked":false,"name":"4ad667da-82e3-4dcb-8ff1-61a4ceb3d819","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"4ad667da-82e3-4dcb-8ff1-61a4ceb3d819","blendMode":0,"displayName":"default","isLocked":false,"name":"4ad667da-82e3-4dcb-8ff1-61a4ceb3d819","opacity":70.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sprUIHomeScreen",
   "nineSlice":null,

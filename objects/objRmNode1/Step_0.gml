@@ -46,14 +46,7 @@ if  (!instance_exists(objGet3RuneScreen) && !instance_exists(objInventory)){
 						_inst.targetRoom = rmTreasure;
 					} else
 					if (nodeSpr == sprRmEvent) {
-						//if (!specialRune) {
-						//	_inst.targetRoom = rmEventC;
-						//} else
-						//_inst.targetRoom = rmEventB;
 						_inst.targetRoom = choose(rmEventA, rmEventB);
-						//_inst.targetRoom = rmEventA;
-						//_inst.targetRoom = rmEventB;
-						//_inst.targetRoom = rmEventC;
 					} else _inst.targetRoom = rmCombat1;
 				}
 			}

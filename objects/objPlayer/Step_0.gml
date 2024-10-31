@@ -66,7 +66,7 @@ get_damaged(objDamagePlayer, true, false);
 
 //shoot the wand
 #region
-if (room != rmTreasure && room != rmShop && room != rmRest && room != rmEventA && room != rmEventB && room != rmEventC && !instance_exists(objChest) && !instance_place(mouse_x, mouse_y, objPauseButton)){
+if (room != rmWinScreen && room != rmTreasure && room != rmShop && room != rmRest && room != rmRestShop && room != rmEventA && room != rmEventB && room != rmEventC && !instance_exists(objChest) && !instance_place(mouse_x, mouse_y, objPauseButton)){
 	if shootTimer > 0 {shootTimer--;};
 	if basicShootKey && shootTimer <= 0 {
 		
@@ -132,7 +132,7 @@ if global.playerHp <= 0 {
 	instance_destroy();
 }
 
-if (!chestOpened && room != rmTraining && room != rmWinScreen && room != rmTreasure && room != rmShop && room != rmRest && room != rmEventA && room != rmEventB && room != rmEventC && room != rmFinalBoss) {
+if (!chestOpened && room != rmTraining && room != rmWinScreen && room != rmTreasure && room != rmShop && room != rmRest && room != rmRestShop && room != rmEventA && room != rmEventB && room != rmEventC && room != rmFinalBoss) {
 	if (instance_number(objEnemyParent) == 0){
 		if (global.stage == 1){
 			instance_create_layer(x, y, "Instances", objChest);
@@ -147,7 +147,7 @@ if (!chestOpened && room != rmTraining && room != rmWinScreen && room != rmTreas
 }
 
 if (room == rmTreasure && instance_number(objRock) == 0 && instance_number(objRockSmall) != 0 && instance_number(objTreasureChest) == 0){
-	instance_create_layer(1917, 831, "Instances", objStairs);
+	instance_create_layer(1920, 901, "Instances", objStairs);
 }
 
 if (instance_number(objFinalBossInitial) == 1) {
