@@ -30,7 +30,7 @@ if (mouse_over)
 			global.eventC1clicked = true;
 			
 			instance_create_layer(1920/2, 1080/2, "UpgradeScreenBase", objEventOutcomeCScreen);
-			
+			instance_destroy(objEventCCard);
 			instance_destroy(objCloseEvent);
 			instance_destroy(objEventC1);
 			instance_destroy(objEventC2);

@@ -1,7 +1,7 @@
-damage = 15;
+damage = 1;
 hitconfirm = false;
 
-get_damaged_create(20);
+get_damaged_create();
 
 debuffs = [];
 tick = 0;
@@ -21,3 +21,6 @@ face = 1;
 
 //state machine
 state = 0; 
+
+//create path to follow player
+path = path_add();

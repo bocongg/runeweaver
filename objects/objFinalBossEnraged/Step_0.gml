@@ -81,12 +81,15 @@ switch(state) {
 		//set the correct speed
 		spd = 0;
 		
+		//stop animating or manually set the image index
+		//image_index = 0;
+		
 		//shoot a bullet
 		shootTimer++;
 		
 			//create the bullet
 			if shootTimer == 1 {
-				bulletInst = instance_create_depth(x + bulletXoff*face, y + bulletYoff, depth, objFinalBossBulletHoming);
+				bulletInst = instance_create_depth(x + bulletXoff*face, y + bulletYoff, depth, objFinalBossBulletEnraged);
 			} 
 			//keep the bullet in the enemy's hands
 			if shootTimer <= windupTime && instance_exists(bulletInst) {
@@ -97,19 +100,11 @@ switch(state) {
 			//shoot the bullet after the windup time is over
 			if shootTimer == windupTime && instance_exists(bulletInst) {
 				audio_play_sound(sndEnemyAttack, 0, 0, 1.0, undefined, 1.0);
+				
 				//set our bullet's state to the movement state
-				//bulletInst.state = 1;
-				show_debug_message("before freezeEnemy");
-				if freezeEnemy == true {
-					//bulletInst.state = 0;
-					show_debug_message("in the destroy");
-					bulletInst.destroy = true;
-				} 
-				else {
-					show_debug_message("else");
-					bulletInst.state = 1;
-				}
-				show_debug_message("after freezeEnemy");
+				if freezeEnemy == true 
+				{bulletInst.destroy = true;} 
+				else {bulletInst.state = 1;}
 			}
 			
 			//recover and return to chasing the player

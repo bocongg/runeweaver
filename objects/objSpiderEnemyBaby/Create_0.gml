@@ -21,3 +21,6 @@ face = 1;
 
 //state machine
 state = 0; 
+
+//create path to follow player
+path = path_add();

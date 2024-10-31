@@ -56,18 +56,12 @@ switch(state) {
 			if shootTimer == windupTime && instance_exists(bulletInst) {
 				audio_play_sound(sndEnemyAttack, 0, 0, 1.0, undefined, 1.0);
 				//set our bullet's state to the movement state
-				//bulletInst.state = 1;
-				show_debug_message("before freezeEnemy");
 				if freezeEnemy == true {
-					//bulletInst.state = 0;
-					show_debug_message("in the destroy");
 					bulletInst.destroy = true;
 				} 
 				else {
-					show_debug_message("else");
 					bulletInst.state = 1;
 				}
-				show_debug_message("after freezeEnemy");
 			}
 			
 			//recover and return to chasing the player
@@ -82,7 +76,14 @@ switch(state) {
 	#endregion
 	break;
 }
+//create path and move to player
+var px = (objPlayer.x div 32) * 32 + 16;
+var py = (objPlayer.y
+div 32) * 32 + 16;
 
+if(mp_grid_path(global.grid,path,x,y,px,py,1)){
+  path_start(path,chaseSpd,path_action_stop, false);  
+}
 
 //chase the player
 	//getting the speed
@@ -90,21 +91,16 @@ switch(state) {
 	yspd = lengthdir_y(spd, dir);
 	
 	//get the correct face
-	if dir > 90 && dir < 270 {
-		face = -1;
-	} else {
-		face = 1;	
-	}
+	if dir > 90 && dir < 270
+		{face = -1;} else 
+		{face = 1;}
 
 	//collisions
-	if place_meeting(x + xspd, y, objWall) || place_meeting(x + xspd, y, objEnemyParent)
-	{
-		xspd = 0;
-	}
-	if place_meeting(x, y + yspd, objWall) || place_meeting(x, y + yspd, objEnemyParent)
-	{
-		yspd = 0;
-	}
+	if place_meeting(x + xspd, y, objWall) || 
+	place_meeting(x + xspd, y, objEnemyParent) {xspd = 0;}
+	
+	if place_meeting(x, y + yspd, objWall) ||
+	place_meeting(x, y + yspd, objEnemyParent){spd = 0;}
 	
 	//moving
 	x += xspd;
@@ -113,15 +109,6 @@ switch(state) {
 	//set the depth
 	depth = -y;
 
-/*//knockback
-sprite_index = sprKBBasicEnemyPhantom;
-image_speed = 0.5;
-image_index = 0;
-knowbackSpeed = lerp(knowbackSpeed, 0, 0.10);
-if knowbackSpeed < 1 
-{
-	knowbackSpeed = 0;
-}*/
 // Inherit the parent event
 	//getting damage and dying
 	event_inherited();

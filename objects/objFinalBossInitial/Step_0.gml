@@ -99,20 +99,12 @@ switch(state) {
 			
 			//shoot the bullet after the windup time is over
 			if shootTimer == windupTime && instance_exists(bulletInst) {
+				
 				audio_play_sound(sndEnemyAttack, 0, 0, 1.0, undefined, 1.0);
+				
 				//set our bullet's state to the movement state
-				//bulletInst.state = 1;
-				show_debug_message("before freezeEnemy");
-				if freezeEnemy == true {
-					//bulletInst.state = 0;
-					show_debug_message("in the destroy");
-					bulletInst.destroy = true;
-				} 
-				else {
-					show_debug_message("else");
-					bulletInst.state = 1;
-				}
-				show_debug_message("after freezeEnemy");
+				if freezeEnemy == true {bulletInst.destroy = true;} 
+				else {bulletInst.state = 1;}
 			}
 			
 			//recover and return to chasing the player
@@ -127,6 +119,14 @@ switch(state) {
 	break;
 }
 
+//create path and move to player
+var px = (objPlayer.x div 32) * 32 + 16;
+var py = (objPlayer.y
+div 32) * 32 + 16;
+
+if(mp_grid_path(global.grid,path,x,y,px,py,1)){
+  path_start(path,chaseSpd,path_action_stop, false);  
+}
 
 //chase the player
 	//getting the speed

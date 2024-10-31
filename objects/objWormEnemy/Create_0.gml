@@ -1,4 +1,4 @@
-damage = 10;
+damage = 1;
 hitconfirm = false;
 
 get_damaged_create();
@@ -29,3 +29,6 @@ bulletInst = noone;
 	
 bulletXoff = 5;
 bulletYoff = -20;
+
+//create path to follow player
+path = path_add();

@@ -24,6 +24,7 @@
     {"name":"inst_77B978A5","path":"rooms/rmCombat5/rmCombat5.yy",},
     {"name":"inst_30BE3806","path":"rooms/rmCombat5/rmCombat5.yy",},
     {"name":"inst_7729A590","path":"rooms/rmCombat5/rmCombat5.yy",},
+    {"name":"inst_7F90BEA1","path":"rooms/rmCombat5/rmCombat5.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -48,6 +49,7 @@
         {"$GMRInstance":"v1","%Name":"inst_77B978A5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_77B978A5","objectId":{"name":"objLizardEnemy","path":"objects/objLizardEnemy/objLizardEnemy.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1208.0,"y":795.0,},
         {"$GMRInstance":"v1","%Name":"inst_30BE3806","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_30BE3806","objectId":{"name":"objWormEnemy","path":"objects/objWormEnemy/objWormEnemy.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":813.0,"y":462.0,},
         {"$GMRInstance":"v1","%Name":"inst_7729A590","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7729A590","objectId":{"name":"objLionEnemy","path":"objects/objLionEnemy/objLionEnemy.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1454.0,"y":782.0,},
+        {"$GMRInstance":"v1","%Name":"inst_7F90BEA1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7F90BEA1","objectId":{"name":"objGrid","path":"objects/objGrid/objGrid.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":109.0,"y":-62.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets_1","assets":[
         {"$GMRSpriteGraphic":"","%Name":"graphic_571AD990","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":true,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_571AD990","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sprRmUpnstairsRight","path":"sprites/sprRmUpnstairsRight/sprRmUpnstairsRight.yy",},"x":1840.0,"y":928.0,},

@@ -121,7 +121,7 @@ function get_damaged (_damageObj, _iframes = false, _isEnemy = true) {
 	
 //basicAttackList	
 	//constructor template for basicAttackList	
-	function create_basic_attack(_wand = sprWand, _bulletObj = objBasicShoot, _cooldown = 1, _bulletNum = 1, _spread = 0) constructor {
+	function create_attack(_wand = sprWand, _bulletObj = objBasicShoot, _cooldown = 1, _bulletNum = 1, _spread = 0) constructor {
 		sprite = _wand;
 		bulletObj = _bulletObj;		//types of bullet
 		cooldown = _cooldown;		//higher number means longer cooldown
@@ -131,7 +131,7 @@ function get_damaged (_damageObj, _iframes = false, _isEnemy = true) {
 	
 	//the different basic attack
 	global.attackList = {
-		basicAttack : new create_basic_attack(
+		basicAttack : new create_attack(
 			sprWand,
 			objBasicBullet,
 			15,
@@ -139,7 +139,7 @@ function get_damaged (_damageObj, _iframes = false, _isEnemy = true) {
 			0
 		),
 		
-		fireBasicAttack : new create_basic_attack(
+		fireBasicAttack : new create_attack(
 			sprWand,
 			objBasicFire,
 			15,
@@ -147,7 +147,7 @@ function get_damaged (_damageObj, _iframes = false, _isEnemy = true) {
 			0
 		),
 		
-		iceBasicAttack : new create_basic_attack(
+		iceBasicAttack : new create_attack(
 			sprWand,
 			objBasicIce,
 			30, 
@@ -155,7 +155,7 @@ function get_damaged (_damageObj, _iframes = false, _isEnemy = true) {
 			0
 		),
 		
-		windBasicAttack : new create_basic_attack(
+		windBasicAttack : new create_attack(
 			sprWand,
 			objBasicWind,
 			30,
@@ -163,7 +163,7 @@ function get_damaged (_damageObj, _iframes = false, _isEnemy = true) {
 			0
 		),
 		
-		fireSpecialAttack : new create_basic_attack(
+		fireSpecialAttack : new create_attack(
 			sprWand,
 			objSpecialFire,
 			60,
@@ -171,37 +171,44 @@ function get_damaged (_damageObj, _iframes = false, _isEnemy = true) {
 			0
 		),
 		
-		iceSpecialAttack : new create_basic_attack(
+		iceSpecialAttack : new create_attack(
 			sprWand,
 			objSpecialFlashFreeze,
 			30, 
 			1,
 			0
 		),	
-		windSpecialAttack : new create_basic_attack(
+		windSpecialAttack : new create_attack(
 			sprWand,
 			objSpecialWind,
 			30,
 			3, 
 			30
 		),
-		infernoSpecialAttack : new create_basic_attack(
+		infernoSpecialAttack : new create_attack(
 			sprWand,
 			objSpecialInferno,
 			30,
 			1, 
 			0
 		),
-		blizzardSpecialAttack : new create_basic_attack(
+		blizzardSpecialAttack : new create_attack(
 			sprWand,
 			objSpecialBlizzard,
 			30,
 			1, 
 			0
 		),
-		frostFireSpecialAttack : new create_basic_attack(
+		frostFireSpecialAttack : new create_attack(
 			sprWand,
 			objSpecialFrostFire,
+			30,
+			1, 
+			0
+		),
+		prismSpecialAttack : new create_attack(
+			sprWand,
+			objSpecialPrism,
 			30,
 			1, 
 			0

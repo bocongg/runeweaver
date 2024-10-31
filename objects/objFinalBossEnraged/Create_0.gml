@@ -1,17 +1,11 @@
-damage = 20;
-hitconfirm = false;
+// Inherit the parent event
+//hp
+event_inherited();
 
-get_damaged_create(80);
-
-debuffs = [];
-tick = 0;
-baseSpd = 0.5; 
-chaseSpd = baseSpd;
-
-freezeEnemy = false; //new
-freezeEnemyID = noone;
+get_damaged_create(50);
 
 spd = 0;
+chaseSpd = 6;
 dir = 0;
 xspd = 0;
 yspd = 0; 
@@ -30,3 +24,6 @@ bulletInst = noone;
 	
 bulletXoff = 5;
 bulletYoff = -20;
+
+//create path to follow player
+path = path_add();
