@@ -102,7 +102,10 @@ if (room != rmTreasure && room != rmShop && room != rmRest && room != rmEventA &
 		} else if specialAttack.bulletObj == objSpecialFlashFreeze {
 			//create the bullet
 			var _bulletInst = instance_create_depth(x, y, depth-100, specialAttack.bulletObj);
-		} 	
+		} else if specialAttack.bulletObj == objSpecialPrism {
+			//create the bullet
+			var _bulletInst = instance_create_depth(x+20, y, depth-100, specialAttack.bulletObj);
+		}	
 		else {
 		
 			for (var i = 0; i < specialAttack.bulletNum ; i++) {

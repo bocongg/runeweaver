@@ -31,6 +31,7 @@
     {"name":"inst_3C859927","path":"rooms/rmFinalBoss/rmFinalBoss.yy",},
     {"name":"inst_1FE67A45","path":"rooms/rmFinalBoss/rmFinalBoss.yy",},
     {"name":"inst_332961F7","path":"rooms/rmFinalBoss/rmFinalBoss.yy",},
+    {"name":"inst_61DC34B2","path":"rooms/rmFinalBoss/rmFinalBoss.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -61,6 +62,7 @@
         {"$GMRInstance":"v1","%Name":"inst_71D82FCB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":true,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_71D82FCB","objectId":{"name":"objEliteEnemy","path":"objects/objEliteEnemy/objEliteEnemy.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1669.0,"y":493.0,},
         {"$GMRInstance":"v1","%Name":"inst_1374D577","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":true,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1374D577","objectId":{"name":"objEliteEnemy","path":"objects/objEliteEnemy/objEliteEnemy.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1731.0,"y":859.0,},
         {"$GMRInstance":"v1","%Name":"inst_332961F7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_332961F7","objectId":{"name":"objFinalBossInitial","path":"objects/objFinalBossInitial/objFinalBossInitial.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1198.0,"y":569.0,},
+        {"$GMRInstance":"v1","%Name":"inst_61DC34B2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_61DC34B2","objectId":{"name":"objGrid","path":"objects/objGrid/objGrid.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":106.0,"y":-59.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets_1","assets":[
         {"$GMRSpriteGraphic":"","%Name":"graphic_6C18F9F5","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":true,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_6C18F9F5","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sprRmUpnstairsRight","path":"sprites/sprRmUpnstairsRight/sprRmUpnstairsRight.yy",},"x":1840.0,"y":928.0,},

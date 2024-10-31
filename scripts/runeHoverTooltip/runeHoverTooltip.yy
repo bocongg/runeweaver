@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"runeHoverTooltip",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"runeHoverTooltip",
+  "parent":{
+    "name":"Inventory",
+    "path":"folders/Scripts/Inventory.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

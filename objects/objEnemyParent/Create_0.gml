@@ -24,3 +24,6 @@ chaseSpd = baseSpd;
 
 freezeEnemy = false; //new
 freezeEnemyID = noone;
+
+////create path to follow player
+//path = path_add();

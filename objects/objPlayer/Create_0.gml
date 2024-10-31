@@ -30,7 +30,7 @@ if (!variable_global_exists("moveSpd")){
 	shootTimer = 0;
 	
 	basicAttack = global.attackList.basicAttack;
-	specialAttack = global.attackList.basicAttack;
+	specialAttack = global.attackList.prismSpecialAttack;
 	
 	chestOpened = false;
 	bossEncounter = false;

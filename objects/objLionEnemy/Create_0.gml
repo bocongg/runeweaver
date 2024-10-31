@@ -1,11 +1,11 @@
-damage = 10;
+damage = 4;
 hitconfirm = false;
 
-get_damaged_create(30);
+get_damaged_create(20);
 
 debuffs = [];
 tick = 0;
-baseSpd = 1; 
+baseSpd = 8; 
 chaseSpd = baseSpd;
 
 
@@ -31,3 +31,6 @@ bulletInst = noone;
 	
 bulletXoff = 5;
 bulletYoff = -20;
+
+//create path to follow player
+path = path_add();

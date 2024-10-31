@@ -125,16 +125,6 @@ if (room == rmTraining && instance_exists(objPlayer)) {
 		instance_create_layer(ref_point_x + lengthdir_x(200, random_dir), ref_point_y + lengthdir_y(200, random_dir), "Instances", objFinalBossInitial);
 	}
 	
-	if (keyboard_check_pressed(ord("7"))){
-		randomise();
-		var ref_point_x, ref_point_y, random_dir;
-		ref_point_x = room_width / 2;
-		ref_point_y = room_height / 2;
-		random_dir = irandom(360);
-		
-		instance_create_layer(ref_point_x + lengthdir_x(200, random_dir), ref_point_y + lengthdir_y(200, random_dir), "Instances", objFinalBossEnraged);
-	}
-	
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	if (keyboard_check_pressed(ord("Q"))){
 		global.playerHp = global.playerMaxHp;

@@ -7,13 +7,12 @@ freezeEnemy = false;
 for (var i = array_length(debuffs) - 1; i >= 0; --i) {
    var _debuff = debuffs[i];
    var _tick_rate = round(_debuff[DebuffInfo.TICK_RATE]);
-   show_debug_message("Instance ID in objEnemyParent: " + string(instance_id_get(i)));
+
    //apply speed reduction if the debuff has SPEED_REDUCTION
    if(_debuff[DebuffInfo.SPEED_REDUCTION] != undefined) {
 		chaseSpd = baseSpd * (1 - _debuff[DebuffInfo.SPEED_REDUCTION]);
 		freezeEnemy = true;
 		freezeEnemyID = instance_id_get(i);
-		 show_debug_message("freezeEnemy: " + string(freezeEnemy) + " ; freezeEnemyID: " + string(freezeEnemyID));
    }
    
    //apply damage if it's time to do so
@@ -53,6 +52,15 @@ if instance_exists(objPlayer) {
 	//set the correct speed
 	spd = chaseSpd;	
 
+//create path and move to player
+var px = (objPlayer.x div 32) * 32 + 16;
+var py = (objPlayer.y
+div 32) * 32 + 16;
+
+if(mp_grid_path(global.grid,path,x,y,px,py,1)){
+  path_start(path,chaseSpd,path_action_stop, false);  
+}
+
 //chase the player
 	//getting the speed
 	xspd = lengthdir_x(spd, dir);
@@ -62,8 +70,13 @@ if instance_exists(objPlayer) {
 	if dir > 90 && dir < 270 {face = -1;} else {face = 1;}
 
 	//collisions
-	if place_meeting(x + xspd, y, objWall) || place_meeting(x + xspd, y, objEnemyParent){xspd = 0;}
-	if place_meeting(x, y + yspd, objWall) || place_meeting(x, y + yspd, objEnemyParent) {yspd = 0;}
+	if place_meeting(x + xspd, y, objWall) || 
+	place_meeting(x + xspd, y, objEnemyParent)
+	{xspd = 0;}
+	
+	if place_meeting(x, y + yspd, objWall) || 
+	place_meeting(x, y + yspd, objEnemyParent) 
+	{yspd = 0;}
 	
 	//moving
 	x += xspd;
