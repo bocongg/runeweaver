@@ -26,9 +26,6 @@ if(device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_right
 			// If Mouse Released - If left mouse button is released...
 			if (mouse_check_button_released(mb_left))
 			{
-				//instance_deactivate_layer("InventoryScreen");
-				//instance_deactivate_layer("Buttons");
-				//instance_activate_layer("Instances");
 				with(objInventory) instance_destroy();
 				with(objWeaveButton) instance_destroy();
 				with(objExitInvButton) instance_destroy();

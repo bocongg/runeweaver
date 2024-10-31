@@ -1,4 +1,4 @@
-damage = 1;
+damage = 10;
 hitconfirm = false;
 
 get_damaged_create();

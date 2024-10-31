@@ -36,7 +36,7 @@ function eventAOption1(){
 			_upgrade.upgrade_data = _upgrade_data;
 			_x += 400;
 		}
-		
+		audio_play_sound(sndRuneChoice, 0, 0, 1.0, undefined, 1.0);
 		instance_create_layer(960, 864, "UpgradeScreen", objAddToInv);
 	};
 	
@@ -74,7 +74,7 @@ function eventAOption1(){
 			_upgrade.upgrade_data = _upgrade_data;
 			_x += 400;
 		}
-		
+		audio_play_sound(sndRuneChoice, 0, 0, 1.0, undefined, 1.0);
 		instance_create_layer(960, 864, "UpgradeScreen", objAddToInv);
 	}
 }
@@ -171,7 +171,7 @@ function eventBOption1(){
 		_upgrade.upgrade_data = _upgrade_data;
 		_x += 400;
 	}
-		
+	audio_play_sound(sndRuneChoice, 0, 0, 1.0, undefined, 1.0);
 	instance_create_layer(960, 864, "UpgradeScreen", objAddToInv);
 }
 
@@ -211,7 +211,7 @@ function eventBOption2(){
 		_upgrade.upgrade_data = _upgrade_data;
 		_x += 400;
 	}
-		
+	audio_play_sound(sndRuneChoice, 0, 0, 1.0, undefined, 1.0);
 	instance_create_layer(960, 864, "UpgradeScreen", objAddToInv);
 }
 	
@@ -259,7 +259,7 @@ function eventCOption1(){
 		_upgrade.upgrade_data = _upgrade_data;
 		_x += 400;
 	}
-		
+	audio_play_sound(sndRuneChoice, 0, 0, 1.0, undefined, 1.0);
 	instance_create_layer(960, 864, "UpgradeScreen", objAddToInv);
 }
 
@@ -299,6 +299,6 @@ function eventCOption2(){
 		_upgrade.upgrade_data = _upgrade_data;
 		_x += 400;
 	}
-		
+	audio_play_sound(sndRuneChoice, 0, 0, 1.0, undefined, 1.0);
 	instance_create_layer(960, 864, "UpgradeScreen", objAddToInv);
 }

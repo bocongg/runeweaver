@@ -27,7 +27,7 @@
   ],
   "name":"sprSpecialFire",
   "nineSlice":null,
-  "origin":5,
+  "origin":3,
   "parent":{
     "name":"Powers",
     "path":"folders/Sprites/Powers.yy",
@@ -91,7 +91,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":60,
+    "xorigin":0,
     "yorigin":26,
   },
   "swatchColours":null,

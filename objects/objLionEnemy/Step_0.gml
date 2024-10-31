@@ -44,7 +44,7 @@ switch(state) {
 		
 			//create the bullet
 			if shootTimer == 1 {
-				bulletInst = instance_create_depth(x + bulletXoff*face, y + bulletYoff, depth, objEnemyBullet);
+				bulletInst = instance_create_depth(x + bulletXoff*face, y + bulletYoff, depth, objEnemyBullet3Fan);
 			} 
 			//keep the bullet in the enemy's hands
 			if shootTimer <= windupTime && instance_exists(bulletInst) {

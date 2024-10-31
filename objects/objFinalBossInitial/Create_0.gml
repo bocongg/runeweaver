@@ -1,11 +1,17 @@
-// Inherit the parent event
-//hp
-event_inherited();
+damage = 20;
+hitconfirm = false;
 
-get_damaged_create(10);
+get_damaged_create(50);
+
+debuffs = [];
+tick = 0;
+baseSpd = 0.5; 
+chaseSpd = baseSpd;
+
+freezeEnemy = false; //new
+freezeEnemyID = noone;
 
 spd = 0;
-chaseSpd = 3;
 dir = 0;
 xspd = 0;
 yspd = 0; 
