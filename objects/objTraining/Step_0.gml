@@ -52,6 +52,15 @@ if (keyboard_check_pressed(ord("N"))) {
 	}
 }
 
+if (keyboard_check_pressed(ord("M"))) {
+	if !instance_exists(objTransition) {
+		if (room == rmMapOverview) {
+			var _inst = instance_create_layer(x, y, "Instances", objTransition);
+			_inst.targetRoom = rmRestShop;	
+		}
+	}
+}
+
 /////////////////////////////////////////////////////////////////////////////////////////////////
 if (keyboard_check_pressed(ord("T"))) {
 	if !instance_exists(objTransition) {

@@ -37,9 +37,8 @@ if (!variable_global_exists("stage")) {
     global.stage = 0;
 }
 
-
-
 randomise();
+
 //Stage 2 generation - Combat & Event rooms only
 var objRmList = [objRmNode1, objRmNode2];
 

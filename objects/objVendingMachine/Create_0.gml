@@ -1,3 +1,1 @@
-//get_damaged_create();
-
-vendingUsed = false;
+global.vendingTimes = 0

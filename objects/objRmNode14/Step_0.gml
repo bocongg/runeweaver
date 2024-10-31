@@ -37,18 +37,7 @@ if  (!instance_exists(objGet3RuneScreen) && !instance_exists(objInventory)){
 				
 				if !instance_exists(objTransition) {
 					var _inst = instance_create_layer(x, y, "Instances", objTransition);
-					if (nodeSpr == sprRmRest) {
-						_inst.targetRoom = rmRest;
-					} else
-					if (nodeSpr == sprRmShop) {
-						_inst.targetRoom = rmShop;
-					} else
-					if (nodeSpr == sprRmTreasure) {
-						_inst.targetRoom = rmTreasure;
-					} else 
-					if (nodeSpr == sprRmEvent) {
-						_inst.targetRoom = choose(rmEventA, rmEventB, rmEventC);
-					} else _inst.targetRoom = rmCombat2;
+					_inst.targetRoom = rmRestShop;
 				}
 			}
 		}

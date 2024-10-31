@@ -1,89 +1,175 @@
-// Declare a function that retrieves all possible rune cards and creates rune card objects for 3 of them.
-function getEnergyDrink(_rune_list)
+// Declare a function that retrieves all possible shop items and creates shop item objects for 3 of them.
+function getEnergyDrink(_item_list)
 {
-	// Create map to store the rune.
+	// Create map to store the item.
 	var _map = ds_map_create();
 	
-	// Add fire rune L1 details to map.
+	// Add Energy Drink details to map.
 	ds_map_replace(_map, "icon", sprEnergyDrink);
+	ds_map_replace(_map, "stock", 1);
+	ds_map_replace(_map, "cost", 60);
 	
-	// Add fire rune L1 to rune list.
-	ds_list_add(_rune_list, _map);
+	// Add Energy Drink to item list.
+	ds_list_add(_item_list, _map);
 }
 
-function getFishTreat(_rune_list)
+function getFishTreat(_item_list)
 {
-	// Create map to store the rune.
+	// Create map to store the item.
 	var _map = ds_map_create();
 	
-	// Add fire rune L1 details to map.
+	// Add Fish Treat details to map.
 	ds_map_replace(_map, "icon", sprFishTreat);
+	ds_map_replace(_map, "stock", 1);
+	ds_map_replace(_map, "cost", 60);
 	
-	// Add fire rune L1 to rune list.
-	ds_list_add(_rune_list, _map);
+	// Add Fish Treat to item list.
+	ds_list_add(_item_list, _map);
 }
 
-function getLuckyBell(_rune_list)
+function getLuckyBell(_item_list)
 {
-	// Create map to store the rune.
+	// Create map to store the item.
 	var _map = ds_map_create();
 	
-	// Add fire rune L1 details to map.
+	// Add Lucky Bell details to map.
 	ds_map_replace(_map, "icon", sprLuckyBell);
+	ds_map_replace(_map, "stock", 1);
+	ds_map_replace(_map, "cost", 20);
 	
-	// Add fire rune L1 to rune list.
-	ds_list_add(_rune_list, _map);
+	// Add Lucky Bell to item list.
+	ds_list_add(_item_list, _map);
 }
-
-
 
 
 function getShopItems() 
-{
-	// Destroy any existing rune cards.
-	with(objGetItems)
-	{
-		// Destroy object.
-		instance_destroy();
-	}
+{	
+	switch(global.vendingTimes){
+		case 0:
+			// Destroy any existing item cards.
+			with(objGetItems)
+			{
+				// Destroy object.
+				instance_destroy();
+			}
 
-	// Create a new list to hold possible rune cards.
-	var _item_list = ds_list_create();
+			// Create a new list to hold possible shop items.
+			global.item_list = ds_list_create();
 
-	// Get upgrades for the fire rune and place them in the list.
-	getEnergyDrink(_item_list);
+			// Get upgrades for the Energy Drink and place them in the list.
+			getEnergyDrink(global.item_list);
 
-	// Get upgrades for the ice rune and place them in the list.
-	getFishTreat(_item_list);
+			// Get upgrades for the Fish Treat and place them in the list.
+			getFishTreat(global.item_list);
 
-	// Get upgrades for the wind rune and place them in the list.
-	getLuckyBell(_item_list);
+			// Get upgrades for the Lucky Bell and place them in the list.
+			getLuckyBell(global.item_list);
 
-	// Shuffle the list containing all the retrieved upgrades.
-	//listShuffle(_item_list);
+			// Shuffle the list containing all the retrieved upgrades.
+			//listShuffle(_item_list);
 
-	// Get the size of the list, this is how many upgrades are in it.
-	var _size = ds_list_size(_item_list);
+			// Get the size of the list, this is how many upgrades are in it.
+			var _size = ds_list_size(global.item_list);
 
-	// Define the x position where the first rune card will be created.
-	var _x = -400;
+			// Define the x position where the first item card will be created.
+			var _x = -400;
 
-	// For each upgrade in the list, up to a max of 3...
-	for (var _index = 0; _index < min(_size, 3); _index += 1)
-	{
-		// Get the upgrade at the current index.
-		_upgrade_data = ds_list_find_value(_item_list, _index);
+			// For each upgrade in the list, up to a max of 3...
+			for (var _index = 0; _index < min(_size, 3); _index += 1)
+			{
+				// Get the upgrade at the current index.
+				_upgrade_data = ds_list_find_value(global.item_list, _index);
 	
-		// Create a new upgrade card object.
-		var _upgrade = instance_create_layer(1920 / 2 + _x, 1080/2, "UpgradeScreen", objGetItems);
+				// Create a new upgrade card object.
+				var _upgrade = instance_create_layer(1920 / 2 + _x, 1080/2, "UpgradeScreen", objGetItems);
 		
-		// Set the reveal covering life.
-		_upgrade.roll_life = 0.5 + 0.25 * _index;
+				// Set the reveal covering life.
+				_upgrade.roll_life = 0.5 + 0.25 * _index;
 	
-		// Set the upgrade data to the rune card object.
-		_upgrade.upgrade_data = _upgrade_data;
+				// Set the upgrade data to the item card object.
+				_upgrade.upgrade_data = _upgrade_data;
 	
-		// Increment the x position for the next card.
-		_x += 400;
-	}
+				// Increment the x position for the next card.
+				_x += 400;
+			}
+			break;
+		case 1:
+			// Get the size of the list, this is how many upgrades are in it.
+			var _size = ds_list_size(global.item_list);
+
+			// Define the x position where the first item card will be created.
+			var _x = -400;
+			
+			// For each upgrade in the list, up to a max of 3...
+			for (var _index = 0; _index < min(_size, 3); _index += 1)
+			{
+				// Get the upgrade at the current index.
+				_upgrade_data = ds_list_find_value(global.item_list, _index);
+	
+				// Create a new upgrade card object.
+				var _upgrade = instance_create_layer(1920 / 2 + _x, 1080/2, "UpgradeScreen", objGetItems);
+		
+				// Set the reveal covering life.
+				_upgrade.roll_life = 0.5 + 0.25 * _index;
+	
+				// Set the upgrade data to the item card object.
+				_upgrade.upgrade_data = _upgrade_data;
+	
+				// Increment the x position for the next card.
+				_x += 400;
+			}
+			break;
+		case 2:
+			// Get the size of the list, this is how many upgrades are in it.
+			var _size = ds_list_size(global.item_list);
+
+			// Define the x position where the first item card will be created.
+			var _x = -400;
+			
+			// For each upgrade in the list, up to a max of 3...
+			for (var _index = 0; _index < min(_size, 3); _index += 1)
+			{
+				// Get the upgrade at the current index.
+				_upgrade_data = ds_list_find_value(global.item_list, _index);
+	
+				// Create a new upgrade card object.
+				var _upgrade = instance_create_layer(1920 / 2 + _x, 1080/2, "UpgradeScreen", objGetItems);
+		
+				// Set the reveal covering life.
+				_upgrade.roll_life = 0.5 + 0.25 * _index;
+	
+				// Set the upgrade data to the item card object.
+				_upgrade.upgrade_data = _upgrade_data;
+	
+				// Increment the x position for the next card.
+				_x += 400;
+			}
+			break;
+		case 3:
+			// Get the size of the list, this is how many upgrades are in it.
+			var _size = ds_list_size(global.item_list);
+
+			// Define the x position where the first item card will be created.
+			var _x = -400;
+			
+			// For each upgrade in the list, up to a max of 3...
+			for (var _index = 0; _index < min(_size, 3); _index += 1)
+			{
+				// Get the upgrade at the current index.
+				_upgrade_data = ds_list_find_value(global.item_list, _index);
+	
+				// Create a new upgrade card object.
+				var _upgrade = instance_create_layer(1920 / 2 + _x, 1080/2, "UpgradeScreen", objGetItems);
+		
+				// Set the reveal covering life.
+				_upgrade.roll_life = 0.5 + 0.25 * _index;
+	
+				// Set the upgrade data to the item card object.
+				_upgrade.upgrade_data = _upgrade_data;
+	
+				// Increment the x position for the next card.
+				_x += 400;
+			}
+			break;
+	}	
 }

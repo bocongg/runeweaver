@@ -21,6 +21,7 @@
     {"name":"inst_48CE60DA_2","path":"rooms/rmRestShop/rmRestShop.yy",},
     {"name":"inst_BAD7BEB","path":"rooms/rmRestShop/rmRestShop.yy",},
     {"name":"inst_3E8EDA0D","path":"rooms/rmRestShop/rmRestShop.yy",},
+    {"name":"inst_61BAEA","path":"rooms/rmRestShop/rmRestShop.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -55,6 +56,7 @@
         {"$GMRInstance":"v1","%Name":"inst_5007E67A_3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5007E67A_3","objectId":{"name":"objSolidWall","path":"objects/objSolidWall/objSolidWall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":58.375004,"scaleY":1.0,"x":38.0,"y":403.0,},
         {"$GMRInstance":"v1","%Name":"inst_2E2FBF45_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2E2FBF45_1","objectId":{"name":"objSolidWall","path":"objects/objSolidWall/objSolidWall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":8.375,"scaleY":1.53125,"x":1124.0,"y":721.0,},
         {"$GMRInstance":"v1","%Name":"inst_48CE60DA_2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_48CE60DA_2","objectId":{"name":"objSolidWall","path":"objects/objSolidWall/objSolidWall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":3.28125,"scaleY":6.46875,"x":1205.0,"y":564.0,},
+        {"$GMRInstance":"v1","%Name":"inst_61BAEA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_61BAEA","objectId":{"name":"objSolidWall","path":"objects/objSolidWall/objSolidWall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":6.8125,"scaleY":9.03125,"x":709.0,"y":327.0,},
       ],"layers":[],"name":"walls","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
   ],
   "name":"rmRestShop",

@@ -77,4 +77,4 @@ with(objEventOutcomeScreen) instance_destroy();
 with(objEventOutcomeCScreen) instance_destroy();
 with(objGetTreasureScreen) instance_destroy();
 
-instance_create_layer(1917, 831, "Instances", objStairs);
+instance_create_layer(1920, 901, "Instances", objStairs);
