@@ -22,7 +22,9 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
 // Draws the heading.
-draw_text(1920 / 2, 175, "CONGRATS!");
+draw_text(1920 / 2 - 380, 175, "You offered");
+draw_sprite(spr_item, global.eventCRuneID, 1920 / 2, 175)
+draw_text(1920 / 2 + 400, 175, "and received:");
 
 draw_set_font(fntMedium);
 draw_set_halign(fa_left);

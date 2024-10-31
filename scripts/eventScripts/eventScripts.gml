@@ -127,6 +127,7 @@ function eventAOption2(){
 			_x += 400;
 		}
 		
+		audio_play_sound(sndRuneChoice, 0, 0, 1.0, undefined, 1.0);
 		instance_create_layer(960, 864, "UpgradeScreen", objAddToInv);
 	}
 }
@@ -218,6 +219,7 @@ function eventBOption2(){
 function eventBOption3(){
 	instance_create_layer(1920/2, 1080/2, "UpgradeScreen", objOKByeScreen);
 	with(objEventOutcomeScreen) instance_destroy();
+	with(objEventOutcomeCScreen) instance_destroy();
 	instance_create_layer(1917, 831, "Instances", objStairs);
 }
 

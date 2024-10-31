@@ -15,10 +15,6 @@ with (obj_slot)
 		draw_sprite(spr_item, iid, x, y); //Draw item sprite
 		draw_set_font(fntMedium);
 		draw_text(x+40, y+50, string(amount)); //Draw item quantity
-		
-		//if (position_meeting(mouse_x, mouse_y, id)) {
-		//	runeHoverTooltip(iid);
-		//}
 	}
 }
 

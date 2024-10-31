@@ -52,7 +52,7 @@ for (var i = 0; i < 2; i+=1){
 objRmList = [objRmNode3, objRmNode4, objRmNode5];
 
 for (var i = 0; i < 3; i+=1){
-	var randomRm = choose(sprRmCombat, sprRmEvent, sprRmShop, sprRmTreasure);
+	var randomRm = choose(sprRmCombat, sprRmCombat, sprRmCombat, sprRmCombat, sprRmCombat, sprRmEvent, sprRmEvent, sprRmEvent, sprRmShop, sprRmTreasure);
 	object_set_sprite(objRmList[i], randomRm);
 }
 
@@ -70,7 +70,7 @@ for (var i = 0; i < 2; i+=1){
 objRmList = [objRmNode9, objRmNode10];
 
 for (var i = 0; i < 2; i+=1){
-	var randomRm = choose(sprRmCombat, sprRmEvent, sprRmShop, sprRmTreasure);
+	var randomRm = choose(sprRmCombat, sprRmCombat, sprRmCombat, sprRmCombat, sprRmCombat, sprRmEvent, sprRmEvent, sprRmEvent, sprRmShop, sprRmTreasure);
 	object_set_sprite(objRmList[i], randomRm);
 }
 
@@ -78,7 +78,7 @@ for (var i = 0; i < 2; i+=1){
 objRmList = [objRmNode11, objRmNode12, objRmNode13];
 
 for (var i = 0; i < 3; i+=1){
-	var randomRm = choose(sprRmCombat, sprRmEvent, sprRmShop, sprRmTreasure);
+	var randomRm = choose(sprRmCombat, sprRmCombat, sprRmCombat, sprRmCombat, sprRmCombat, sprRmEvent, sprRmEvent, sprRmEvent, sprRmShop, sprRmTreasure);
 	object_set_sprite(objRmList[i], randomRm);
 }
 
