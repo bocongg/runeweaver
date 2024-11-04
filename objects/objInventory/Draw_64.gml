@@ -5,7 +5,7 @@ if (global.stage == 0) {
 }
 
 with (obj_slot)
-{
+{		
 	//Get values
 	var iid = global.inventory[# var_slot, 0];
 	var amount = global.inventory[# var_slot, 1];
@@ -22,22 +22,22 @@ with (obj_slot_Attack)
 {
 	var iidAttack = global.attack_slot[# var_slotAttack, 0];
 	var amountAttack = global.attack_slot[# var_slotAttack, 1];
-	
-	if (iidAttack != item.none)
-	{
-		draw_sprite(spr_item, iidAttack, x, y)
-	}
+
+    if (iidAttack != item.none)
+    {
+        draw_sprite(spr_item, iidAttack, x, y);
+    }
 }
 
 with (obj_slot_Weave)
 {
 	var iidWeave = global.weave_slot[# var_slotWeave, 0];
 	var amountWeave = global.weave_slot[# var_slotWeave, 1];
-	
-	if (iidWeave != item.none)
-	{
-		draw_sprite(spr_item, iidWeave, x, y)
-	}
+
+    if (iidWeave != item.none)
+    {
+        draw_sprite(spr_item, iidWeave, x, y);
+    }
 }
 	
 //Get values

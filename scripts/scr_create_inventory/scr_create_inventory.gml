@@ -1,6 +1,5 @@
 /// @description Creates the inventory slots.
 function scr_create_inventory() {
-
 	var slot = 0;
 	
 	while (slot < ds_grid_width(global.inventory))

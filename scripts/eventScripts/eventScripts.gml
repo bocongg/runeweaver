@@ -1,8 +1,8 @@
-//Obtain 2-3 Level 1 runes of the same element.
+//Obtain 1-2 Level 1 runes of the same element.
 
 function eventAOption1(){
 	randomise();
-	var _quantity = choose(2,3);
+	var _quantity = choose(1,2);
 	var _rune_type = choose("fire","ice", "wind");
 	
 	if _quantity == 2 {
@@ -40,7 +40,7 @@ function eventAOption1(){
 		instance_create_layer(960, 864, "UpgradeScreen", objAddToInv);
 	};
 	
-	if _quantity == 3 {
+	if _quantity == 1 {
 		with(objAddRunes)
 		{
 			instance_destroy();
@@ -50,23 +50,17 @@ function eventAOption1(){
 
 		if (_rune_type == "fire"){
 			getFireRuneL1(_rune_list);
-			getFireRuneL1(_rune_list);
-			getFireRuneL1(_rune_list);
 		} else if (_rune_type == "ice"){
 			getIceRuneL1(_rune_list);
-			getIceRuneL1(_rune_list);
-			getIceRuneL1(_rune_list);
 		} else if (_rune_type == "wind"){
-			getWindRuneL1(_rune_list);
-			getWindRuneL1(_rune_list);
 			getWindRuneL1(_rune_list);
 		} 
 
 		var _size = ds_list_size(_rune_list);
 
-		var _x = -400;
+		var _x = 0;
 
-		for (var _index = 0; _index < min(_size, 3); _index += 1)
+		for (var _index = 0; _index < min(_size, 1); _index += 1)
 		{
 			_upgrade_data = ds_list_find_value(_rune_list, _index);
 			var _upgrade = instance_create_layer(1920 / 2 + _x, 1080/2, "UpgradeScreen", objAddRunes);
