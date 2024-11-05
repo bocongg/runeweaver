@@ -1,5 +1,5 @@
 if (!audio_is_playing(sndGameLose)){
-	audio_play_sound(sndGameLose, 0, 0, 1.0, undefined, 1.0);
+	audio_play_sound(sndGameLose, 0, 0, 0.7);
 }
 
 if (image_speed > 0)

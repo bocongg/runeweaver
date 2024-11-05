@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sndVendingMachineAmbient",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":18.761208,
+  "name":"sndVendingMachineAmbient",
+  "parent":{
+    "name":"Shop",
+    "path":"folders/Sounds/Shop.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sndVendingMachineAmbient.mp3",
+  "type":0,
+  "volume":1.0,
+}

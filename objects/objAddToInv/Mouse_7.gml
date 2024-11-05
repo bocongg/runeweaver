@@ -1,7 +1,7 @@
 sprite_index = sprButton;
 image_index = 1;
 
-audio_play_sound(sndRuneSelect, 0, 0, 1.0, undefined, 1.0);
+audio_play_sound(sndRuneCardSelect, 0, 0, 1.0, undefined, 1.0);
 
 with (objAddRunes){
 	var _icon = ds_map_find_value(upgrade_data, "icon");

@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":105.11674,
+  "duration":105.122,
   "name":"sndGameWin",
   "parent":{
     "name":"Sounds",
@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"sndGameWin.mp3",
   "type":0,
-  "volume":0.57,
+  "volume":1.0,
 }

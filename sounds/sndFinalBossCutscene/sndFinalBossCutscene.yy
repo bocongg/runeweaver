@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":374.6743,
+  "duration":375.01917,
   "name":"sndFinalBossCutscene",
   "parent":{
     "name":"FInal Boss",

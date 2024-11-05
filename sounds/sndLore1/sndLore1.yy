@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":29.688,
+  "duration":29.75875,
   "name":"sndLore1",
   "parent":{
     "name":"Sounds",
@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"sndLore1.mp3",
   "type":0,
-  "volume":1.0,
+  "volume":0.8,
 }

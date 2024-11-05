@@ -1,5 +1,3 @@
-event_inherited();
-
 text = "Replay again";
 
 // Variable used for clicked state.

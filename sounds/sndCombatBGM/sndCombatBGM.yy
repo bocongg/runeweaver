@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":197.6553,
+  "duration":197.88283,
   "name":"sndCombatBGM",
   "parent":{
     "name":"Sounds",
