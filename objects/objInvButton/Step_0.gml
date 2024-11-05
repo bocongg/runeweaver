@@ -30,14 +30,10 @@ if(device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_right
 			// If Mouse Released - If left mouse button is released...
 			if (mouse_check_button_released(mb_left))
 			{
-				var _camX = camera_get_view_x(view_camera[0]);
-				var _camY = camera_get_view_y(view_camera[0]);
-
 				instance_create_layer(1920/2, 1080/2, "InventoryScreen", objInventory);
 				instance_create_layer(1487, 146, "Buttons", objExitInvButton);
 				instance_create_layer(960, 367, "Buttons", objWeaveButton);
-				instance_deactivate_layer("UpgradeScreenBase");
-				instance_deactivate_layer("UpgradeScreen");
+				instance_deactivate_object(objGetRunes);
 				instance_deactivate_object(objPlayer);
 			}
 		}
