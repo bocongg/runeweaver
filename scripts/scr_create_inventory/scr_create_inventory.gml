@@ -1,5 +1,7 @@
 /// @description Creates the inventory slots.
 function scr_create_inventory() {
+	global.inventory_slots = ds_list_create();
+	
 	var slot = 0;
 	
 	while (slot < ds_grid_width(global.inventory))
@@ -16,11 +18,16 @@ function scr_create_inventory() {
 			itemY = bbox_top + 480 + 176 + 176;
 		}	
 			
-		var inst = instance_create_layer(itemX, itemY, "InventoryScreen", obj_slot);
-		inst.var_slot = slot;
+		var slot_data = {
+            x: itemX,
+            y: itemY,
+            index: slot
+        };
+        ds_list_add(global.inventory_slots, slot_data);
 		slot ++;
 	}
 	
+	global.attack_slots = ds_list_create();
 	
 	var slotAttack = 0;
 	
@@ -34,10 +41,16 @@ function scr_create_inventory() {
 			itemY = 888;
 		}
 
-		var inst = instance_create_layer(itemX, itemY, "InventoryScreen", obj_slot_Attack);
-		inst.var_slotAttack = slotAttack;
+		var slotAttack_data = {
+            x: itemX,
+            y: itemY,
+            index: slotAttack
+        };
+        ds_list_add(global.attack_slots, slotAttack_data);
 		slotAttack ++;
 	}
+	
+	global.weave_slots = ds_list_create();
 	
 	var slotWeave = 0;
 	
@@ -59,8 +72,12 @@ function scr_create_inventory() {
 			itemY = 215;
 		}
 
-		var inst = instance_create_layer(itemX, itemY, "InventoryScreen", obj_slot_Weave);
-		inst.var_slotWeave = slotWeave;
+		var slotWeave_data = {
+            x: itemX,
+            y: itemY,
+            index: slotWeave
+        };
+        ds_list_add(global.weave_slots, slotWeave_data);
 		slotWeave ++;
 	}
 
