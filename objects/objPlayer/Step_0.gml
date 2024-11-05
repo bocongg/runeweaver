@@ -146,7 +146,7 @@ if global.playerHp <= 0 {
 	instance_destroy();
 }
 
-if (!chestOpened && room != rmTraining && room != rmWinScreen && room != rmTreasure && room != rmShop && room != rmRest && room != rmRestShop && room != rmEventA && room != rmEventB && room != rmEventC && room != rmFinalBoss) {
+if (!chestOpened && !object_exists(objLoseGif) && room != rmTraining && room != rmWinScreen && room != rmTreasure && room != rmShop && room != rmRest && room != rmRestShop && room != rmEventA && room != rmEventB && room != rmEventC && room != rmFinalBoss) {
 	if (instance_number(objEnemyParent) == 0){
 		if (global.stage == 1){
 			instance_create_layer(x, y, "Instances", objChest);

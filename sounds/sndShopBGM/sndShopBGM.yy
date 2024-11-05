@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":16.32653,
+  "duration":14.268125,
   "name":"sndShopBGM",
   "parent":{
     "name":"Shop",

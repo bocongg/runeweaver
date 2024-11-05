@@ -45,7 +45,7 @@ if ((ds_map_find_value(upgrade_data, "stock") != 0)) && (global.gold >= ds_map_f
 			// Checks for mouse release.
 			if (mouse_check_button_released(mb_left))
 			{
-				audio_play_sound(sndPurchase, 0, 0, 1.0, undefined, 1.0);
+				audio_play_sound(sndPurchase, 0, 0, 1.0);
 			
 				// Set variables for card stats.
 				var _icon = ds_map_find_value(upgrade_data, "icon");
@@ -59,7 +59,7 @@ if ((ds_map_find_value(upgrade_data, "stock") != 0)) && (global.gold >= ds_map_f
 					global.vendingTimes += 1;
 
 				} else if (_icon == sprFishTreat) {
-					audio_play_sound(sndPlayerGainHealth, 0, 0, 1.0, undefined, 1.0);
+					audio_play_sound(sndPlayerGainHealth, 0, 0, 1.0);
 				
 					global.gold -= 60;
 					if (global.playerHp != global.playerMaxHp) {

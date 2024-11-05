@@ -9,11 +9,11 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.391813,
+  "duration":0.42325,
   "name":"sndEnemyAttack",
   "parent":{
-    "name":"Sound Effects",
-    "path":"folders/Sounds/Sound Effects.yy",
+    "name":"Attacks",
+    "path":"folders/Sounds/Attacks.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"sndEnemyAttack.mp3",
   "type":0,
-  "volume":1.0,
+  "volume":0.8,
 }

@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.528,
+  "duration":0.579958,
   "name":"sndChestOpen",
   "parent":{
     "name":"Sound Effects",

@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":71.448,
+  "duration":67.871414,
   "name":"sndTreasureBGM",
   "parent":{
     "name":"Treasure",

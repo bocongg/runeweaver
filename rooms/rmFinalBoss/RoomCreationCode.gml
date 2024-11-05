@@ -1,4 +1,4 @@
-audio_sound_gain(sndStartBGM, 0, 1000);
+audio_sound_gain(sndMenuBGM, 0, 1000);
 
 audio_play_sound(sndFinalBossInitialBGM, 0, 1, 1.0, undefined, 1.0);
 

@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":288.07834,
+  "duration":288.42325,
   "name":"sndRestBGM",
   "parent":{
     "name":"Rest",
