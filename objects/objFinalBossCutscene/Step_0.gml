@@ -12,7 +12,7 @@ if (image_speed > 0)
 		
 		if (audio_is_playing(sndFinalBossCutscene)){
 			audio_stop_all();
-			audio_play_sound(sndFinalBossEnragedBGM, 0, 1, 1.0, undefined, 1.0);
+			audio_play_sound(sndFinalBossEnragedBGM, 0, 1, 1.0, undefined, 0.7);
 		}
 	}
 }
