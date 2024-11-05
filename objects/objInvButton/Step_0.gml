@@ -33,8 +33,7 @@ if(device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_right
 				instance_create_layer(1920/2, 1080/2, "InventoryScreen", objInventory);
 				instance_create_layer(1487, 146, "Buttons", objExitInvButton);
 				instance_create_layer(960, 367, "Buttons", objWeaveButton);
-				instance_deactivate_layer("UpgradeScreenBase");
-				instance_deactivate_layer("UpgradeScreen");
+				instance_deactivate_object(objGetRunes);
 				instance_deactivate_object(objPlayer);
 			}
 		}

@@ -14,10 +14,7 @@
     "name":"Lose Screen",
     "path":"folders/Objects/Lose Screen.yy",
   },
-  "parentObjectId":{
-    "name":"objPauseButtonParent",
-    "path":"objects/objPauseButtonParent/objPauseButtonParent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
