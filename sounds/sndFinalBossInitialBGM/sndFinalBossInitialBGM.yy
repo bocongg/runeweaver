@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":52.459167,
+  "duration":88.299164,
   "name":"sndFinalBossInitialBGM",
   "parent":{
     "name":"FInal Boss",
