@@ -34,10 +34,10 @@ switch(state) {
 		}
 		
 		//set the correct speed
-		spd = 0;
+		chaseSpd = 0;
 		
 		//stop animating or manually set the image index
-		//image_index = 0;
+		image_index = 0;
 		
 		//shoot a bullet
 		shootTimer++;
@@ -102,14 +102,7 @@ if instance_exists(objPlayer) {
 	place_meeting(x + xspd, y, objEnemyParent) {xspd = 0;}
 	
 	if place_meeting(x, y + yspd, objWall) ||
-	place_meeting(x, y + yspd, objEnemyParent){spd = 0;}
-	
-	//moving
-	x += xspd;
-	y += yspd;
-	
-	//set the depth
-	depth = -y;
+	place_meeting(x, y + yspd, objEnemyParent){yspd = 0;}
 
 // Inherit the parent event
 	//getting damage and dying

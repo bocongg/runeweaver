@@ -10,6 +10,7 @@ if (!variable_global_exists("moveSpd")){
 	moveSpd = global.moveSpd
 	xspd = 0;
 	yspd = 0;
+	canMove = true;
 
 
 // Sprite Control
@@ -35,5 +36,3 @@ if (!variable_global_exists("moveSpd")){
 	chestOpened = false;
 	bossEncounter = false;
 	bossEnraged = false;
-	
-	damageState = 0;

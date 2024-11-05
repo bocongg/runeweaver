@@ -34,10 +34,10 @@ switch(state) {
 		}
 		
 		//set the correct speed
-		spd = 0;
+		chaseSpd = 0;
 		
 		//stop animating or manually set the image index
-		//image_index = 0;
+		image_index = 0;
 		
 		//shoot a bullet
 		shootTimer++;
@@ -90,8 +90,8 @@ if instance_exists(objPlayer) {
 	
 	//get the correct face
 	if dir > 90 && dir < 270 
-	{face = -1;} 
-	else {face = 1;}
+		{face = -1;} else 
+		{face = 1;}
 
 	//collisions
 	if place_meeting(x + xspd, y, objWall) || 
@@ -102,11 +102,4 @@ if instance_exists(objPlayer) {
 	place_meeting(x, y + yspd, objEnemyParent)
 	{yspd = 0;}
 	
-	//moving
-	x += xspd;
-	y += yspd;
-	
-	//set the depth
-	depth = -y;
-
 	event_inherited();
