@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":212.82487,
+  "duration":282.25833,
   "name":"sndFinalBossEnragedBGM",
   "parent":{
     "name":"FInal Boss",

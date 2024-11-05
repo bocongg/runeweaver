@@ -66,7 +66,11 @@ get_damaged(objDamagePlayer, true, false);
 
 //shoot the wand
 #region
-if (room != rmWinScreen && room != rmTreasure && room != rmShop && room != rmRest && room != rmRestShop && room != rmEventA && room != rmEventB && room != rmEventC && !instance_exists(objChest) && !instance_place(mouse_x, mouse_y, objPauseButton)){
+if (room != rmWinScreen && room != rmTreasure && room != rmShop && room != rmRest && room != rmRestShop && room != rmEventA && room != rmEventB && room != rmEventC && !instance_exists(objChest) && !instance_place(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0), objPauseButton) && !instance_exists(objPauseButtonParent)){
+	if (!instance_exists(objAiming)){
+		instance_create_depth(x, y, -10000, objAiming);
+	}
+	
 	if shootTimer > 0 {shootTimer--;};
 	if basicShootKey && shootTimer <= 0 {
 		
@@ -134,6 +138,9 @@ if (room != rmWinScreen && room != rmTreasure && room != rmShop && room != rmRes
 			}
 		} 
 	}
+} else {
+	instance_destroy(objAiming);
+	window_set_cursor(cr_default);
 }
 #endregion
 
@@ -146,7 +153,7 @@ if global.playerHp <= 0 {
 	instance_destroy();
 }
 
-if (!chestOpened && !object_exists(objLoseGif) && room != rmTraining && room != rmWinScreen && room != rmTreasure && room != rmShop && room != rmRest && room != rmRestShop && room != rmEventA && room != rmEventB && room != rmEventC && room != rmFinalBoss) {
+if (!chestOpened && !instance_exists(objLoseGif) && room != rmTraining && room != rmWinScreen && room != rmTreasure && room != rmShop && room != rmRest && room != rmRestShop && room != rmEventA && room != rmEventB && room != rmEventC && room != rmFinalBoss) {
 	if (instance_number(objEnemyParent) == 0){
 		if (global.stage == 1){
 			instance_create_layer(x, y, "Instances", objChest);

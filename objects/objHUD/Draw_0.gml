@@ -2,16 +2,7 @@
 var _camX = camera_get_view_x(view_camera[0]);
 var _camY = camera_get_view_y(view_camera[0]);
 
-//if (!instance_exists(objInventory)){
-//	instance_create_layer(_camX + 1664, _camY + 992, "UpgradeScreenBase", objInvButton);
-//}
-
-
 with(objEquipBasic){
-	//if (!instance_exists(objEquipBasic)){
-	//	instance_create_layer(_camX+104, _camY+873, "RunesInventory", objEquipBasic)
-	//}
-	
 	draw_sprite(sprRuneEquipBasic, 0, _camX+104, _camY+873)
 
 	var basicAttack = global.attack_slot[# 0, 0];
@@ -36,8 +27,19 @@ var healthbar_x = _camX + 284;
 var healthbar_y = _camY + 96;
 draw_sprite(sprPlayerHealthBar, _hpImage, healthbar_x, healthbar_y);
 
+//draw shop items
+draw_sprite(sprHUDEnergyDrink, 0, _camX + 450, _camY + 134);
+var _drinkString = "x " + string(global.energyDrink);
+draw_set_font(fntMedium);
+draw_text(_camX + 450 + 20, _camY + 134 - 10, _drinkString);
+
+draw_sprite(sprHUDLuckyBell, 0, _camX + 361, _camY + 134);
+var _bellString = "x " + string(global.goldChance);
+draw_set_font(fntMedium);
+draw_text(_camX + 361 + 20, _camY + 134 - 10, _bellString);
+
 //draw the player's gold
-var _goldString = "X " + string(global.gold);
+var _goldString = "x " + string(global.gold);
 image_speed = 0.2;
 
 // Calculate the top-right corner of the view
