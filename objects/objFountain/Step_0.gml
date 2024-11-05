@@ -8,7 +8,7 @@ if (!fountainUsed){
 			global.playerHp = global.playerMaxHp;	
 		}
 		
-		audio_play_sound(sndPlayerGainHealth, 0, 0, 1.0, undefined, 1.0);
+		audio_play_sound(sndPlayerGainHealth, 0, 0, 1.0);
 		
 		instance_destroy(objInteractableTooltip);
 		fountainUsed = true;

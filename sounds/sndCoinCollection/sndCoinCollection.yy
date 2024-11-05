@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.653062,
+  "duration":0.710583,
   "name":"sndCoinCollection",
   "parent":{
     "name":"Sound Effects",

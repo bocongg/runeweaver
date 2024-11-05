@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":3.291406,
+  "duration":3.348958,
   "name":"sndPlayerGainHealth",
   "parent":{
     "name":"Sound Effects",

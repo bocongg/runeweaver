@@ -3,4 +3,4 @@ if (!instance_exists(objPauseButton)){
 }
 
 if (audio_is_playing(sndLore1)) {audio_stop_sound(sndLore1);}
-audio_play_sound(sndLore2, 0, 1, 1.0, undefined, 1.0);
+audio_play_sound(sndLore2, 0, 1, 0.5);

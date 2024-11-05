@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.339594,
+  "duration":0.397125,
   "name":"sndSpecialAttack",
   "parent":{
     "name":"Attacks",

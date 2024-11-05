@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.679156,
+  "duration":0.710583,
   "name":"sndEnemyDeath",
   "parent":{
     "name":"Sound Effects",
@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"sndEnemyDeath.mp3",
   "type":0,
-  "volume":1.0,
+  "volume":0.8,
 }

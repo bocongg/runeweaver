@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":23.562437,
+  "duration":20.9555,
   "name":"sndGameLose",
   "parent":{
     "name":"Sounds",

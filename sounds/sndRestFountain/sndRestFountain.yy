@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":45.048,
+  "duration":45.11875,
   "name":"sndRestFountain",
   "parent":{
     "name":"Rest",
@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"sndRestFountain.mp3",
   "type":0,
-  "volume":0.65,
+  "volume":1.0,
 }
