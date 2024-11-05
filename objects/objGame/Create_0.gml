@@ -1,5 +1,8 @@
 scr_init_inventory();
 
+//scr_gain_item(item.prismrune3, 1);
+
+
 // Player HP
 global.playerMaxHp = 100;
 global.playerHp = global.playerMaxHp;

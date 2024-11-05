@@ -66,7 +66,7 @@ get_damaged(objDamagePlayer, true, false);
 
 //shoot the wand
 #region
-if (room != rmWinScreen && room != rmTreasure && room != rmShop && room != rmRest && room != rmRestShop && room != rmEventA && room != rmEventB && room != rmEventC && !instance_exists(objChest) && !instance_place(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0), objPauseButton) && !instance_exists(objPauseButtonParent)){
+if (room != rmWinScreen && room != rmTreasure && room != rmShop && room != rmRest && room != rmRestShop && room != rmEventA && room != rmEventB && room != rmEventC && !instance_exists(objChest) && !instance_place(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0), objPauseButton) && !instance_exists(objPauseButtonParent) && !instance_place(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0), objInventory)){
 	if (!instance_exists(objAiming)){
 		instance_create_depth(x, y, -10000, objAiming);
 	}
