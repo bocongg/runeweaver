@@ -1,3 +1,6 @@
+//rotate 
+image_angle = dir;
+
 //move
 	xspd = lengthdir_x(spd, dir);
 	yspd = lengthdir_y(spd, dir);
@@ -6,7 +9,6 @@
 	y += yspd;
 	
 //cleanup	
-
 	//hit confirm destroy
 	if hitconfirm == true && enemyDestroy == true {destroy = true;};
 	
@@ -22,4 +24,3 @@
 	if point_distance(xstart, ystart, x, y) > maxDist {
 		destroy = true;
 	}
-	

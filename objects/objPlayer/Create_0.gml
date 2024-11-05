@@ -29,9 +29,11 @@ if (!variable_global_exists("moveSpd")){
 //wand info
 	shootTimer = 0;
 	
-	basicAttack = global.attackList.basicAttack;
-	specialAttack = global.attackList.prismSpecialAttack;
+	basicAttack = global.attackList.sparkLevel1Attack;
+	specialAttack = global.attackList.sparkLevel3Attack;
 	
 	chestOpened = false;
 	bossEncounter = false;
 	bossEnraged = false;
+	
+	damageState = 0;

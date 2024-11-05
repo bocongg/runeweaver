@@ -119,9 +119,10 @@ function get_damaged (_damageObj, _iframes = false, _isEnemy = true) {
 	}
 }
 	
-//basicAttackList	
-	//constructor template for basicAttackList	
-	function create_attack(_wand = sprWand, _bulletObj = objBasicShoot, _cooldown = 1, _bulletNum = 1, _spread = 0) constructor {
+//attackList	
+	//constructor template for attackList	
+	function create_attack(_dmg = 1, _wand = sprWand, _bulletObj = objBasicShoot, _cooldown = 1, _bulletNum = 1, _spread = 0) constructor {
+		dmg = _dmg;
 		sprite = _wand;
 		bulletObj = _bulletObj;		//types of bullet
 		cooldown = _cooldown;		//higher number means longer cooldown
@@ -131,85 +132,221 @@ function get_damaged (_damageObj, _iframes = false, _isEnemy = true) {
 	
 	//the different basic attack
 	global.attackList = {
-		basicAttack : new create_attack(
+		sparkLevel1Attack : new create_attack(
+			1, 
 			sprWand,
 			objBasicBullet,
 			15,
 			1, 
 			0
 		),
-		
-		fireBasicAttack : new create_attack(
+		sparkLevel3Attack : new create_attack(
+			6, 
+			sprWand,
+			objBasicBullet,
+			15,
+			1, 
+			0
+		),
+		fireBoltLevel1Attack : new create_attack(
+			2,
 			sprWand,
 			objBasicFire,
 			15,
 			1, 
 			0
 		),
-		
-		iceBasicAttack : new create_attack(
+		fireBoltLevel2Attack : new create_attack(
+			4,
+			sprWand,
+			objBasicFire,
+			15,
+			1, 
+			0
+		),
+		fireBoltLevel3Attack : new create_attack(
+			6,
+			sprWand,
+			objBasicFire,
+			15,
+			1, 
+			0
+		),
+		iceShardLevel1Attack : new create_attack(
+			2,
 			sprWand,
 			objBasicIce,
 			30, 
 			1,
 			0
 		),
-		
-		windBasicAttack : new create_attack(
+		iceShardLevel2Attack : new create_attack(
+			4,
+			sprWand,
+			objBasicIce,
+			30, 
+			1,
+			0
+		),
+		iceShardLevel3Attack : new create_attack(
+			6,
+			sprWand,
+			objBasicIce,
+			30, 
+			1,
+			0
+		),
+		airCutterLevel1Attack : new create_attack(
+			1,
 			sprWand,
 			objBasicWind,
 			30,
-			3, 
+			1, 
 			0
 		),
-		
-		fireSpecialAttack : new create_attack(
+		airCutterLevel2Attack : new create_attack(
+			2,
 			sprWand,
-			objSpecialFire,
-			60,
+			objBasicWind,
+			30,
+			1, 
+			0
+		),
+		airCutterLevel3Attack : new create_attack(
+			3,
+			sprWand,
+			objBasicWind,
+			30,
 			1, 
 			0
 		),
 		
-		iceSpecialAttack : new create_attack(
+		//special attack
+		fireballLevel1Attack : new create_attack(
+			6,
+			sprWand,
+			objSpecialFire,
+			180,
+			1, 
+			0
+		),
+		fireballLevel2Attack : new create_attack(
+			12,
+			sprWand,
+			objSpecialFire,
+			180,
+			1, 
+			0
+		),
+		fireballLevel3Attack : new create_attack(
+			18,
+			sprWand,
+			objSpecialFire,
+			180,
+			1, 
+			0
+		),
+		flashFreezeLevel1Attack : new create_attack(
+			5,
 			sprWand,
 			objSpecialFlashFreeze,
-			30, 
+			180, 
 			1,
 			0
 		),	
-		windSpecialAttack : new create_attack(
+		flashFreezeLevel2Attack : new create_attack(
+			10,
+			sprWand,
+			objSpecialFlashFreeze,
+			180, 
+			1,
+			0
+		),	
+		flashFreezeLevel3Attack : new create_attack(
+			15,
+			sprWand,
+			objSpecialFlashFreeze,
+			180, 
+			1,
+			0
+		),	
+		galeforceLevel1Attack : new create_attack(
+			4,
 			sprWand,
 			objSpecialWind,
-			30,
+			120,
 			3, 
 			30
 		),
-		infernoSpecialAttack : new create_attack(
+		galeforceLevel2Attack : new create_attack(
+			8,
+			sprWand,
+			objSpecialWind,
+			120,
+			3, 
+			30
+		),
+		galeforceLevel3Attack : new create_attack(
+			12,
+			sprWand,
+			objSpecialWind,
+			120,
+			3, 
+			30
+		),
+		infernoLevel2Attack : new create_attack(
+			10,
 			sprWand,
 			objSpecialInferno,
 			30,
 			1, 
 			0
 		),
-		blizzardSpecialAttack : new create_attack(
+		infernoLevel3Attack : new create_attack(
+			15,
 			sprWand,
-			objSpecialBlizzard,
+			objSpecialInferno,
 			30,
 			1, 
 			0
 		),
-		frostFireSpecialAttack : new create_attack(
+		blizzardLevel2Attack : new create_attack(
+			1,
+			sprWand,
+			objSpecialBlizzard,
+			360,
+			1, 
+			0
+		),
+		blizzardLevel3Attack : new create_attack(
+			2,
+			sprWand,
+			objSpecialBlizzard,
+			360,
+			1, 
+			0
+		),
+		frostfireBlastLevel2Attack : new create_attack(
+			15,
 			sprWand,
 			objSpecialFrostFire,
+			240,
+			1, 
+			0
+		),
+		frostfireBlastLevel3Attack : new create_attack(
 			30,
+			sprWand,
+			objSpecialFrostFire,
+			240,
 			1, 
 			0
 		),
 		prismSpecialAttack : new create_attack(
+			25,
 			sprWand,
 			objSpecialPrism,
-			30,
+			480,
 			1, 
 			0
 		)

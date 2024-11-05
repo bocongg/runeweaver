@@ -1,3 +1,6 @@
+//rotate
+image_angle = dir;
+
 //move
 	xspd = lengthdir_x(spd, dir);
 	yspd = lengthdir_y(spd, dir);
@@ -14,12 +17,7 @@
 	if destroy == true {instance_destroy();}
 	
 	//colliion on enemyParent and Wall
-	if place_meeting(x, y, objSolidWall) {
-		destroy = true;
-	}
+	if place_meeting(x, y, objSolidWall) {destroy = true;}
 	
 	//bullet out of range
-	if point_distance(xstart, ystart, x, y) > maxDist {
-		destroy = true;
-	}
-	
+	if point_distance(xstart, ystart, x, y) > maxDist {destroy = true;}

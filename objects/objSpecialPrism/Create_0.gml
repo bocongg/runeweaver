@@ -5,6 +5,9 @@ spd = 5;
 xspd = 0; 
 yspd = 0;
 
+//beamLast
+beamLast = 60; //1 sec is 60fps
+
 // cleanup
 maxDist = 500;
 destroy = false;

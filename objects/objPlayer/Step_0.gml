@@ -83,10 +83,13 @@ if (room != rmWinScreen && room != rmTreasure && room != rmShop && room != rmRes
 			
 				//change the bullet's direction
 				with(_bulletInst) {
+					show_debug_message(string(other.basicAttack.dmg));
+					damage = other.basicAttack.dmg;
 					dir = other.aimDir - _spread/2 + _spreadDiv*i; 
 				}
 			}
-	} else if specialShootKey && shootTimer <= 0 {
+	}
+	else if specialShootKey && shootTimer <= 0 {
 		
 		//reset the timer
 		shootTimer = specialAttack.cooldown;
@@ -95,16 +98,26 @@ if (room != rmWinScreen && room != rmTreasure && room != rmShop && room != rmRes
 			var _spread = specialAttack.spread;
 			var _spreadDiv = max(_spread/1 -1, 1);
 		
-		//TEST//
 		if specialAttack.bulletObj == objSpecialBlizzard {
 			//create the bullet
 			var _bulletInst = instance_create_depth(mouse_x, mouse_y, depth-100, specialAttack.bulletObj);
+			with (_bulletInst) {
+				damage = other.specialAttack.dmg;
+			}
 		} else if specialAttack.bulletObj == objSpecialFlashFreeze {
 			//create the bullet
 			var _bulletInst = instance_create_depth(x, y, depth-100, specialAttack.bulletObj);
+			with (_bulletInst) {
+				damage = other.specialAttack.dmg;
+			}
 		} else if specialAttack.bulletObj == objSpecialPrism {
 			//create the bullet
 			var _bulletInst = instance_create_depth(x+20, y, depth-100, specialAttack.bulletObj);
+			//change the bullet's direction
+			with(_bulletInst) {
+				damage = other.specialAttack.dmg;
+				dir = other.aimDir;
+			}
 		}	
 		else {
 		
@@ -115,6 +128,7 @@ if (room != rmWinScreen && room != rmTreasure && room != rmShop && room != rmRes
 			
 				//change the bullet's direction
 				with(_bulletInst) {
+					damage = other.specialAttack.dmg;
 					dir = other.aimDir - _spread/2 + _spreadDiv*i; 
 				}
 			}
@@ -160,42 +174,104 @@ if ((room == rmFinalBoss || room == rmTraining) && instance_number(objFinalBossI
 }
 
 //Set basic attack based on rune equipped
-if (global.attack_slot[# 0, 0] == item.firerune1) ||
-	(global.attack_slot[# 0, 0] == item.frostfirerune2) || 
-    (global.attack_slot[# 0, 0] == item.frostfirerune3){
-	basicAttack = global.attackList.fireBasicAttack;
-}
-if ((global.attack_slot[# 0, 0] == item.windrune1) ||
-	(global.attack_slot[# 0, 0] == item.infernorune2) || 
-    (global.attack_slot[# 0, 0] == item.infernorune3)){
-	basicAttack = global.attackList.windBasicAttack;
-}
-if ((global.attack_slot[# 0, 0] == item.icerune1) ||
-	(global.attack_slot[# 0, 0] == item.blizzardrune2) || 
-    (global.attack_slot[# 0, 0] == item.blizzardrune3)){
-	basicAttack = global.attackList.iceBasicAttack;
+switch (global.attack_slot[# 0, 0]) {
+    case item.prismrune3:
+        basicAttack = global.attackList.sparkLevel3Attack;
+        break;
+	case item.firerune1:
+        basicAttack = global.attackList.fireBoltLevel1Attack;
+        break;
+	case item.firerune2:
+        basicAttack = global.attackList.fireBoltLevel2Attack;
+        break;
+	case item.firerune3:
+        basicAttack = global.attackList.fireBoltLevel3Attack;
+        break;
+	case item.frostfirerune2:
+        basicAttack = global.attackList.fireBoltLevel2Attackf;
+        break;
+	case item.frostfirerune3:
+        basicAttack = global.attackList.fireLevel3BasicAttack;
+        break;
+	case item.windrune1:
+        basicAttack = global.attackList.airCutterLevel1Attack;
+        break;	
+	case item.windrune2:
+        basicAttack = global.attackList.airCutterLevel2Attack;
+        break;	
+	case item.windrune3:
+        basicAttack = global.attackList.airCutterLevel3Attack;
+        break;	
+	case item.infernorune2:
+        basicAttack = global.attackList.airCutterLevel2Attack;
+        break;	
+	case item.infernorune3:
+        basicAttack = global.attackList.airCutterLevel3Attack;
+        break;	
+	case item.icerune1:
+        basicAttack = global.attackList.iceShardLevel1Attack;
+        break;
+	case item.icerune2:
+        basicAttack = global.attackList.iceShardLevel2Attack;
+        break;	
+	case item.icerune3:
+        basicAttack = global.attackList.iceShardLevel3Attack;
+        break;	
+	case item.blizzardrune2:
+        basicAttack = global.attackList.iceShardLevel2Attack;
+        break;	
+	case item.blizzardrune3:
+        basicAttack = global.attackList.iceShardLevel3Attack;
+        break;
 }
 
-
-// Set special attack based on rune equipped
-if (global.attack_slot[# 1, 0] == item.firerune1){
-	specialAttack = global.attackList.fireSpecialAttack;
-}
-if (global.attack_slot[# 1, 0] == item.icerune1){
-	specialAttack = global.attackList.iceSpecialAttack;
-}
-if (global.attack_slot[# 1, 0] == item.windrune1){
-	specialAttack = global.attackList.windSpecialAttack;
-}
-if ((global.attack_slot[# 1, 0] == item.blizzardrune2) || 
-    (global.attack_slot[# 1, 0] == item.blizzardrune3)){
-	specialAttack = global.attackList.blizzardSpecialAttack;
-}
-if ((global.attack_slot[# 1, 0] == item.frostfirerune2) || 
-    (global.attack_slot[# 1, 0] == item.frostfirerune3)){
-	specialAttack = global.attackList.frostFireSpecialAttack;
-}
-if ((global.attack_slot[# 1, 0] == item.infernorune2) || 
-    (global.attack_slot[# 1, 0] == item.infernorune3)){
-	specialAttack = global.attackList.infernoSpecialAttack;
+switch (global.attack_slot[# 1, 0]) {
+    case item.firerune1:
+        specialAttack = global.attackList.fireballLevel1Attack;
+        break;
+	case item.firerune2:
+        specialAttack = global.attackList.fireballLevel2Attack;
+        break;
+	case item.firerune3:
+        specialAttack = global.attackList.fireballLevel3Attack;
+        break;
+	case item.icerune1:
+        specialAttack = global.attackList.flashFreezeLevel1Attack;
+        break;
+	case item.icerune2:
+        specialAttack = global.attackList.flashFreezeLevel2Attack;
+        break;
+	case item.icerune3:
+        specialAttack = global.attackList.flashFreezeLevel3Attack;
+        break;
+	case item.windrune1:
+        specialAttack = global.attackList.galeforceLevel1Attack;
+        break;
+	case item.windrune2:
+        specialAttack = global.attackList.galeforceLevel2Attack;
+        break;
+	case item.windrune3:
+        specialAttack = global.attackList.galeforceLevel3Attack;
+        break;
+	case item.infernorune2:
+        specialAttack = global.attackList.infernoLevel2Attack;
+        break;
+	case item.infernorune3:
+        specialAttack = global.attackList.infernoLevel3Attacksd;
+        break;
+	case item.frostfirerune2:
+        specialAttack = global.attackList.frostfireBlastLevel2Attack;
+        break;
+	case item.frostfirerune3:
+        specialAttack = global.attackList.frostfireBlastLevel3Attack;
+        break;
+	case item.blizzardrune2:
+        specialAttack = global.attackList.blizzardLevel2Attack;
+        break;
+	case item.blizzardrune3:
+        specialAttack = global.attackList.blizzardLevel3Attack;
+        break;
+	case item.prismrune3:
+        specialAttack = global.attackList.prismSpecialAttack;
+        break;
 }
