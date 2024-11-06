@@ -8,7 +8,7 @@ switch(state) {
 		break;
 }
 
-draw_text(x, y,string(hp)+"/"+string(maxHp));
+//draw_text(x, y,string(hp)+"/"+string(maxHp));
 
 //draw hp
 var _healthPercent = hp / maxHp;

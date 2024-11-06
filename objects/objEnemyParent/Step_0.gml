@@ -11,8 +11,10 @@ for (var i = array_length(debuffs) - 1; i >= 0; --i) {
    //apply speed reduction if the debuff has SPEED_REDUCTION
    if(_debuff[DebuffInfo.SPEED_REDUCTION] != undefined) {
 		chaseSpd = baseSpd * (1 - _debuff[DebuffInfo.SPEED_REDUCTION]);
-		freezeEnemy = true;
-		freezeEnemyID = instance_id_get(i);
+		if (_debuff[DebuffInfo.SPEED_REDUCTION] == 1) {
+			freezeEnemy = true;
+			freezeEnemyID = instance_id_get(i);
+		}
    }
    
    //apply damage if it's time to do so

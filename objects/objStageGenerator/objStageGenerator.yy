@@ -12,7 +12,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Map Screen",
-    "path":"folders/Objects/Map Screen.yy",
+    "path":"folders/Objects/Pause Screen/Map Screen.yy",
   },
   "parentObjectId":null,
   "persistent":false,
