@@ -22,7 +22,7 @@ scr_gain_item(item.prismrune3, 1);
 global.playerMaxHp = 100;
 global.playerHp = global.playerMaxHp;
 
-global.gold = 0;
+global.gold = 10;
 
 global.energyDrink = 0;
 

@@ -46,31 +46,41 @@ if (mouse_over)
 		{
 			// Set variables for card stats.
 			var _object = ds_map_find_value(upgrade_data, "object");
-			//var _key = ds_map_find_value(upgrade_data, "key");
-			//var _amount = ds_map_find_value(upgrade_data, "amount");
 			var _icon = ds_map_find_value(upgrade_data, "icon");
-	
-			//// Upgrade components stats.
-			//_object[? _key] += _amount;
+			
+			var _camX = camera_get_view_x(view_camera[0]);
+			var _camY = camera_get_view_y(view_camera[0]);
 			
 			// Add rune to inventory
 			if (_icon == sprRuneFire1) {
 				scr_gain_item(item.firerune1, 1);
+				global.addRunesAnim = layer_sequence_create("PauseScreen", _camX + 1920/2, _camY + 1080/2, seqAddF1);
+				layer_sequence_play(global.addRunesAnim);
 
 			} else if (_icon == sprRuneIce1) {
 				scr_gain_item(item.icerune1, 1);
+				global.addRunesAnim = layer_sequence_create("PauseScreen", _camX + 1920/2, _camY + 1080/2, seqAddI1);
+				layer_sequence_play(global.addRunesAnim);
 		
 			} else if (_icon == sprRuneWind1) {
 				scr_gain_item(item.windrune1, 1);
+				global.addRunesAnim = layer_sequence_create("PauseScreen", _camX + 1920/2, _camY + 1080/2, seqAddW1);
+				layer_sequence_play(global.addRunesAnim);
 				
 			} else if (_icon == sprRuneFire2) {
 				scr_gain_item(item.firerune2, 1);
+				global.addRunesAnim = layer_sequence_create("PauseScreen", _camX + 1920/2, _camY + 1080/2, seqAddF2);
+				layer_sequence_play(global.addRunesAnim);
 				
 			} else if (_icon == sprRuneIce2) {
 				scr_gain_item(item.icerune2, 1);
+				global.addRunesAnim = layer_sequence_create("PauseScreen", _camX + 1920/2, _camY + 1080/2, seqAddI2);
+				layer_sequence_play(global.addRunesAnim);
 		
 			} else if (_icon == sprRuneWind2) {
 				scr_gain_item(item.windrune2, 1);
+				global.addRunesAnim = layer_sequence_create("PauseScreen", _camX + 1920/2, _camY + 1080/2, seqAddW2);
+				layer_sequence_play(global.addRunesAnim);
 			} 
 			
 			if (global.stage == 0) {

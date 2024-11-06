@@ -10,4 +10,4 @@ maxDist = 500;
 destroy = false;
 enemyDestroy = false;
 
-audio_play_sound(sndWindBasic, 0, 0, 1.0, undefined, 1.0);
+audio_play_sound(sndWindBasic, 0, 0, 0.5);

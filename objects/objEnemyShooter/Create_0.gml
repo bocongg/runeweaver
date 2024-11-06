@@ -32,4 +32,4 @@ bulletYoff = -20;
 path = path_add();
 
 // Default bullet type (can be overridden by children)
-bulletType = objEnemyBulle1Big;
+bulletType = objEnemyBullet1Big;

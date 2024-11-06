@@ -14,11 +14,11 @@ with(objEquipBasic){
 		var _cdImage = _cdPercent * (sprite_get_number(spr_item_cooldown) - 1);
 		draw_sprite(spr_item_cooldown, _cdImage, _camX+107, _camY+888);
 		
-		draw_set_halign(fa_center);
-		draw_set_valign(fa_middle);
-		draw_text(_camX+104, _camY+873+90,string(objPlayer.shootTimerBasic));
-		draw_set_halign(fa_left);
-		draw_set_valign(fa_top);
+		//draw_set_halign(fa_center);
+		//draw_set_valign(fa_middle);
+		//draw_text(_camX+104, _camY+873+90,string(objPlayer.shootTimerBasic));
+		//draw_set_halign(fa_left);
+		//draw_set_valign(fa_top);
 		
 	}
 }
@@ -34,11 +34,11 @@ with(objEquipSpecial){
 		var _cdImage = _cdPercent * (sprite_get_number(spr_item_cooldown) - 1);
 		draw_sprite(spr_item_cooldown, _cdImage, _camX+223, _camY+888);
 		
-		draw_set_halign(fa_center);
-		draw_set_valign(fa_middle);
-		draw_text(_camX+224, _camY+873+90,string(objPlayer.shootTimerSpecial));
-		draw_set_halign(fa_left);
-		draw_set_valign(fa_top);
+		//draw_set_halign(fa_center);
+		//draw_set_valign(fa_middle);
+		//draw_text(_camX+224, _camY+873+90,string(objPlayer.shootTimerSpecial));
+		//draw_set_halign(fa_left);
+		//draw_set_valign(fa_top);
 	}
 }
 
