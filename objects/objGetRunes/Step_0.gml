@@ -73,7 +73,9 @@ if (mouse_over)
 				scr_gain_item(item.windrune2, 1);
 			} 
 			
-			global.showInvTooltip = true;
+			if (global.stage == 0) {
+				with(objInvButton) {instance_create_layer(x, y-150, "UpgradeScreenBase", objInvTooltip1)}
+			}
 			
 			// Destroys runes.
 			with(objGetRunes) instance_destroy();

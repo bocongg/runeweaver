@@ -177,7 +177,7 @@ if (!chestOpened && !instance_exists(objLoseGif) && room != rmTraining && room !
 	}
 }
 
-if (room == rmTreasure && instance_number(objRock) == 0 && instance_number(objRockSmall) != 0 && instance_number(objTreasureChest) == 0){
+if (room == rmTreasure && instance_number(objTreasureChest) == 0 && instance_number(objRockSmall) != 0 && instance_number(objTreasureChest) == 0){
 	instance_create_layer(1920, 901, "Instances", objStairs);
 }
 
