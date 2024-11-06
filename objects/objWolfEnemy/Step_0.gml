@@ -13,7 +13,7 @@ switch(state) {
 		//set the correct speed
 		spd = chaseSpd;
 		
-		if (distance_to_object(objPlayer) < 1) {
+		if (distance_to_object(objPlayer) < 10) {
 			
 			//go to attack state
 			state = 1;
@@ -36,7 +36,7 @@ switch(state) {
 		{mask_index = sprEnemyWolfAttackHitboxLeft;} 
 		else {mask_index = sprEnemyWolfAttackHitboxRight;}
 		
-		if (distance_to_object(objPlayer) > 1) {
+		if (distance_to_object(objPlayer) > 10) {
 			
 			//go to chase state
 			state = 0;

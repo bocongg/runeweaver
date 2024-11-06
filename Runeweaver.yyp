@@ -207,6 +207,8 @@
     {"id":{"name":"objSpecialWind","path":"objects/objSpecialWind/objSpecialWind.yy",},},
     {"id":{"name":"objSpiderEnemy","path":"objects/objSpiderEnemy/objSpiderEnemy.yy",},},
     {"id":{"name":"objSpiderEnemyBaby","path":"objects/objSpiderEnemyBaby/objSpiderEnemyBaby.yy",},},
+    {"id":{"name":"objSpikeLarge","path":"objects/objSpikeLarge/objSpikeLarge.yy",},},
+    {"id":{"name":"objSpikeSmall","path":"objects/objSpikeSmall/objSpikeSmall.yy",},},
     {"id":{"name":"objStageGenerator","path":"objects/objStageGenerator/objStageGenerator.yy",},},
     {"id":{"name":"objStairs","path":"objects/objStairs/objStairs.yy",},},
     {"id":{"name":"objStartButton","path":"objects/objStartButton/objStartButton.yy",},},

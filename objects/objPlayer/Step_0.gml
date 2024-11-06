@@ -72,16 +72,16 @@ get_damaged(objDamagePlayer, true, false);
 
 //shoot the wand
 #region
-if (room != rmWinScreen && room != rmTreasure && room != rmShop && room != rmRest && room != rmRestShop && room != rmEventA && room != rmEventB && room != rmEventC && !instance_exists(objChest) && !instance_place(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0), objPauseButton) && !instance_exists(objPauseButtonParent) && !instance_place(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0), objInventory)){
+if (room != rmWinScreen && room != rmTreasure && room != rmShop && room != rmRest && room != rmRestShop && room != rmEventA && room != rmEventB && room != rmEventC && !instance_exists(objChest) && !instance_place(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0), objPauseButton) && !instance_exists(objPauseButtonParent) && !instance_exists(objInventory)){
 	if (!instance_exists(objAiming)){
 		instance_create_depth(x, y, -10000, objAiming);
 	}
 	
-	if shootTimer > 0 {shootTimer--;};
-	if basicShootKey && shootTimer <= 0 {
+	if shootTimerBasic > 0 {shootTimerBasic--;};
+	if basicShootKey && shootTimerBasic <= 0 {
 		
 		//reset the timer
-		shootTimer = basicAttack.cooldown;
+		shootTimerBasic = basicAttack.cooldown;
 		
 		//shooting
 			var _spread = basicAttack.spread;
@@ -99,10 +99,11 @@ if (room != rmWinScreen && room != rmTreasure && room != rmShop && room != rmRes
 				}
 			}
 	}
-	else if specialShootKey && shootTimer <= 0 {
+	if shootTimerSpecial > 0 {shootTimerSpecial--;};
+	if specialShootKey && shootTimerSpecial <= 0 {
 		
 		//reset the timer
-		shootTimer = specialAttack.cooldown;
+		shootTimerSpecial = specialAttack.cooldown;
 		
 		//shooting
 			var _spread = specialAttack.spread;

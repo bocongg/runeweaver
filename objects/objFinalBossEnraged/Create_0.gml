@@ -1,7 +1,7 @@
 damage = 20;
 hitconfirm = false;
 
-get_damaged_create(100);
+get_damaged_create(200);
 
 debuffs = [];
 tick = 0;
