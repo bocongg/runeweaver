@@ -75,10 +75,10 @@ function getTreasure()
 	var _size = ds_list_size(_rune_list);
 
 	// Define the x position where the first rune card will be created.
-	var _x = 0;
+	var _x = -400;
 
 	// For each upgrade in the list, up to a max of 3...
-	for (var _index = 0; _index < min(_size, 1); _index += 1)
+	for (var _index = 0; _index < min(_size, 3); _index += 1)
 	{
 		// Get the upgrade at the current index.
 		_upgrade_data = ds_list_find_value(_rune_list, _index);
@@ -136,10 +136,10 @@ function getTreasure2()
 	var _size = ds_list_size(_rune_list);
 
 	// Define the x position where the first rune card will be created.
-	var _x = 0;
+	var _x = -400;
 
 	// For each upgrade in the list, up to a max of 3...
-	for (var _index = 0; _index < min(_size, 1); _index += 1)
+	for (var _index = 0; _index < min(_size, 3); _index += 1)
 	{
 		// Get the upgrade at the current index.
 		_upgrade_data = ds_list_find_value(_rune_list, _index);

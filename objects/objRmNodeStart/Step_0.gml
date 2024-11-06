@@ -29,6 +29,8 @@ if (!instance_exists(objGet3RuneScreen) && !instance_exists(objInventory) && ins
 			// Checks for mouse release.
 			if (mouse_check_button_released(mb_left))
 			{	
+				instance_destroy(objInvTooltip1)
+				
 				var roomID = object_get_name(objRmNodeStart);
 				ds_list_add(global.stagesCleared, roomID);
 				alarm_set(0,20);
