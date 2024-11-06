@@ -7,13 +7,12 @@ freezeEnemy = false;
 for (var i = array_length(debuffs) - 1; i >= 0; --i) {
    var _debuff = debuffs[i];
    var _tick_rate = round(_debuff[DebuffInfo.TICK_RATE]);
-   show_debug_message("Instance ID in objEnemyParent: " + string(instance_id_get(i)));
+ 
    //apply speed reduction if the debuff has SPEED_REDUCTION
    if(_debuff[DebuffInfo.SPEED_REDUCTION] != undefined) {
 		chaseSpd = baseSpd * (1 - _debuff[DebuffInfo.SPEED_REDUCTION]);
 		freezeEnemy = true;
 		freezeEnemyID = instance_id_get(i);
-		 show_debug_message("freezeEnemy: " + string(freezeEnemy) + " ; freezeEnemyID: " + string(freezeEnemyID));
    }
    
    //apply damage if it's time to do so
@@ -147,14 +146,6 @@ if instance_exists(objPlayer) {
 	if place_meeting(x, y + yspd, objWall) || 
 	place_meeting(x, y + yspd, objEnemyParent) 
 	{yspd = 0;}
-	
-	//moving
-	x += xspd;
-	y += yspd;
-	
-	//set the depth
-	depth = -y;
-
 
 //death
 if hp <= 0 {

@@ -8,6 +8,7 @@
 
 //player movement
 #region
+	if (canMove) {
 	//get the direction
 	var _horizKey = rightKey - leftKey;
 	var _vertKey = downKey - upKey;
@@ -23,15 +24,20 @@
 		
 	xspd = lengthdir_x(_spd, moveDir);
 	yspd = lengthdir_y(_spd, moveDir);
-
+	
 //collision
 	if place_meeting(x + xspd, y, objSolidWall) == true {xspd = 0;}
 	if place_meeting(x, y + yspd, objSolidWall) == true {yspd = 0;}
 
-
 //move the player
 	x += xspd;
 	y += yspd;
+
+} else {
+	xspd = 0;
+	yspd = 0;
+}
+canMove = true;
 
 //depth
 	depth = -bbox_bottom;
@@ -115,6 +121,7 @@ if (room != rmWinScreen && room != rmTreasure && room != rmShop && room != rmRes
 				damage = other.specialAttack.dmg;
 			}
 		} else if specialAttack.bulletObj == objSpecialPrism {
+			
 			//create the bullet
 			var _bulletInst = instance_create_depth(x+20, y, depth-100, specialAttack.bulletObj);
 			//change the bullet's direction

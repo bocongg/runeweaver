@@ -78,13 +78,6 @@ if instance_exists(objPlayer) {
 	if place_meeting(x, y + yspd, objWall) || 
 	place_meeting(x, y + yspd, objEnemyParent) 
 	{yspd = 0;}
-	
-	//moving
-	x += xspd;
-	y += yspd;
-	
-	//set the depth
-	depth = -y;
 
 //death
 if hp <= 0 {
