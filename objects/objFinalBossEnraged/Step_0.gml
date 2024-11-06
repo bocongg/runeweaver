@@ -46,75 +46,6 @@ if(image_blend == c_red) {
 	}
 }
 
-//state machine
-switch(state) {
-
-	case 0: //chase state
-		//get player's direction
-		if instance_exists(objPlayer) {
-			dir = point_direction(x, y, objPlayer.x, objPlayer.y);
-		}
-		//set the correct speed
-		spd = chaseSpd;
-		
-		//transition to shooting state
-		shootTimer++;
-		
-		if shootTimer > cooldownTime {
-			
-			//go to shoot state
-			state = 1;
-			
-			//reset timer so the shooting
-			shootTimer = 0;
-		}
-		break;
-		
-	case 1: //pause and shoot state
-		
-		//get player's direction
-		if instance_exists(objPlayer) {
-			dir = point_direction(x, y, objPlayer.x, objPlayer.y);
-		}
-		
-		//set the correct speed
-		spd = 0;
-		
-		//shoot a bullet
-		shootTimer++;
-		
-			//create the bullet
-			if shootTimer == 1 {
-				bulletInst = instance_create_depth(x + bulletXoff*face, y + bulletYoff, depth, objFinalBossBulletEnraged3Homing);
-			} 
-			//keep the bullet in the enemy's hands
-			if shootTimer <= windupTime && instance_exists(bulletInst) {
-				bulletInst.x = x + bulletXoff * face;
-				bulletInst.y = y + bulletYoff;
-			}
-			
-			//shoot the bullet after the windup time is over
-			if shootTimer == windupTime && instance_exists(bulletInst) {
-				audio_play_sound(sndEnemyAttack, 0, 0, 1.0, undefined, 1.0);
-				
-				//set our bullet's state to the movement state
-				if freezeEnemy == true 
-				{bulletInst.destroy = true;} 
-				else {bulletInst.state = 1;}
-			}
-			
-			//recover and return to chasing the player
-			if shootTimer > windupTime + recoverTime {
-				
-				//go back to chasing the player
-				state = 0;
-				
-				//reset the timer so we can use it again
-				shootTimer = 0;
-			}
-	break;
-}
-
 if instance_exists(objPlayer) {
 	//create path and move to player
 	var px = (objPlayer.x div 32) * 32 + 16;
@@ -154,3 +85,4 @@ if hp <= 0 {
 		_inst.targetRoom = rmWinScreen;
 	}
 }
+event_inherited();

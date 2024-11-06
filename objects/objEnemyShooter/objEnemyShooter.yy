@@ -1,20 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"objRmNode12",
+  "%Name":"objEnemyShooter",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objRmNode12",
+  "name":"objEnemyShooter",
   "overriddenProperties":[],
   "parent":{
-    "name":"Map Screen",
-    "path":"folders/Objects/Pause Screen/Map Screen.yy",
+    "name":"Enemies",
+    "path":"folders/Objects/Game/Enemies.yy",
   },
   "parentObjectId":{
-    "name":"objMapNode",
-    "path":"objects/objMapNode/objMapNode.yy",
+    "name":"objEnemyParent",
+    "path":"objects/objEnemyParent/objEnemyParent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
