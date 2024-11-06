@@ -1,3 +1,5 @@
+event_inherited();
+
 tick++;
 
 //reset speed to normal at the start of each step
@@ -85,4 +87,3 @@ if hp <= 0 {
 		_inst.targetRoom = rmWinScreen;
 	}
 }
-event_inherited();

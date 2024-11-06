@@ -1,11 +1,11 @@
 damage = 10;
 hitconfirm = false;
 
-get_damaged_create(10);
+get_damaged_create(5);
 
 debuffs = [];
 tick = 0;
-baseSpd = 1.5;
+baseSpd = 10;
 chaseSpd = baseSpd;
 
 
