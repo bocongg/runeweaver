@@ -34,7 +34,7 @@ if(device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_right
 				instance_activate_object(objPlayer);
 				
 				if ((global.attack_slot[# 0, 0] == item.none) && (global.attack_slot[# 1, 0] == item.none)){
-					if (global.stage == 0 && instance_exists(objInvTooltip1) && !instance_exists(objInventory)) {
+					if (global.stage == 0 && !instance_exists(objInventory)) {
 						with(objEquipBasic) {instance_create_layer(x+61.5, y-122, "RunesInventory", objInvTooltip3)}
 					}
 				} else if ((global.attack_slot[# 0, 0] != item.none) || (global.attack_slot[# 1, 0] != item.none)){

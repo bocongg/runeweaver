@@ -10,7 +10,7 @@ maxDist = 500;
 destroy = false;
 enemyDestroy = false;
 
-audio_play_sound(sndIceBasic, 0, 0, 1.0, undefined, 1.0);
+audio_play_sound(sndIceBasic, 0, 0, 0.5);
 
 //slowdown over time
 damage = 0.5;

@@ -1,0 +1,1 @@
+effect_create_above(ef_star, x, y, 2, c_white);

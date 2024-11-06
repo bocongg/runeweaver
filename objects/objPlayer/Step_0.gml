@@ -72,7 +72,7 @@ get_damaged(objDamagePlayer, true, false);
 
 //shoot the wand
 #region
-if (room != rmWinScreen && room != rmTreasure && room != rmShop && room != rmRest && room != rmRestShop && room != rmEventA && room != rmEventB && room != rmEventC && !instance_exists(objChest) && !instance_place(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0), objPauseButton) && !instance_exists(objPauseButtonParent) && !instance_exists(objInventory)){
+if (room != rmWinScreen && room != rmTreasure && room != rmShop && room != rmRest && room != rmRestShop && room != rmEventA && room != rmEventB && room != rmEventC && !instance_exists(objChest) && !instance_place(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0), objPauseButton) && !instance_exists(objPauseButtonParent)){
 	if (!instance_exists(objAiming)){
 		instance_create_depth(x, y, -10000, objAiming);
 	}
@@ -208,10 +208,10 @@ switch (global.attack_slot[# 0, 0]) {
         basicAttack = global.attackList.fireBoltLevel3Attack;
         break;
 	case item.frostfirerune2:
-        basicAttack = global.attackList.fireBoltLevel2Attackf;
+        basicAttack = global.attackList.fireBoltLevel2Attack;
         break;
 	case item.frostfirerune3:
-        basicAttack = global.attackList.fireLevel3BasicAttack;
+        basicAttack = global.attackList.fireBoltLevel3Attack;
         break;
 	case item.windrune1:
         basicAttack = global.attackList.airCutterLevel1Attack;
@@ -277,7 +277,7 @@ switch (global.attack_slot[# 1, 0]) {
         specialAttack = global.attackList.infernoLevel2Attack;
         break;
 	case item.infernorune3:
-        specialAttack = global.attackList.infernoLevel3Attacksd;
+        specialAttack = global.attackList.infernoLevel3Attack;
         break;
 	case item.frostfirerune2:
         specialAttack = global.attackList.frostfireBlastLevel2Attack;

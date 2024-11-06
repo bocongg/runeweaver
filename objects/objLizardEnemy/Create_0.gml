@@ -1,5 +1,5 @@
 event_inherited();
-bulletType = objEnemyBulle1Big;
+bulletType = objEnemyBullet1Big;
 cooldownTime = 2 * 60;
 windupTime = 40;
 recoverTime = 25;

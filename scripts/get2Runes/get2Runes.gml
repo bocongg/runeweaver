@@ -10,15 +10,26 @@ function get2Runes()
 
 	// Create a new list to hold possible rune cards.
 	var _rune_list = ds_list_create();
+	
+	if (global.stage < 5) {
+		// Get upgrades for the fire rune and place them in the list.
+		getFireRuneL1(_rune_list);
 
-	// Get upgrades for the fire rune and place them in the list.
-	getFireRuneL1(_rune_list);
+		// Get upgrades for the ice rune and place them in the list.
+		getIceRuneL1(_rune_list);
 
-	// Get upgrades for the ice rune and place them in the list.
-	getIceRuneL1(_rune_list);
+		// Get upgrades for the wind rune and place them in the list.
+		getWindRuneL1(_rune_list);
+	} else if (global.stage > 5) {
+		// Get upgrades for the fire rune and place them in the list.
+		getFireRuneL2(_rune_list);
 
-	// Get upgrades for the wind rune and place them in the list.
-	getWindRuneL1(_rune_list);
+		// Get upgrades for the ice rune and place them in the list.
+		getIceRuneL2(_rune_list);
+
+		// Get upgrades for the wind rune and place them in the list.
+		getWindRuneL2(_rune_list);
+	}
 
 	// Shuffle the list containing all the retrieved upgrades.
 	listShuffle(_rune_list);

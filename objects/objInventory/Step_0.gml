@@ -1,3 +1,9 @@
+if ((global.attack_slot[# 0, 0] == item.none) && (global.attack_slot[# 1, 0] == item.none)) {
+	if (!instance_exists(objInvTooltip2)){
+		with(objEquipBasic) {instance_create_layer(x+61.5, y-122, "RunesInventory", objInvTooltip2)}	
+	}
+} else {instance_destroy(objInvTooltip2)}
+
 weaveRunesCheck();
 
 // Inventory slot
