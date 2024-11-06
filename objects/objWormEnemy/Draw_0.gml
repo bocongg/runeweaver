@@ -13,4 +13,4 @@ switch(state){
 //draw hp
 var _healthPercent = hp / maxHp;
 var _hpImage = _healthPercent * (sprite_get_number(sprEnemyHealthBar) - 1);
-draw_sprite(sprEnemyHealthBar, _hpImage, x, y - sprite_height/2 - 10);
+draw_sprite_ext(sprEnemyHealthBar, _hpImage, x, y - sprite_height/2 - 10, 2, 2, image_angle, image_blend, image_alpha);

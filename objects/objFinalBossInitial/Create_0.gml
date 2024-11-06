@@ -1,8 +1,9 @@
 event_inherited();
-//damage = 20;
-//hitconfirm = false;
+damage = 20;
 
 get_damaged_create(50);
+
+baseSpd = 0.5;
 
 //shooting state
 cooldownTime = 4*60; //4 seconds 
@@ -13,3 +14,5 @@ bulletInst = noone;
 
 //create path to follow player
 path = path_add();
+
+bulletType = objFinalBossBulletInitial;

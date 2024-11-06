@@ -1,6 +1,5 @@
 scr_init_inventory();
 
-//scr_gain_item(item.prismrune3, 1);
 //scr_gain_item(item.firerune1, 1);
 //scr_gain_item(item.firerune2, 1);
 //scr_gain_item(item.firerune3, 1);
@@ -17,6 +16,7 @@ scr_init_inventory();
 //scr_gain_item(item.infernorune2, 1);
 //scr_gain_item(item.infernorune3, 1);
 //scr_gain_item(item.prismrune3, 1);
+
 
 // Player HP
 global.playerMaxHp = 100;

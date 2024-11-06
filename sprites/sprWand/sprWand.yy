@@ -23,7 +23,7 @@
   ],
   "name":"sprWand",
   "nineSlice":null,
-  "origin":9,
+  "origin":6,
   "parent":{
     "name":"Player",
     "path":"folders/Sprites/Player.yy",

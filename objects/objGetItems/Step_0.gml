@@ -54,7 +54,7 @@ if ((ds_map_find_value(upgrade_data, "stock") != 0)) && (global.gold >= ds_map_f
 				if (_icon == sprEnergyDrink) {
 					global.gold -= 60;
 					global.energyDrink += 1;
-					global.moveSpd += global.moveSpd + (global.energyDrink*0.05*global.moveSpd);
+					global.moveSpd += global.energyDrink*0.25*global.moveSpd;
 					upgrade_data[? "stock"] -= 1;
 					global.vendingTimes += 1;
 

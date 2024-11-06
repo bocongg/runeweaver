@@ -5,7 +5,7 @@ get_damaged_create(20);
 
 debuffs = [];
 tick = 0;
-baseSpd = 2; 
+baseSpd = 3; 
 chaseSpd = baseSpd;
 
 

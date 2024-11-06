@@ -28,7 +28,8 @@ if (!variable_global_exists("moveSpd")){
 	
 
 //wand info
-	shootTimer = 0;
+	shootTimerBasic = 0;
+	shootTimerSpecial = 0;
 	
 	basicAttack = global.attackList.sparkLevel1Attack;
 	specialAttack = global.attackList.sparkLevel3Attack;

@@ -1,3 +1,5 @@
+event_inherited();
+
 tick++;
 
 //reset speed to normal at the start of each step
@@ -90,4 +92,3 @@ if hp <= 0 {
 		audio_stop_sound(sndFinalBossInitialBGM);
 	}
 }
-event_inherited();

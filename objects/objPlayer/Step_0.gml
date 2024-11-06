@@ -72,16 +72,16 @@ get_damaged(objDamagePlayer, true, false);
 
 //shoot the wand
 #region
-if (room != rmWinScreen && room != rmTreasure && room != rmShop && room != rmRest && room != rmRestShop && room != rmEventA && room != rmEventB && room != rmEventC && !instance_exists(objChest) && !instance_place(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0), objPauseButton) && !instance_exists(objPauseButtonParent) && !instance_place(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0), objInventory)){
+if (room != rmWinScreen && room != rmTreasure && room != rmShop && room != rmRest && room != rmRestShop && room != rmEventA && room != rmEventB && room != rmEventC && !instance_exists(objChest) && !instance_place(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0), objPauseButton) && !instance_exists(objPauseButtonParent) && !instance_exists(objInventory)){
 	if (!instance_exists(objAiming)){
 		instance_create_depth(x, y, -10000, objAiming);
 	}
 	
-	if shootTimer > 0 {shootTimer--;};
-	if basicShootKey && shootTimer <= 0 {
+	if shootTimerBasic > 0 {shootTimerBasic--;};
+	if basicShootKey && shootTimerBasic <= 0 {
 		
 		//reset the timer
-		shootTimer = basicAttack.cooldown;
+		shootTimerBasic = basicAttack.cooldown;
 		
 		//shooting
 			var _spread = basicAttack.spread;
@@ -99,51 +99,54 @@ if (room != rmWinScreen && room != rmTreasure && room != rmShop && room != rmRes
 				}
 			}
 	}
-	else if specialShootKey && shootTimer <= 0 {
+	if (global.attack_slot[# 1, 0] != item.none){
+		if shootTimerSpecial > 0 {shootTimerSpecial--;};
+		if specialShootKey && shootTimerSpecial <= 0 {
 		
-		//reset the timer
-		shootTimer = specialAttack.cooldown;
+			//reset the timer
+			shootTimerSpecial = specialAttack.cooldown;
 		
-		//shooting
-			var _spread = specialAttack.spread;
-			var _spreadDiv = max(_spread/1 -1, 1);
+			//shooting
+				var _spread = specialAttack.spread;
+				var _spreadDiv = max(_spread/1 -1, 1);
 		
-		if specialAttack.bulletObj == objSpecialBlizzard {
-			//create the bullet
-			var _bulletInst = instance_create_depth(mouse_x, mouse_y, depth-100, specialAttack.bulletObj);
-			with (_bulletInst) {
-				damage = other.specialAttack.dmg;
-			}
-		} else if specialAttack.bulletObj == objSpecialFlashFreeze {
-			//create the bullet
-			var _bulletInst = instance_create_depth(x, y, depth-100, specialAttack.bulletObj);
-			with (_bulletInst) {
-				damage = other.specialAttack.dmg;
-			}
-		} else if specialAttack.bulletObj == objSpecialPrism {
-			
-			//create the bullet
-			var _bulletInst = instance_create_depth(x+20, y, depth-100, specialAttack.bulletObj);
-			//change the bullet's direction
-			with(_bulletInst) {
-				damage = other.specialAttack.dmg;
-				dir = other.aimDir;
-			}
-		}	
-		else {
-		
-			for (var i = 0; i < specialAttack.bulletNum ; i++) {
-				
+			if specialAttack.bulletObj == objSpecialBlizzard {
 				//create the bullet
-				var _bulletInst = instance_create_depth(x, centerY, depth-100, specialAttack.bulletObj);
+				var _bulletInst = instance_create_depth(mouse_x, mouse_y, depth-100, specialAttack.bulletObj);
+				with (_bulletInst) {
+					damage = other.specialAttack.dmg;
+				}
+			} else if specialAttack.bulletObj == objSpecialFlashFreeze {
+				//create the bullet
+				var _bulletInst = instance_create_depth(x, y, depth-100, specialAttack.bulletObj);
+				with (_bulletInst) {
+					damage = other.specialAttack.dmg;
+				}
+			} else if specialAttack.bulletObj == objSpecialPrism {
 			
+				//create the bullet
+				var _bulletInst = instance_create_depth(x+20, y, depth-100, specialAttack.bulletObj);
 				//change the bullet's direction
 				with(_bulletInst) {
 					damage = other.specialAttack.dmg;
-					dir = other.aimDir - _spread/2 + _spreadDiv*i; 
+					dir = other.aimDir;
 				}
-			}
-		} 
+			}	
+			else {
+		
+				for (var i = 0; i < specialAttack.bulletNum ; i++) {
+				
+					//create the bullet
+					var _bulletInst = instance_create_depth(x, centerY, depth-100, specialAttack.bulletObj);
+			
+					//change the bullet's direction
+					with(_bulletInst) {
+						damage = other.specialAttack.dmg;
+						dir = other.aimDir - _spread/2 + _spreadDiv*i; 
+					}
+				}
+			} 
+		}
 	}
 } else {
 	instance_destroy(objAiming);
@@ -189,7 +192,10 @@ if ((room == rmFinalBoss || room == rmTraining) && instance_number(objFinalBossI
 
 //Set basic attack based on rune equipped
 switch (global.attack_slot[# 0, 0]) {
-    case item.prismrune3:
+    case item.none:
+        basicAttack = global.attackList.sparkLevel1Attack;
+        break;
+	case item.prismrune3:
         basicAttack = global.attackList.sparkLevel3Attack;
         break;
 	case item.firerune1:
