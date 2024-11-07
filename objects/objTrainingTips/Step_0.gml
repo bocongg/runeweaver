@@ -1,47 +1,43 @@
 // If mouse is over this instance, adjusting for the GUI layer...
 if(device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_right && device_mouse_y_to_gui(0) > bbox_top && device_mouse_y_to_gui(0) < bbox_bottom)
 	{
+
+		window_set_cursor(cr_default);
+
 		// Assign Variable - Reduce target scale size.
-		target_scale = 0.9;
+		target_scale = 0.8;
 
 		// If Mouse Pressed - If left mouse button is pressed...
 		if (mouse_check_button_pressed(mb_left))
 		{
-		// Play Audio - Play click sound effect.
+			// Play Audio - Play click sound effect.
 			audio_play_sound(sndButtonClick, 0, 0, 1.0, undefined, 1.0);
-	
+			
 			// Assign Variable - Sets click state to true.
 			is_clicked = true;
 	
 			// Assign Variable - Reduce target scale size further.
-			target_scale = 0.8;
+			target_scale = 0.7;
 		}
 
 		// If Variable - Checks if mouse has been clicked on this button.
 		if(is_clicked == true)
 		{
 		// Assign Variable - Reduce target scale size further.
-			target_scale = 0.9;
+			target_scale = 0.8;
 	
 			// If Mouse Released - If left mouse button is released...
 			if (mouse_check_button_released(mb_left))
 			{
-				with(objInventory) instance_destroy();
-				with(objWeaveButton) instance_destroy();
-				with(objExitInvButton) instance_destroy();
-				with(objInvTooltip2) instance_destroy();
-				instance_activate_object(objGetRunes);
-				instance_activate_object(objPlayer);
-				
-				if ((global.attack_slot[# 0, 0] == item.none) && (global.attack_slot[# 1, 0] == item.none)){
-					if (global.stage == 0 && !instance_exists(objInventory) && room != rmTraining) {
-						with(objEquipBasic) {instance_create_layer(x+61.5, y-122, "RunesInventory", objInvTooltip3)}
-					}
-				} else if ((global.attack_slot[# 0, 0] != item.none) || (global.attack_slot[# 1, 0] != item.none)){
-					with(objEquipBasic){instance_destroy(objInvTooltip3)}
+				instance_deactivate_all(true);
+				var _camX = camera_get_view_x(view_camera[0]);
+				var _camY = camera_get_view_y(view_camera[0]);
+
+				if (!instance_exists(objTrainingGuide)){
+					instance_create_layer(_camX + 1920/2, _camY + 1080/2, "UpgradeScreenBase", objTrainingGuide);
 				}
 			}
-		}
+	}
 }
 
 // Else
