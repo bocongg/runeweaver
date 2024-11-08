@@ -11,8 +11,8 @@
   "name":"objWinGrandpa",
   "overriddenProperties":[],
   "parent":{
-    "name":"Interactables",
-    "path":"folders/Objects/Game/Interactables.yy",
+    "name":"Win Screen",
+    "path":"folders/Objects/Win Screen.yy",
   },
   "parentObjectId":null,
   "persistent":false,

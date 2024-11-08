@@ -1,9 +1,5 @@
 draw_self();
 
-if (global.stage == 0) {
-	with(objEquipBasic) {draw_sprite(sprInvTooltip2, 0, x+61.5, y-122);}
-}
-
 // Draw slots and items
 var slot_count = ds_list_size(global.inventory_slots);
 for (var i = 0; i < slot_count; i++) {

@@ -1,7 +1,7 @@
 // Reset mouse_over to false, this will hide the overlay effect on map node.
 mouse_over = false;
 
-if (!instance_exists(objGet3RuneScreen) && !instance_exists(objInventory) && instance_exists(objInvTooltip1)){
+if (!instance_exists(objGet3RuneScreen) && !instance_exists(objInventory) && !instance_exists(objInvTooltip1) && (instance_exists(objInvTooltip3)) || (global.attack_slot[# 0, 0] != item.none) || (global.attack_slot[# 1, 0] != item.none)){
 
 	// If the mouse is over this card...
 	if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_right && device_mouse_y_to_gui(0) > bbox_top && device_mouse_y_to_gui(0) < bbox_bottom)
@@ -31,7 +31,7 @@ if (!instance_exists(objGet3RuneScreen) && !instance_exists(objInventory) && ins
 			{	
 				var roomID = object_get_name(objRmNodeStart);
 				ds_list_add(global.stagesCleared, roomID);
-				alarm_set(0,20);
+				alarm_set(0,15);
 				
 				if !instance_exists(objTransition) {
 					var _inst = instance_create_layer(x, y, "Instances", objTransition);

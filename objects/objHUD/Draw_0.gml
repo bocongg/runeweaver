@@ -8,6 +8,19 @@ with(objEquipBasic){
 	var basicAttack = global.attack_slot[# 0, 0];
 
 	draw_sprite(spr_item, basicAttack, _camX+107, _camY+888)
+	
+	if (instance_exists(objPlayer)){
+		var _cdPercent = objPlayer.shootTimerBasic / objPlayer.basicAttack.cooldown;
+		var _cdImage = _cdPercent * (sprite_get_number(spr_item_cooldown) - 1);
+		draw_sprite(spr_item_cooldown, _cdImage, _camX+107, _camY+888);
+		
+		//draw_set_halign(fa_center);
+		//draw_set_valign(fa_middle);
+		//draw_text(_camX+104, _camY+873+90,string(objPlayer.shootTimerBasic));
+		//draw_set_halign(fa_left);
+		//draw_set_valign(fa_top);
+		
+	}
 }
 
 with(objEquipSpecial){
@@ -16,6 +29,17 @@ with(objEquipSpecial){
 	var specialAttack = global.attack_slot[# 1, 0];
 
 	draw_sprite(spr_item, specialAttack, _camX+223, _camY+888)
+	if (instance_exists(objPlayer) && global.attack_slot[# 1, 0] != item.none){
+		var _cdPercent = objPlayer.shootTimerSpecial / objPlayer.specialAttack.cooldown;
+		var _cdImage = _cdPercent * (sprite_get_number(spr_item_cooldown) - 1);
+		draw_sprite(spr_item_cooldown, _cdImage, _camX+223, _camY+888);
+		
+		//draw_set_halign(fa_center);
+		//draw_set_valign(fa_middle);
+		//draw_text(_camX+224, _camY+873+90,string(objPlayer.shootTimerSpecial));
+		//draw_set_halign(fa_left);
+		//draw_set_valign(fa_top);
+	}
 }
 
 //draw player's hp
