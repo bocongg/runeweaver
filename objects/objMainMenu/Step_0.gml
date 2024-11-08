@@ -24,6 +24,7 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 		if (mouse_check_button_released(mb_left))
 		{
 			global.stage = 0;
+			global.replayed = true;
 			game_restart();
 		}
 	}
