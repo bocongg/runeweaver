@@ -71,12 +71,10 @@ if instance_exists(objPlayer) {
 	if dir > 90 && dir < 270 {face = -1;} else {face = 1;}
 
 	//collisions
-	if place_meeting(x + xspd, y, objWall) || 
-	place_meeting(x + xspd, y, objEnemyParent)
+	if place_meeting(x + xspd, y, objEnemyParent)
 	{xspd = 0;}
 	
-	if place_meeting(x, y + yspd, objWall) || 
-	place_meeting(x, y + yspd, objEnemyParent) 
+	if place_meeting(x, y + yspd, objEnemyParent) 
 	{yspd = 0;}
 
 //death

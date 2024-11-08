@@ -121,7 +121,7 @@ function get_damaged (_damageObj, _iframes = false, _isEnemy = true) {
 	
 //attackList	
 	//constructor template for attackList	
-	function create_attack(_dmg = 1, _wand = sprWand, _bulletObj = objBasicShoot, _cooldown = 1, _bulletNum = 1, _spread = 0) constructor {
+	function create_attack(_dmg = 1, _wand = sprWand, _bulletObj = objBasicBullet, _cooldown = 1, _bulletNum = 1, _spread = 0) constructor {
 		dmg = _dmg;
 		sprite = _wand;
 		bulletObj = _bulletObj;		//types of bullet
@@ -401,14 +401,14 @@ global.dotAttackList = {
 		fireballLevel1Attack : new create_DOTattack(
 			0.8,	//dot
 			0,		//speed reduction
-			1,	//dmg interval
+			1,		//dmg interval
 			5		//dmg last
 		),
 		fireballLevel2Attack : new create_DOTattack(
 			0.9,	//dot
 			0,		//speed reduction
-			1,	//dmg interval
-			5,		//dmg last
+			1,		//dmg interval
+			5		//dmg last
 		),
 		fireballLevel3Attack : new create_DOTattack(
 			1,	//dot
@@ -419,19 +419,19 @@ global.dotAttackList = {
 		flashFreezeLevel1Attack : new create_DOTattack(
 			0.5,	//dot
 			1,		//speed reduction
-			1,	//dmg interval
+			1,		//dmg interval
 			5		//dmg last
 		),	
 		flashFreezeLevel2Attack : new create_DOTattack(
 			0.6,	//dot
 			1,		//speed reduction
-			1,	//dmg interval
+			1,		//dmg interval
 			5		//dmg last
 		),	
 		flashFreezeLevel3Attack : new create_DOTattack(
 			0.7,	//dot
 			1,		//speed reduction
-			1,	//dmg interval
+			1,		//dmg interval
 			5		//dmg last
 		),	
 		infernoLevel2Attack : new create_DOTattack(
@@ -471,7 +471,7 @@ global.dotAttackList = {
 			5	
 		),
 		prismSpecialAttack : new create_DOTattack(
-			1,	//dot
+			1,		//dot
 			1,		//speed reduction5
 			0.5,	//dmg interval
 			5		//dmg last

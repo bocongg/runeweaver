@@ -97,12 +97,14 @@ if (room != rmWinScreen && room != rmTreasure && room != rmShop && room != rmRes
 				with(_bulletInst) {
 					show_debug_message("Bullet Damage:" + string(other.basicAttack.dmg));
 					damage = other.basicAttack.dmg;
-					//DOT
-					dotDmg = other.basicDOTAttack.dot;
-					spdReduct = other.basicDOTAttack.spdReduct; 
-					dmgInterval = other.basicDOTAttack.dmgInterval; 
-					dmgLast = other.basicDOTAttack.dmgLast;
 					dir = other.aimDir - _spread/2 + _spreadDiv*i; 
+					//DOT
+					if other.basicAttack.bulletObj != objBasicBullet {
+						dotDmg = other.basicDOTAttack.dot;
+						spdReduct = other.basicDOTAttack.spdReduct; 
+						dmgInterval = other.basicDOTAttack.dmgInterval; 
+						dmgLast = other.basicDOTAttack.dmgLast;
+					}
 				}
 			}
 	}
@@ -202,10 +204,6 @@ if (!chestOpened && !instance_exists(objLoseGif) && room != rmTraining && room !
 		}
 		chestOpened = true;
 	}
-}
-
-if (room == rmTreasure && instance_number(objRock) == 0 && instance_number(objRockSmall) != 0 && instance_number(objTreasureChest) == 0){
-	instance_create_layer(1920, 901, "Instances", objStairs);
 }
 
 if (instance_number(objFinalBossInitial) == 1) {
