@@ -1,2 +1,2 @@
-//destroy self
-instance_destroy();
+////destroy self
+//instance_destroy();

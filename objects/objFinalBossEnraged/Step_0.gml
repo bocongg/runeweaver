@@ -23,7 +23,7 @@ for (var i = array_length(debuffs) - 1; i >= 0; --i) {
       hp -= _dmg; // Or however you apply damage in your game
 	  
 	  //create DOT text
-	  with instance_create_layer(x, y, "Instances", objDOTText) {
+	  with instance_create_layer(x, y, "Instances", objDOTDamageText) {
 		damageText = _dmg;
 		size = 2;
 		speedR = _debuff[DebuffInfo.SPEED_REDUCTION];
@@ -54,7 +54,7 @@ for (var i = array_length(debuffs) - 1; i >= 0; --i) {
    }
 }
 
-get_damaged(objDamageEnemy);
+//get_damaged(objDamageEnemy);
 
 //turn off red damage flash
 if(image_blend == c_red) {

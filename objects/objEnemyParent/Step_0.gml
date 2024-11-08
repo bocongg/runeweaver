@@ -22,7 +22,7 @@ for (var i = array_length(debuffs) - 1; i >= 0; --i) {
       var _dmg = _debuff[DebuffInfo.DMG]; 
       hp -= _dmg; 
 	  //create DOT text
-	  with instance_create_layer(x, y, "Instances", objDOTText) {
+	  with instance_create_layer(x, y, "Instances", objDOTDamageText) {
 		damageText = _dmg;
 		size = 2;
 		speedR = _debuff[DebuffInfo.SPEED_REDUCTION];
@@ -46,6 +46,10 @@ for (var i = array_length(debuffs) - 1; i >= 0; --i) {
    //remove debuff when it expires
    if (_debuff[DebuffInfo.DURATION] <= 0) {
       array_delete(debuffs, i, 1);
+	  if (_debuff[DebuffInfo.SPEED_REDUCTION] == 1) {
+			freezeEnemy = true;
+			freezeEnemyID = instance_id_get(i);
+		}
 	  if (image_blend == c_aqua) {
 		image_blend = c_white;
 		image_alpha = 1;

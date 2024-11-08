@@ -1,3 +1,4 @@
+event_inherited();
 // Create damage objects if not already created
 if createdDamageObjects == false {
     // Create a list to store all enemy instances within the area
@@ -57,4 +58,3 @@ if floor(image_index) > 1 {
         instance_destroy(enemyDamageInst);
     }
 }
-s

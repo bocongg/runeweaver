@@ -419,59 +419,59 @@ global.dotAttackList = {
 		flashFreezeLevel1Attack : new create_DOTattack(
 			0.5,	//dot
 			1,		//speed reduction
-			0.5,	//dmg interval
+			1,	//dmg interval
 			5		//dmg last
 		),	
 		flashFreezeLevel2Attack : new create_DOTattack(
-			0.5,	//dot
+			0.6,	//dot
 			1,		//speed reduction
-			0.5,	//dmg interval
+			1,	//dmg interval
 			5		//dmg last
 		),	
 		flashFreezeLevel3Attack : new create_DOTattack(
-			0.5,	//dot
+			0.7,	//dot
 			1,		//speed reduction
-			0.5,	//dmg interval
+			1,	//dmg interval
 			5		//dmg last
 		),	
 		infernoLevel2Attack : new create_DOTattack(
-			0.5,	//dot
+			2,		//dot
 			0,		//speed reduction
 			0.5,	//dmg interval
 			5		//dmg last
 		),
 		infernoLevel3Attack : new create_DOTattack(
-			0.5,	//dot
+			3,		//dot
 			0,		//speed reduction
 			0.5,	//dmg interval
 			5		//dmg last
 		),
 		blizzardLevel2Attack : new create_DOTattack(
-			0.2,	//dot
+			0.8,	//dot
 			1,		//speed reduction
 			0.5,	//dmg interval
 			5		//dmg last
 		),
 		blizzardLevel3Attack : new create_DOTattack(
-			0.2,	//dot
+			0.9,	//dot
 			1,		//speed reduction
 			0.5,	//dmg interval
 			5		//dmg last
 		),
 		frostfireBlastLevel2Attack : new create_DOTattack(
-			0.5,	//dot
+			0.8,	//dot
 			1,		//speed reduction
 			0.5,	//dmg interval
-			5		//dmg last
+			5	
 		),
 		frostfireBlastLevel3Attack : new create_DOTattack(
-			0.5,	//dot
+			0.9,	//dot
 			1,		//speed reduction
 			0.5,	//dmg interval
-			5		//dmg last
+			5	
 		),
 		prismSpecialAttack : new create_DOTattack(
-			3,	//dot
+			1,	//dot
 			1,		//speed reduction5
 			0.5,	//dmg interval
 			5		//dmg last

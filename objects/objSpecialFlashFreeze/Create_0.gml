@@ -2,10 +2,22 @@ event_inherited();
 
 //vars for creating damage objects
 createdDamageObjects = false;
-enemyDamageInst = noone;
+enemyDamageInst = noone; 
 
-//damage over time
-damageOverTime = 0;
-damageInterval = 1; //DO NOT SET TO ZERO //apply the damage every half a second
-damageLast = 5; //damage effect will last for 5 seconds 
+dotDmg = other.dotDmg;
+damageInterval = other.dmgInterval; 
+dmgLast = other.dmgLast; 
+spdReduct = other.spdReduct;
+
+//beamLast
+beamLast = 60; //1 sec is 60fps
+
+// The duration you want for the animation cycle, in seconds
+animation_duration = 0.3; // 1 second
+
+// Calculate the total number of steps for the duration
+animation_steps = animation_duration * room_speed;
+
+// Initialize a counter to track the animation progress
+animation_counter = 0;
 

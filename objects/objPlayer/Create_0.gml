@@ -40,4 +40,5 @@ if (!variable_global_exists("moveSpd")){
 	
 	
 //Dot info
-damageOverTimeAttack = global.dotAttackList.fireBoltLevel1Attack;
+basicDOTAttack = global.dotAttackList.fireBoltLevel1Attack;
+specialDOTAttack = global.dotAttackList.fireballLevel1Attack;
