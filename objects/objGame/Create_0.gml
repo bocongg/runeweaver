@@ -1,21 +1,21 @@
 scr_init_inventory();
 
-//scr_gain_item(item.firerune1, 1);
-//scr_gain_item(item.firerune2, 1);
-//scr_gain_item(item.firerune3, 1);
-//scr_gain_item(item.icerune1, 1);
-//scr_gain_item(item.icerune2, 1);
-//scr_gain_item(item.icerune3, 1);
-//scr_gain_item(item.windrune1, 1);
-//scr_gain_item(item.windrune2, 1);
-//scr_gain_item(item.windrune3, 1);
-//scr_gain_item(item.frostfirerune2, 1);
-//scr_gain_item(item.frostfirerune3, 1);
-//scr_gain_item(item.blizzardrune2, 1);
-//scr_gain_item(item.blizzardrune3, 1);
-//scr_gain_item(item.infernorune2, 1);
-//scr_gain_item(item.infernorune3, 1);
-//scr_gain_item(item.prismrune3, 1);
+scr_gain_item(item.firerune1, 2);
+scr_gain_item(item.firerune2, 2);
+scr_gain_item(item.firerune3, 2);
+scr_gain_item(item.icerune1, 2);
+scr_gain_item(item.icerune2, 2);
+scr_gain_item(item.icerune3, 2);
+scr_gain_item(item.windrune1, 2);
+scr_gain_item(item.windrune2, 2);
+scr_gain_item(item.windrune3, 2);
+scr_gain_item(item.frostfirerune2, 2);
+scr_gain_item(item.frostfirerune3, 2);
+scr_gain_item(item.blizzardrune2, 2);
+scr_gain_item(item.blizzardrune3, 2);
+scr_gain_item(item.infernorune2, 2);
+scr_gain_item(item.infernorune3, 2);
+scr_gain_item(item.prismrune3, 2);
 
 
 // Player HP

@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprBasicWind",
-    "path":"sprites/sprBasicWind/sprBasicWind.yy",
+    "name":"sprSpecialWind",
+    "path":"sprites/sprSpecialWind/sprSpecialWind.yy",
   },
   "spriteMaskId":null,
   "visible":true,

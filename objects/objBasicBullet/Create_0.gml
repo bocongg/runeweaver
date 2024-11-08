@@ -11,3 +11,8 @@ maxDist = 500;
 destroy = false;
 enemyDestroy = false;
 
+//damage over time
+dotDmg = other.dotDmg;
+damageInterval = other.dmgInterval; 
+damageLast = other.dmgLast; 
+spdReduct = other.spdReduct;

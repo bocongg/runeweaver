@@ -1,3 +1,26 @@
+event_inherited();
+
+if (beamLast > 0) {
+    objPlayer.canMove = false;
+} else {
+    objPlayer.canMove = true;
+}
+// Increment the animation counter
+animation_counter += 1;
+
+// Calculate the normalized progress of the animation (from 0 to 1)
+var animation_progress = animation_counter / animation_steps;
+
+// Update the image_index based on the progress
+image_index = animation_progress * (sprite_get_number(sprite_index) - 1);
+
+// Loop the animation if it reaches the end
+if (animation_counter >= animation_steps) {
+    animation_counter = 0; // Reset the counter to loop the animation
+}
+
+
+
 //create damage objects
 if createdDamageObjects == false {
 	//var colliding_enemy = instance_place(x, y, objEnemyParent); 
@@ -14,9 +37,9 @@ if createdDamageObjects == false {
 		
 				// Check for collision with multiple enemies
 				var damageOverTimeinfo = [];
-				damageOverTimeinfo [DebuffInfo.DMG] = damageOverTime; // damage is however much damage the poison should apply each tick
+				damageOverTimeinfo [DebuffInfo.DMG] = dotDmg; // damage is however much damage the poison should apply each tick
 				damageOverTimeinfo [DebuffInfo.TICK_RATE] = game_get_speed(gamespeed_fps) * damageInterval; 
-				damageOverTimeinfo [DebuffInfo.DURATION] = game_get_speed(gamespeed_fps) * damageLast; 
+				damageOverTimeinfo [DebuffInfo.DURATION] = game_get_speed(gamespeed_fps) * dmgLast; 
 				damageOverTimeinfo [DebuffInfo.SPEED_REDUCTION] = 1; 
 				damageOverTimeinfo [DebuffInfo.DAMAGE_COLOUR] = c_aqua; 
 
@@ -41,5 +64,7 @@ if floor(image_index) > 1 {
 		instance_destroy(enemyDamageInst);
 	}
 }
-	
-	event_inherited();
+
+	//destroy
+	beamLast--;
+	if beamLast == 0 {instance_destroy();}

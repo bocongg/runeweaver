@@ -20,6 +20,11 @@ image_angle = dir;
 	if place_meeting(x, y, objEnemyParent) || place_meeting(x, y, objSolidWall) {
 		var _areaDamageInst = instance_create_depth(x+8, y+8, -3000, objAreaDamage);
 		with(_areaDamageInst) {
+			//damage over time
+			dotDmg = other.dotDmg;
+			damageInterval = other.dmgInterval; 
+			damageLast = other.dmgLast; 
+			spdReduct = other.spdReduct;
 			image_xscale = 5; //how large the xscale
 			image_yscale = 5; //how large the yscale
 		}

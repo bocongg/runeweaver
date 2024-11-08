@@ -37,3 +37,8 @@ if (!variable_global_exists("moveSpd")){
 	chestOpened = false;
 	bossEncounter = false;
 	bossEnraged = false;
+	
+	
+//Dot info
+basicDOTAttack = global.dotAttackList.fireBoltLevel1Attack;
+specialDOTAttack = global.dotAttackList.fireballLevel1Attack;

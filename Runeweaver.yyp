@@ -105,6 +105,7 @@
     {"id":{"name":"objDamageEnemy","path":"objects/objDamageEnemy/objDamageEnemy.yy",},},
     {"id":{"name":"objDamageParent","path":"objects/objDamageParent/objDamageParent.yy",},},
     {"id":{"name":"objDamagePlayer","path":"objects/objDamagePlayer/objDamagePlayer.yy",},},
+    {"id":{"name":"objDOTDamageText","path":"objects/objDOTDamageText/objDOTDamageText.yy",},},
     {"id":{"name":"objEnemyBullet1Big","path":"objects/objEnemyBullet1Big/objEnemyBullet1Big.yy",},},
     {"id":{"name":"objEnemyBullet1Fast","path":"objects/objEnemyBullet1Fast/objEnemyBullet1Fast.yy",},},
     {"id":{"name":"objEnemyBullet3Fan","path":"objects/objEnemyBullet3Fan/objEnemyBullet3Fan.yy",},},

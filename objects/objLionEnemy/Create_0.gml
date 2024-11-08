@@ -10,3 +10,5 @@ get_damaged_create(30);
 
 //create path to follow player
 path = path_add();
+
+dmgText = "";
