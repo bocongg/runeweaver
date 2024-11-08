@@ -37,3 +37,7 @@ if (!variable_global_exists("moveSpd")){
 	chestOpened = false;
 	bossEncounter = false;
 	bossEnraged = false;
+	
+	
+//Dot info
+damageOverTimeAttack = global.dotAttackList.fireBoltLevel1Attack;

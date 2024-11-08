@@ -1,22 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"objAreaDamage",
+  "%Name":"objDOTText",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objAreaDamage",
+  "name":"objDOTText",
   "overriddenProperties":[],
   "parent":{
-    "name":"Power",
-    "path":"folders/Objects/Game/Power.yy",
+    "name":"Game",
+    "path":"folders/Objects/Game.yy",
   },
-  "parentObjectId":{
-    "name":"objDamageParent",
-    "path":"objects/objDamageParent/objDamageParent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -34,10 +32,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sprAreaDamage",
-    "path":"sprites/sprAreaDamage/sprAreaDamage.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

@@ -80,6 +80,7 @@
     {"name":"objDamageEnemy","order":6,"path":"objects/objDamageEnemy/objDamageEnemy.yy",},
     {"name":"objDamageParent","order":10,"path":"objects/objDamageParent/objDamageParent.yy",},
     {"name":"objDamagePlayer","order":9,"path":"objects/objDamagePlayer/objDamagePlayer.yy",},
+    {"name":"objDOTText","order":21,"path":"objects/objDOTText/objDOTText.yy",},
     {"name":"objEnemyBulle1Big","order":13,"path":"objects/objEnemyBulle1Big/objEnemyBulle1Big.yy",},
     {"name":"objEnemyBullet1Fast","order":12,"path":"objects/objEnemyBullet1Fast/objEnemyBullet1Fast.yy",},
     {"name":"objEnemyBullet3Fan","order":3,"path":"objects/objEnemyBullet3Fan/objEnemyBullet3Fan.yy",},

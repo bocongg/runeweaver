@@ -351,3 +351,129 @@ function get_damaged (_damageObj, _iframes = false, _isEnemy = true) {
 			0
 		)
 	}
+//constructor template for attackList	
+	function create_DOTattack(_dot = 1, _spdReduct = 1, _dmgInterval = 1, _dmgLast = 5) constructor {
+		dot = _dot;					//damage over time
+		spdReduct = _spdReduct;		//speed reduction - freeze is 1, 0.5 means slowdown by 50%
+		dmgInterval = _dmgInterval;	//damage interval
+		dmgLast = _dmgLast;			//how long does the damage last 
+	}
+
+global.dotAttackList = {
+		fireBoltLevel1Attack : new create_DOTattack(
+			0.5,	//dot
+			0,		//speed reduction
+			1,		//dmg interval
+			3		//dmg last
+		),
+		fireBoltLevel2Attack : new create_DOTattack(
+			0.6,	//dot
+			0,		//speed reduction
+			1,		//dmg interval
+			4		//dmg last
+		),
+		fireBoltLevel3Attack : new create_DOTattack(
+			0.7,	//dot
+			0,		//speed reduction
+			1,		//dmg interval
+			5		//dmg last
+		),
+		iceShardLevel1Attack : new create_DOTattack(
+			0.2,	//dot
+			0.7,	//speed reduction
+			1,		//dmg interval
+			3		//dmg last
+		),
+		iceShardLevel2Attack : new create_DOTattack(
+			0.3,		//dot
+			0.7,	//speed reduction
+			1,		//dmg interval
+			4		//dmg last
+		),
+		iceShardLevel3Attack : new create_DOTattack(
+			0.4,	//dot
+			0.7,	//speed reduction
+			1,		//dmg interval
+			5		//dmg last
+		),
+		
+		//special attack
+		fireballLevel1Attack : new create_DOTattack(
+			0.8,	//dot
+			0,		//speed reduction
+			1,	//dmg interval
+			5		//dmg last
+		),
+		fireballLevel2Attack : new create_DOTattack(
+			0.9,	//dot
+			0,		//speed reduction
+			1,	//dmg interval
+			5,		//dmg last
+		),
+		fireballLevel3Attack : new create_DOTattack(
+			1,	//dot
+			0,		//speed reduction
+			1,	//dmg interval
+			5		//dmg last
+		),
+		flashFreezeLevel1Attack : new create_DOTattack(
+			0.5,	//dot
+			1,		//speed reduction
+			0.5,	//dmg interval
+			5		//dmg last
+		),	
+		flashFreezeLevel2Attack : new create_DOTattack(
+			0.5,	//dot
+			1,		//speed reduction
+			0.5,	//dmg interval
+			5		//dmg last
+		),	
+		flashFreezeLevel3Attack : new create_DOTattack(
+			0.5,	//dot
+			1,		//speed reduction
+			0.5,	//dmg interval
+			5		//dmg last
+		),	
+		infernoLevel2Attack : new create_DOTattack(
+			0.5,	//dot
+			0,		//speed reduction
+			0.5,	//dmg interval
+			5		//dmg last
+		),
+		infernoLevel3Attack : new create_DOTattack(
+			0.5,	//dot
+			0,		//speed reduction
+			0.5,	//dmg interval
+			5		//dmg last
+		),
+		blizzardLevel2Attack : new create_DOTattack(
+			0.2,	//dot
+			1,		//speed reduction
+			0.5,	//dmg interval
+			5		//dmg last
+		),
+		blizzardLevel3Attack : new create_DOTattack(
+			0.2,	//dot
+			1,		//speed reduction
+			0.5,	//dmg interval
+			5		//dmg last
+		),
+		frostfireBlastLevel2Attack : new create_DOTattack(
+			0.5,	//dot
+			1,		//speed reduction
+			0.5,	//dmg interval
+			5		//dmg last
+		),
+		frostfireBlastLevel3Attack : new create_DOTattack(
+			0.5,	//dot
+			1,		//speed reduction
+			0.5,	//dmg interval
+			5		//dmg last
+		),
+		prismSpecialAttack : new create_DOTattack(
+			3,	//dot
+			1,		//speed reduction5
+			0.5,	//dmg interval
+			5		//dmg last
+		)
+	}

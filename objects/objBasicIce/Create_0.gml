@@ -11,9 +11,3 @@ destroy = false;
 enemyDestroy = false;
 
 audio_play_sound(sndIceBasic, 0, 0, 1.0, undefined, 1.0);
-
-//slowdown over time
-damage = 0.5;
-slowdownInterval = 0.5; //DO NOT SET TO ZERO //apply the slowdown every half a second
-slowdownLast = 5; //slowdown effect will last for 5 seconds 
-slowdown = 0.7; //freeze is 1, 0.5 means slowdown by 50%

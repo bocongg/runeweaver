@@ -19,8 +19,24 @@ for (var i = array_length(debuffs) - 1; i >= 0; --i) {
    
    //apply damage if it's time to do so
    if (tick mod _tick_rate == 0) {
-      var _dmg = _debuff[DebuffInfo.DMG];
-      hp -= _dmg; // Or however you apply damage in your game
+      var _dmg = _debuff[DebuffInfo.DMG]; 
+      hp -= _dmg; 
+	  //create DOT text
+	  with instance_create_layer(x, y, "Instances", objDOTText) {
+		damageText = _dmg;
+		size = 2;
+		speedR = _debuff[DebuffInfo.SPEED_REDUCTION];
+		tickR = _debuff[DebuffInfo.TICK_RATE];
+		damageColour = _debuff[DebuffInfo.DAMAGE_COLOUR];
+		damageLast = _debuff[DebuffInfo.DURATION];
+		
+		show_debug_message("DOT: " + string(damageText));
+		show_debug_message("speedR: " + string(speedR));
+		show_debug_message("tickR: " + string(tickR));
+		show_debug_message("damageColour: " + string(damageColour));
+		show_debug_message("damageLast: " + string(damageLast));
+		show_debug_message("--------------------------------------");
+	  }
 	  image_blend = _debuff[DebuffInfo.DAMAGE_COLOUR];
    }
 
