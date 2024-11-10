@@ -50,7 +50,7 @@ with (objGetTreasure){
 	// Add shop items
 	if (_icon == sprEnergyDrinkT) {
 		global.energyDrink += 1;
-		global.moveSpd += global.energyDrink*0.25*global.moveSpd;
+		global.moveSpd += global.energyDrink*0.25*8;
 
 	} else if (_icon == sprFishTreatT) {
 		audio_play_sound(sndPlayerGainHealth, 0, 0, 1.0, undefined, 1.0);
