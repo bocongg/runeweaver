@@ -20,11 +20,11 @@ if instance_exists(objPlayer) {
 		{face = 1;}
 
 	//collisions
-	if place_meeting(x + xspd, y, objWall) || 
+	if place_meeting(x + xspd, y, objSolidWall) || 
 	place_meeting(x + xspd, y, objEnemyParent)
 	{xspd = 0;}
 	
-	if place_meeting(x, y + yspd, objWall) || 
+	if place_meeting(x, y + yspd, objSolidWall) || 
 	place_meeting(x, y + yspd, objEnemyParent)
 	{yspd = 0;}
 	

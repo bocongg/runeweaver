@@ -151,7 +151,7 @@ if (room == rmTraining && instance_exists(objPlayer)) {
 	
 	if (keyboard_check_pressed(ord("R"))){
 		global.energyDrink += 1;
-		global.moveSpd += global.energyDrink*0.25*global.moveSpd;
+		global.moveSpd += global.energyDrink*0.25*8;
 		instance_destroy(objPlayer);
 		instance_create_layer(1920/2, 1080/2, "Instances", objPlayer);
 	}

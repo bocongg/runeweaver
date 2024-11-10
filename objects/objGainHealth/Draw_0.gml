@@ -18,7 +18,7 @@ draw_set_color(c_white);
 draw_set_font(fntLarge); 
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
-draw_text(1920/2, 1080/2 - 100, "You gained 25% health successfully!");
+draw_text(1920/2, 1080/2 - 100, "25% health recovered!");
 
 //"press shoot to restart"
 //set the draw color to white

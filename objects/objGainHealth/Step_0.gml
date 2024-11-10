@@ -7,5 +7,5 @@ alpha = clamp(alpha, 0, 1);
 
 if basicShootKey && alpha >= 1
 {
-	instance_destroy(objGainHealth_test);
+	instance_destroy(objGainHealth);
 }
