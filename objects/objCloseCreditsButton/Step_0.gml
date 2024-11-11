@@ -27,7 +27,8 @@ if(device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_right
 			if (mouse_check_button_released(mb_left))
 			{
 				instance_destroy(objCreditsScreen);
-				instance_destroy(objCloseCreditsButton)
+				instance_destroy(objCloseCreditsButton);
+				instance_destroy(objCreditsNext)
 			}
 		}
 }

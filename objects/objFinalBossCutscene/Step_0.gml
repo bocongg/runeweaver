@@ -7,6 +7,7 @@ if (image_speed > 0)
 {
     if (image_index >= image_number - 1){
 		instance_create_layer(room_width/2, room_height/2, "Instances", objFinalBossEnraged);
+		instance_create_layer(room_width/2, room_height/2, "Instances", objLava);
 		instance_destroy(objFinalBossCutscene);
 		instance_activate_object(objPlayer);
 		
