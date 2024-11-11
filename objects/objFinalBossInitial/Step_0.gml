@@ -103,7 +103,7 @@ if hp <= 0 {
 	
 	var lay_id = layer_get_id("Background");
 	var back_id = layer_background_get_id(lay_id);
-	layer_background_sprite(back_id, sprFinalBossBgEnraged);
+	layer_background_sprite(back_id, sprFinalBossBgEnragedNoLava);
 	
 	if (audio_is_playing(sndFinalBossInitialBGM)){
 		audio_stop_sound(sndFinalBossInitialBGM);

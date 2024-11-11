@@ -1,19 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"objLava",
+  "%Name":"objCreditsNext",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objLava",
+  "name":"objCreditsNext",
   "overriddenProperties":[],
   "parent":{
-    "name":"Background",
-    "path":"folders/Objects/Game/Background.yy",
+    "name":"Start Screen",
+    "path":"folders/Objects/Start Screen.yy",
   },
   "parentObjectId":{
-    "name":"objDamagePlayer",
-    "path":"objects/objDamagePlayer/objDamagePlayer.yy",
+    "name":"objPauseButtonParent",
+    "path":"objects/objPauseButtonParent/objPauseButtonParent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprLava",
-    "path":"sprites/sprLava/sprLava.yy",
+    "name":"sprPauseButtons",
+    "path":"sprites/sprPauseButtons/sprPauseButtons.yy",
   },
   "spriteMaskId":null,
   "visible":true,
