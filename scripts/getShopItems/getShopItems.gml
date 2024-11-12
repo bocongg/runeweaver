@@ -34,7 +34,11 @@ function getLuckyBell(_item_list)
 	
 	// Add Lucky Bell details to map.
 	ds_map_replace(_map, "icon", sprLuckyBell);
-	ds_map_replace(_map, "stock", 1);
+	if (global.stage != 8) {
+		ds_map_replace(_map, "stock", 1);
+	} else {
+		ds_map_replace(_map, "stock", 0);
+	}
 	ds_map_replace(_map, "cost", 20);
 	
 	// Add Lucky Bell to item list.

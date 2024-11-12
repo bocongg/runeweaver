@@ -82,6 +82,7 @@
   },
   "name":"Runeweaver",
   "resources":[
+    {"id":{"name":"fntDOT","path":"fonts/fntDOT/fntDOT.yy",},},
     {"id":{"name":"fntLarge","path":"fonts/fntLarge/fntLarge.yy",},},
     {"id":{"name":"fntMedium","path":"fonts/fntMedium/fntMedium.yy",},},
     {"id":{"name":"fntPause","path":"fonts/fntPause/fntPause.yy",},},
@@ -374,6 +375,7 @@
     {"id":{"name":"sprFireTooltip","path":"sprites/sprFireTooltip/sprFireTooltip.yy",},},
     {"id":{"name":"sprFishTreat","path":"sprites/sprFishTreat/sprFishTreat.yy",},},
     {"id":{"name":"sprFishTreatT","path":"sprites/sprFishTreatT/sprFishTreatT.yy",},},
+    {"id":{"name":"sprGainHealth","path":"sprites/sprGainHealth/sprGainHealth.yy",},},
     {"id":{"name":"sprGold","path":"sprites/sprGold/sprGold.yy",},},
     {"id":{"name":"sprHUDEnergyDrink","path":"sprites/sprHUDEnergyDrink/sprHUDEnergyDrink.yy",},},
     {"id":{"name":"sprHUDLuckyBell","path":"sprites/sprHUDLuckyBell/sprHUDLuckyBell.yy",},},
