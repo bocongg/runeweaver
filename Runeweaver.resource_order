@@ -63,6 +63,7 @@
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"fntDOT","order":5,"path":"fonts/fntDOT/fntDOT.yy",},
     {"name":"fntLarge","order":1,"path":"fonts/fntLarge/fntLarge.yy",},
     {"name":"fntPause","order":3,"path":"fonts/fntPause/fntPause.yy",},
     {"name":"fntShop","order":4,"path":"fonts/fntShop/fntShop.yy",},
@@ -318,6 +319,7 @@
     {"name":"sprFireTooltip","order":5,"path":"sprites/sprFireTooltip/sprFireTooltip.yy",},
     {"name":"sprFishTreat","order":3,"path":"sprites/sprFishTreat/sprFishTreat.yy",},
     {"name":"sprFishTreatT","order":3,"path":"sprites/sprFishTreatT/sprFishTreatT.yy",},
+    {"name":"sprGainHealth","order":3,"path":"sprites/sprGainHealth/sprGainHealth.yy",},
     {"name":"sprHUDEnergyDrink","order":6,"path":"sprites/sprHUDEnergyDrink/sprHUDEnergyDrink.yy",},
     {"name":"sprHUDLuckyBell","order":7,"path":"sprites/sprHUDLuckyBell/sprHUDLuckyBell.yy",},
     {"name":"sprIceTooltip","order":5,"path":"sprites/sprIceTooltip/sprIceTooltip.yy",},
