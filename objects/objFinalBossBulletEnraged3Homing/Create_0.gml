@@ -2,7 +2,7 @@ damage = 5;
 hitconfirm = false;
 
 dir = 5;
-spd = 7;
+spd = 9;
 xspd = 0; 
 yspd = 0;
 
@@ -14,4 +14,7 @@ state = 0;
 // cleanup
 destroy = false;
 playerDestroy = false;
+
+//create path to follow player
+path = path_add();
 

@@ -1,35 +1,24 @@
-//state machine
-switch(state) {
-	//wait for the enemy  to  shoot state
-	case 0:
-	
-		//wait for enemy to shoot state
-		if instance_exists(objPlayer) {
-			dir = point_direction(x, y, objPlayer.x, objPlayer.y);
-			image_angle = point_direction(x, y, objPlayer.x, objPlayer.y);
-		}
+//rotate
+image_angle = dir;
 		
-		//set depth to make myself more visible
-		depth = -y - 50;
-	
-	break;
-	
-	//shoot or travel
-	case 1:
-		if instance_exists(objPlayer) {
-			dir = point_direction(x, y, objPlayer.x, objPlayer.y);
-		}
-		//movement
-		xspd = lengthdir_x(spd, dir);
-		yspd = lengthdir_y(spd, dir);
-		x += xspd;
-		y += yspd;
 		
-		//update depth
-		depth = -y;
-	
-	break;
+if instance_exists(objPlayer) {
+    // Calculate the new direction towards the player
+    var targetDir = point_direction(x, y, objPlayer.x, objPlayer.y);
+    
+    // Smoothly adjust the current direction towards the target direction
+    // Adjust the "homingSpeed" value to control how fast the bullet turns (e.g., 5 for faster turning)
+    dir = lerp(dir, targetDir, 0.05); // 0.05 is a smoothing factor; increase for faster tracking
 }
+		
+//movement
+xspd = lengthdir_x(spd, dir);
+yspd = lengthdir_y(spd, dir);
+x += xspd;
+y += yspd;
+		
+//update depth
+depth = -y;
 	
 //cleanup	
 

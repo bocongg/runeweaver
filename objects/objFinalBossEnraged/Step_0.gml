@@ -1,68 +1,90 @@
-event_inherited();
+switch (state) {
+    case 0: // Chase state
+        #region
+        if instance_exists(objPlayer) {
+            dir = point_direction(x, y, objPlayer.x, objPlayer.y);
+        }
 
-tick++;
+        spd = chaseSpd;
 
-//reset speed to normal at the start of each step
-chaseSpd = baseSpd; 
-freezeEnemy = false;
+        shootTimer++;
+        if (shootTimer > cooldownTime) {
+            state = 1;
+            shootTimer = 0;
+        }
+        break;
+        #endregion
 
-for (var i = array_length(debuffs) - 1; i >= 0; --i) {
-   var _debuff = debuffs[i];
-   var _tick_rate = round(_debuff[DebuffInfo.TICK_RATE]);
-  
-   //apply speed reduction if the debuff has SPEED_REDUCTION
-   if(_debuff[DebuffInfo.SPEED_REDUCTION] != undefined) {
-		chaseSpd = baseSpd * (1 - _debuff[DebuffInfo.SPEED_REDUCTION]);
-		freezeEnemy = true;
-		freezeEnemyID = instance_id_get(i);
-   }
-   
-   //apply damage if it's time to do so
-   if (tick mod _tick_rate == 0) {
-      var _dmg = _debuff[DebuffInfo.DMG];
-      hp -= _dmg; // Or however you apply damage in your game
-	  
-	  //create DOT text
-	  with instance_create_layer(x, y, "Instances", objDOTDamageText) {
-		damageText = _dmg;
-		size = 2;
-		speedR = _debuff[DebuffInfo.SPEED_REDUCTION];
-		tickR = _debuff[DebuffInfo.TICK_RATE];
-		damageColour = _debuff[DebuffInfo.DAMAGE_COLOUR];
-		damageLast = _debuff[DebuffInfo.DURATION];
-		
-		show_debug_message("DOT: " + string(damageText));
-		show_debug_message("speedR: " + string(speedR));
-		show_debug_message("tickR: " + string(tickR));
-		show_debug_message("damageColour: " + string(damageColour));
-		show_debug_message("damageLast: " + string(damageLast));
-		show_debug_message("--------------------------------------");
-	  }
-	  image_blend = _debuff[DebuffInfo.DAMAGE_COLOUR];
-   }
+    case 1: // Pause and shoot state
+        if instance_exists(objPlayer) {
+            dir = point_direction(x, y, objPlayer.x, objPlayer.y);
+        }
 
-   //decrease debuff duration 
-   _debuff[DebuffInfo.DURATION]--;
-   
-   //remove debuff when it expires
-   if (_debuff[DebuffInfo.DURATION] <= 0) {
-      array_delete(debuffs, i, 1);
-	  if (image_blend == c_aqua) {
-		image_blend = c_white;
-		image_alpha = 1;
-	  }
-   }
+        chaseSpd = 0;
+
+        shootTimer++;
+
+        if (shootTimer == 1) {
+			switch (bulletIndex){
+				case 0:
+					bulletCount = 1; //number of bullets in a blast
+					spread = 0; //spread angle (in degrees)
+				break;
+				case 1:
+					bulletCount = 5; //number of bullets in a blast
+					spread = 30; //spread angle (in degrees)
+				break;
+				case 2:
+					bulletCount = 5; //number of bullets in a blast
+					spread = 30; //spread angle (in degrees)
+				break;
+			}
+		    
+		    // Direction towards the player
+		    if instance_exists(objPlayer) {
+				var baseDir = point_direction(x, y, objPlayer.x, objPlayer.y);
+			}
+		    
+			// Calculate the angle step between each bullet
+		    var _spreadDiv = max(spread/1 - 1, 1);
+
+		    // Loop to create multiple bullets
+		    for (var i = 0; i < bulletCount; i++) {
+		        // Calculate the angle for each bullet
+		        var bulletAngle = baseDir - spread / 2 + i * _spreadDiv;
+				// Alternate bullet types
+		            bulletType = bulletTypes[bulletIndex];
+					show_debug_message("Count: " + string(i));
+		            bulletInst = instance_create_depth(x + bulletXoff * face, y + bulletYoff, depth, bulletType);
+					
+		        // Set the direction of the bullet
+		        with (bulletInst) {
+					dir = bulletAngle;
+				}	
+		    }
+			// Switch to the next bullet type
+			bulletIndex = (bulletIndex + 1) mod array_length(bulletTypes);
 }
+		
+        if (shootTimer <= windupTime && instance_exists(bulletInst)) {
+            bulletInst.x = x + bulletXoff * face;
+            bulletInst.y = y + bulletYoff;
+        }
 
-//get_damaged(objDamageEnemy);
+        if (shootTimer == windupTime && instance_exists(bulletInst)) {
+            audio_play_sound(sndEnemyAttack, 0, 0, 1.0, undefined, 1.0);
+            if (freezeEnemy) {
+                bulletInst.destroy = true;
+            } else {
+                bulletInst.state = 1;
+            }
+        }
 
-//turn off red damage flash
-if(image_blend == c_red) {
-	image_alpha -= 0.025
-	if(image_alpha <= 0.70) {
-		image_blend = c_white;
-		image_alpha = 1;
-	}
+        if (shootTimer > windupTime + recoverTime) {
+            state = 0;
+            shootTimer = 0;
+        }
+        break;
 }
 
 if instance_exists(objPlayer) {
@@ -93,6 +115,8 @@ if instance_exists(objPlayer) {
 	if place_meeting(x, y + yspd, objSolidWall) || 
 	place_meeting(x, y + yspd, objEnemyParent) 
 	{yspd = 0;}
+
+event_inherited();
 
 //death
 if hp <= 0 {

@@ -15,8 +15,8 @@
     "path":"folders/Objects/Game/Enemies.yy",
   },
   "parentObjectId":{
-    "name":"objEnemyShooter",
-    "path":"objects/objEnemyShooter/objEnemyShooter.yy",
+    "name":"objEnemyParent",
+    "path":"objects/objEnemyParent/objEnemyParent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
