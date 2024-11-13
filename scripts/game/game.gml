@@ -79,7 +79,6 @@ function get_damaged (_damageObj, _iframes = false, _isEnemy = true) {
 						//tell the damage instance to destroy itself 
 						_inst.destroy = true;
 					} else {
-						show_debug_message("in get_damage() Damage: " + string(_inst.damage));
 						with instance_create_layer(x, y, "Instances", objDOTDamageText) {
 							damageText = _inst.damage;
 							damageColour = c_red;
@@ -304,7 +303,7 @@ function get_damaged (_damageObj, _iframes = false, _isEnemy = true) {
 			10,
 			sprWand,
 			objSpecialInferno,
-			30,
+			180,
 			1, 
 			0
 		),
@@ -312,7 +311,7 @@ function get_damaged (_damageObj, _iframes = false, _isEnemy = true) {
 			15,
 			sprWand,
 			objSpecialInferno,
-			30,
+			180,
 			1, 
 			0
 		),

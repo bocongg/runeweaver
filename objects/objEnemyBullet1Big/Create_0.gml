@@ -2,7 +2,7 @@ damage = 20;
 hitconfirm = false;
 
 dir = 5;
-spd = 5;
+spd = 7;
 xspd = 0; 
 yspd = 0;
 

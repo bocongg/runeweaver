@@ -106,6 +106,6 @@ function getTreasure()
 		// Increment the x position for the next card.
 		_x += 400;
 	}
-	
+	ds_list_destroy(_rune_list);
 	instance_create_layer(960, 864, "UpgradeScreen", objAddToInv);
 }

@@ -13,13 +13,6 @@ with(objEquipBasic){
 		var _cdPercent = objPlayer.shootTimerBasic / objPlayer.basicAttack.cooldown;
 		var _cdImage = _cdPercent * (sprite_get_number(spr_item_cooldown) - 1);
 		draw_sprite(spr_item_cooldown, _cdImage, _camX+107, _camY+888);
-		
-		//draw_set_halign(fa_center);
-		//draw_set_valign(fa_middle);
-		//draw_text(_camX+104, _camY+873+90,string(objPlayer.shootTimerBasic));
-		//draw_set_halign(fa_left);
-		//draw_set_valign(fa_top);
-		
 	}
 }
 
@@ -33,12 +26,6 @@ with(objEquipSpecial){
 		var _cdPercent = objPlayer.shootTimerSpecial / objPlayer.specialAttack.cooldown;
 		var _cdImage = _cdPercent * (sprite_get_number(spr_item_cooldown) - 1);
 		draw_sprite(spr_item_cooldown, _cdImage, _camX+223, _camY+888);
-		
-		//draw_set_halign(fa_center);
-		//draw_set_valign(fa_middle);
-		//draw_text(_camX+224, _camY+873+90,string(objPlayer.shootTimerSpecial));
-		//draw_set_halign(fa_left);
-		//draw_set_valign(fa_top);
 	}
 }
 
@@ -54,12 +41,12 @@ draw_sprite(sprPlayerHealthBar, _hpImage, healthbar_x, healthbar_y);
 //draw shop items
 draw_sprite(sprHUDEnergyDrink, 0, _camX + 450, _camY + 134);
 var _drinkString = "x " + string(global.energyDrink);
-draw_set_font(fntMedium);
+draw_set_font(fntDOTMedium);
 draw_text(_camX + 450 + 20, _camY + 134 - 10, _drinkString);
 
 draw_sprite(sprHUDLuckyBell, 0, _camX + 361, _camY + 134);
 var _bellString = "x " + string(global.goldChance);
-draw_set_font(fntMedium);
+draw_set_font(fntDOTMedium);
 draw_text(_camX + 361 + 20, _camY + 134 - 10, _bellString);
 
 //draw the player's gold
@@ -72,5 +59,5 @@ var gold_y = _camY + 96; // Adjust the vertical offset as needed
 
 
 draw_sprite(sprGold, image_index, gold_x, gold_y);
-draw_set_font(fntMedium);
+draw_set_font(fntDOTMedium);
 draw_text(gold_x + 30, gold_y - 10, _goldString);

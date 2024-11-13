@@ -63,21 +63,6 @@ switch (state) {
 			bulletIndex = (bulletIndex + 1) mod array_length(bulletTypes);
 		}
 
-        
-		//if (shootTimer <= windupTime && instance_exists(bulletInst)) {
-        //    bulletInst.x = x + bulletXoff * face;
-        //    bulletInst.y = y + bulletYoff;
-        //}
-
-        //if (shootTimer == windupTime && instance_exists(bulletInst)) {
-        //    audio_play_sound(sndEnemyAttack, 0, 0, 1.0, undefined, 1.0);
-        //    if (freezeEnemy) {
-        //        bulletInst.destroy = true;
-        //    } else {
-        //        bulletInst.state = 1;
-        //    }
-        //}
-
         if (shootTimer > windupTime + recoverTime) {
             state = 0;
             shootTimer = 0;
