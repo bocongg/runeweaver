@@ -1,14 +1,13 @@
 //rotate
 image_angle = dir;
-		
-		
+
 if instance_exists(objPlayer) {
     // Calculate the new direction towards the player
-    var targetDir = point_direction(x, y, objPlayer.x, objPlayer.y);
-    
-    // Smoothly adjust the current direction towards the target direction
+	dir = point_direction(x, y, objPlayer.x, objPlayer.y);
+	//var targetDir
+	// Smoothly adjust the current direction towards the target direction
     // Adjust the "homingSpeed" value to control how fast the bullet turns (e.g., 5 for faster turning)
-    dir = lerp(dir, targetDir, 0.05); // 0.05 is a smoothing factor; increase for faster tracking
+    //dir = lerp(dir, targetDir, 0.01); // 0.05 is a smoothing factor; increase for faster tracking
 }
 		
 //movement

@@ -3,7 +3,7 @@
   "%Name":"sprTreasureChestClosed",
   "bboxMode":0,
   "bbox_bottom":323,
-  "bbox_left":26,
+  "bbox_left":27,
   "bbox_right":371,
   "bbox_top":78,
   "collisionKind":1,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"1c3f23a8-2d20-4a6a-a33e-04935ba3ca9c","name":"1c3f23a8-2d20-4a6a-a33e-04935ba3ca9c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"062e4052-1599-4a0e-bf19-ac7cc15b4efb","name":"062e4052-1599-4a0e-bf19-ac7cc15b4efb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":400,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"1c7d2138-53b5-433c-a048-736d03d37c90","blendMode":0,"displayName":"default","isLocked":false,"name":"1c7d2138-53b5-433c-a048-736d03d37c90","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"5d03dc70-7554-4c14-8821-2cf314e49a3d","blendMode":0,"displayName":"default","isLocked":false,"name":"5d03dc70-7554-4c14-8821-2cf314e49a3d","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sprTreasureChestClosed",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1c3f23a8-2d20-4a6a-a33e-04935ba3ca9c","path":"sprites/sprTreasureChestClosed/sprTreasureChestClosed.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"3b026248-72f4-4f94-b72f-6ebed50987bc","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"062e4052-1599-4a0e-bf19-ac7cc15b4efb","path":"sprites/sprTreasureChestClosed/sprTreasureChestClosed.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"3d68cfc0-4ddb-475b-a0d3-600c964376cb","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
