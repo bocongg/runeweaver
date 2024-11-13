@@ -153,6 +153,7 @@ if (room != rmWinScreen && room != rmTreasure && room != rmShop && room != rmRes
 					dotDmg = other.specialDOTAttack.dot;
 					spdReduct = other.specialDOTAttack.spdReduct; 
 					dmgInterval = other.specialDOTAttack.dmgInterval; 
+					show_debug_message(" Damage Last:" + string(other.specialDOTAttack.dmgLast));
 					dmgLast = other.specialDOTAttack.dmgLast;
 				}
 			}	

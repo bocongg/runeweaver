@@ -11,7 +11,8 @@ if (image_speed > 0)
 		instance_create_layer(500, 1261, "Instances", objLavaSmall);
 		instance_create_layer(2406, 436, "Instances", objLavaSmall);
 		instance_destroy(objFinalBossCutscene);
-		instance_activate_all();
+		instance_activate_object(objLizardEnemy);
+		instance_activate_object(objPlayer);
 		
 		if (audio_is_playing(sndFinalBossCutscene)){
 			audio_stop_all();

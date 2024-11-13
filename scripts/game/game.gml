@@ -479,6 +479,6 @@ global.dotAttackList = {
 			1,		//dot
 			1,		//speed reduction5
 			0.5,	//dmg interval
-			5		//dmg last
+			5	//dmg last
 		)
 	}
