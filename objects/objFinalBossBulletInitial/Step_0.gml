@@ -1,33 +1,14 @@
-//state machine
-switch(state) {
-	//wait for the enemy  to  shoot state
-	case 0:
-	
-		//wait for enemy to shoot state
-		if instance_exists(objPlayer) {
-			dir = point_direction(x, y, objPlayer.x, objPlayer.y);
-			image_angle = point_direction(x, y, objPlayer.x, objPlayer.y);
-		}
+//rotate
+image_angle = dir;
+
+//movement
+xspd = lengthdir_x(spd, dir);
+yspd = lengthdir_y(spd, dir);
+x += xspd;
+y += yspd;
 		
-		//set depth to make myself more visible
-		depth = -y - 50;
-	
-	break;
-	
-	//shoot or travel
-	case 1:
-		
-		//movement
-		xspd = lengthdir_x(spd, dir);
-		yspd = lengthdir_y(spd, dir);
-		x += xspd;
-		y += yspd;
-		
-		//update depth
-		depth = -y;
-	
-	break;
-}
+//update depth
+depth = -y;
 	
 //cleanup	
 

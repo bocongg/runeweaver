@@ -2,7 +2,7 @@ damage = 15;
 hitconfirm = false;
 
 dir = 5;
-spd = 5;
+spd = 10;
 xspd = 0; 
 yspd = 0;
 
@@ -14,4 +14,5 @@ state = 0;
 // cleanup
 destroy = false;
 playerDestroy = false;
+
 

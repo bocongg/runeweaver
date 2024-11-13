@@ -67,6 +67,14 @@ if(image_blend == c_red) {
 		image_alpha = 1;
 	}
 }
+//turn off red damage flash
+if(image_blend == c_purple) {
+	image_alpha -= 0.025
+	if(image_alpha <= 0.70) {
+		image_blend = c_white;
+		image_alpha = 1;
+	}
+}
 
 if instance_exists(objPlayer) {
 		dir = point_direction(x, y, objPlayer.x, objPlayer.y);

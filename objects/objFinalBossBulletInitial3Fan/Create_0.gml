@@ -15,3 +15,6 @@ state = 0;
 destroy = false;
 playerDestroy = false;
 
+
+
+
