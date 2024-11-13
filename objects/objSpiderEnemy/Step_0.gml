@@ -83,7 +83,28 @@ if hp <= 0 {
 	audio_play_sound(sndEnemyDeath, 0, 0, 1.0, undefined, 1.0);
 	for (var i = 0; i < irandom_range(3,4); i++){
 		randomise();
-		instance_create_layer(x + lengthdir_x(200, irandom(360)), y + lengthdir_y(200, irandom(360)), "Instances", objSpiderEnemyBaby);
+		with (instance_create_layer(x + lengthdir_x(200, irandom(360)), y + lengthdir_y(200, irandom(360)), "Instances", objSpiderEnemyBaby)){
+			while (!place_free(x, y)){
+				var nearestWall = instance_nearest(x, y, objSolidWall)
+				var wallDist = point_direction(x, y, nearestWall.x, nearestWall.y);
+				show_debug_message("Wall dist: " + string(wallDist));
+				if (wallDist > 0 && wallDist < 180){
+					x = x;
+					y = y + wallDist;
+				} else if (wallDist > 180 && wallDist < 360){
+					x = x;
+					y = y - wallDist;
+				} else if (wallDist > 90 && wallDist < 270){
+					x = x + wallDist;
+					y = y;
+				} else if (wallDist > 270 && wallDist < 90){
+					x = x - wallDist;
+					y = y;
+				}
+			}
+		}
 	}
+	
+	
 	instance_destroy();
 }
