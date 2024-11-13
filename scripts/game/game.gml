@@ -152,7 +152,7 @@ function get_damaged (_damageObj, _iframes = false, _isEnemy = true) {
 			2,
 			sprWand,
 			objBasicFire,
-			15,
+			30,
 			1, 
 			0
 		),
@@ -160,7 +160,7 @@ function get_damaged (_damageObj, _iframes = false, _isEnemy = true) {
 			4,
 			sprWand,
 			objBasicFire,
-			15,
+			30,
 			1, 
 			0
 		),
@@ -168,7 +168,7 @@ function get_damaged (_damageObj, _iframes = false, _isEnemy = true) {
 			6,
 			sprWand,
 			objBasicFire,
-			15,
+			30,
 			1, 
 			0
 		),
@@ -200,7 +200,7 @@ function get_damaged (_damageObj, _iframes = false, _isEnemy = true) {
 			1,
 			sprWand,
 			objBasicWind,
-			30,
+			15,
 			1, 
 			0
 		),
@@ -208,7 +208,7 @@ function get_damaged (_damageObj, _iframes = false, _isEnemy = true) {
 			2,
 			sprWand,
 			objBasicWind,
-			30,
+			15,
 			1, 
 			0
 		),
@@ -216,7 +216,7 @@ function get_damaged (_damageObj, _iframes = false, _isEnemy = true) {
 			3,
 			sprWand,
 			objBasicWind,
-			30,
+			15,
 			1, 
 			0
 		),
