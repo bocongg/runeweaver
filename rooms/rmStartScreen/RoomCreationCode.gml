@@ -1,0 +1,1 @@
+audio_play_sound(sndMenuBGM, 0, 1, 1.0);

@@ -157,7 +157,6 @@ if (room != rmWinScreen && room != rmTreasure && room != rmShop && room != rmRes
 				}
 			}	
 			else {
-		
 				for (var i = 0; i < specialAttack.bulletNum ; i++) {
 				
 					//create the bullet
@@ -182,15 +181,6 @@ if (room != rmWinScreen && room != rmTreasure && room != rmShop && room != rmRes
 	window_set_cursor(cr_default);
 }
 #endregion
-
-
-
-if global.playerHp <= (0.5 * global.playerMaxHp) { // Check if health is 20% or below
-    image_blend = c_red;
-}
-if global.playerHp >= (0.5 * global.playerMaxHp) { // Check if health is 20% or below
-    image_blend = c_white;
-}
 
 //death
 if global.playerHp <= 0 {

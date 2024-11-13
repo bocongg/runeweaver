@@ -6,7 +6,7 @@ xspd = 0;
 yspd = 0;
 
 // cleanup
-maxDist = 500;
+maxDist = 700;
 destroy = false;
 enemyDestroy = false;
 

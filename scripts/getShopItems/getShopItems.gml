@@ -174,6 +174,7 @@ function getShopItems()
 				// Increment the x position for the next card.
 				_x += 400;
 			}
+			ds_list_destroy(global.item_list);
 			break;
 	}	
 }

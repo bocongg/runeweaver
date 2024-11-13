@@ -83,6 +83,7 @@
   "name":"Runeweaver",
   "resources":[
     {"id":{"name":"fntDOT","path":"fonts/fntDOT/fntDOT.yy",},},
+    {"id":{"name":"fntDOTMedium","path":"fonts/fntDOTMedium/fntDOTMedium.yy",},},
     {"id":{"name":"fntLarge","path":"fonts/fntLarge/fntLarge.yy",},},
     {"id":{"name":"fntMedium","path":"fonts/fntMedium/fntMedium.yy",},},
     {"id":{"name":"fntPause","path":"fonts/fntPause/fntPause.yy",},},
@@ -162,6 +163,7 @@
     {"id":{"name":"objInvTooltip2","path":"objects/objInvTooltip2/objInvTooltip2.yy",},},
     {"id":{"name":"objInvTooltip3","path":"objects/objInvTooltip3/objInvTooltip3.yy",},},
     {"id":{"name":"objLava","path":"objects/objLava/objLava.yy",},},
+    {"id":{"name":"objLavaSmall","path":"objects/objLavaSmall/objLavaSmall.yy",},},
     {"id":{"name":"objLionEnemy","path":"objects/objLionEnemy/objLionEnemy.yy",},},
     {"id":{"name":"objLizardEnemy","path":"objects/objLizardEnemy/objLizardEnemy.yy",},},
     {"id":{"name":"objLoadingScreen","path":"objects/objLoadingScreen/objLoadingScreen.yy",},},
@@ -472,6 +474,7 @@
     {"id":{"name":"sprSplashScreen","path":"sprites/sprSplashScreen/sprSplashScreen.yy",},},
     {"id":{"name":"sprTipsButton","path":"sprites/sprTipsButton/sprTipsButton.yy",},},
     {"id":{"name":"sprTransition","path":"sprites/sprTransition/sprTransition.yy",},},
+    {"id":{"name":"sprTreasureBg","path":"sprites/sprTreasureBg/sprTreasureBg.yy",},},
     {"id":{"name":"sprTreasureChestClosed","path":"sprites/sprTreasureChestClosed/sprTreasureChestClosed.yy",},},
     {"id":{"name":"sprTreasureChestOpened","path":"sprites/sprTreasureChestOpened/sprTreasureChestOpened.yy",},},
     {"id":{"name":"sprUIHomeScreen","path":"sprites/sprUIHomeScreen/sprUIHomeScreen.yy",},},

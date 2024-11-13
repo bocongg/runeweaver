@@ -1,25 +1,16 @@
-event_inherited();
-
-if (beamLast > 0) {
-    objPlayer.canMove = false;
-} else {
-    objPlayer.canMove = true;
-}
-// Increment the animation counter
 animation_counter += 1;
 
-// Calculate the normalized progress of the animation (from 0 to 1)
+//calculate the normalized progress of the animation (from 0 to 1)
 var animation_progress = animation_counter / animation_steps;
 
-// Update the image_index based on the progress
+//update the image_index based on the progress
 image_index = animation_progress * (sprite_get_number(sprite_index) - 1);
 
-// Loop the animation if it reaches the end
-if (animation_counter >= animation_steps) {
+//loop the animation if it reaches the end
+if (animation_counter >= 180) {
     animation_counter = 0; // Reset the counter to loop the animation
+	instance_destroy();
 }
-
-
 
 //create damage objects
 if createdDamageObjects == false {
@@ -34,7 +25,6 @@ if createdDamageObjects == false {
 		var colliding_enemy = ds_list_find_value(_instList, i);
 		
 		if (colliding_enemy != noone) {
-		
 				// Check for collision with multiple enemies
 				var damageOverTimeinfo = [];
 				damageOverTimeinfo [DebuffInfo.DMG] = dotDmg; // damage is however much damage the poison should apply each tick
@@ -64,7 +54,3 @@ if floor(image_index) > 1 {
 		instance_destroy(enemyDamageInst);
 	}
 }
-
-	//destroy
-	beamLast--;
-	if beamLast == 0 {instance_destroy();}

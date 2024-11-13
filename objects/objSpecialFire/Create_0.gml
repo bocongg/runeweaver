@@ -1,12 +1,12 @@
 event_inherited();
 
 dir = 5;
-spd = 5;
+spd = 7;
 xspd = 0; 
 yspd = 0;
 
 // cleanup
-maxDist = 500;
+maxDist = 700;
 destroy = false;
 enemyDestroy = false;
 
