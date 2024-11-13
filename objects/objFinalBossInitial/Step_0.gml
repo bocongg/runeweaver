@@ -27,11 +27,11 @@ switch (state) {
          if (shootTimer == 1) {
 			switch (bulletIndex){
 				case 0:
-					bulletCount = 1; //number of bullets in a blast
+					bulletCount = 0; //number of bullets in a blast
 					spread = 0; //spread angle (in degrees)
 				break;
 				case 1:
-					bulletCount = 5; //number of bullets in a blast
+					bulletCount = 4; //number of bullets in a blast
 					spread = 30; //spread angle (in degrees)
 				break;
 			}
@@ -43,15 +43,17 @@ switch (state) {
 			
 			// Calculate the angle step between each bullet
 		    var _spreadDiv = max(spread/1 - 1, 1);
-
+			
 		    // Loop to create multiple bullets
-		    for (var i = 0; i < bulletCount; i++) {
+		    for (var i = 0; i <= bulletCount; i++) {
 		        // Calculate the angle for each bullet
-		        var bulletAngle = baseDir - spread/2 + _spreadDiv*i;
+		        var bulletAngle = baseDir - spread*2 + _spreadDiv*i;
 				// Alternate bullet types
 		            bulletType = bulletTypes[bulletIndex];
-		            bulletInst = instance_create_depth(x + bulletXoff * face, y + bulletYoff, depth, bulletType);
-					
+					if (!freezeEnemy){
+						bulletInst = instance_create_depth(x, y, depth, bulletType);
+						audio_play_sound(sndEnemyAttack, 0, 0, 1.0, undefined, 1.0);
+					}
 		        // Set the direction of the bullet
 		        with (bulletInst) {
 					dir = bulletAngle;
@@ -59,21 +61,22 @@ switch (state) {
 		    }
 			// Switch to the next bullet type
 			bulletIndex = (bulletIndex + 1) mod array_length(bulletTypes);
-}
+		}
 
-        if (shootTimer <= windupTime && instance_exists(bulletInst)) {
-            bulletInst.x = x + bulletXoff * face;
-            bulletInst.y = y + bulletYoff;
-        }
+        
+		//if (shootTimer <= windupTime && instance_exists(bulletInst)) {
+        //    bulletInst.x = x + bulletXoff * face;
+        //    bulletInst.y = y + bulletYoff;
+        //}
 
-        if (shootTimer == windupTime && instance_exists(bulletInst)) {
-            audio_play_sound(sndEnemyAttack, 0, 0, 1.0, undefined, 1.0);
-            if (freezeEnemy) {
-                bulletInst.destroy = true;
-            } else {
-                bulletInst.state = 1;
-            }
-        }
+        //if (shootTimer == windupTime && instance_exists(bulletInst)) {
+        //    audio_play_sound(sndEnemyAttack, 0, 0, 1.0, undefined, 1.0);
+        //    if (freezeEnemy) {
+        //        bulletInst.destroy = true;
+        //    } else {
+        //        bulletInst.state = 1;
+        //    }
+        //}
 
         if (shootTimer > windupTime + recoverTime) {
             state = 0;
