@@ -73,11 +73,17 @@ function get_damaged (_damageObj, _iframes = false, _isEnemy = true) {
 					
 					if (_isEnemy) {
 						//take damage from specific instance
+						
 						hp -= _inst.damage;
 						_hitConfirm = true;
 						//tell the damage instance to destroy itself 
 						_inst.destroy = true;
 					} else {
+						show_debug_message("in get_damage() Damage: " + string(_inst.damage));
+						with instance_create_layer(x, y, "Instances", objDOTDamageText) {
+							damageText = _inst.damage;
+							damageColour = c_red;
+						}
 						global.playerHp -= _inst.damage;
 						_hitConfirm = true;
 						_inst.destroy = true;

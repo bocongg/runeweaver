@@ -183,6 +183,8 @@ if (room != rmWinScreen && room != rmTreasure && room != rmShop && room != rmRes
 }
 #endregion
 
+
+
 if global.playerHp <= (0.5 * global.playerMaxHp) { // Check if health is 20% or below
     image_blend = c_red;
 }
