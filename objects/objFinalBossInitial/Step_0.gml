@@ -38,7 +38,7 @@ switch (state) {
 		    
 		    // Direction towards the player
 		    if instance_exists(objPlayer) {
-				var baseDir = point_direction(x, y, objPlayer.x, objPlayer.y);
+				baseDir = point_direction(x, y, objPlayer.x, objPlayer.y);
 			}
 			
 			// Calculate the angle step between each bullet

@@ -92,18 +92,24 @@ if (room != rmWinScreen && room != rmTreasure && room != rmShop && room != rmRes
 			for (var i = 0; i < basicAttack.bulletNum ; i++) {
 				//create the bullet
 			var _bulletInst = instance_create_depth(x, centerY, depth-100, basicAttack.bulletObj);
-			
 				//change the bullet's direction
 				with(_bulletInst) {
-					show_debug_message("Bullet Damage:" + string(other.basicAttack.dmg));
+					show_debug_message("Bullet Damage: " + string(other.basicAttack.dmg));
 					damage = other.basicAttack.dmg;
 					dir = other.aimDir - _spread/2 + _spreadDiv*i; 
 					//DOT
-					if other.basicAttack.bulletObj != objBasicBullet {
+					//if other.basicAttack.bulletObj != objBasicBullet {
+					if other.basicDOTAttack != noone {
 						dotDmg = other.basicDOTAttack.dot;
 						spdReduct = other.basicDOTAttack.spdReduct; 
 						dmgInterval = other.basicDOTAttack.dmgInterval; 
 						dmgLast = other.basicDOTAttack.dmgLast;
+						show_debug_message("=== START objPlayer Basic Attack DOT ===");
+						show_debug_message("dotDmg: " + string(dotDmg));
+						show_debug_message("spdReduct: " + string(spdReduct));
+						show_debug_message("dmgInterval: " + string(dmgInterval));
+						show_debug_message("dmgLast: " + string(dmgLast));
+						show_debug_message("=== END objPlayer Basic Attack DOT ===");
 					}
 				}
 			}
@@ -129,8 +135,18 @@ if (room != rmWinScreen && room != rmTreasure && room != rmShop && room != rmRes
 					spdReduct = other.specialDOTAttack.spdReduct; 
 					dmgInterval = other.specialDOTAttack.dmgInterval; 
 					dmgLast = other.specialDOTAttack.dmgLast;
+					
+					show_debug_message("=== START objPlayer Special Attack - objSpecialBlizzard  ===");
+					show_debug_message("damage: " + string(damage));
+					show_debug_message("=== DOT ===");
+					show_debug_message("dotDmg: " + string(dotDmg));
+					show_debug_message("spdReduct: " + string(spdReduct));
+					show_debug_message(" dmgInterval: " + string(dmgInterval));
+					show_debug_message(" dmgLast: " + string(dmgLast));
+					show_debug_message("=== END objPlayer Special Attack DOT - objSpecialBlizzard ===");
 				}
-			} else if specialAttack.bulletObj == objSpecialFlashFreeze {
+			} 
+			else if specialAttack.bulletObj == objSpecialFlashFreeze {
 				//create the bullet
 				var _bulletInst = instance_create_depth(x, y, depth-100, specialAttack.bulletObj);
 				with (_bulletInst) {
@@ -140,23 +156,40 @@ if (room != rmWinScreen && room != rmTreasure && room != rmShop && room != rmRes
 					spdReduct = other.specialDOTAttack.spdReduct; 
 					dmgInterval = other.specialDOTAttack.dmgInterval; 
 					dmgLast = other.specialDOTAttack.dmgLast;
+					
+					show_debug_message("=== START objPlayer Special Attack - objSpecialFlashFreeze  ===");
+					show_debug_message("damage: " + string(damage));
+					show_debug_message("=== DOT ===");
+					show_debug_message("dotDmg: " + string(dotDmg));
+					show_debug_message("spdReduct: " + string(spdReduct));
+					show_debug_message(" dmgInterval: " + string(dmgInterval));
+					show_debug_message(" dmgLast: " + string(dmgLast));
+					show_debug_message("=== END objPlayer Special Attack DOT - objSpecialFlashFreeze ===");
 				}
-			} else if specialAttack.bulletObj == objSpecialPrism {
+			} 
+			else if specialAttack.bulletObj == objSpecialPrism {
 				//create the bullet
 				var _bulletInst = instance_create_depth(x+20, y, depth-100, specialAttack.bulletObj);
 				//change the bullet's direction
 				with(_bulletInst) {
-					show_debug_message("Bullet Damage:" + string(other.specialAttack.dmg));
 					damage = other.specialAttack.dmg;
 					dir = other.aimDir;
 					//DOT
 					dotDmg = other.specialDOTAttack.dot;
 					spdReduct = other.specialDOTAttack.spdReduct; 
 					dmgInterval = other.specialDOTAttack.dmgInterval; 
-					show_debug_message(" Damage Last:" + string(other.specialDOTAttack.dmgLast));
 					dmgLast = other.specialDOTAttack.dmgLast;
+					
+					show_debug_message("=== START objPlayer Special Attack - objSpecialPrism ===");
+					show_debug_message("damage: " + string(damage));
+					show_debug_message("=== DOT ===");
+					show_debug_message("dotDmg: " + string(dotDmg));
+					show_debug_message("spdReduct: " + string(spdReduct));
+					show_debug_message(" dmgInterval: " + string(dmgInterval));
+					show_debug_message(" dmgLast: " + string(dmgLast));
+					show_debug_message("=== END objPlayer Special Attack DOT - objSpecialPrism ===");
 				}
-			}	
+			}		
 			else {
 				for (var i = 0; i < specialAttack.bulletNum ; i++) {
 				
@@ -172,6 +205,15 @@ if (room != rmWinScreen && room != rmTreasure && room != rmShop && room != rmRes
 						spdReduct = other.specialDOTAttack.spdReduct; 
 						dmgInterval = other.specialDOTAttack.dmgInterval; 
 						dmgLast = other.specialDOTAttack.dmgLast;
+						
+						show_debug_message("=== START objPlayer Special Attack ===");
+						show_debug_message("damage: " + string(damage));
+						show_debug_message("=== DOT ===");
+						show_debug_message("dotDmg: " + string(dotDmg));
+						show_debug_message("spdReduct: " + string(spdReduct));
+						show_debug_message(" dmgInterval: " + string(dmgInterval));
+						show_debug_message(" dmgLast: " + string(dmgLast));
+						show_debug_message("===END objPlayer Special Attack DOT===");
 					}
 				}
 			} 

@@ -27,3 +27,4 @@ bulletIndex = 0; // Start with the first bullet type
 bulletCount = 1;
 spread = 0;
 angleStep = 1;
+baseDir = 0;

@@ -54,7 +54,6 @@ switch (state) {
 		        var bulletAngle = baseDir - spread*2 + _spreadDiv*i;
 				// Alternate bullet types
 		            bulletType = bulletTypes[bulletIndex];
-					show_debug_message("Count: " + string(i));
 		            if (!freezeEnemy){
 						bulletInst = instance_create_depth(x + bulletXoff * face, y + bulletYoff, depth, bulletType);
 						audio_play_sound(sndEnemyAttack, 0, 0, 1.0, undefined, 1.0);

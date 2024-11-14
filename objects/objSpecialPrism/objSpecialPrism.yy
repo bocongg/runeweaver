@@ -4,7 +4,6 @@
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"objEnemyParent","path":"objects/objEnemyParent/objEnemyParent.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"objSpecialPrism",
@@ -14,8 +13,8 @@
     "path":"folders/Objects/Game/Power.yy",
   },
   "parentObjectId":{
-    "name":"objBasicBullet",
-    "path":"objects/objBasicBullet/objBasicBullet.yy",
+    "name":"objDamageEnemy",
+    "path":"objects/objDamageEnemy/objDamageEnemy.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

@@ -12,7 +12,14 @@ destroy = false;
 enemyDestroy = false;
 
 //damage over time
-dotDmg = other.dotDmg;
-damageInterval = other.dmgInterval; 
-damageLast = other.dmgLast; 
-spdReduct = other.spdReduct;
+//dotDmg = other.dotDmg;
+//dmgInterval = other.dmgInterval; 
+//dmgLast = other.dmgLast; 
+//spdReduct = other.spdReduct;
+
+show_debug_message("===START objBasicBullet Create Event ===");
+show_debug_message("dotDmg:" + string(dotDmg));
+show_debug_message("damageInterval:" + string(dmgInterval));
+show_debug_message("damageLast:" + string(dmgLast));
+show_debug_message("spdReduct:" + string(spdReduct));
+show_debug_message("===END objBasicBullet Create Event ===");

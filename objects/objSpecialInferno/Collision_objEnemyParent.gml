@@ -1,8 +1,8 @@
 // Create the debuff information
 var damageOverTimeInfo = [];
 damageOverTimeInfo[DebuffInfo.DMG] = dotDmg; // Damage per tick
-damageOverTimeInfo[DebuffInfo.TICK_RATE] = game_get_speed(gamespeed_fps) * damageInterval;
-damageOverTimeInfo[DebuffInfo.DURATION] = game_get_speed(gamespeed_fps) * damageLast;
+damageOverTimeInfo[DebuffInfo.TICK_RATE] = game_get_speed(gamespeed_fps) * dmgInterval;
+damageOverTimeInfo[DebuffInfo.DURATION] = game_get_speed(gamespeed_fps) * dmgLast;
 damageOverTimeInfo[DebuffInfo.SPEED_REDUCTION] = spdReduct;
 damageOverTimeInfo[DebuffInfo.DAMAGE_COLOUR] = c_red;
 

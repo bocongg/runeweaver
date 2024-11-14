@@ -5,7 +5,7 @@ createdDamageObjects = false;
 enemyDamageInst = noone; 
 
 dotDmg = other.dotDmg;
-damageInterval = other.dmgInterval; 
+dmgInterval = other.dmgInterval; 
 dmgLast = other.dmgLast; 
 spdReduct = other.spdReduct;
 
