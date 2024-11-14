@@ -15,7 +15,7 @@ for (var i = 0; i < slot_count; i++) {
 	//Draw stuff
 	if (iid != item.none){
 		draw_sprite(spr_item, iid, slot_x, slot_y) //Draw item sprite
-		draw_set_font(fntMedium);
+		draw_set_font(fntDOTMedium);
 		draw_text(slot_x+40, slot_y+50, string(amount)); //Draw item quantity
 	}
 }

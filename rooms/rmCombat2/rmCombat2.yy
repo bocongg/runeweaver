@@ -25,6 +25,7 @@
     {"name":"inst_1DAFD449","path":"rooms/rmCombat2/rmCombat2.yy",},
     {"name":"inst_37231A74","path":"rooms/rmCombat2/rmCombat2.yy",},
     {"name":"inst_AE66C24","path":"rooms/rmCombat2/rmCombat2.yy",},
+    {"name":"inst_2EB8EC40","path":"rooms/rmCombat2/rmCombat2.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -42,6 +43,7 @@
       ],"layers":[],"name":"UpgradeScreen","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"UpgradeScreenBase","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"UpgradeScreenBase","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":700,"effectEnabled":true,"effectType":null,"gridX":1,"gridY":1,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"$GMRInstance":"v1","%Name":"inst_2EB8EC40","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2EB8EC40","objectId":{"name":"objGrid","path":"objects/objGrid/objGrid.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":124.0,"y":-52.0,},
         {"$GMRInstance":"v1","%Name":"inst_5D9FDDEB_1_1_3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5D9FDDEB_1_1_3","objectId":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":428.0,"y":404.0,},
         {"$GMRInstance":"v1","%Name":"inst_FF1F539","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_FF1F539","objectId":{"name":"objSpiderEnemy","path":"objects/objSpiderEnemy/objSpiderEnemy.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1710.0,"y":640.0,},
         {"$GMRInstance":"v1","%Name":"inst_21720692","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_21720692","objectId":{"name":"objSpiderEnemy","path":"objects/objSpiderEnemy/objSpiderEnemy.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1541.0,"y":974.0,},

@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprEnemySpider",
-    "path":"sprites/sprEnemySpider/sprEnemySpider.yy",
+    "name":"sprEnemySpiderBaby",
+    "path":"sprites/sprEnemySpiderBaby/sprEnemySpiderBaby.yy",
   },
   "spriteMaskId":null,
   "visible":true,

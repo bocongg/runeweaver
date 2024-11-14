@@ -1,2 +1,2 @@
 instance_destroy(objWinTextWelcome);
-alarm_set(1, 60);
+alarm_set(1, 15);

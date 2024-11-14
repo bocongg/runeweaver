@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprSpecialFlashFreeze",
-    "path":"sprites/sprSpecialFlashFreeze/sprSpecialFlashFreeze.yy",
+    "name":"sprSpecialFrostFire",
+    "path":"sprites/sprSpecialFrostFire/sprSpecialFrostFire.yy",
   },
   "spriteMaskId":null,
   "visible":true,
