@@ -8,7 +8,7 @@ baseSpd = 0.5;
 state = 0;
 
 //shooting state
-cooldownTime = 2*60; //4 seconds 
+cooldownTime = 60; //4 seconds 
 shootTimer = irandom(cooldownTime);
 windupTime = 30;	//stand and freeze
 recoverTime = 25;	//time before start chasing player
