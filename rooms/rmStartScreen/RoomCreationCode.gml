@@ -1,1 +1,1 @@
-audio_play_sound(sndMenuBGM, 0, 1, 1.0);
+audio_play_sound(sndMenuBGM, 1, true)
