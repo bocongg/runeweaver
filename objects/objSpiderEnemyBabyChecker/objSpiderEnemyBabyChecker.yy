@@ -1,18 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"objSolidWall",
+  "%Name":"objSpiderEnemyBabyChecker",
   "eventList":[],
   "managed":true,
-  "name":"objSolidWall",
+  "name":"objSpiderEnemyBabyChecker",
   "overriddenProperties":[],
   "parent":{
-    "name":"Background",
-    "path":"folders/Objects/Game/Background.yy",
+    "name":"Enemies",
+    "path":"folders/Objects/Game/Enemies.yy",
   },
-  "parentObjectId":{
-    "name":"objWall",
-    "path":"objects/objWall/objWall.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,10 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sprSolidWall",
-    "path":"sprites/sprSolidWall/sprSolidWall.yy",
+  "spriteId":null,
+  "spriteMaskId":{
+    "name":"sprEnemySpider",
+    "path":"sprites/sprEnemySpider/sprEnemySpider.yy",
   },
-  "spriteMaskId":null,
   "visible":true,
 }

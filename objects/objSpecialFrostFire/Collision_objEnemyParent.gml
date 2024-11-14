@@ -4,7 +4,7 @@ damageOverTimeInfo[DebuffInfo.DMG] = dotDmg; // Damage per tick
 damageOverTimeInfo[DebuffInfo.TICK_RATE] = game_get_speed(gamespeed_fps) * dmgInterval;
 damageOverTimeInfo[DebuffInfo.DURATION] = game_get_speed(gamespeed_fps) * dmgLast;
 damageOverTimeInfo[DebuffInfo.SPEED_REDUCTION] = spdReduct;
-damageOverTimeInfo[DebuffInfo.DAMAGE_COLOUR] = c_red;
+damageOverTimeInfo[DebuffInfo.DAMAGE_COLOUR] = c_purple;
 
 
 // Flag to check if a similar debuff exists

@@ -77,7 +77,11 @@ if ((ds_map_find_value(upgrade_data, "stock") != 0)) && (global.gold >= ds_map_f
 					upgrade_data[? "stock"] -= 1;
 					global.vendingTimes += 1;
 				}
-			
+				
+				if (audio_is_playing(sndVendingMachineAmbient)){
+					audio_stop_sound(sndVendingMachineAmbient);
+				}
+				
 				// Destroys shop items.
 				with(objGetItems) instance_destroy();
 	

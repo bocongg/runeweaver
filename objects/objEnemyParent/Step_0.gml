@@ -67,7 +67,7 @@ if(image_blend == c_red) {
 		image_alpha = 1;
 	}
 }
-//turn off red damage flash
+//turn off purple damage flash
 if(image_blend == c_purple) {
 	image_alpha -= 0.025
 	if(image_alpha <= 0.70) {

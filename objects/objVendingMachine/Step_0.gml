@@ -4,7 +4,7 @@ if (global.vendingTimes < 3){
 			instance_create_layer(1920/2, 1080/2, "UpgradeScreenBase", objGetShopItemsScreen);
 		}
 	}
-} else {
+} else if (global.vendingTimes >= 3) {
 	image_index = 1;
 	instance_destroy(objInteractableTooltip);
 }

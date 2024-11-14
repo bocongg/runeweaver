@@ -14,7 +14,7 @@
 	if destroy == true {instance_destroy();}
 	
 	//colliion on enemyParent and Wall
-	if place_meeting(x, y, objSolidWall) {
+	if (place_meeting(x, y, objSolidWall) && !place_meeting(x, y, objPlayer)) {
 		destroy = true;
 	}
 	
