@@ -1,4 +1,4 @@
-//rotate
+//rotate 
 image_angle = dir;
 
 //move
@@ -9,7 +9,6 @@ image_angle = dir;
 	y += yspd;
 	
 //cleanup	
-
 	//hit confirm destroy
 	if hitconfirm == true && enemyDestroy == true {destroy = true;};
 	
@@ -17,7 +16,11 @@ image_angle = dir;
 	if destroy == true {instance_destroy();}
 	
 	//colliion on enemyParent and Wall
-	if place_meeting(x, y, objSolidWall) {destroy = true;}
+	if place_meeting(x, y, objSolidWall) {
+		destroy = true;
+	}
 	
 	//bullet out of range
-	if point_distance(xstart, ystart, x, y) > maxDist {destroy = true;}
+	if point_distance(xstart, ystart, x, y) > maxDist {
+		destroy = true;
+	}

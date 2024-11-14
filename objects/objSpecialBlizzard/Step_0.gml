@@ -28,7 +28,7 @@ if createdDamageObjects == false {
 				// Check for collision with multiple enemies
 				var damageOverTimeinfo = [];
 				damageOverTimeinfo [DebuffInfo.DMG] = dotDmg; // damage is however much damage the poison should apply each tick
-				damageOverTimeinfo [DebuffInfo.TICK_RATE] = game_get_speed(gamespeed_fps) * damageInterval; 
+				damageOverTimeinfo [DebuffInfo.TICK_RATE] = game_get_speed(gamespeed_fps) * dmgInterval; 
 				damageOverTimeinfo [DebuffInfo.DURATION] = game_get_speed(gamespeed_fps) * dmgLast; 
 				damageOverTimeinfo [DebuffInfo.SPEED_REDUCTION] = 1; 
 				damageOverTimeinfo [DebuffInfo.DAMAGE_COLOUR] = c_aqua; 

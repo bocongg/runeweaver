@@ -5,9 +5,11 @@ createdDamageObjects = false;
 enemyDamageInst = noone; 
 
 dotDmg = other.dotDmg;
-damageInterval = other.dmgInterval; 
+dmgInterval = other.dmgInterval; 
 dmgLast = other.dmgLast; 
 spdReduct = other.spdReduct;
+
+
 
 // The duration you want for the animation cycle, in seconds
 animation_duration = 0.3; // 1 second

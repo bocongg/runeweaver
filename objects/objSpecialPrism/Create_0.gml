@@ -1,16 +1,23 @@
 event_inherited();
 
-dir = 5;
-spd = 5;
-xspd = 0; 
-yspd = 0;
+//vars for creating damage objects
+createdDamageObjects = false;
+enemyDamageInst = noone; 
+
+dotDmg = other.dotDmg;
+dmgInterval = other.dmgInterval; 
+dmgLast = other.dmgLast; 
+spdReduct = other.spdReduct;
+
+// The duration you want for the animation cycle, in seconds
+animation_duration = 0.3; // 1 second
+
+// Calculate the total number of steps for the duration
+animation_steps = animation_duration * room_speed;
+
+// Initialize a counter to track the animation progress
+animation_counter = 0;
 
 //beamLast
 beamLast = 60; //1 sec is 60fps
 
-// cleanup
-maxDist = 500;
-destroy = false;
-enemyDestroy = false;
-
-audio_play_sound(sndPrismAttack, 0, 0, 0.5);
